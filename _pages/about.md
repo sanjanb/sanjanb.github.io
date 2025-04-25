@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.linkedin.com/in/sanjan-bm/'>LinkedIn</a>.
+subtitle: <a href='https://www.linkedin.com/in/sanjan-bm/'>LinkedIn</a>.<a href='https://www.linkedin.com/in/sanjan-bm/'>Github</a>.
 
 profile:
   align: right
