@@ -94,37 +94,19 @@
   "skills": [
     {
       "name": "Web Development",
-      "keywords": [
-        "ReactJS",
-        "MERN Stack",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
+      "keywords": ["ReactJS", "MERN Stack", "HTML", "CSS", "JavaScript"]
     },
     {
       "name": "AI/ML",
-      "keywords": [
-        "Python",
-        "Machine Learning",
-        "Data Science"
-      ]
+      "keywords": ["Python", "Machine Learning", "Data Science"]
     },
     {
       "name": "Product Management",
-      "keywords": [
-        "Admin Dashboard",
-        "User Experience Planning",
-        "Team Coordination"
-      ]
+      "keywords": ["Admin Dashboard", "User Experience Planning", "Team Coordination"]
     },
     {
       "name": "Digital Marketing",
-      "keywords": [
-        "Instagram Content Planning",
-        "Email Marketing",
-        "Brand Awareness Campaigns"
-      ]
+      "keywords": ["Instagram Content Planning", "Email Marketing", "Brand Awareness Campaigns"]
     }
   ],
   "languages": [
@@ -140,12 +122,7 @@
   "interests": [
     {
       "name": "Building Innovative AI Solutions",
-      "keywords": [
-        "NLP",
-        "Computer Vision",
-        "Blockchain with AI",
-        "IoT with AI"
-      ]
+      "keywords": ["NLP", "Computer Vision", "Blockchain with AI", "IoT with AI"]
     }
   ],
   "references": [],
@@ -153,11 +130,7 @@
     {
       "name": "The Buzz Club Website",
       "summary": "A café website for live order tracking, menu display, and customer engagement built using the MERN stack and ReactJS.",
-      "highlights": [
-        "Interactive Hero Section",
-        "Admin dashboard for products",
-        "Responsive mobile/desktop design"
-      ],
+      "highlights": ["Interactive Hero Section", "Admin dashboard for products", "Responsive mobile/desktop design"],
       "startDate": "2024-02-01",
       "endDate": "2024-04-01",
       "url": "https://example.com"
@@ -165,11 +138,7 @@
     {
       "name": "GSI Product Management Dashboard",
       "summary": "ReactJS-based admin dashboard for managing products for quick commerce and service booking platforms.",
-      "highlights": [
-        "Secure role-based access",
-        "Efficient product upload and update",
-        "Fast loading and minimalistic design"
-      ],
+      "highlights": ["Secure role-based access", "Efficient product upload and update", "Fast loading and minimalistic design"],
       "startDate": "2024-02-01",
       "endDate": "2024-03-01",
       "url": "https://example.com"
