@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About Me
-permalink: /about/
+permalink: /
 subtitle: >
   <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
   <a href='https://github.com/sanjan-bm' target="_blank">GitHub</a>
