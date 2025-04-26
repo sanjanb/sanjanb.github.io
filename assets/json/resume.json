@@ -1,200 +1,179 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Sanjan B M",
+    "label": "AI/ML Engineering Student | Tech Lead | Web Developer",
+    "email": "sanjanacharaya1234@gmail.com",
+    "phone": "+91-9535752673",
+    "summary": "Engineering student specializing in Artificial Intelligence and Machine Learning. Tech head and web developer experienced in MERN stack, ReactJS, digital marketing, and product management. Passionate about building innovative solutions for startups and services.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Mysuru",
+      "countryCode": "570028",
+      "region": "Karnataka"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "Sanjan B M",
+        "url": "https://www.linkedin.com/in/sanjan-bm/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Sanjanb",
+        "url": "https://github.com/sanjanb"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "GSI Startup",
+      "position": "Tech Lead (Web and Product Development)",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "startDate": "2024-01-01",
+      "summary": "Leading website and product development for quick commerce, turf booking, and salon booking platforms. Managing React-based development and product management.",
+      "highlights": [
+        "Built web apps using ReactJS",
+        "Developed admin dashboard for managing products",
+        "Planned digital marketing strategies for GSI services"
+      ]
+    },
+    {
+      "name": "The Buzz Club",
+      "position": "Web Developer & Digital Marketer",
+      "url": "https://example.com",
+      "startDate": "2024-01-01",
+      "summary": "Developing a café website to enhance digital presence and improve offline customer engagement using MERN stack and social media strategies.",
+      "highlights": [
+        "Website development for menu and live orders",
+        "Instagram content planning and marketing",
+        "Customer engagement and newsletter setup"
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Vishwabandhu Seva Trust",
+      "position": "Volunteer",
+      "startDate": "2024-01-01",
+      "summary": "Supporting various initiatives under the Vishwabandhu Seva Trust including fundraising events and automation setups."
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "ATME College of Engineering",
+      "area": "Artificial Intelligence and Machine Learning",
+      "studyType": "Bachelor of Technology (B.Tech)",
+      "startDate": "2022-07-01",
+      "endDate": "2026-06-30"
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
+  "awards": [],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Artificial Intelligence",
+      "issuer": "CISCO",
+      "date": "2023-05-01",
+      "url": "https://www.credly.com/badges/2bc3c184-6d52-45a3-80ed-995bb7a2eb7a/public_url"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "Full Stack Web Development",
+      "issuer": "Your Institution or Platform",
+      "date": "2024-03-01",
+      "url": "https://example.com"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Machine Leanring with Python",
+      "issuer": "FreeCodeCamp",
+      "date": "2024-03-01",
+      "url": "https://www.freecodecamp.org/certification/sanjanb/machine-learning-with-python-v7"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "See all Certifications",
+      "url": "https://www.linkedin.com/in/sanjan-bm/details/certifications/"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Web Development",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "ReactJS",
+        "MERN Stack",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "AI/ML",
+      "keywords": [
+        "Python",
+        "Machine Learning",
+        "Data Science"
+      ]
+    },
+    {
+      "name": "Product Management",
+      "keywords": [
+        "Admin Dashboard",
+        "User Experience Planning",
+        "Team Coordination"
+      ]
+    },
+    {
+      "name": "Digital Marketing",
+      "keywords": [
+        "Instagram Content Planning",
+        "Email Marketing",
+        "Brand Awareness Campaigns"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "English",
+      "fluency": "Professional Working Proficiency"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "language": "Kannada / Hindi",
+      "fluency": "Native Speaker"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Building Innovative AI Solutions",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "NLP",
+        "Computer Vision",
+        "Blockchain with AI",
+        "IoT with AI"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
+      "name": "The Buzz Club Website",
+      "summary": "A café website for live order tracking, menu display, and customer engagement built using the MERN stack and ReactJS.",
+      "highlights": [
+        "Interactive Hero Section",
+        "Admin dashboard for products",
+        "Responsive mobile/desktop design"
+      ],
+      "startDate": "2024-02-01",
+      "endDate": "2024-04-01",
+      "url": "https://example.com"
+    },
+    {
+      "name": "GSI Product Management Dashboard",
+      "summary": "ReactJS-based admin dashboard for managing products for quick commerce and service booking platforms.",
+      "highlights": [
+        "Secure role-based access",
+        "Efficient product upload and update",
+        "Fast loading and minimalistic design"
+      ],
+      "startDate": "2024-02-01",
+      "endDate": "2024-03-01",
       "url": "https://example.com"
     }
-  ]
+  ],
+  "publications": []
 }
