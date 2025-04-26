@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me
+title: AboutMe
 permalink: /
 subtitle: >
   <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
@@ -10,7 +10,7 @@ subtitle: >
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   address: >
     <p>ATME College of Engineering</p>
     <p>Vasanth Nagar, Mysuru</p>
@@ -30,10 +30,10 @@ Currently, I'm pursuing my Bachelor of Engineering at ATME College, with a speci
 
 My academic pursuits are complemented by hands-on leadership roles, including directing projects within the IEEE student branch. I've also earned multiple certifications in high-demand tech areas, demonstrating my commitment to continuous learning and practical application.
 
+---
+
 ### Connect with Me
 
 Feel free to explore my [LinkedIn](https://www.linkedin.com/in/sanjan-bm/) profile or check out my [GitHub](https://github.com/sanjan-bm) repositories to see some of my work. I'm always open to new opportunities and collaborations, so don't hesitate to reach out!
 
----
 
-_Note: You can customize the social media links, profile picture, and other details by editing the `profile` property of the YAML header in your `_pages/about.md` file. Additionally, you can manage your publications by editing the `_bibliography/papers.bib` file, and Jekyll will automatically render your [publications page](/al-folio/publications/)._
