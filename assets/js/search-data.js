@@ -453,7 +453,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-gen-ai-using-gan-39-s",
           title: 'Gen AI using GAN&amp;#39;s',
-          description: "Generative Adversarial Networks (GANs) are a class of deep learning models designed for generating synthetic data. This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.",
+          description: "This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
