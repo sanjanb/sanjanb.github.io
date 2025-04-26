@@ -37,4 +37,4 @@ Feel free to explore my [LinkedIn](https://www.linkedin.com/in/sanjan-bm/) profi
 
 ---
 
-*Note: You can customize the social media links, profile picture, and other details by editing the `profile` property of the YAML header in your `_pages/about.md` file. Additionally, you can manage your publications by editing the `_bibliography/papers.bib` file, and Jekyll will automatically render your [publications page](/al-folio/publications/).*
+_Note: You can customize the social media links, profile picture, and other details by editing the `profile` property of the YAML header in your `_pages/about.md` file. Additionally, you can manage your publications by editing the `_bibliography/papers.bib` file, and Jekyll will automatically render your [publications page](/al-folio/publications/)._
