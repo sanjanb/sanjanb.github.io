@@ -13,7 +13,7 @@ _scripts/*
 
 # Ignore config files
 *.toml
-*.yml
+#*.yml
 *.yaml
 *.md
 *.txt
