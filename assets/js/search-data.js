@@ -456,9 +456,9 @@ ninja.data = [{
           description: "This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-farmtotable-nextjs-ecommerce",
+          title: 'FarmToTable-NextJs-Ecommerce',
+          description: "This project demonstrates how to build a scalable e-commerce solution with a beautiful user interface and robust functionality.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
