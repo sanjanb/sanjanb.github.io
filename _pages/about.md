@@ -8,7 +8,6 @@ subtitle: >
   <a href='https://www.kaggle.com/sanjanbm' target="_blank">Kaggle</a> •
   <a href='mailto:sanjanacharaya1234@gmail.com?subject=Hey%20i%20wanted%20to%20talk%20to%20you' target="_blank">Mail me</a>
 
----
 
 profile:
   align: right
