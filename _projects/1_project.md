@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gen AI using GAN's
-description: Generative Adversarial Networks (GANs) are a class of deep learning models designed for generating synthetic data. This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.
+description: This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.
 img: assets/img/12.jpg
 importance: 1
 category: work
