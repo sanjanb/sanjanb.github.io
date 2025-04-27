@@ -19,18 +19,18 @@ selected_papers: false # Set to false to exclude selected papers
 social: true # Includes social icons at the bottom of the page
 ---
 
-### Building Tomorrow's Technology Today
+#### Building Tomorrow's Technology Today
 
 > "The best way to predict the future is to create it." — *Alan Kay*
 
-### The Blueprint
+### **The Blueprint**
 
 I'm a passionate tech **enthusiast** and **builder**, dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups, local businesses, and personal creative ventures, I strive to make a meaningful impact through technology.
 
 ---
 
 ### **Technical Foundation**
-My technical toolkit includes:
+*My technical toolkit includes:*
 
 > - **Languages**: Python, JavaScript, HTML/CSS
 > - **Frameworks**: React, Node.js, Express, Next.js
@@ -70,7 +70,7 @@ My academic journey is more than coursework—it's a deliberate progression thro
 
 ---
 
-## Let's Connect
+# Let's Connect
 
 Every great technological advancement begins with a conversation. Whether you're interested in discussing emerging AI trends, exploring web development possibilities, or simply connecting over shared technological interests, I welcome the opportunity to exchange ideas.
 
