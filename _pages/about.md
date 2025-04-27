@@ -1,6 +1,6 @@
 ---
 layout: about
-title: AboutMe
+title: About
 permalink: /
 subtitle: >
   <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
