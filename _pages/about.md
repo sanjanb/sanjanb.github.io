@@ -19,32 +19,26 @@ selected_papers: false # Set to false to exclude selected papers
 social: true # Includes social icons at the bottom of the page
 ---
 
-# Building Tomorrow's Technology Today
+### Building Tomorrow's Technology Today
 
 > "The best way to predict the future is to create it." — *Alan Kay*
 
-## The Blueprint
+### The Blueprint
 
-I'm **Sanjan B M** — a technology architect crafting at the intersection of artificial intelligence and human-centered design. As Vice Chair of the **IEEE ATME Student Branch**, I'm not just studying the tech landscape; I'm actively reshaping it through leadership, innovation, and collaborative problem-solving.
-
-My journey marries rigorous academic pursuit with hands-on creation, resulting in a portfolio that spans multiple domains while maintaining a singular focus: leveraging technology to enhance human experience.
-
+I'm a passionate tech **enthusiast** and **builder**, dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups, local businesses, and personal creative ventures, I strive to make a meaningful impact through technology.
 ---
 
-## Technical Foundation
+### Technical Foundation
+My technical toolkit includes:
 
-```python
-skills = {
-    "languages": ["Python", "JavaScript", "HTML/CSS"],
-    "frameworks": ["React", "Node.js", "Express", "Next.js"],
-    "databases": ["MongoDB", "MySQL"],
-    "tools": ["Git", "Power BI"],
-    "deployment": ["Vercel", "Render"],
-    "concepts": ["Machine Learning", "Web Development", "API Integration"]
-}
-```
+- **Languages**: Python, JavaScript, HTML/CSS
+- **Frameworks**: React, Node.js, Express, Next.js
+- **Databases**: MongoDB, MySQL
+- **Tools**: Git, Power BI
+- **Deployment**: Vercel, Render
+- **Concepts**: Machine Learning, Web Development, API Integration, Team Management
 
-## Academic Architecture
+### Academic Architecture
 
 **Bachelor of Technology | AI & Machine Learning**  
 ATME College of Engineering, Mysuru  
@@ -52,65 +46,24 @@ ATME College of Engineering, Mysuru
 
 My academic journey is more than coursework—it's a deliberate progression through the foundations of artificial intelligence, machine learning algorithms, and their practical applications in solving complex problems.
 
----
+### Community & Collaboration
 
-## Experience Ecosystem
+As someone deeply committed to knowledge sharing and community building:
 
-### 🚀 Engineering the Future
-
-As a **freelance web developer**, I've translated client visions into responsive MERN stack applications that prioritize user experience while maintaining technical excellence. Each project is an opportunity to merge design thinking with development precision.
-
-My **AI internship at COSMIC365.AI** allowed me to dive deeper into machine learning model development, where I helped transform raw data into actionable intelligence through careful preprocessing and thoughtful model architecture.
-
-### 💡 Leading by Design
-
-Leadership isn't just a title—it's a responsibility I embrace as **Vice Chair of IEEE ATMECE**. By organizing technical workshops, facilitating industry connections, and mentoring emerging talent, I've helped cultivate a community where innovation thrives.
-
-As **Project Manager** for various technical initiatives, I've learned that successful delivery isn't just about code—it's about orchestrating diverse talents toward a unified vision.
+- **IEEE Leadership**: Organizing workshops, seminars, and tech events that bridge the gap between theory and industry practices
+- **Open Source Contributions**: Actively contributing to projects through initiatives like GirlScript Winter of Contributing and Social Winter of Code
+- **Mentorship**: Guiding fellow students in their technical journeys through IEEE activities
 
 ---
 
-## Project Portfolio
+###  Vision & Goals
 
-My projects reflect my commitment to creating solutions that matter:
+I'm dedicated to leveraging technology to create meaningful impact. My focus areas include:
 
-<div class="projects-container">
-  <div class="project">
-    <h3>Fashion Item Generator</h3>
-    <p>Harnessing the power of GANs to revolutionize fashion design through AI-driven creativity</p>
-  </div>
-  
-  <div class="project">
-    <h3>Full-Stack Cafe Solution</h3>
-    <p>Seamless MERN stack implementation bringing cafes into the digital age with intuitive ordering</p>
-  </div>
-  
-  <div class="project">
-    <h3>GSI Management Dashboard</h3>
-    <p>React-powered admin interface providing comprehensive e-commerce management capabilities</p>
-  </div>
-</div>
-
-*Each project represents not just technical implementation, but a problem solved and value delivered.*
-
----
-
-## Open Source & Community
-
-I believe in the power of collaborative innovation. Through contributions to **GirlScript Winter of Contributing** and **Social Winter of Code**, I've added my voice to the global conversation about technology's role in creating positive change.
-
-As an active participant in the IEEE community, I work to bridge the gap between theoretical knowledge and practical application—creating spaces where ideas can flourish and transform into impactful solutions.
-
----
-
-## The Vision Forward
-
-I'm driven by the potential of technology to solve meaningful problems. My focus remains on:
-
-- Creating AI solutions that augment human capability rather than replacing it
-- Developing web experiences that delight users while solving real needs
-- Contributing to communities that foster inclusive innovation
-- Building technologies that stand at the intersection of efficiency and empathy
+- Developing AI solutions that address real-world challenges
+- Building accessible and performant web applications
+- Contributing to open-source communities
+- Fostering innovation through collaborative projects
 
 ---
 
