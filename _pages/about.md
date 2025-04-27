@@ -26,19 +26,20 @@ social: true # Includes social icons at the bottom of the page
 ### The Blueprint
 
 I'm a passionate tech **enthusiast** and **builder**, dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups, local businesses, and personal creative ventures, I strive to make a meaningful impact through technology.
+
 ---
 
-### Technical Foundation
+### **Technical Foundation**
 My technical toolkit includes:
 
-- **Languages**: Python, JavaScript, HTML/CSS
-- **Frameworks**: React, Node.js, Express, Next.js
-- **Databases**: MongoDB, MySQL
-- **Tools**: Git, Power BI
-- **Deployment**: Vercel, Render
-- **Concepts**: Machine Learning, Web Development, API Integration, Team Management
+> - **Languages**: Python, JavaScript, HTML/CSS
+> - **Frameworks**: React, Node.js, Express, Next.js
+> - **Databases**: MongoDB, MySQL
+> - **Tools**: Git, Power BI
+> - **Deployment**: Vercel, Render
+> - **Concepts**: Machine Learning, Web Development, API Integration, Team Management
 
-### Academic Architecture
+### **Academic Architecture**
 
 **Bachelor of Technology | AI & Machine Learning**  
 ATME College of Engineering, Mysuru  
@@ -46,9 +47,11 @@ ATME College of Engineering, Mysuru
 
 My academic journey is more than coursework—it's a deliberate progression through the foundations of artificial intelligence, machine learning algorithms, and their practical applications in solving complex problems.
 
-### Community & Collaboration
+---
 
-As someone deeply committed to knowledge sharing and community building:
+### **Community & Collaboration**
+
+*As someone deeply committed to knowledge sharing and community building:*
 
 - **IEEE Leadership**: Organizing workshops, seminars, and tech events that bridge the gap between theory and industry practices
 - **Open Source Contributions**: Actively contributing to projects through initiatives like GirlScript Winter of Contributing and Social Winter of Code
@@ -56,9 +59,9 @@ As someone deeply committed to knowledge sharing and community building:
 
 ---
 
-###  Vision & Goals
+###  **Vision & Goals**
 
-I'm dedicated to leveraging technology to create meaningful impact. My focus areas include:
+*I'm dedicated to leveraging technology to create meaningful impact. My focus areas include:*
 
 - Developing AI solutions that address real-world challenges
 - Building accessible and performant web applications
