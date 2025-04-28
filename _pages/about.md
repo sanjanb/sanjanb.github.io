@@ -23,13 +23,13 @@ social: true # Includes social icons at the bottom of the page
 
 > "The best way to predict the future is to create it." — *Alan Kay*
 
-### **The Blueprint**
+#### **The Blueprint**
 
 I'm a passionate tech **enthusiast** and **builder**, dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups, local businesses, and personal creative ventures, I strive to make a meaningful impact through technology.
 
 ---
 
-### **Technical Foundation**
+#### **Technical Foundation**
 *My technical toolkit includes:*
 
 > - **Languages**: Python, JavaScript, HTML/CSS
@@ -39,7 +39,7 @@ I'm a passionate tech **enthusiast** and **builder**, dedicated to creating huma
 > - **Deployment**: Vercel, Render
 > - **Concepts**: Machine Learning, Web Development, API Integration, Team Management
 
-### **Academic Architecture**
+#### **Academic Architecture**
 
 **Bachelor of Technology | AI & Machine Learning**  
 ATME College of Engineering, Mysuru  
@@ -49,7 +49,7 @@ My academic journey is more than coursework—it's a deliberate progression thro
 
 ---
 
-### **Community & Collaboration**
+#### **Community & Collaboration**
 
 *As someone deeply committed to knowledge sharing and community building:*
 
@@ -59,7 +59,7 @@ My academic journey is more than coursework—it's a deliberate progression thro
 
 ---
 
-###  **Vision & Goals**
+####  **Vision & Goals**
 
 *I'm dedicated to leveraging technology to create meaningful impact. My focus areas include:*
 
