@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - sanjanb
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - sanjanb/TechAvishkar
+  - sanjanb/FarmToTable-NextJs-Ecommerce
+  - sanjanb/NeuralNetwork-with-PyTorch
+  - sanjanb/GAN-GenAI
+
