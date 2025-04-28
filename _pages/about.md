@@ -14,6 +14,7 @@ profile:
   address: >
     <p>ATME College of Engineering</p>
     <p>Vasanth Nagar, Mysuru</p>
+    
 news: true # Set to false to exclude news section
 selected_papers: false # Set to false to exclude selected papers
 social: true # Includes social icons at the bottom of the page
@@ -38,16 +39,6 @@ I'm a passionate tech **enthusiast** and **builder**, dedicated to creating huma
 > - **Tools**: Git, Power BI
 > - **Deployment**: Vercel, Render
 > - **Concepts**: Machine Learning, Web Development, API Integration, Team Management
-
-#### **Academic Architecture**
-
-**Bachelor of Technology | AI & Machine Learning**  
-ATME College of Engineering, Mysuru  
-*CGPA: 9.19/10 | Expected Graduation: 2026*
-
-My academic journey is more than coursework—it's a deliberate progression through the foundations of artificial intelligence, machine learning algorithms, and their practical applications in solving complex problems.
-
----
 
 #### **Community & Collaboration**
 
