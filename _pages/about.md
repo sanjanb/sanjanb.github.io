@@ -70,40 +70,6 @@ My academic journey is more than coursework—it's a deliberate progression thro
 
 ---
 
-<div style="display: flex; flex-wrap: wrap; gap: 2rem;">
-
-  <div style="flex: 2;">
-    <!-- MAIN CONTENT continues here (your About page main text) -->
-    
-  </div>
-
-  <div style="flex: 1; min-width: 250px;">
-    <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
-
-      <h3>🔥 Current Focus</h3>
-      <ul>
-        <li>Computer Vision Projects</li>
-        <li>Next.js 14 Deep Dive</li>
-        <li>Kaggle ML Competitions</li>
-        <li>System Design Fundamentals</li>
-      </ul>
-
-      <hr>
-
-      <h3>📚 Certifications</h3>
-      <ul>
-        <li>AI for Everyone (Coursera)</li>
-        <li>TensorFlow Developer Certification (In Progress)</li>
-        <li>Full-Stack Web Development</li>
-        <li>Product Management Fundamentals</li>
-      </ul>
-
-    </div>
-  </div>
-
-</div>
-
-
 # Let's Connect
 
 Every great technological advancement begins with a conversation. Whether you're interested in discussing emerging AI trends, exploring web development possibilities, or simply connecting over shared technological interests, I welcome the opportunity to exchange ideas.
