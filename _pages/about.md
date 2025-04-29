@@ -20,10 +20,9 @@ selected_papers: false # Set to false to exclude selected papers
 social: true # Includes social icons at the bottom of the page
 ---
 
-# SANJAN BM
-
 <div markdown="1" align="center">
-## Building Tomorrow's Technology Today
+  
+## **Building Tomorrow's Technology Today**
 
 *AI Engineer | Full-Stack Developer | Open Source Contributor*
 </div>
@@ -41,14 +40,37 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 
 ## Technical Expertise
 
-| **Area** | **Skills & Technologies** |
-|----------|--------------------------|
-| **Programming Languages** | Python, JavaScript, HTML/CSS |
-| **Frameworks & Libraries** | React, Node.js, Express, Next.js |
-| **Databases** | MongoDB, MySQL |
-| **Development Tools** | Git, Power BI |
-| **Deployment & DevOps** | Vercel, Render |
-| **Core Competencies** | Machine Learning, Web Development, API Integration, Team Leadership |
+<div class="skills-container">
+  <div class="skill-category">
+    <h4>Programming Languages</h4>
+    <div class="skill-items">Python • JavaScript • HTML/CSS</div>
+  </div>
+  
+  <div class="skill-category">
+    <h4>Frameworks & Libraries</h4>
+    <div class="skill-items">React • Node.js • Express • Next.js</div>
+  </div>
+  
+  <div class="skill-category">
+    <h4>Databases</h4>
+    <div class="skill-items">MongoDB • MySQL</div>
+  </div>
+  
+  <div class="skill-category">
+    <h4>Development Tools</h4>
+    <div class="skill-items">Git • Power BI</div>
+  </div>
+  
+  <div class="skill-category">
+    <h4>Deployment & DevOps</h4>
+    <div class="skill-items">Vercel • Render</div>
+  </div>
+  
+  <div class="skill-category">
+    <h4>Core Competencies</h4>
+    <div class="skill-items">Machine Learning • Web Development • API Integration • Team Leadership</div>
+  </div>
+</div>
 
 ## Community Leadership
 
@@ -114,7 +136,6 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 ---
 
 <div markdown="1" align="center">
-  
 ## Vision Statement
 
 I'm committed to leveraging technology as a force for positive transformation, creating solutions that are not just technically excellent but also ethical, accessible, and human-centered.
@@ -128,5 +149,27 @@ I'm committed to leveraging technology as a force for positive transformation, c
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skill-category {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .skill-category h4 {
+    margin-bottom: 0.25rem;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .skill-items {
+    font-size: 1rem;
+    color: #333;
   }
 </style>
