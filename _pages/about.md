@@ -29,6 +29,7 @@ social: true # Includes social icons at the bottom of the page
 
 ---
 
+
 <div class="row">
 <div class="col-sm-8">
 
@@ -72,6 +73,9 @@ I'm a passionate technology professional dedicated to creating human-centric exp
   </div>
 </div>
 
+---
+
+
 ## **Community Leadership**
 
 - **IEEE Leadership**: Organizing technical workshops, seminars, and networking events that bridge academic theory with industry practices.
@@ -82,26 +86,9 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 
 </div>
 
-<div class="col-sm-4" style="margin-top: 50px;">
-
-## Areas of Focus
-
-- AI for Real-World Impact
-- Accessible Web Applications 
-- Open Source Development
-- Collaborative Innovation
-- Technical Community Building
-
-## Languages
-
-- English (Professional)
-- Hindi (Native)
-- Kannada (Native)
-
-</div>
-
 
 ---
+
 
 ## Projects & Experience
 
@@ -132,6 +119,7 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 </div>
 </div>
 
+
 ---
 
 <div markdown="1" align="center">
@@ -142,34 +130,3 @@ I'm committed to leveraging technology as a force for positive transformation, c
 
 **The future is collaborative — let's build it together.**
 </div>
-
-<style>
-  .project-card {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .skill-category {
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .skill-category h4 {
-    margin-bottom: 0.25rem;
-    color: #555;
-    font-weight: 600;
-  }
-  
-  .skill-items {
-    font-size: 1rem;
-    color: #333;
-  }
-</style>
