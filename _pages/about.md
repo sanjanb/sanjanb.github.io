@@ -32,7 +32,7 @@ social: true # Includes social icons at the bottom of the page
 <div class="row">
 <div class="col-sm-8">
 
-## Professional Summary
+## **Professional Summary**
 
 I'm a passionate technology professional dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups and businesses, I transform complex challenges into elegant solutions that make a meaningful impact.
 
@@ -72,7 +72,7 @@ I'm a passionate technology professional dedicated to creating human-centric exp
   </div>
 </div>
 
-## Community Leadership
+## **Community Leadership**
 
 - **IEEE Leadership**: Organizing technical workshops, seminars, and networking events that bridge academic theory with industry practices.
   
@@ -82,7 +82,7 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-4" style="margin-top: 50px;">
 
 ## Areas of Focus
 
@@ -99,38 +99,37 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 - Kannada (Native)
 
 </div>
-</div>
+
 
 ---
 
 ## Projects & Experience
 
-<div class="row">
-
-<div class="col-sm-6 project-card">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
   <h3>AI-Powered Analytics Platform</h3>
   <p>Developed a machine learning solution that processes business data to provide actionable insights, increasing operational efficiency by 35%.</p>
   <p><strong>Technologies:</strong> Python, TensorFlow, MongoDB, React</p>
 </div>
 
-<div class="col-sm-6 project-card">
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
   <h3>Community Learning Hub</h3>
   <p>Led the development of an interactive platform for tech education, reaching over 500 students through IEEE initiatives.</p>
   <p><strong>Technologies:</strong> Next.js, Node.js, Express, MySQL</p>
 </div>
 
-<div class="col-sm-6 project-card">
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
   <h3>E-Commerce Solution</h3>
   <p>Built a responsive e-commerce platform for local businesses with integrated payment processing and inventory management.</p>
   <p><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe API</p>
 </div>
 
-<div class="col-sm-6 project-card">
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
   <h3>Open Source Contributions</h3>
   <p>Contributed to multiple open source projects, focusing on accessibility improvements and performance optimization.</p>
   <p><strong>Technologies:</strong> JavaScript, React, Git</p>
 </div>
-
 </div>
 
 ---
