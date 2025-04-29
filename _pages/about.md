@@ -39,39 +39,6 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 
 > "The best way to predict the future is to create it." — *Alan Kay*
 
-## Technical Expertise
-
-<div class="skills-container">
-  <div class="skill-category">
-    <h4>Programming Languages</h4>
-    <div class="skill-items">Python • JavaScript • HTML/CSS</div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Frameworks & Libraries</h4>
-    <div class="skill-items">React • Node.js • Express • Next.js</div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Databases</h4>
-    <div class="skill-items">MongoDB • MySQL</div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Development Tools</h4>
-    <div class="skill-items">Git • Power BI</div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Deployment & DevOps</h4>
-    <div class="skill-items">Vercel • Render</div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Core Competencies</h4>
-    <div class="skill-items">Machine Learning • Web Development • API Integration • Team Leadership</div>
-  </div>
-</div>
 
 ---
 
