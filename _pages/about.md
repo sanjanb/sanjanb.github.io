@@ -26,7 +26,7 @@ social: true # Includes social icons at the bottom of the page
 
 *AI Engineer | Full-Stack Developer | Open Source Contributor*
 </div>
----
+
 
 ## Professional Summary
 
