@@ -20,51 +20,122 @@ selected_papers: false # Set to false to exclude selected papers
 social: true # Includes social icons at the bottom of the page
 ---
 
-#### Building Tomorrow's Technology Today
+# SANJAN BM
+
+<div align="center">
+  
+## Building Tomorrow's Technology Today
+
+*AI Engineer | Full-Stack Developer | Open Source Contributor*
+
+</div>
+
+---
+
+<div style="display: flex; justify-content: space-between;">
+<div style="width: 65%;">
+
+## Professional Summary
+
+I'm a passionate technology professional dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups and businesses, I transform complex challenges into elegant solutions that make a meaningful impact.
 
 > "The best way to predict the future is to create it." — *Alan Kay*
 
-#### **The Blueprint**
+## Technical Expertise
 
-I'm a passionate tech **enthusiast** and **builder**, dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups, local businesses, and personal creative ventures, I strive to make a meaningful impact through technology.
+| **Area** | **Skills & Technologies** |
+|----------|--------------------------|
+| **Programming Languages** | Python, JavaScript, HTML/CSS |
+| **Frameworks & Libraries** | React, Node.js, Express, Next.js |
+| **Databases** | MongoDB, MySQL |
+| **Development Tools** | Git, Power BI |
+| **Deployment & DevOps** | Vercel, Render |
+| **Core Competencies** | Machine Learning, Web Development, API Integration, Team Leadership |
+
+## Community Leadership
+
+- **IEEE Leadership**: Organizing technical workshops, seminars, and networking events that bridge academic theory with industry practices.
+  
+- **Open Source Contributions**: Active developer in initiatives like GirlScript Winter of Contributing and Social Winter of Code.
+
+- **Technical Mentorship**: Guiding aspiring technologists through structured learning paths from conceptual understanding to implementation.
+
+</div>
+
+<div style="width: 30%;">
+
+## Contact Information
+
+<div align="center">
+
+![Profile Photo](https://api.placeholder.com/150)
+
+</div>
+
+### Connect With Me
+
+📧 [Email](mailto:sanjanacharaya1234@gmail.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/sanjan-bm/)  
+💻 [GitHub](https://github.com/sanjan-bm)  
+
+### Areas of Focus
+
+- AI for Real-World Impact
+- Accessible Web Applications 
+- Open Source Development
+- Collaborative Innovation
+- Technical Community Building
+
+### Languages
+
+- English (Professional)
+- Hindi (Native)
+- Kannada (Native)
+- *Add more as applicable*
+
+</div>
+</div>
 
 ---
 
-#### **Technical Foundation**
-*My technical toolkit includes:*
+## Projects & Experience
 
-> - **Languages**: Python, JavaScript, HTML/CSS
-> - **Frameworks**: React, Node.js, Express, Next.js
-> - **Databases**: MongoDB, MySQL
-> - **Tools**: Git, Power BI
-> - **Deployment**: Vercel, Render
-> - **Concepts**: Machine Learning, Web Development, API Integration, Team Management
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 
-#### **Community & Collaboration**
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+  <h3>AI-Powered Analytics Platform</h3>
+  <p>Developed a machine learning solution that processes business data to provide actionable insights, increasing operational efficiency by 35%.</p>
+  <p><strong>Technologies:</strong> Python, TensorFlow, MongoDB, React</p>
+</div>
 
-*As someone deeply committed to knowledge sharing and community building:*
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+  <h3>Community Learning Hub</h3>
+  <p>Led the development of an interactive platform for tech education, reaching over 500 students through IEEE initiatives.</p>
+  <p><strong>Technologies:</strong> Next.js, Node.js, Express, MySQL</p>
+</div>
 
-- **IEEE Leadership**: Organizing workshops, seminars, and tech events that bridge the gap between theory and industry practices
-- **Open Source Contributions**: Actively contributing to projects through initiatives like GirlScript Winter of Contributing and Social Winter of Code
-- **Mentorship**: Guiding fellow students in their technical journeys through IEEE activities
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+  <h3>E-Commerce Solution</h3>
+  <p>Built a responsive e-commerce platform for local businesses with integrated payment processing and inventory management.</p>
+  <p><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe API</p>
+</div>
+
+<div style="width: 48%; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+  <h3>Open Source Contributions</h3>
+  <p>Contributed to multiple open source projects, focusing on accessibility improvements and performance optimization.</p>
+  <p><strong>Technologies:</strong> JavaScript, React, Git</p>
+</div>
+
+</div>
 
 ---
 
-####  **Vision & Goals**
+<div align="center">
+  
+## Vision Statement
 
-*I'm dedicated to leveraging technology to create meaningful impact. My focus areas include:*
+I'm committed to leveraging technology as a force for positive transformation, creating solutions that are not just technically excellent but also ethical, accessible, and human-centered.
 
-- Developing AI solutions that address real-world challenges
-- Building accessible and performant web applications
-- Contributing to open-source communities
-- Fostering innovation through collaborative projects
+**The future is collaborative — let's build it together.**
 
----
-
-# Let's Connect
-
-Every great technological advancement begins with a conversation. Whether you're interested in discussing emerging AI trends, exploring web development possibilities, or simply connecting over shared technological interests, I welcome the opportunity to exchange ideas.
-
-Find me on [LinkedIn](https://www.linkedin.com/in/sanjan-bm/), explore my work on [GitHub](https://github.com/sanjan-bm), or reach out directly via [email](mailto:sanjanacharaya1234@gmail.com).
-
-*The future is collaborative—let's build it together.*
+</div>
