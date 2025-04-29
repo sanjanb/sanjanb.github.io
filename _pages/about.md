@@ -136,7 +136,8 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 ---
 
 <div markdown="1" align="center">
-## Vision Statement
+  
+## **Vision Statement**
 
 I'm committed to leveraging technology as a force for positive transformation, creating solutions that are not just technically excellent but also ethical, accessible, and human-centered.
 
