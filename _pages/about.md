@@ -1,38 +1,58 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: 
+subtitle: >
+  <span class="text-muted">AI/ML Engineer | Tech Lead | Web Developer</span> • 
   <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
   <a href='https://github.com/sanjan-bm' target="_blank">GitHub</a> •
   <a href='https://www.kaggle.com/sanjanbm' target="_blank">Kaggle</a> •
-  <a href='mailto:sanjanacharaya1234@gmail.com?subject=Hey%20i%20wanted%20to%20talk%20to%20you' target="_blank">Mail me</a>
+  <a href='mailto:sanjanacharaya1234@gmail.com?subject=Project%20Inquiry' target="_blank">Email</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: true # crops the image to make it circular
+  more_info: false # removed contact details for minimalist approach
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # no papers yet based on resume data
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false # disabled announcements for cleaner look
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: false # no scrollbar for cleaner look
+  limit: 2 # reduced number of visible posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## Hello, I'm Sanjan
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm an Artificial Intelligence and Machine Learning engineering student with experience as a Tech Lead and Web Developer. I specialize in building innovative solutions using MERN stack, ReactJS, and emerging AI technologies.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Expertise
+
+- **AI/ML Development** — Leveraging Python to create intelligent solutions
+- **Web Development** — Building responsive applications with ReactJS and MERN stack
+- **Tech Leadership** — Leading development teams and managing digital products
+- **Digital Marketing** — Creating engagement strategies and content planning
+
+### Current Work
+
+Currently serving as Tech Lead at GSI Startup, where I develop quick commerce platforms and service booking solutions. I also work as a Web Developer for The Buzz Club, creating digital experiences that enhance customer engagement.
+
+### Projects
+
+My recent projects include:
+
+- **GSI Product Management Dashboard** — A ReactJS-based admin system for managing multi-platform products with role-based access and minimalist design
+- **The Buzz Club Website** — A MERN stack café platform featuring interactive elements, live order tracking, and responsive design
+
+### Education
+
+Pursuing a B.Tech in Artificial Intelligence and Machine Learning (2022-2026).
+
+### Let's Connect
+
+I'm always interested in discussing new projects and opportunities where I can apply my technical skills to create meaningful solutions. Feel free to reach out through any of the links above.
