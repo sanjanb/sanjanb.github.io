@@ -249,7 +249,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/life-guide/";
+            window.location.href = "/blog/2023/Distill-template/";
           
         },
       },{id: "post-a-post-with-custom-blockquotes",
