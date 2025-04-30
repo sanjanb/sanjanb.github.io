@@ -3,96 +3,557 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
-  <a href='https://github.com/sanjan-bm' target="_blank">GitHub</a> •
-  <a href='https://www.kaggle.com/sanjanbm' target="_blank">Kaggle</a> •
-  <a href='mailto:sanjanacharaya1234@gmail.com?subject=Hey%20i%20wanted%20to%20talk%20to%20you' target="_blank">Mail me</a>
+  <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> •
+  <a href='https://github.com/sanjan-bm' target="_blank"><i class="fab fa-github"></i> GitHub</a> •
+  <a href='https://www.kaggle.com/sanjanbm' target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a> •
+  <a href='mailto:sanjanacharaya1234@gmail.com?subject=Let%27s%20Connect' target="_blank"><i class="fas fa-envelope"></i> Email</a>
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>ATME College of Engineering</p>
-    <p>Vasanth Nagar, Mysuru</p>
-    
-news: true # Set to false to exclude news section
-selected_papers: false # Set to false to exclude selected papers
-social: true # Includes social icons at the bottom of the page
+    <p><i class="fas fa-map-marker-alt"></i> ATME College of Engineering</p>
+    <p>Vasanth Nagar, Mysuru, India</p>
+    <p><a href="assets/pdf/resume.pdf" target="_blank" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-download"></i> Download Resume</a></p>
+
+news: true # News section enabled
+selected_papers: true # Enabled to showcase research or technical papers
+social: true # Social icons enabled
 ---
 
-<div markdown="1" align="center">
-  
-#### **Building Tomorrow's Technology Today**
-
-*AI Engineer | Full-Stack Developer | Open Source Contributor*
+<div class="row justify-content-center">
+  <div class="col-md-10 mt-3">
+    <div class="profile-card text-center shadow-lg p-4 mb-5 rounded">
+      <h1 class="font-weight-bold">Sanjan B M</h1>
+      <h3 class="text-muted">Building Tomorrow's Technology Today</h3>
+      <p class="lead mt-3"><strong>AI Engineer | Full-Stack Developer | Open Source Contributor</strong></p>
+      <div class="mt-4">
+        <a href="#contact" class="btn btn-primary px-4 py-2 mr-2">Contact Me</a>
+        <a href="#projects" class="btn btn-outline-primary px-4 py-2">View Projects</a>
+      </div>
+    </div>
+  </div>
 </div>
-
 
 ## Professional Summary
 
 I'm a passionate technology professional dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups and businesses, I transform complex challenges into elegant solutions that make a meaningful impact.
 
-> "The best way to predict the future is to create it." — *Alan Kay*
+<div class="quote-card">
+  <blockquote>
+    "The best way to predict the future is to create it."
+    <footer>— <cite>Alan Kay</cite></footer>
+  </blockquote>
+</div>
+
+---
+
+## Skills & Expertise
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="skills-section">
+      <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+      <div class="skills-container">
+        <div class="skill-item">
+          <span class="skill-name">AI & Machine Learning</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Full-Stack Development</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Data Science & Analytics</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Cloud Architecture</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+    <div class="skills-section">
+      <h3><i class="fas fa-tools"></i> Technologies</h3>
+      <div class="tech-badges">
+        <span class="badge">Python</span>
+        <span class="badge">TensorFlow</span>
+        <span class="badge">PyTorch</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Next.js</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">Git</span>
+        <span class="badge">Docker</span>
+        <span class="badge">AWS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Community Leadership
 
-- **IEEE Leadership**: Organizing technical workshops, seminars, and networking events that bridge academic theory with industry practices.
+<div class="row">
+  <div class="col-md-4">
+    <div class="community-card">
+      <div class="community-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <h4>IEEE Leadership</h4>
+      <p>Organizing technical workshops, seminars, and networking events that bridge academic theory with industry practices.</p>
+    </div>
+  </div>
   
-- **Open Source Contributions**: Active developer in initiatives like GirlScript Winter of Contributing and Social Winter of Code.
-
-- **Technical Mentorship**: Guiding aspiring technologists through structured learning paths from conceptual understanding to implementation.
-
+  <div class="col-md-4">
+    <div class="community-card">
+      <div class="community-icon">
+        <i class="fas fa-code-branch"></i>
+      </div>
+      <h4>Open Source Contributions</h4>
+      <p>Active developer in initiatives like GirlScript Winter of Contributing and Social Winter of Code.</p>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="community-card">
+      <div class="community-icon">
+        <i class="fas fa-chalkboard-teacher"></i>
+      </div>
+      <h4>Technical Mentorship</h4>
+      <p>Guiding aspiring technologists through structured learning paths from conceptual understanding to implementation.</p>
+    </div>
+  </div>
 </div>
 
 ---
 
+<a id="projects"></a>
 ## Projects & Experience
 
 <div class="row">
+  <div class="col-md-6">
+    <div class="project-card">
+      <div class="project-header">
+        <h3>AI-Powered Analytics Platform</h3>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <p>Developed a machine learning solution that processes business data to provide actionable insights, increasing operational efficiency by 35%.</p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">TensorFlow</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">React</span>
+      </div>
+    </div>
+  </div>
 
-<div class="col-sm-6 project-card">
-  <h3>AI-Powered Analytics Platform</h3>
-  <p>Developed a machine learning solution that processes business data to provide actionable insights, increasing operational efficiency by 35%.</p>
-  <p><strong>Technologies:</strong> Python, TensorFlow, MongoDB, React</p>
-</div>
+  <div class="col-md-6">
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Community Learning Hub</h3>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <p>Led the development of an interactive platform for tech education, reaching over 500 students through IEEE initiatives.</p>
+      <div class="project-tech">
+        <span class="tech-tag">Next.js</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Express</span>
+        <span class="tech-tag">MySQL</span>
+      </div>
+    </div>
+  </div>
 
-<div class="col-sm-6 project-card">
-  <h3>Community Learning Hub</h3>
-  <p>Led the development of an interactive platform for tech education, reaching over 500 students through IEEE initiatives.</p>
-  <p><strong>Technologies:</strong> Next.js, Node.js, Express, MySQL</p>
-</div>
+  <div class="col-md-6">
+    <div class="project-card">
+      <div class="project-header">
+        <h3>E-Commerce Solution</h3>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <p>Built a responsive e-commerce platform for local businesses with integrated payment processing and inventory management.</p>
+      <div class="project-tech">
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">Stripe API</span>
+      </div>
+    </div>
+  </div>
 
-<div class="col-sm-6 project-card">
-  <h3>E-Commerce Solution</h3>
-  <p>Built a responsive e-commerce platform for local businesses with integrated payment processing and inventory management.</p>
-  <p><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe API</p>
-</div>
-
-<div class="col-sm-6 project-card">
-  <h3>Open Source Contributions</h3>
-  <p>Contributed to multiple open source projects, focusing on accessibility improvements and performance optimization.</p>
-  <p><strong>Technologies:</strong> JavaScript, React, Git</p>
-</div>
-
+  <div class="col-md-6">
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Open Source Contributions</h3>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <p>Contributed to multiple open source projects, focusing on accessibility improvements and performance optimization.</p>
+      <div class="project-tech">
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Git</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 ---
 
-<div markdown="1" align="center">
+<a id="education"></a>
+## Education
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4>B.E. in Computer Science</h4>
+      <p>ATME College of Engineering, VTU</p>
+      <p class="timeline-date">2020 - 2024</p>
+    </div>
+  </div>
   
-## **Vision Statement**
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h4>Certifications</h4>
+      <ul>
+        <li>Machine Learning Specialization - Coursera</li>
+        <li>Full Stack Development - Udemy</li>
+        <li>AWS Cloud Practitioner - Amazon Web Services</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-I'm committed to leveraging technology as a force for positive transformation, creating solutions that are not just technically excellent but also ethical, accessible, and human-centered.
+---
 
-**The future is collaborative — let's build it together.**
+<a id="contact"></a>
+## Let's Connect
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="contact-form-container">
+      <form method="POST" action="https://formspree.io/f/your-formspree-id">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:sanjanacharaya1234@gmail.com">sanjanacharaya1234@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Mysuru, Karnataka, India</span>
+      </div>
+      <div class="contact-social">
+        <a href="https://www.linkedin.com/in/sanjan-bm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/sanjan-bm" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.kaggle.com/sanjanbm" target="_blank"><i class="fab fa-kaggle"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="vision-statement text-center">
+  <h2>Vision Statement</h2>
+  <p class="lead">I'm committed to leveraging technology as a force for positive transformation, creating solutions that are not just technically excellent but also ethical, accessible, and human-centered.</p>
+  <p class="font-weight-bold mt-3">The future is collaborative — let's build it together.</p>
 </div>
 
 <style>
-  .project-card {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
+  /* Base Styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: 600;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  /* Quote Card */
+  .quote-card {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 20px;
+    margin: 20px 0;
     border-radius: 5px;
+  }
+  
+  .quote-card blockquote {
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .quote-card footer {
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin-bottom: 30px;
+  }
+  
+  .skills-container {
+    margin-top: 15px;
+  }
+  
+  .skill-item {
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+  }
+  
+  .progress-bar {
+    background-color: #007bff;
+  }
+  
+  .tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  
+  /* Community Section */
+  .community-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .community-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .project-links a {
+    color: #6c757d;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .project-links a:hover {
+    color: #007bff;
+  }
+  
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+  .tech-tag {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e9ecef;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    left: -39px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: 3px solid #ffffff;
+  }
+  
+  .timeline-date {
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  /* Contact Section */
+  .contact-form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    color: #007bff;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  
+  .contact-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .contact-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    color: #007bff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-social a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  /* Vision Statement */
+  .vision-statement {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
   }
 </style>
