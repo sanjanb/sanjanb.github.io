@@ -42,7 +42,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -88,8 +88,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: My-Blogs # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for Everything
+blog_name: MyBlogs # blog_name will be displayed in your blog page
+blog_description: Explore my thoughts, experiences, and insights across technology, design, productivity, and personal growth. Whether it's a deep dive into AI and web development or casual reflections on my journey, this blog is where I share what I learn and what inspires me. I aim to make every post informative, honest, and worth your time.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -104,7 +104,7 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
+  repo: sanjanb/giscus # <your-github-user-name>/<your-github-repo-name>
   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
@@ -117,7 +117,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: discussions # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
