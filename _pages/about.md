@@ -21,20 +21,6 @@ selected_papers: true # Enabled to showcase research or technical papers
 social: true # Social icons enabled
 ---
 
-<div class="row justify-content-center">
-  <div class="col-md-10 mt-3">
-    <div class="profile-card text-center shadow-lg p-4 mb-5 rounded">
-      <h1 class="font-weight-bold">Sanjan B M</h1>
-      <h3 class="text-muted">Building Tomorrow's Technology Today</h3>
-      <p class="lead mt-3"><strong>AI Engineer | Full-Stack Developer | Open Source Contributor</strong></p>
-      <div class="mt-4">
-        <a href="#contact" class="btn btn-primary px-4 py-2 mr-2">Contact Me</a>
-        <a href="#projects" class="btn btn-outline-primary px-4 py-2">View Projects</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 ## Professional Summary
 
 I'm a passionate technology professional dedicated to creating human-centric experiences at the intersection of AI, product design, and purposeful innovation. With a strong foundation in leading and developing systems for startups and businesses, I transform complex challenges into elegant solutions that make a meaningful impact.
@@ -141,159 +127,7 @@ I'm a passionate technology professional dedicated to creating human-centric exp
 </div>
 
 ---
-
-<a id="projects"></a>
-## Projects & Experience
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="project-card">
-      <div class="project-header">
-        <h3>AI-Powered Analytics Platform</h3>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <p>Developed a machine learning solution that processes business data to provide actionable insights, increasing operational efficiency by 35%.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">TensorFlow</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">React</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Community Learning Hub</h3>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <p>Led the development of an interactive platform for tech education, reaching over 500 students through IEEE initiatives.</p>
-      <div class="project-tech">
-        <span class="tech-tag">Next.js</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">Express</span>
-        <span class="tech-tag">MySQL</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="project-card">
-      <div class="project-header">
-        <h3>E-Commerce Solution</h3>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <p>Built a responsive e-commerce platform for local businesses with integrated payment processing and inventory management.</p>
-      <div class="project-tech">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">Stripe API</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Open Source Contributions</h3>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <p>Contributed to multiple open source projects, focusing on accessibility improvements and performance optimization.</p>
-      <div class="project-tech">
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Git</span>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
-<a id="education"></a>
-## Education
-
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <h4>B.E. in Computer Science</h4>
-      <p>ATME College of Engineering, VTU</p>
-      <p class="timeline-date">2020 - 2024</p>
-    </div>
-  </div>
   
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <h4>Certifications</h4>
-      <ul>
-        <li>Machine Learning Specialization - Coursera</li>
-        <li>Full Stack Development - Udemy</li>
-        <li>AWS Cloud Practitioner - Amazon Web Services</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
----
-
-<a id="contact"></a>
-## Let's Connect
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="contact-form-container">
-      <form method="POST" action="https://formspree.io/f/your-formspree-id">
-        <div class="form-group">
-          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-    </div>
-  </div>
-  
-  <div class="col-md-6">
-    <div class="contact-info">
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:sanjanacharaya1234@gmail.com">sanjanacharaya1234@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Mysuru, Karnataka, India</span>
-      </div>
-      <div class="contact-social">
-        <a href="https://www.linkedin.com/in/sanjan-bm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/sanjan-bm" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.kaggle.com/sanjanbm" target="_blank"><i class="fab fa-kaggle"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
----
 
 <div class="vision-statement text-center">
   <h2>Vision Statement</h2>
@@ -375,7 +209,7 @@ I'm a passionate technology professional dedicated to creating human-centric exp
   
   .badge {
     background-color: #e9ecef;
-    color: #495057;
+    color: #3789db;
     padding: 8px 12px;
     border-radius: 30px;
     font-size: 14px;
@@ -509,11 +343,7 @@ I'm a passionate technology professional dedicated to creating human-centric exp
     font-size: 20px;
   }
   
-  .contact-social {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-  }
+  
   
   .contact-social a {
     display: flex;
