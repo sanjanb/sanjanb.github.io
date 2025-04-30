@@ -6,7 +6,7 @@ description: A comprehensive exploration of [Your Topic] with actionable insight
 tags: main-topic subtopic1 subtopic2 tutorial
 categories: featured-posts tutorials
 thumbnail: assets/img/blog/featured-image.jpg
-featured: true
+featured: false
 toc:
   sidebar: left
 giscus_comments: false
