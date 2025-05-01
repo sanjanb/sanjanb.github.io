@@ -515,13 +515,6 @@ ninja.data = [{
           window.open("https://github.com/sanjanb", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
         id: 'social-kaggle',
         title: 'Kaggle',
         section: 'Socials',
@@ -529,11 +522,11 @@ ninja.data = [{
           window.open("https://www.kaggle.com/sanjanbm", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/Sanjan B M", "_blank");
         },
       },{
         id: 'social-custom_social',
