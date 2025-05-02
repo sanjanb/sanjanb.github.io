@@ -28,7 +28,6 @@ latest_posts:
 <div class="container-fluid px-3">
   <div class="row">
     <div class="col-lg-12">
-      <h2 class="mt-4">Hello, I'm Sanjan</h2>
       <p class="lead">I'm an Artificial Intelligence and Machine Learning engineering student with experience as a Tech Lead and Web Developer. I specialize in building innovative solutions using MERN stack, ReactJS, and emerging AI technologies.</p>
       <h4 class="mt-4">Expertise</h4>
       <ul>
