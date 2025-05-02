@@ -27,8 +27,6 @@ latest_posts:
   limit: 2 # reduced number of visible posts
 ---
 
-## Hello, I'm Sanjan
-
 I'm an Artificial Intelligence and Machine Learning engineering student with experience as a Tech Lead and Web Developer. I specialize in building innovative solutions using MERN stack, ReactJS, and emerging AI technologies.
 
 ### Expertise
