@@ -14,9 +14,9 @@ profile:
   image: prof_pic.jpg
   image_circular: true
   more_info:
-    <p>Vice Chair @ ATME IEEE SB | Published Researcher | Contributor @ GWOC and SWOC | Open-source Collaboration | Technical Director | AI & ML enthusiast | Leading Innovation in MERN Development | DevOps</p>
+    <p>Vice Chair @ ATME IEEE SB </p>
     <p> Mysuru, Karnataka, India</p>
-    <p>Contact any time: +91 9535752673</p>
+    <p>Contact: +91 9535752673</p>
 
 selected_papers: false
 social: true
@@ -28,7 +28,7 @@ latest_posts:
   limit: 2
 ---
 
-I’m a tech-driven builder creating human-first experiences at the intersection of AI, product design, and purpose. I’ve 'led' and 'built' systems for startups, local businesses, and my own creative ventures. With over 'four' years of experience in building responsive web applications using the 'MERN stack' and modern frameworks like 'Next.js'. I am proficient in AI and 'machine learning', with a strong background in 'leading teams' and 'organizing events'. I had contributed significantly to 'open-source' projects, including 'decentralized' applications and smart contracts, and has a proven ability to lead 'cross-functional' teams and manage projects effectively.
+I’m a tech-driven builder creating human-first experiences at the intersection of AI, product design, and purpose. I’ve `led and built` systems for `startups`, `local businesses`, and my own creative ventures. With over `four` years of experience in building responsive web applications using the `MERN stack` and modern frameworks like `Next.js`. I am proficient in AI and `machine learning`, with a strong background in `leading teams` and `organizing events`. I had contributed significantly to `open-source` projects, including `decentralized` applications and smart contracts, and has a proven ability to lead `cross-functional` teams and manage projects effectively.
 
 As a [Vice Chair at IEEE ATMECE](https://atme.edu.in/ieee-home-2/), I had led [student branch activities](https://www.linkedin.com/company/ieee-atmece/posts/?feedView=all), organized workshops, and promoted tech awareness. He has also served as a Business Development Specialist, building revenue pipelines and scalable systems for B2B and B2C growth. My expertise in community journalism, demonstrated through the role as a 'News Editor' at Thirthahalli Bandhu, showcasing ability to craft compelling narratives and engage audiences.
 
