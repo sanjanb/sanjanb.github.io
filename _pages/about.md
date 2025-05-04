@@ -8,6 +8,7 @@ subtitle: |
   <a href='https://github.com/sanjan-bm' target="_blank">GitHub</a> •
   <a href='https://www.kaggle.com/sanjanbm' target="_blank">Kaggle</a> •
   <a href='mailto:sanjanacharaya1234@gmail.com?subject=Project%20Inquiry' target="_blank">Email</a>
+  
 
 profile:
   align: right
@@ -17,7 +18,7 @@ profile:
     <p>Vice Chair @ ATME IEEE SB </p>
     <p>Mysuru, Karnataka, India</p>
     <p>Contact: +91 9535752673</p>
-    [`Hosted Resume`](https://sanjanb.github.io/resume/)
+    <p><a href='https://sanjanb.github.io/resume' target="_blank">Hosted Resume</a></p>
 
 selected_papers: false
 social: true
