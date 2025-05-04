@@ -2,8 +2,8 @@
 layout: about
 title: About
 permalink: /
-subtitle: >
-  <span class="text-muted">AI/ML Engineer | Tech Lead | Web Developer</span> • 
+subtitle: |
+  <span class="text-muted">AI/ML Engineer | Tech Lead | Web Developer</span> •
   <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
   <a href='https://github.com/sanjan-bm' target="_blank">GitHub</a> •
   <a href='https://www.kaggle.com/sanjanbm' target="_blank">Kaggle</a> •
@@ -13,9 +13,9 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true
-  more_info:
+  more_info: |
     <p>Vice Chair @ ATME IEEE SB </p>
-    <p> Mysuru, Karnataka, India</p>
+    <p>Mysuru, Karnataka, India</p>
     <p>Contact: +91 9535752673</p>
 
 selected_papers: false
