@@ -12,7 +12,7 @@ subtitle: |
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
   more_info: |
     <p>Vice Chair @ ATME IEEE SB </p>
     <p>Mysuru, Karnataka, India</p>
