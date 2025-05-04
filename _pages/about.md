@@ -13,7 +13,10 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true
-  more_info: false
+  more_info:
+    <p>Vice Chair @ ATME IEEE SB | Published Researcher | Contributor @ GWOC and SWOC | Open-source Collaboration | Technical Director | AI & ML enthusiast | Leading Innovation in MERN Development | DevOps</p>
+    <p> Mysuru, Karnataka, India</p>
+    <p>Contact any time: +91 9535752673</p>
 
 selected_papers: false
 social: true
