@@ -17,7 +17,7 @@ profile:
     <p>Vice Chair @ ATME IEEE SB </p>
     <p>Mysuru, Karnataka, India</p>
     <p>Contact: +91 9535752673</p>
-    <p>[`Hosted Resume`](https://sanjanb.github.io/resume/)</p>
+    [`Hosted Resume`](https://sanjanb.github.io/resume/)
 
 selected_papers: false
 social: true
