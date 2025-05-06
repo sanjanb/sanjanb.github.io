@@ -105,7 +105,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-gen-ai-using-gan-39-s",
           title: 'Gen AI using GAN&amp;#39;s',
-          description: "This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.",
+          description: "Developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-farmtotable-nextjs-ecommerce",
