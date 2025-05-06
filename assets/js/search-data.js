@@ -113,9 +113,9 @@ ninja.data = [{
           description: "This project demonstrates how to build a scalable e-commerce solution with a beautiful user interface and robust functionality.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-aspirise-a-complete-wellness-advisor",
+          title: 'Aspirise - A Complete Wellness Advisor',
+          description: "It is designed to detect and support mental health needs on an individual basis.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
