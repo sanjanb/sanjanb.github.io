@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gen AI using GAN's
-description: This project focuses on developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset, which consists of grayscale images of various clothing items such as shirts, shoes, and dresses.
+description: Developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset.
 img: assets/img/12.jpg
 importance: 1
 category: work
