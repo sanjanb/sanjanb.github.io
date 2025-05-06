@@ -5,7 +5,7 @@ description: It is designed to detect and support mental health needs on an indi
 img: assets/img/7.jpg
 redirect: https://unsplash.com
 importance: 3
-category: work
+category: AI
 ---
 
 # Mental-depression-Measures
