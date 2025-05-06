@@ -4,7 +4,7 @@ title: Gen AI using GAN's
 description: Developing a GAN to generate realistic fashion items inspired by the Fashion MNIST dataset.
 img: assets/img/project1.png
 importance: 1
-category: work
+category: AI
 related_publications: false
 ---
 
