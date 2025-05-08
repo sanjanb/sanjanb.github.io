@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Complete Wellness Advisor
+title: Mental depression Measures
 description: It is designed to detect and support mental health needs on an individual basis.
-img: assets/img/7.jpg
+img: assets/img/dep.png
 redirect: https://unsplash.com
 importance: 3
 category: AI
