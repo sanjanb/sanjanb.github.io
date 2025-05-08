@@ -133,9 +133,9 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-metricsmonk",
+          title: 'MetricsMonk',
+          description: "A new agency to make the startups get their digital presence in the market",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
