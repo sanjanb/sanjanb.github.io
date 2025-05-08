@@ -20,7 +20,7 @@ profile:
     <p>Contact: +91 9535752673</p>
     <p>Important Links:</p><br>
     <p><a href='https://drive.google.com/file/d/1mRqvJdyZVMGQYiSmZBA5jFywdjk3P1Qz/view' target="_blank">Resume PDF</a></p><br>
-    <p><a href='https://sanjanb.github.io/resume' target="_blank">Hosted Resume</a></p>
+    <p><a href='https://sanjanb.github.io/resume' target="_blank">Resume Hosted</a></p>
 
 selected_papers: false
 social: true
