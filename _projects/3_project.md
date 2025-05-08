@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aspirise - A Complete Wellness Advisor
+title: Complete Wellness Advisor
 description: It is designed to detect and support mental health needs on an individual basis.
 img: assets/img/7.jpg
 redirect: https://unsplash.com
