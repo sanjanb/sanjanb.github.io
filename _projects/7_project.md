@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
+title: MetricsMonk
+description: A new agency to make the startups get their digital presence in the market
+img: assets/img/mm.png
 importance: 1
 category: work
 related_publications: true
