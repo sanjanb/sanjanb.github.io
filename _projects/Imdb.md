@@ -2,7 +2,7 @@
 layout: page
 title: IMDB Classificatoin using BERT
 description: Developed a text classification model leveraging BERT (Bidirectional Encoder Representations from Transformers).
-img: assets/img/project1.png
+img: assets/img/imdb.png
 importance: 1
 category: AI
 related_publications: false
