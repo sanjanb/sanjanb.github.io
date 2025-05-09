@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IMDB Classificatoin using BERT
-description: Developed a text classification model leveraging BERT (Bidirectional Encoder Representations from Transformers) to perform sentiment analysis on the IMDB movie reviews dataset, achieving high accuracy in distinguishing positive and negative sentiments.
+description: Developed a text classification model leveraging BERT (Bidirectional Encoder Representations from Transformers).
 img: assets/img/project1.png
 importance: 1
 category: AI
