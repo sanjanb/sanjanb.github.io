@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+title: TechAvishkar
+description: A website built to showcase our IEEE hackathon
+img: assets/img/hack.png
 importance: 2
 category: work
 giscus_comments: true
