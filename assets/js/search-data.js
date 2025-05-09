@@ -150,7 +150,7 @@ ninja.data = [{
               window.location.href = "/projects/9_project/";
             },},{id: "projects-imdb-classificatoin-using-bert",
           title: 'IMDB Classificatoin using BERT',
-          description: "Developed a text classification model leveraging BERT (Bidirectional Encoder Representations from Transformers) to perform sentiment analysis on the IMDB movie reviews dataset, achieving high accuracy in distinguishing positive and negative sentiments.",
+          description: "Developed a text classification model leveraging BERT (Bidirectional Encoder Representations from Transformers).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Imdb/";
             },},{
