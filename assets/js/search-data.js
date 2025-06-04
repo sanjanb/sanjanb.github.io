@@ -148,6 +148,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-mental-depression-measures",
+          title: 'Mental depression Measures',
+          description: "It is designed to detect and support mental health needs on an individual basis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/BiasNet-Pretrained-Model/";
             },},{id: "projects-imdb-classificatoin-using-bert",
           title: 'IMDB Classificatoin using BERT',
           description: "Developed a text classification model leveraging BERT (Bidirectional Encoder Representations from Transformers).",
