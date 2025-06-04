@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mental depression Measures
-description: It is designed to detect and support mental health needs on an individual basis.
+title: BiasNet-Pretrained-Model
+description: DeepFair helps mitigate biases and promote fairness in model predictions.
 img: assets/img/dep.png
 importance: 3
 redirect: https://github.com/sanjanb/Mental-depression-measures
