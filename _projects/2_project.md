@@ -5,7 +5,6 @@ description: This project demonstrates how to build a scalable e-commerce soluti
 img: assets/img/3.jpg
 importance: 2
 category: web
-redirect:https://github.com/sanjanb/FarmToTable-NextJs-Ecommerce
 giscus_comments: true
 ---
 
