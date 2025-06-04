@@ -3,7 +3,6 @@ layout: page
 title: Mental depression Measures
 description: It is designed to detect and support mental health needs on an individual basis.
 img: assets/img/dep.png
-redirect: https://github.com/sanjanb/Mental-depression-measures
 importance: 3
 category: AI
 ---
