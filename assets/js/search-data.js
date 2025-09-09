@@ -66,11 +66,11 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "post-a-post-with-formatting-and-links",
+      },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
         
-          title: "a post with formatting and links",
+          title: "Mastering Jekyll: Advanced Formatting and Link Techniques",
         
-        description: "march &amp; april, looking forward to summer",
+        description: "Explore advanced formatting techniques, link management, and content organization strategies for Jekyll-powered blogs and documentation sites.",
         section: "Posts",
         handler: () => {
           
