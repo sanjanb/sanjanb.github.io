@@ -17,6 +17,7 @@ profile:
     <p><strong>IMPORTANT LINKS</strong></p><br>
     <p><a href='https://drive.google.com/file/d/1pp-sgwVTQO30j3C0Wj2bLbj4_6EDUAOZ/view?usp=sharing' target='_blank'>Resume</a></p><br>
     <p><a href='https://sanjanb.github.io/resume/' target='_blank'>Curriculum vitae</a></p><br>
+    <p><a href='https://www.datacamp.com/portfolio/sanjanacharya' target='_blank'>Data Science</a></p><br>
     <p><a href='https://sanjanb.github.io/Internship-log/' target='_blank'>SynerSense pvt. ltd.</a></p><br>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
