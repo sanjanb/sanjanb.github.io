@@ -2,33 +2,39 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  <span class="text-muted">AI Engineer</span> • 
+  <a href='https://www.linkedin.com/in/sanjan-bm/' target="_blank">LinkedIn</a> •
+  <a href='https://github.com/sanjanb' target="_blank">GitHub</a> •
+  <a href='https://www.kaggle.com/sanjanbm' target="_blank">Kaggle</a> •
+  <a href='mailto:sanjanacharaya1234@gmail.com?subject=Project%20Inquiry' target="_blank">Email</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><strong>IMPORTANT LINKS</strong></p><br>
+    <p><a href='https://drive.google.com/file/d/1pp-sgwVTQO30j3C0Wj2bLbj4_6EDUAOZ/view?usp=sharing' target='_blank'>Resume</a></p><br>
+    <p><a href='https://sanjanb.github.io/resume/' target='_blank'>Curriculum vitae</a></p><br>
+    <p><a href='https://sanjanb.github.io/Internship-log/' target='_blank'>SynerSense pvt. ltd.</a></p><br>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am `Sanjan B M`, an Artificial Intelligence & Machine Learning engineering student with a passion for `human-centric product building` at the intersection of AI research, product design, and purposeful innovation.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I serve as a `Vision Language Model Developer` at [SynerSense Pvt. Ltd.](https://www.linkedin.com/company/synersense/posts/?feedView=all), where I work on CLIP and multimodal architectures for real-world computer vision tasks. I also hold the role of `Tech Lead` at [GSI Startup](https://www.linkedin.com/company/gsi-group-technologies/posts/?feedView=all), building quick commerce platforms and service booking systems, and act as `Vice Chair` of the [IEEE ATME Student Branch](https://www.linkedin.com/company/ieee-atmece/posts/?feedView=all) — leading workshops, hackathons, and mentorship programs.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I have a proven track record in `web development`, `machine learning`, and `technical leadership`, with projects ranging from GAN-based image generation to BERT-powered text classification.
