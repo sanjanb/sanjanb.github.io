@@ -7,6 +7,7 @@ tags: ["AI", "ML", "introduction", "blog"]
 categories: ["personal"]
 thumbnail: assets/img/blog/welcome.jpg
 featured: true
+published: false  # Template for welcome posts
 ---
 
 # Welcome to My AI & ML Journey!

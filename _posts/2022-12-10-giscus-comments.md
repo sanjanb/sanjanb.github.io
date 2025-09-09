@@ -7,6 +7,7 @@ tags: comments
 categories: sample-posts external-services
 giscus_comments: true
 related_posts: false
+published: false  # Template for giscus comments
 ---
 
 This post shows how to add GISCUS comments.

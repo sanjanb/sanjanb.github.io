@@ -7,6 +7,7 @@ tags: formatting jupyter
 categories: sample-posts
 giscus_comments: true
 related_posts: false
+published: false  # Template for jupyter notebooks
 ---
 
 To include a jupyter notebook in a post, you can use the following code:
