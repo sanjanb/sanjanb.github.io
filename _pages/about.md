@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Bio
 permalink: /
 subtitle: >
   <span class="text-muted">AI Engineer</span> • 
