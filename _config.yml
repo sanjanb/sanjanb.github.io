@@ -114,7 +114,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: YOUR_SCHOLAR_ID # your Google Scholar ID (replace with actual ID)
+scholar_userid: xeTdWMwAAAAJ # your Google Scholar ID (replace with actual ID)
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -271,6 +271,7 @@ exclude:
   - readme_preview/
   - vendor
   - _templates/  # Exclude templates directory from being built
+  - assets/jupyter/  # Exclude jupyter files if jupyter is not installed
 keep_files:
   - CNAME
   - .nojekyll
