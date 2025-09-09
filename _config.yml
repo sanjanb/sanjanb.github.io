@@ -271,6 +271,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _templates/  # Exclude templates directory from being built
 keep_files:
   - CNAME
   - .nojekyll
