@@ -82,7 +82,7 @@ max_width: 1000px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: assets/img/profile_pic.png # The site-wide (default for all links) Open Graph preview image
+og_image: assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 
 # -----------------------------------------------------------------------------
@@ -317,6 +317,10 @@ jekyll-archives:
       categories: "/blog/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
+      year: "/books/:year/"
+      tags: "/books/:type/:name/"
+      categories: "/books/:type/:name/"
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
