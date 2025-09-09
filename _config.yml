@@ -6,10 +6,11 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Sanjan 
 middle_name: 
 last_name: B M
-# contact_note: >
-#  You can even add a little note about which of these is the best way to reach you.
-#description: > # the ">" symbol means to ignore newlines until "footer_text:"
-#  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+contact_note: >
+  Feel free to reach out for collaborations, research discussions, or just to connect!
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  AI Engineer and Machine Learning enthusiast specializing in Generative AI, Deep Learning, and Computer Vision. 
+  Passionate about building intelligent systems that solve real-world problems.
 footer_text: >
   "Designed and developed with curiosity and a dash of chaos. © 2025."
 keywords: Sanjan B M, sanjan, AI Engineer, ML Engineer, Generative AI, Data Science, Machine Learning, Deep Learning, LLM, machine learning, artificial intelligence, deep learning, computer vision, natural language processing  # add your own keywords or leave empty
@@ -27,19 +28,19 @@ back_to_top: true # set to false to disable the back to top button
 # Optional Features
 # -----------------------------------------------------------------------------
 
-# enable_google_analytics: true # enables google analytics
-# enable_cronitor_analytics: false # enables cronitor RUM analytics
-# enable_google_verification: true # enables google site verification
-# enable_bing_verification: false # enables bing site verification
-# enable_masonry: true # enables automatic project cards arrangement
-# enable_math: true # enables math typesetting (uses MathJax)
-# enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-# enable_darkmode: true # enables switching between light/dark modes
-# enable_navbar_social: false # enables displaying social links in the navbar on the about page
-# enable_project_categories: true # enables categorization of projects into multiple categories
-# enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-# enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
-# enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
+enable_google_analytics: true # enables google analytics
+enable_cronitor_analytics: false # enables cronitor RUM analytics
+enable_google_verification: true # enables google site verification
+enable_bing_verification: false # enables bing site verification
+enable_masonry: true # enables automatic project cards arrangement
+enable_math: true # enables math typesetting (uses MathJax)
+enable_tooltips: true # enables automatic tooltip links generated for each section titles on pages and posts
+enable_darkmode: true # enables switching between light/dark modes
+enable_navbar_social: true # enables displaying social links in the navbar on the about page
+enable_project_categories: true # enables categorization of projects into multiple categories
+enable_medium_zoom: true # enables image zoom feature (as on medium.com)
+enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -107,18 +108,19 @@ lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 linkedin_username: sanjan-bm # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
-orcid_id: # your ORCID ID
+orcid_id: 0000-0000-0000-0000 # your ORCID ID (replace with actual ID)
 osf_id: # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: # your Google Scholar ID
+scholar_userid: YOUR_SCHOLAR_ID # your Google Scholar ID (replace with actual ID)
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
 stackoverflow_id: # your stackoverflow id
 telegram_username: # your Telegram user name
+twitter_username: # your Twitter handle (if you have one)
 unsplash_id: # your unsplash id
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
@@ -135,13 +137,13 @@ zotero_username: # your zotero username
 
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+google_analytics: G-XXXXXXXXXX # your Google Analytics measurement ID (format: G-XXXXXXXXXX) - replace with actual ID
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
+google_site_verification: # your google-site-verification ID (Google Search Console) - add your verification code
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
