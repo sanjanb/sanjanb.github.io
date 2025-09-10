@@ -1,14 +1,22 @@
 ---
 layout: achievement
-title: Best Student Award - Senate Bhavan, Mysuru. ##  **Academic Foundation**---
-
-## **Personal Reflection & Impact**
-
-### **What This Means to Me**# **Current Academic Standing**uru University
+title: Best Student Award - Senate Bhavan, Mysuru University
 organization: Lions International & Mysuru University
 date: 2024-11-01
 category: academic
 tags: [best-student-award, vtu, mysuru-university, academic-excellence, recognition]
+summary: Honored to receive the prestigious Best Student Award at Senate Bhavan, Mysuru University, recognizing academic excellence and achievements in engineering
+rating: 5
+giscus_comments: true
+metrics:
+  - value: "9.23/10"
+    label: "CGPA"
+  - value: "VTU Selected"
+    label: "University Recognition"
+  - value: "State Level"
+    label: "Award Significance"
+skills: [Academic Excellence, Engineering, AI & Machine Learning, Leadership, Research]
+---
 summary: Honored to receive the prestigious Best Student Award at Senate Bhavan, Mysuru University, recognizing academic excellence and achievements in engineering
 rating: 5
 metrics:
