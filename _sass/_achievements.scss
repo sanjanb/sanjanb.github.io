@@ -310,6 +310,56 @@
     font-family: 'Fira Code', 'Monaco', monospace;
   }
   
+  // Image styling for achievements
+  figure {
+    margin: 2.5rem 0;
+    text-align: center;
+    
+    img {
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      max-width: 100%;
+      height: auto;
+      
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+      }
+    }
+    
+    figcaption {
+      margin-top: 1rem;
+      font-style: italic;
+      color: var(--global-text-color-light);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+  
+  // Direct img styling for cases without figure wrapper
+  img {
+    &.img-fluid {
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s ease;
+      margin: 2rem 0;
+      
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+      }
+    }
+    
+    &.z-depth-1 {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    &.rounded {
+      border-radius: 12px;
+    }
+  }
+  
   // Enhanced summary section
   .achievement-summary {
     background: linear-gradient(135deg, var(--global-bg-color), var(--global-card-bg-color));

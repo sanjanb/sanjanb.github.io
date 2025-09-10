@@ -21,6 +21,8 @@ I am truly grateful and honored to be one of the students from VTU selected for 
 
 The event took place at the esteemed **Senate Bhavan, Mysuru University** — a moment that will remain etched in my memory forever.
 
+{% include figure.liquid loading="eager" path="assets/img/best.jpg" title="Best Student Award Ceremony" class="img-fluid rounded z-depth-1" %}
+
 ---
 
 ## 🏆 Award Ceremony Highlights
