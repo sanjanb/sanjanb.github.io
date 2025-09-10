@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
+        },{id: "nav-achievements",
+          title: "achievements",
+          description: "Professional achievements, certifications, awards, and recognitions throughout my academic and professional journey.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/achievements/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
