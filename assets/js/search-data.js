@@ -37,7 +37,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
+        },{id: "post-advanced-blog-formatting-guide-mastering-jekyll-and-al-folio-techniques",
+        
+          title: "Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques",
+        
+        description: "A comprehensive guide showcasing advanced formatting techniques for Jekyll blogs using the al-folio theme, including code highlighting, interactive elements, and visual enhancements.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/advanced-blog-formatting-guide/";
+          
+        },
+      },{id: "post-building-scalable-ai-systems-lessons-from-production",
+        
+          title: "Building Scalable AI Systems: Lessons from Production",
+        
+        description: "Real-world insights and practical strategies for deploying machine learning models at scale, covering infrastructure, monitoring, and best practices learned from production environments.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/building-scalable-ai-systems/";
+          
+        },
+      },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
         
           title: "Mastering Jekyll: Advanced Formatting and Link Techniques",
         
