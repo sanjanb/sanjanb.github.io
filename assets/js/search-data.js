@@ -98,8 +98,8 @@ ninja.data = [{
           description: "",
           section: "Achievements",handler: () => {
               window.location.href = "/achievements/ieee-vice-chair/";
-            },},{id: "achievements-best-student-award-senate-bhavan-mysuru",
-          title: 'Best Student Award - Senate Bhavan, Mysuru.',
+            },},{id: "achievements-best-student-award-senate-bhavan-mysuru-university",
+          title: 'Best Student Award - Senate Bhavan, Mysuru University',
           description: "",
           section: "Achievements",handler: () => {
               window.location.href = "/achievements/academic-excellence/";
