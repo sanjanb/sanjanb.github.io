@@ -165,10 +165,10 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: sanjab/giscuss # <your-github-user-name>/<your-github-repo-name>
-  repo_id: R_kgDOOnMiwg # leave empty or specify your repo_id (see https://giscus.app/)
+  repo: sanjanb/sanjanb.github.io # <your-github-user-name>/<your-github-repo-name>
+  repo_id: R_kgDOPstneA # leave empty or specify your repo_id (see https://giscus.app/)
   category: General # name of the category under which discussions will be created
-  category_id: DIC_kwDOOnMiws4CvQFp # leave empty or specify your category_id (see https://giscus.app/)
+  category_id: DIC_kwDOPstneM4CvQNK # leave empty or specify your category_id (see https://giscus.app/)
   mapping: pathname # identify discussions by post title
   strict: 0 # use strict identification mode
   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
