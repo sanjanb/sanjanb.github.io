@@ -1,6 +1,10 @@
 ---
 layout: achievement
-title: Best Student Award - Senate Bhavan, Mysuru University
+title: Best Student Award - Senate Bhavan, ##  **Academic Foundation**---
+
+## **Personal Reflection & Impact**
+
+### **What This Means to Me**# **Current Academic Standing**uru University
 organization: Lions International & Mysuru University
 date: 2024-11-01
 category: academic
@@ -25,15 +29,15 @@ The event took place at the esteemed **Senate Bhavan, Mysuru University** — a 
 
 ---
 
-## 🏆 Award Ceremony Highlights
+## **Award Ceremony Highlights**
 
-### Distinguished Recognition
+### **Distinguished Recognition**
 
 I had the privilege of receiving the award from **Parampoojya Jagadguru Dr. Nirmalanandanatha Swamiji**, the revered Peethadhipathi of Adi Chunchanagiri Mahasamsthana Math.
 
 His blessings made the occasion even more special and meaningful.
 
-### Esteemed Dignitaries Present
+### **Esteemed Dignitaries Present**
 
 The ceremony was graced by distinguished dignitaries, including:
 
@@ -43,40 +47,33 @@ The ceremony was graced by distinguished dignitaries, including:
 
 ---
 
-## 🎯 Award Significance
+## **Award Significance**
 
-### What This Recognition Represents
+#### **What This Recognition Represents**
 
 This prestigious award recognizes exceptional performance across multiple dimensions:
 
-** Academic Excellence**  
-Outstanding performance in engineering studies with consistent high grades
+**Academic Excellence**: Outstanding performance in engineering studies with consistent high grades
 
-** AI/ML Specialization**  
-Deep expertise and innovation in Artificial Intelligence and Machine Learning
+**AI/ML Specialization**: Deep expertise and innovation in Artificial Intelligence and Machine Learning
 
-** Leadership Qualities**  
-Demonstrated leadership in academic projects and community involvement
+**Leadership Qualities**: Demonstrated leadership in academic projects and community involvement
 
-** Research Contributions**  
-Active participation in cutting-edge research and innovative thinking
+**Research Contributions**: Active participation in cutting-edge research and innovative thinking
 
-### The Selection Journey
+#### **The Selection Journey**
 
-**University Level Selection**  
-Chosen from among thousands of VTU students across Karnataka
+**University Level Selection**: Chosen from among thousands of VTU students across Karnataka
 
-**State Recognition**  
-Acknowledged at the prestigious Mysuru University venue
+**State Recognition**: Acknowledged at the prestigious Mysuru University venue
 
-**Multi-Organization Endorsement**  
-Supported by Lions International and educational trusts
+**Multi-Organization Endorsement**: Supported by Lions International and educational trusts
 
 ---
 
-##  Academic Foundation
+##  ** Academic Foundation **
 
-### Current Academic Standing
+#### Current Academic Standing
 
 **CGPA: 9.23/10**  
 *Maintained consistent academic excellence throughout the program*
@@ -90,7 +87,7 @@ ATME College of Engineering, Mysuru
 **University**  
 Visvesvaraya Technological University (VTU)
 
-### Key Academic Milestones
+### **Key Academic Milestones**
 
  **Top 5% Performance** — Consistently ranked among the highest performers  
 
@@ -102,9 +99,9 @@ Visvesvaraya Technological University (VTU)
 
 ---
 
-## Personal Reflection & Impact
+## **Personal Reflection & Impact**
 
-### What This Means to Me
+### **What This Means to Me**
 
 This recognition represents far more than academic achievement — it's validation of:
 
@@ -113,7 +110,7 @@ This recognition represents far more than academic achievement — it's validati
 - **Leadership values** and community service
 - **Vision for technology** that makes a positive impact
 
-### Moving Forward
+### **Moving Forward**
 
 This honor motivates me to:
 
@@ -124,22 +121,17 @@ This honor motivates me to:
 
 ---
 
-##  Gratitude & Acknowledgments
+##  **Gratitude & Acknowledgments**
 
-**To the Organizing Committee**  
-Thank you for this prestigious recognition and the opportunity to be part of such an esteemed gathering.
+**To the Organizing Committee**: Thank you for this prestigious recognition and the opportunity to be part of such an esteemed gathering.
 
-**To My Institution (ATME College)**  
-Grateful for providing excellent education, resources, and unwavering support throughout my journey.
+**To My Institution (ATME College)**: Grateful for providing excellent education, resources, and unwavering support throughout my journey.
 
-**To My Faculty Members**  
-Thank you for your guidance, mentorship, and for believing in my potential from day one.
+**To My Faculty Members**: Thank you for your guidance, mentorship, and for believing in my potential from day one.
 
-**To My Family & Friends**  
-Your constant encouragement and support have been the foundation of this achievement.
+**To My Family & Friends**: Your constant encouragement and support have been the foundation of this achievement.
 
-**To My Fellow Students**  
-Thank you for making this journey collaborative, enriching, and memorable.
+**To My Fellow Students**: Thank you for making this journey collaborative, enriching, and memorable.
 
 ---
 
