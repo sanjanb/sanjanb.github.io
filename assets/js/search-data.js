@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-achievements",
-          title: "achievements",
-          description: "Professional achievements, certifications, awards, and recognitions throughout my academic and professional journey.",
+        },{id: "nav-",
+          title: "",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/achievements/";
