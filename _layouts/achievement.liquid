@@ -95,37 +95,33 @@ layout: default
   </header>
 
   <article class="achievement-content">
-    {% if page.icon %}
-      <div class="achievement-icon">
-        <i class="{{ page.icon }}"></i>
-      </div>
-    {% endif %}
-    
     {% if page.summary %}
       <div class="achievement-summary">
-        <h4>{{ page.summary }}</h4>
-      </div>
-    {% endif %}
-
-    {% if page.metrics %}
-      <div class="achievement-metrics">
-        {% for metric in page.metrics %}
-          <div class="metric-item">
-            <div class="metric-number">{{ metric.value }}</div>
-            <div class="metric-label">{{ metric.label }}</div>
-          </div>
-        {% endfor %}
+        <p><strong>{{ page.summary }}</strong></p>
       </div>
     {% endif %}
 
     {{ content }}
     
+    {% if page.metrics %}
+      <div class="achievement-metrics">
+        <h4>Key Metrics</h4>
+        <ul>
+          {% for metric in page.metrics %}
+            <li><strong>{{ metric.value }}</strong> - {{ metric.label }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    
     {% if page.skills %}
       <div class="achievement-skills">
-        <h5>Skills & Technologies:</h5>
-        {% for skill in page.skills %}
-          <span class="skill-tag">{{ skill }}</span>
-        {% endfor %}
+        <h4>Skills & Technologies</h4>
+        <p>
+          {% for skill in page.skills %}
+            <code>{{ skill }}</code>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </p>
       </div>
     {% endif %}
   </article>
@@ -137,48 +133,36 @@ layout: default
 
 <style>
 .achievement-content {
-  .achievement-icon {
-    text-align: center;
-    font-size: 3rem;
-    color: var(--global-theme-color);
-    margin-bottom: 1rem;
-  }
-  
   .achievement-summary {
-    background: var(--global-card-bg-color);
-    border-left: 4px solid var(--global-theme-color);
+    background: var(--global-bg-color);
+    border-left: 3px solid var(--global-theme-color);
     padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
     
-    h4 {
+    p {
       margin: 0;
-      color: var(--global-text-color);
     }
   }
   
   .achievement-metrics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
     margin: 2rem 0;
     
-    .metric-item {
-      text-align: center;
-      padding: 1rem;
-      background: linear-gradient(135deg, var(--global-theme-color), #667eea);
-      color: white;
-      border-radius: 8px;
+    h4 {
+      color: var(--global-text-color);
+      margin-bottom: 1rem;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
       
-      .metric-number {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-      }
-      
-      .metric-label {
-        font-size: 0.9rem;
-        opacity: 0.9;
+      li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--global-divider-color);
+        
+        &:last-child {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -186,19 +170,17 @@ layout: default
   .achievement-skills {
     margin-top: 2rem;
     
-    h5 {
+    h4 {
       color: var(--global-text-color);
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     
-    .skill-tag {
-      display: inline-block;
-      background: var(--global-theme-color);
-      color: white;
-      padding: 0.3rem 0.8rem;
-      border-radius: 15px;
-      font-size: 0.8rem;
-      margin: 0.2rem;
+    code {
+      background: var(--global-code-bg-color);
+      color: var(--global-text-color);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.9rem;
     }
   }
 }
