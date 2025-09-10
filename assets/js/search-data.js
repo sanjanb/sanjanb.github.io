@@ -59,6 +59,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/building-scalable-ai-systems/";
           
         },
+      },{id: "post-docker-mastery-from-development-to-production",
+        
+          title: "Docker Mastery: From Development to Production",
+        
+        description: "A comprehensive guide to mastering Docker for modern development workflows, including best practices, optimization techniques, and production deployment strategies.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/docker-mastery-guide/";
+          
+        },
       },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
         
           title: "Mastering Jekyll: Advanced Formatting and Link Techniques",

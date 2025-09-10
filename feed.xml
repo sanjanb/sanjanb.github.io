@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://sanjanb.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://sanjanb.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-09-10T06:24:46+00:00</updated><id>https://sanjanb.github.io/feed.xml</id><title type="html">blank</title><subtitle>AI Engineer and Machine Learning enthusiast specializing in Generative AI, Deep Learning, and Computer Vision. Passionate about building intelligent systems that solve real-world problems. </subtitle><entry><title type="html">Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques</title><link href="https://sanjanb.github.io/blog/2025/advanced-blog-formatting-guide/" rel="alternate" type="text/html" title="Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques"/><published>2025-01-15T10:00:00+00:00</published><updated>2025-01-15T10:00:00+00:00</updated><id>https://sanjanb.github.io/blog/2025/advanced-blog-formatting-guide</id><content type="html" xml:base="https://sanjanb.github.io/blog/2025/advanced-blog-formatting-guide/"><![CDATA[<p>Creating compelling blog content requires more than just good writing—it needs <strong>exceptional formatting</strong> and <strong>visual presentation</strong>. This comprehensive guide demonstrates advanced techniques available in Jekyll with the al-folio theme.</p> <h2 id="-content-formatting-essentials">🎯 Content Formatting Essentials</h2> <h3 id="blockquotes-for-impact">Blockquotes for Impact</h3> <blockquote> <p><strong>The Problem Every Developer Faces:</strong></p> <p>You’re working on a complex project, everything seems to be going smoothly, and then suddenly—boom! A mysterious bug appears that breaks everything. You spend hours debugging, searching Stack Overflow, and questioning your life choices. Sound familiar?</p> </blockquote> <p>This is how you create emphasis and draw attention to key scenarios or quotes.</p> <h3 id="strategic-text-emphasis">Strategic Text Emphasis</h3> <p>Use <strong>bold text</strong> for key concepts, <em>italics</em> for emphasis, and <code class="language-plaintext highlighter-rouge">inline code</code> for technical terms. Here’s how to balance them:</p> <ul> <li><strong>Primary concepts</strong>: Bold for main ideas</li> <li><em>Secondary emphasis</em>: Italics for nuanced points</li> <li><code class="language-plaintext highlighter-rouge">Technical terms</code>: Code formatting for APIs, functions, filenames</li> <li><strong><em>Combined emphasis</em></strong>: For absolutely critical information</li> </ul> <h2 id="-code-presentation-mastery">💻 Code Presentation Mastery</h2> <h3 id="syntax-highlighted-code-blocks">Syntax-Highlighted Code Blocks</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Advanced Python example with multiple concepts
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://sanjanb.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://sanjanb.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-09-10T06:25:04+00:00</updated><id>https://sanjanb.github.io/feed.xml</id><title type="html">blank</title><subtitle>AI Engineer and Machine Learning enthusiast specializing in Generative AI, Deep Learning, and Computer Vision. Passionate about building intelligent systems that solve real-world problems. </subtitle><entry><title type="html">Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques</title><link href="https://sanjanb.github.io/blog/2025/advanced-blog-formatting-guide/" rel="alternate" type="text/html" title="Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques"/><published>2025-01-15T10:00:00+00:00</published><updated>2025-01-15T10:00:00+00:00</updated><id>https://sanjanb.github.io/blog/2025/advanced-blog-formatting-guide</id><content type="html" xml:base="https://sanjanb.github.io/blog/2025/advanced-blog-formatting-guide/"><![CDATA[<p>Creating compelling blog content requires more than just good writing—it needs <strong>exceptional formatting</strong> and <strong>visual presentation</strong>. This comprehensive guide demonstrates advanced techniques available in Jekyll with the al-folio theme.</p> <h2 id="-content-formatting-essentials">🎯 Content Formatting Essentials</h2> <h3 id="blockquotes-for-impact">Blockquotes for Impact</h3> <blockquote> <p><strong>The Problem Every Developer Faces:</strong></p> <p>You’re working on a complex project, everything seems to be going smoothly, and then suddenly—boom! A mysterious bug appears that breaks everything. You spend hours debugging, searching Stack Overflow, and questioning your life choices. Sound familiar?</p> </blockquote> <p>This is how you create emphasis and draw attention to key scenarios or quotes.</p> <h3 id="strategic-text-emphasis">Strategic Text Emphasis</h3> <p>Use <strong>bold text</strong> for key concepts, <em>italics</em> for emphasis, and <code class="language-plaintext highlighter-rouge">inline code</code> for technical terms. Here’s how to balance them:</p> <ul> <li><strong>Primary concepts</strong>: Bold for main ideas</li> <li><em>Secondary emphasis</em>: Italics for nuanced points</li> <li><code class="language-plaintext highlighter-rouge">Technical terms</code>: Code formatting for APIs, functions, filenames</li> <li><strong><em>Combined emphasis</em></strong>: For absolutely critical information</li> </ul> <h2 id="-code-presentation-mastery">💻 Code Presentation Mastery</h2> <h3 id="syntax-highlighted-code-blocks">Syntax-Highlighted Code Blocks</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Advanced Python example with multiple concepts
 </span><span class="kn">import</span> <span class="n">asyncio</span>
 <span class="kn">from</span> <span class="n">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
 <span class="kn">from</span> <span class="n">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
@@ -264,7 +264,7 @@ function runCode() {
     output.className = 'error';
   }
 }
-</script> <style>.code-playground{border:1px solid #ddd;border-radius:8px;overflow:hidden;margin:2rem 0}.code-editor textarea{width:100%;height:200px;border:0;padding:1rem;font-family:'Courier New',monospace;resize:vertical}.code-output{background:#f8f9fa;padding:1rem;border-top:1px solid #ddd}.code-output pre{background:white;border:1px solid #ddd;border-radius:4px;padding:.5rem;margin-top:.5rem;min-height:2rem}.code-output pre.success{border-color:#28a745;color:#28a745}.code-output pre.error{border-color:#dc3545;color:#dc3545}</style> <h2 id="-resources-and-references">📚 Resources and References</h2> <h3 id="essential-tools-and-libraries">Essential Tools and Libraries</h3> <table> <thead> <tr> <th>Tool/Library</th> <th>Purpose</th> <th>Link</th> </tr> </thead> <tbody> <tr> <td><strong>Rouge</strong></td> <td>Syntax highlighting</td> <td><a href="https://github.com/rouge-ruby/rouge">GitHub</a></td> </tr> <tr> <td><strong>MathJax</strong></td> <td>Mathematical expressions</td> <td><a href="https://www.mathjax.org/">Official Site</a></td> </tr> <tr> <td><strong>Mermaid</strong></td> <td>Diagrams and flowcharts</td> <td><a href="https://github.com/mermaid-js/mermaid">GitHub</a></td> </tr> <tr> <td><strong>Chart.js</strong></td> <td>Interactive charts</td> <td><a href="https://www.chartjs.org/">Official Site</a></td> </tr> <tr> <td><strong>Bootstrap</strong></td> <td>Responsive framework</td> <td><a href="https://getbootstrap.com/">Official Site</a></td> </tr> </tbody> </table> <h3 id="further-reading">Further Reading</h3> <ol> <li><strong><a href="https://jekyllrb.com/docs/">Jekyll Documentation</a></strong> - Official Jekyll guides</li> <li><strong><a href="https://www.markdownguide.org/">Markdown Guide</a></strong> - Comprehensive Markdown reference</li> <li><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">Web Accessibility Guidelines</a></strong> - WCAG 2.1 quick reference</li> <li><strong><a href="https://developers.google.com/search/docs">SEO Best Practices</a></strong> - Google’s SEO documentation</li> </ol> <hr/> <h2 id="-conclusion">🎉 Conclusion</h2> <p>Mastering blog formatting is an ongoing journey. The techniques demonstrated in this guide provide a solid foundation for creating engaging, accessible, and visually appealing content. Remember:</p> <blockquote> <p><strong>“Great content deserves great presentation. Your ideas are only as powerful as your ability to communicate them effectively.”</strong></p> </blockquote> <h3 id="key-takeaways">Key Takeaways</h3> <ul> <li>✅ <strong>Structure is crucial</strong> - Use headings, lists, and whitespace effectively</li> <li>✅ <strong>Code quality matters</strong> - Proper syntax highlighting and examples enhance understanding</li> <li>✅ <strong>Visual elements engage</strong> - Charts, diagrams, and images break up text</li> <li>✅ <strong>Accessibility first</strong> - Design for all users from the start</li> <li>✅ <strong>Performance counts</strong> - Optimize images and lazy-load heavy content</li> </ul> <p>Happy blogging! 🚀</p> <hr/> <p><em>Found this guide helpful? Share it with fellow developers and don’t forget to leave a comment below with your own formatting tips and tricks!</em></p>]]></content><author><name></name></author><category term="tutorial"/><category term="formatting"/><category term="code"/><category term="jekyll"/><category term="blogging"/><category term="tutorial"/><summary type="html"><![CDATA[A comprehensive guide showcasing advanced formatting techniques for Jekyll blogs using the al-folio theme, including code highlighting, interactive elements, and visual enhancements.]]></summary></entry><entry><title type="html">Building Scalable AI Systems: Lessons from Production</title><link href="https://sanjanb.github.io/blog/2025/building-scalable-ai-systems/" rel="alternate" type="text/html" title="Building Scalable AI Systems: Lessons from Production"/><published>2025-01-10T14:30:00+00:00</published><updated>2025-01-10T14:30:00+00:00</updated><id>https://sanjanb.github.io/blog/2025/building-scalable-ai-systems</id><content type="html" xml:base="https://sanjanb.github.io/blog/2025/building-scalable-ai-systems/"><![CDATA[<p>Building AI systems that work in the lab is one thing. <strong>Building AI systems that work reliably in production</strong> is an entirely different challenge. After deploying dozens of ML models to production environments, here are the hard-learned lessons that can save you months of debugging and sleepless nights.</p> <h2 id="-the-reality-check-what-they-dont-teach-you">🚨 The Reality Check: What They Don’t Teach You</h2> <blockquote> <p><strong>The Harsh Truth:</strong></p> <p>Your beautiful 99.9% accuracy model that works perfectly on your curated test set will face the chaos of real-world data. Users will input images that are upside down, text with emojis you’ve never seen, and edge cases that would make your training data weep.</p> </blockquote> <h3 id="the-production-pyramid-of-needs">The Production Pyramid of Needs</h3> <pre><code class="language-mermaid">graph TD
+</script> <style>.code-playground{border:1px solid #ddd;border-radius:8px;overflow:hidden;margin:2rem 0}.code-editor textarea{width:100%;height:200px;border:0;padding:1rem;font-family:'Courier New',monospace;resize:vertical}.code-output{background:#f8f9fa;padding:1rem;border-top:1px solid #ddd}.code-output pre{background:white;border:1px solid #ddd;border-radius:4px;padding:.5rem;margin-top:.5rem;min-height:2rem}.code-output pre.success{border-color:#28a745;color:#28a745}.code-output pre.error{border-color:#dc3545;color:#dc3545}</style> <h2 id="-resources-and-references">📚 Resources and References</h2> <h3 id="essential-tools-and-libraries">Essential Tools and Libraries</h3> <table> <thead> <tr> <th>Tool/Library</th> <th>Purpose</th> <th>Link</th> </tr> </thead> <tbody> <tr> <td><strong>Rouge</strong></td> <td>Syntax highlighting</td> <td><a href="https://github.com/rouge-ruby/rouge">GitHub</a></td> </tr> <tr> <td><strong>MathJax</strong></td> <td>Mathematical expressions</td> <td><a href="https://www.mathjax.org/">Official Site</a></td> </tr> <tr> <td><strong>Mermaid</strong></td> <td>Diagrams and flowcharts</td> <td><a href="https://github.com/mermaid-js/mermaid">GitHub</a></td> </tr> <tr> <td><strong>Chart.js</strong></td> <td>Interactive charts</td> <td><a href="https://www.chartjs.org/">Official Site</a></td> </tr> <tr> <td><strong>Bootstrap</strong></td> <td>Responsive framework</td> <td><a href="https://getbootstrap.com/">Official Site</a></td> </tr> </tbody> </table> <h3 id="further-reading">Further Reading</h3> <ol> <li><strong><a href="https://jekyllrb.com/docs/">Jekyll Documentation</a></strong> - Official Jekyll guides</li> <li><strong><a href="https://www.markdownguide.org/">Markdown Guide</a></strong> - Comprehensive Markdown reference</li> <li><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">Web Accessibility Guidelines</a></strong> - WCAG 2.1 quick reference</li> <li><strong><a href="https://developers.google.com/search/docs">SEO Best Practices</a></strong> - Google’s SEO documentation</li> </ol> <hr/> <h2 id="-conclusion">🎉 Conclusion</h2> <p>Mastering blog formatting is an ongoing journey. The techniques demonstrated in this guide provide a solid foundation for creating engaging, accessible, and visually appealing content. Remember:</p> <blockquote> <p><strong>“Great content deserves great presentation. Your ideas are only as powerful as your ability to communicate them effectively.”</strong></p> </blockquote> <h3 id="key-takeaways">Key Takeaways</h3> <ul> <li>✅ <strong>Structure is crucial</strong> - Use headings, lists, and whitespace effectively</li> <li>✅ <strong>Code quality matters</strong> - Proper syntax highlighting and examples enhance understanding</li> <li>✅ <strong>Visual elements engage</strong> - Charts, diagrams, and images break up text</li> <li>✅ <strong>Accessibility first</strong> - Design for all users from the start</li> <li>✅ <strong>Performance counts</strong> - Optimize images and lazy-load heavy content</li> </ul> <p>Happy blogging! 🚀</p> <hr/> <p><em>Found this guide helpful? Share it with fellow developers and don’t forget to leave a comment below with your own formatting tips and tricks!</em></p>]]></content><author><name></name></author><category term="tutorial"/><category term="formatting"/><category term="code"/><category term="jekyll"/><category term="blogging"/><category term="tutorial"/><summary type="html"><![CDATA[A comprehensive guide showcasing advanced formatting techniques for Jekyll blogs using the al-folio theme, including code highlighting, interactive elements, and visual enhancements.]]></summary></entry><entry><title type="html">Building Scalable AI Systems: Lessons from Production</title><link href="https://sanjanb.github.io/blog/2025/building-scalable-ai-systems/" rel="alternate" type="text/html" title="Building Scalable AI Systems: Lessons from Production"/><published>2025-01-10T14:30:00+00:00</published><updated>2025-01-10T14:30:00+00:00</updated><id>https://sanjanb.github.io/blog/2025/building-scalable-ai-systems</id><content type="html" xml:base="https://sanjanb.github.io/blog/2025/building-scalable-ai-systems/"><![CDATA[<p>Building AI systems that work in the lab is one thing. <strong>Building AI systems that work reliably in production</strong> is an entirely different challenge. After deploying dozens of ML models to production environments, here are the hard-learned lessons that can save you months of debugging and sleepless nights.</p> <h2 id="the-reality-check-what-they-dont-teach-you">The Reality Check: What They Don’t Teach You</h2> <blockquote> <p><strong>The Harsh Truth:</strong></p> <p>Your beautiful 99.9% accuracy model that works perfectly on your curated test set will face the chaos of real-world data. Users will input images that are upside down, text with emojis you’ve never seen, and edge cases that would make your training data weep.</p> </blockquote> <h3 id="the-production-pyramid-of-needs">The Production Pyramid of Needs</h3> <pre><code class="language-mermaid">graph TD
     A[Model Accuracy] --&gt; B[Data Quality]
     B --&gt; C[Infrastructure Reliability]
     C --&gt; D[Monitoring &amp; Observability]
@@ -277,7 +277,7 @@ function runCode() {
     style C fill:#9C27B0
     style B fill:#FF5722
     style A fill:#607D8B
-</code></pre> <p>Most developers start at the top, but <strong>production success is built from the bottom up</strong>.</p> <h2 id="️-infrastructure-architecture-that-actually-works">🏗️ Infrastructure Architecture That Actually Works</h2> <h3 id="containerization-strategy">Containerization Strategy</h3> <p>Here’s the Docker setup that has saved us countless deployment headaches:</p> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Multi-stage build for ML applications</span>
+</code></pre> <p>Most developers start at the top, but <strong>production success is built from the bottom up</strong>.</p> <h2 id="infrastructure-architecture-that-actually-works">Infrastructure Architecture That Actually Works</h2> <h3 id="containerization-strategy">Containerization Strategy</h3> <p>Here’s the Docker setup that has saved us countless deployment headaches:</p> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Multi-stage build for ML applications</span>
 <span class="k">FROM</span><span class="w"> </span><span class="s">python:3.11-slim</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">builder</span>
 
 <span class="c"># Install system dependencies</span>
@@ -393,7 +393,7 @@ function runCode() {
       <span class="na">target</span><span class="pi">:</span>
         <span class="na">type</span><span class="pi">:</span> <span class="s">Utilization</span>
         <span class="na">averageUtilization</span><span class="pi">:</span> <span class="m">80</span>
-</code></pre></div></div> <h2 id="-monitoring-that-actually-helps">📊 Monitoring That Actually Helps</h2> <h3 id="the-three-pillars-of-ml-monitoring">The Three Pillars of ML Monitoring</h3> <div class="row"> <div class="col-md-4"> #### 🔧 System Metrics - **Latency**: P50, P95, P99 - **Throughput**: Requests/second - **Error Rate**: 4xx/5xx responses - **Resource Usage**: CPU, Memory, GPU </div> <div class="col-md-4"> #### 🎯 Model Metrics - **Prediction Accuracy**: Real-time validation - **Feature Drift**: Statistical tests - **Output Distribution**: Unexpected patterns - **Confidence Scores**: Model uncertainty </div> <div class="col-md-4"> #### 💼 Business Metrics - **User Engagement**: Click-through rates - **Revenue Impact**: A/B test results - **Cost per Prediction**: Infrastructure costs - **ROI**: Business value delivered </div> </div> <h3 id="prometheus--grafana-setup">Prometheus + Grafana Setup</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># monitoring.py - Custom metrics collection
+</code></pre></div></div> <h2 id="monitoring-that-actually-helps">Monitoring That Actually Helps</h2> <h3 id="the-three-pillars-of-ml-monitoring">The Three Pillars of ML Monitoring</h3> <div class="row"> <div class="col-md-4"> #### System Metrics - **Latency**: P50, P95, P99 - **Throughput**: Requests/second - **Error Rate**: 4xx/5xx responses - **Resource Usage**: CPU, Memory, GPU </div> <div class="col-md-4"> #### Model Metrics - **Prediction Accuracy**: Real-time validation - **Feature Drift**: Statistical tests - **Output Distribution**: Unexpected patterns - **Confidence Scores**: Model uncertainty </div> <div class="col-md-4"> #### Business Metrics - **User Engagement**: Click-through rates - **Revenue Impact**: A/B test results - **Cost per Prediction**: Infrastructure costs - **ROI**: Business value delivered </div> </div> <h3 id="prometheus--grafana-setup">Prometheus + Grafana Setup</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># monitoring.py - Custom metrics collection
 </span><span class="kn">from</span> <span class="n">prometheus_client</span> <span class="kn">import</span> <span class="n">Counter</span><span class="p">,</span> <span class="n">Histogram</span><span class="p">,</span> <span class="n">Gauge</span><span class="p">,</span> <span class="n">start_http_server</span>
 <span class="kn">import</span> <span class="n">time</span>
 <span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
@@ -511,7 +511,7 @@ function runCode() {
 
 <span class="c1"># Start Prometheus metrics server
 </span><span class="nf">start_http_server</span><span class="p">(</span><span class="mi">8001</span><span class="p">)</span>
-</code></pre></div></div> <h2 id="️-data-quality-and-validation">🛡️ Data Quality and Validation</h2> <h3 id="input-validation-pipeline">Input Validation Pipeline</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># data_validation.py
+</code></pre></div></div> <h2 id="data-quality-and-validation">Data Quality and Validation</h2> <h3 id="input-validation-pipeline">Input Validation Pipeline</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># data_validation.py
 </span><span class="kn">from</span> <span class="n">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Optional</span>
 <span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 <span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
@@ -627,7 +627,7 @@ function runCode() {
 <span class="p">}</span>
 
 <span class="n">validator</span> <span class="o">=</span> <span class="nc">DataValidator</span><span class="p">(</span><span class="n">image_schema</span><span class="p">,</span> <span class="n">ValidationLevel</span><span class="p">.</span><span class="n">WARNING</span><span class="p">)</span>
-</code></pre></div></div> <h2 id="-performance-optimization-strategies">🎯 Performance Optimization Strategies</h2> <h3 id="model-optimization-techniques">Model Optimization Techniques</h3> <div class="alert alert-info" role="alert"> <h4 class="alert-heading">💡 Pro Tip: The 80/20 Rule of ML Optimization</h4> <p>80% of your performance gains will come from 20% of optimizations. Focus on these high-impact areas first:</p> <ul> <li><strong>Model Quantization</strong>: Reduce precision without losing accuracy</li> <li><strong>Batch Processing</strong>: Process multiple requests together</li> <li><strong>Caching</strong>: Cache frequent predictions and intermediate results</li> <li><strong>Model Pruning</strong>: Remove unnecessary parameters</li> </ul> </div> <h3 id="caching-strategy-implementation">Caching Strategy Implementation</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># caching.py - Multi-level caching system
+</code></pre></div></div> <h2 id="performance-optimization-strategies">Performance Optimization Strategies</h2> <h3 id="model-optimization-techniques">Model Optimization Techniques</h3> <div class="alert alert-info" role="alert"> <h4 class="alert-heading">💡 Pro Tip: The 80/20 Rule of ML Optimization</h4> <p>80% of your performance gains will come from 20% of optimizations. Focus on these high-impact areas first:</p> <ul> <li><strong>Model Quantization</strong>: Reduce precision without losing accuracy</li> <li><strong>Batch Processing</strong>: Process multiple requests together</li> <li><strong>Caching</strong>: Cache frequent predictions and intermediate results</li> <li><strong>Model Pruning</strong>: Remove unnecessary parameters</li> </ul> </div> <h3 id="caching-strategy-implementation">Caching Strategy Implementation</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># caching.py - Multi-level caching system
 </span><span class="kn">import</span> <span class="n">redis</span>
 <span class="kn">import</span> <span class="n">pickle</span>
 <span class="kn">import</span> <span class="n">hashlib</span>
@@ -742,7 +742,7 @@ function runCode() {
     <span class="c1"># Your expensive model inference here
 </span>    <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Simulate processing time
 </span>    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">prediction</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">example</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">confidence</span><span class="sh">"</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">}</span>
-</code></pre></div></div> <h2 id="-cicd-for-ml-models">🔄 CI/CD for ML Models</h2> <h3 id="automated-testing-pipeline">Automated Testing Pipeline</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># .github/workflows/ml-pipeline.yml</span>
+</code></pre></div></div> <h2 id="cicd-for-ml-models">CI/CD for ML Models</h2> <h3 id="automated-testing-pipeline">Automated Testing Pipeline</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># .github/workflows/ml-pipeline.yml</span>
 <span class="na">name</span><span class="pi">:</span> <span class="s">ML Model CI/CD</span>
 
 <span class="na">on</span><span class="pi">:</span>
@@ -858,7 +858,637 @@ function runCode() {
       <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
         <span class="s"># Your blue-green deployment script</span>
         <span class="s">python scripts/blue_green_deploy.py --version=$(git rev-parse --short HEAD)</span>
-</code></pre></div></div> <h2 id="-key-metrics-and-kpis">📈 Key Metrics and KPIs</h2> <h3 id="business-impact-dashboard">Business Impact Dashboard</h3> <p>Here are the metrics that actually matter to stakeholders:</p> <table> <thead> <tr> <th>Metric Category</th> <th>Key Indicators</th> <th>Target Values</th> </tr> </thead> <tbody> <tr> <td><strong>Performance</strong></td> <td>Latency (P95)</td> <td>&lt; 200ms</td> </tr> <tr> <td> </td> <td>Throughput</td> <td>&gt; 1000 RPS</td> </tr> <tr> <td> </td> <td>Availability</td> <td>99.9%</td> </tr> <tr> <td><strong>Quality</strong></td> <td>Model Accuracy</td> <td>&gt; 95%</td> </tr> <tr> <td> </td> <td>Prediction Confidence</td> <td>&gt; 80%</td> </tr> <tr> <td> </td> <td>Data Quality Score</td> <td>&gt; 98%</td> </tr> <tr> <td><strong>Business</strong></td> <td>Cost per Prediction</td> <td>&lt; $0.001</td> </tr> <tr> <td> </td> <td>Revenue Impact</td> <td>+15%</td> </tr> <tr> <td> </td> <td>User Satisfaction</td> <td>&gt; 4.5/5</td> </tr> </tbody> </table> <h2 id="-next-steps-and-scaling">🚀 Next Steps and Scaling</h2> <p>As your ML systems grow, consider these advanced patterns:</p> <ol> <li><strong>Multi-Model Serving</strong>: Deploy multiple model versions with traffic splitting</li> <li><strong>Feature Stores</strong>: Centralized feature management and serving</li> <li><strong>Model Governance</strong>: Track model lineage, versions, and compliance</li> <li><strong>Edge Deployment</strong>: Move inference closer to users</li> <li><strong>AutoML Pipelines</strong>: Automated model retraining and deployment</li> </ol> <hr/> <h2 id="-key-takeaways">💡 Key Takeaways</h2> <blockquote> <p><strong>Remember:</strong> The goal isn’t to build the most sophisticated ML system—it’s to build a system that reliably delivers business value while being maintainable and scalable.</p> </blockquote> <ul> <li>✅ <strong>Start with monitoring</strong> - You can’t improve what you can’t measure</li> <li>✅ <strong>Validate everything</strong> - Input data, model outputs, and business metrics</li> <li>✅ <strong>Plan for failure</strong> - Circuit breakers, fallbacks, and graceful degradation</li> <li>✅ <strong>Optimize iteratively</strong> - Profile first, then optimize the bottlenecks</li> <li>✅ <strong>Think long-term</strong> - Technical debt in ML systems is expensive to fix</li> </ul> <p>Building production ML systems is challenging, but with the right patterns and practices, you can create systems that not only work but thrive in the chaos of the real world.</p> <p><em>What’s your biggest challenge with ML in production? Share your experiences in the comments below!</em></p>]]></content><author><name></name></author><category term="projects"/><category term="AI"/><category term="machine-learning"/><category term="production"/><category term="scaling"/><category term="devops"/><summary type="html"><![CDATA[Real-world insights and practical strategies for deploying machine learning models at scale, covering infrastructure, monitoring, and best practices learned from production environments.]]></summary></entry><entry xml:lang="en"><title type="html">Mastering Jekyll: Advanced Formatting and Link Techniques</title><link href="https://sanjanb.github.io/blog/2015/formatting-and-links/" rel="alternate" type="text/html" title="Mastering Jekyll: Advanced Formatting and Link Techniques"/><published>2015-03-15T16:40:16+00:00</published><updated>2025-09-09T00:00:00+00:00</updated><id>https://sanjanb.github.io/blog/2015/formatting-and-links</id><content type="html" xml:base="https://sanjanb.github.io/blog/2015/formatting-and-links/"><![CDATA[<h2 id="introduction">Introduction</h2> <p>Modern web development demands sophisticated content presentation techniques that go beyond basic markdown. This comprehensive guide explores advanced formatting methods, intelligent link management, and professional content organization strategies specifically designed for Jekyll-powered static sites.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/blog/formatting-guide/jekyll-advanced-480.webp 480w,/assets/img/blog/formatting-guide/jekyll-advanced-800.webp 800w,/assets/img/blog/formatting-guide/jekyll-advanced-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/blog/formatting-guide/jekyll-advanced.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Advanced Jekyll Techniques" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> <p>In today’s digital landscape, effective content presentation can significantly impact user engagement and knowledge transfer. Whether you’re building technical documentation, academic portfolios, or professional blogs, mastering these techniques will elevate your content from basic to exceptional.</p> <h2 id="typography-and-text-formatting">Typography and Text Formatting</h2> <h3 id="advanced-text-styling">Advanced Text Styling</h3> <p>Jekyll and Markdown provide powerful text formatting capabilities that extend far beyond basic <strong>bold</strong> and <em>italic</em> styling. Let’s explore professional typography techniques:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Strong emphasis**</span> for critical information
+</code></pre></div></div> <h2 id="key-metrics-and-kpis">Key Metrics and KPIs</h2> <h3 id="business-impact-dashboard">Business Impact Dashboard</h3> <p>Here are the metrics that actually matter to stakeholders:</p> <table> <thead> <tr> <th>Metric Category</th> <th>Key Indicators</th> <th>Target Values</th> </tr> </thead> <tbody> <tr> <td><strong>Performance</strong></td> <td>Latency (P95)</td> <td>&lt; 200ms</td> </tr> <tr> <td> </td> <td>Throughput</td> <td>&gt; 1000 RPS</td> </tr> <tr> <td> </td> <td>Availability</td> <td>99.9%</td> </tr> <tr> <td><strong>Quality</strong></td> <td>Model Accuracy</td> <td>&gt; 95%</td> </tr> <tr> <td> </td> <td>Prediction Confidence</td> <td>&gt; 80%</td> </tr> <tr> <td> </td> <td>Data Quality Score</td> <td>&gt; 98%</td> </tr> <tr> <td><strong>Business</strong></td> <td>Cost per Prediction</td> <td>&lt; $0.001</td> </tr> <tr> <td> </td> <td>Revenue Impact</td> <td>+15%</td> </tr> <tr> <td> </td> <td>User Satisfaction</td> <td>&gt; 4.5/5</td> </tr> </tbody> </table> <h2 id="next-steps-and-scaling">Next Steps and Scaling</h2> <p>As your ML systems grow, consider these advanced patterns:</p> <ol> <li><strong>Multi-Model Serving</strong>: Deploy multiple model versions with traffic splitting</li> <li><strong>Feature Stores</strong>: Centralized feature management and serving</li> <li><strong>Model Governance</strong>: Track model lineage, versions, and compliance</li> <li><strong>Edge Deployment</strong>: Move inference closer to users</li> <li><strong>AutoML Pipelines</strong>: Automated model retraining and deployment</li> </ol> <hr/> <h2 id="key-takeaways">Key Takeaways</h2> <blockquote> <p><strong>Remember:</strong> The goal isn’t to build the most sophisticated ML system—it’s to build a system that reliably delivers business value while being maintainable and scalable.</p> </blockquote> <ul> <li>✅ <strong>Start with monitoring</strong> - You can’t improve what you can’t measure</li> <li>✅ <strong>Validate everything</strong> - Input data, model outputs, and business metrics</li> <li>✅ <strong>Plan for failure</strong> - Circuit breakers, fallbacks, and graceful degradation</li> <li>✅ <strong>Optimize iteratively</strong> - Profile first, then optimize the bottlenecks</li> <li>✅ <strong>Think long-term</strong> - Technical debt in ML systems is expensive to fix</li> </ul> <p>Building production ML systems is challenging, but with the right patterns and practices, you can create systems that not only work but thrive in the chaos of the real world.</p> <p><em>What’s your biggest challenge with ML in production? Share your experiences in the comments below!</em></p>]]></content><author><name></name></author><category term="projects"/><category term="AI"/><category term="machine-learning"/><category term="production"/><category term="scaling"/><category term="devops"/><summary type="html"><![CDATA[Real-world insights and practical strategies for deploying machine learning models at scale, covering infrastructure, monitoring, and best practices learned from production environments.]]></summary></entry><entry><title type="html">Docker Mastery: From Development to Production</title><link href="https://sanjanb.github.io/blog/2025/docker-mastery-guide/" rel="alternate" type="text/html" title="Docker Mastery: From Development to Production"/><published>2025-01-05T09:00:00+00:00</published><updated>2025-01-05T09:00:00+00:00</updated><id>https://sanjanb.github.io/blog/2025/docker-mastery-guide</id><content type="html" xml:base="https://sanjanb.github.io/blog/2025/docker-mastery-guide/"><![CDATA[<p>Docker has revolutionized how we build, ship, and run applications. But there’s a <strong>massive difference</strong> between running <code class="language-plaintext highlighter-rouge">docker run hello-world</code> and architecting containerized systems that scale to millions of users. This guide bridges that gap.</p> <h2 id="-beyond-the-basics-docker-deep-dive">🐳 Beyond the Basics: Docker Deep Dive</h2> <h3 id="the-mental-model-shift">The Mental Model Shift</h3> <blockquote> <p><strong>Think of containers not as lightweight VMs, but as processes with superpowers.</strong></p> <p>Each container should do <strong>one thing well</strong>, be <strong>stateless</strong>, and <strong>fail fast</strong>. This isn’t just philosophy—it’s practical architecture that saves you from debugging nightmares at 3 AM.</p> </blockquote> <h2 id="️-dockerfile-best-practices-that-actually-matter">🏗️ Dockerfile Best Practices That Actually Matter</h2> <h3 id="multi-stage-builds-the-game-changer">Multi-Stage Builds: The Game Changer</h3> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ❌ BAD: Single-stage build (bloated image)</span>
+<span class="k">FROM</span><span class="s"> node:18</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> package*.json ./</span>
+<span class="k">RUN </span>npm <span class="nb">install</span>
+<span class="k">COPY</span><span class="s"> . .</span>
+<span class="k">RUN </span>npm run build
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+<span class="k">CMD</span><span class="s"> ["npm", "start"]</span>
+
+<span class="c"># ✅ GOOD: Multi-stage build (optimized)</span>
+<span class="c"># Build stage</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">builder</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> package*.json ./</span>
+<span class="k">RUN </span>npm ci <span class="nt">--only</span><span class="o">=</span>production <span class="o">&amp;&amp;</span> npm cache clean <span class="nt">--force</span>
+<span class="k">COPY</span><span class="s"> . .</span>
+<span class="k">RUN </span>npm run build
+
+<span class="c"># Production stage</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">production</span>
+<span class="k">RUN </span>addgroup <span class="nt">-g</span> 1001 <span class="nt">-S</span> nodejs <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    adduser <span class="nt">-S</span> nextjs <span class="nt">-u</span> 1001
+
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> --from=builder --chown=nextjs:nodejs /app/dist ./dist</span>
+<span class="k">COPY</span><span class="s"> --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules</span>
+<span class="k">COPY</span><span class="s"> --from=builder --chown=nextjs:nodejs /app/package.json ./package.json</span>
+
+<span class="k">USER</span><span class="s"> nextjs</span>
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+<span class="k">HEALTHCHECK</span><span class="s"> --interval=30s --timeout=3s --start-period=5s --retries=3 \</span>
+  CMD curl -f http://localhost:3000/health || exit 1
+
+<span class="k">CMD</span><span class="s"> ["node", "dist/server.js"]</span>
+</code></pre></div></div> <h3 id="layer-optimization-strategies">Layer Optimization Strategies</h3> <div class="alert alert-warning" role="alert"> <strong>⚠️ Layer Order Matters!</strong> Docker caches layers, so put frequently changing content at the bottom of your Dockerfile. </div> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Python application with optimized layers</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.11-slim</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">base</span>
+
+<span class="c"># Install system dependencies (rarely changes)</span>
+<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> <span class="se">\
+</span>    build-essential <span class="se">\
+</span>    curl <span class="se">\
+</span>    <span class="o">&amp;&amp;</span> <span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/apt/lists/<span class="k">*</span>
+
+<span class="c"># Create non-root user (security best practice)</span>
+<span class="k">RUN </span>useradd <span class="nt">--create-home</span> <span class="nt">--shell</span> /bin/bash appuser
+
+<span class="c"># Set working directory</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+
+<span class="c"># Copy and install Python dependencies (changes occasionally)</span>
+<span class="k">COPY</span><span class="s"> requirements.txt .</span>
+<span class="k">RUN </span>pip <span class="nb">install</span> <span class="nt">--no-cache-dir</span> <span class="nt">--upgrade</span> pip <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    pip <span class="nb">install</span> <span class="nt">--no-cache-dir</span> <span class="nt">-r</span> requirements.txt
+
+<span class="c"># Copy application code (changes frequently)</span>
+<span class="k">COPY</span><span class="s"> --chown=appuser:appuser . .</span>
+
+<span class="c"># Switch to non-root user</span>
+<span class="k">USER</span><span class="s"> appuser</span>
+
+<span class="c"># Runtime configuration</span>
+<span class="k">EXPOSE</span><span class="s"> 8000</span>
+<span class="k">HEALTHCHECK</span><span class="s"> --interval=30s --timeout=10s --start-period=5s --retries=3 \</span>
+  CMD python health_check.py
+
+<span class="k">CMD</span><span class="s"> ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "4", "app:app"]</span>
+</code></pre></div></div> <h2 id="-docker-compose-for-development-excellence">🔧 Docker Compose for Development Excellence</h2> <h3 id="development-environment-setup">Development Environment Setup</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># docker-compose.dev.yml</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.8'</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">app</span><span class="pi">:</span>
+    <span class="na">build</span><span class="pi">:</span>
+      <span class="na">context</span><span class="pi">:</span> <span class="s">.</span>
+      <span class="na">dockerfile</span><span class="pi">:</span> <span class="s">Dockerfile.dev</span>
+      <span class="na">target</span><span class="pi">:</span> <span class="s">development</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">.:/app</span>
+      <span class="pi">-</span> <span class="s">/app/node_modules</span>  <span class="c1"># Prevent overwriting node_modules</span>
+      <span class="pi">-</span> <span class="s">app-cache:/app/.cache</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">3000:3000"</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">9229:9229"</span>  <span class="c1"># Node.js debugger</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">NODE_ENV=development</span>
+      <span class="pi">-</span> <span class="s">DEBUG=app:*</span>
+      <span class="pi">-</span> <span class="s">REDIS_URL=redis://redis:6379</span>
+      <span class="pi">-</span> <span class="s">DB_HOST=postgres</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">postgres</span>
+      <span class="pi">-</span> <span class="s">redis</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app-network</span>
+    <span class="na">stdin_open</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">tty</span><span class="pi">:</span> <span class="kc">true</span>
+
+  <span class="na">postgres</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">postgres:15-alpine</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="na">POSTGRES_DB</span><span class="pi">:</span> <span class="s">myapp_dev</span>
+      <span class="na">POSTGRES_USER</span><span class="pi">:</span> <span class="s">developer</span>
+      <span class="na">POSTGRES_PASSWORD</span><span class="pi">:</span> <span class="s">devpass123</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">postgres-data:/var/lib/postgresql/data</span>
+      <span class="pi">-</span> <span class="s">./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">5432:5432"</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app-network</span>
+    <span class="na">healthcheck</span><span class="pi">:</span>
+      <span class="na">test</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">CMD-SHELL"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">pg_isready</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">developer</span><span class="nv"> </span><span class="s">-d</span><span class="nv"> </span><span class="s">myapp_dev"</span><span class="pi">]</span>
+      <span class="na">interval</span><span class="pi">:</span> <span class="s">10s</span>
+      <span class="na">timeout</span><span class="pi">:</span> <span class="s">5s</span>
+      <span class="na">retries</span><span class="pi">:</span> <span class="m">5</span>
+
+  <span class="na">redis</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">redis:7-alpine</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="s">redis-server --appendonly yes</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">redis-data:/data</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">6379:6379"</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app-network</span>
+    <span class="na">healthcheck</span><span class="pi">:</span>
+      <span class="na">test</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">CMD"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">redis-cli"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">ping"</span><span class="pi">]</span>
+      <span class="na">interval</span><span class="pi">:</span> <span class="s">10s</span>
+      <span class="na">timeout</span><span class="pi">:</span> <span class="s">3s</span>
+      <span class="na">retries</span><span class="pi">:</span> <span class="m">3</span>
+
+  <span class="na">nginx</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">nginx:alpine</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">./nginx/dev.conf:/etc/nginx/nginx.conf:ro</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">80:80"</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app-network</span>
+
+<span class="na">volumes</span><span class="pi">:</span>
+  <span class="na">postgres-data</span><span class="pi">:</span>
+  <span class="na">redis-data</span><span class="pi">:</span>
+  <span class="na">app-cache</span><span class="pi">:</span>
+
+<span class="na">networks</span><span class="pi">:</span>
+  <span class="na">app-network</span><span class="pi">:</span>
+    <span class="na">driver</span><span class="pi">:</span> <span class="s">bridge</span>
+</code></pre></div></div> <h3 id="production-ready-compose">Production-Ready Compose</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># docker-compose.prod.yml</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.8'</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">app</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">myapp:${VERSION:-latest}</span>
+    <span class="na">deploy</span><span class="pi">:</span>
+      <span class="na">replicas</span><span class="pi">:</span> <span class="m">3</span>
+      <span class="na">restart_policy</span><span class="pi">:</span>
+        <span class="na">condition</span><span class="pi">:</span> <span class="s">on-failure</span>
+        <span class="na">delay</span><span class="pi">:</span> <span class="s">5s</span>
+        <span class="na">max_attempts</span><span class="pi">:</span> <span class="m">3</span>
+      <span class="na">resources</span><span class="pi">:</span>
+        <span class="na">limits</span><span class="pi">:</span>
+          <span class="na">cpus</span><span class="pi">:</span> <span class="s1">'</span><span class="s">1.0'</span>
+          <span class="na">memory</span><span class="pi">:</span> <span class="s">1G</span>
+        <span class="na">reservations</span><span class="pi">:</span>
+          <span class="na">cpus</span><span class="pi">:</span> <span class="s1">'</span><span class="s">0.5'</span>
+          <span class="na">memory</span><span class="pi">:</span> <span class="s">512M</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">NODE_ENV=production</span>
+      <span class="pi">-</span> <span class="s">REDIS_URL=redis://redis:6379</span>
+      <span class="pi">-</span> <span class="s">DB_HOST=postgres</span>
+      <span class="pi">-</span> <span class="s">LOG_LEVEL=info</span>
+    <span class="na">secrets</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">db_password</span>
+      <span class="pi">-</span> <span class="s">jwt_secret</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app-network</span>
+      <span class="pi">-</span> <span class="s">monitoring</span>
+    <span class="na">healthcheck</span><span class="pi">:</span>
+      <span class="na">test</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">CMD"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">curl"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">-f"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">http://localhost:3000/health"</span><span class="pi">]</span>
+      <span class="na">interval</span><span class="pi">:</span> <span class="s">30s</span>
+      <span class="na">timeout</span><span class="pi">:</span> <span class="s">10s</span>
+      <span class="na">retries</span><span class="pi">:</span> <span class="m">3</span>
+      <span class="na">start_period</span><span class="pi">:</span> <span class="s">40s</span>
+
+  <span class="na">postgres</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">postgres:15-alpine</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="na">POSTGRES_DB</span><span class="pi">:</span> <span class="s">myapp_prod</span>
+      <span class="na">POSTGRES_USER</span><span class="pi">:</span> <span class="s">appuser</span>
+      <span class="na">POSTGRES_PASSWORD_FILE</span><span class="pi">:</span> <span class="s">/run/secrets/db_password</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">postgres-data:/var/lib/postgresql/data</span>
+    <span class="na">secrets</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">db_password</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">app-network</span>
+    <span class="na">deploy</span><span class="pi">:</span>
+      <span class="na">placement</span><span class="pi">:</span>
+        <span class="na">constraints</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">node.labels.database == true</span><span class="pi">]</span>
+
+<span class="na">secrets</span><span class="pi">:</span>
+  <span class="na">db_password</span><span class="pi">:</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">jwt_secret</span><span class="pi">:</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="kc">true</span>
+
+<span class="na">networks</span><span class="pi">:</span>
+  <span class="na">app-network</span><span class="pi">:</span>
+    <span class="na">driver</span><span class="pi">:</span> <span class="s">overlay</span>
+    <span class="na">attachable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">monitoring</span><span class="pi">:</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="kc">true</span>
+
+<span class="na">volumes</span><span class="pi">:</span>
+  <span class="na">postgres-data</span><span class="pi">:</span>
+    <span class="na">driver</span><span class="pi">:</span> <span class="s">local</span>
+</code></pre></div></div> <h2 id="-performance-optimization-deep-dive">🚀 Performance Optimization Deep Dive</h2> <h3 id="image-size-optimization">Image Size Optimization</h3> <div class="row"> <div class="col-md-6"> #### ❌ Bloated Image (2.1GB) ```dockerfile FROM ubuntu:latest RUN apt-get update &amp;&amp; apt-get install -y \ python3 python3-pip git curl wget \ build-essential nodejs npm COPY . /app WORKDIR /app RUN pip3 install -r requirements.txt ``` </div> <div class="col-md-6"> #### ✅ Optimized Image (145MB) ```dockerfile FROM python:3.11-alpine RUN apk add --no-cache gcc musl-dev COPY requirements.txt . RUN pip install --no-cache-dir -r requirements.txt COPY . /app WORKDIR /app ``` </div> </div> <h3 id="advanced-optimization-techniques">Advanced Optimization Techniques</h3> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Multi-architecture build with BuildKit</span>
+<span class="c"># syntax=docker/dockerfile:1</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">--platform=$BUILDPLATFORM python:3.11-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">builder</span>
+
+<span class="c"># Build arguments</span>
+<span class="k">ARG</span><span class="s"> TARGETPLATFORM</span>
+<span class="k">ARG</span><span class="s"> BUILDPLATFORM</span>
+<span class="k">ARG</span><span class="s"> TARGETOS</span>
+<span class="k">ARG</span><span class="s"> TARGETARCH</span>
+
+<span class="c"># Install build dependencies</span>
+<span class="k">RUN </span>apk add <span class="nt">--no-cache</span> <span class="se">\
+</span>    gcc <span class="se">\
+</span>    musl-dev <span class="se">\
+</span>    libffi-dev <span class="se">\
+</span>    openssl-dev <span class="se">\
+</span>    <span class="o">&amp;&amp;</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip wheel
+
+<span class="c"># Install Python dependencies</span>
+<span class="k">COPY</span><span class="s"> requirements.txt .</span>
+<span class="k">RUN </span>pip wheel <span class="nt">--no-cache-dir</span> <span class="nt">--no-deps</span> <span class="nt">--wheel-dir</span> /wheels <span class="nt">-r</span> requirements.txt
+
+<span class="c"># Production stage</span>
+<span class="k">FROM</span><span class="s"> python:3.11-alpine</span>
+
+<span class="c"># Create app user</span>
+<span class="k">RUN </span>adduser <span class="nt">-D</span> <span class="nt">-s</span> /bin/sh appuser
+
+<span class="c"># Copy wheels and install</span>
+<span class="k">COPY</span><span class="s"> --from=builder /wheels /wheels</span>
+<span class="k">COPY</span><span class="s"> requirements.txt .</span>
+<span class="k">RUN </span>pip <span class="nb">install</span> <span class="nt">--no-cache-dir</span> <span class="nt">--no-index</span> <span class="nt">--find-links</span> /wheels <span class="nt">-r</span> requirements.txt <span class="se">\
+</span>    <span class="o">&amp;&amp;</span> <span class="nb">rm</span> <span class="nt">-rf</span> /wheels requirements.txt
+
+<span class="c"># Copy application</span>
+<span class="k">COPY</span><span class="s"> --chown=appuser:appuser . /app</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">USER</span><span class="s"> appuser</span>
+
+<span class="c"># Use exec form to ensure proper signal handling</span>
+<span class="k">CMD</span><span class="s"> ["python", "-m", "gunicorn", "--bind", "0.0.0.0:8000", "app:app"]</span>
+</code></pre></div></div> <h2 id="-security-hardening">🔐 Security Hardening</h2> <h3 id="security-best-practices-checklist">Security Best Practices Checklist</h3> <div class="alert alert-danger" role="alert"> <h4 class="alert-heading">🔒 Security is Not Optional</h4> <p>A single security vulnerability can cost millions. These practices are your first line of defense.</p> </div> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Security-hardened Dockerfile</span>
+<span class="k">FROM</span><span class="s"> node:18-alpine</span>
+
+<span class="c"># Install security updates</span>
+<span class="k">RUN </span>apk upgrade <span class="nt">--no-cache</span>
+
+<span class="c"># Create non-root user with specific UID/GID</span>
+<span class="k">RUN </span>addgroup <span class="nt">-g</span> 1001 <span class="nt">-S</span> nodejs <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    adduser <span class="nt">-S</span> nextjs <span class="nt">-u</span> 1001 <span class="nt">-G</span> nodejs
+
+<span class="c"># Set secure file permissions</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> --chown=nextjs:nodejs package*.json ./</span>
+<span class="k">USER</span><span class="s"> nextjs</span>
+<span class="k">RUN </span>npm ci <span class="nt">--only</span><span class="o">=</span>production <span class="o">&amp;&amp;</span> npm cache clean <span class="nt">--force</span>
+
+<span class="c"># Copy application with proper ownership</span>
+<span class="k">COPY</span><span class="s"> --chown=nextjs:nodejs . .</span>
+
+<span class="c"># Remove unnecessary packages and files</span>
+<span class="k">USER</span><span class="s"> root</span>
+<span class="k">RUN </span>apk del curl wget <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">rm</span> <span class="nt">-rf</span> /var/cache/apk/<span class="k">*</span> /tmp/<span class="k">*</span> /var/tmp/<span class="k">*</span>
+
+<span class="c"># Switch back to non-root user</span>
+<span class="k">USER</span><span class="s"> nextjs</span>
+
+<span class="c"># Use non-root port</span>
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+
+<span class="c"># Add health check</span>
+<span class="k">HEALTHCHECK</span><span class="s"> --interval=30s --timeout=3s --start-period=5s --retries=3 \</span>
+  CMD node healthcheck.js
+
+<span class="c"># Use exec form and proper signal handling</span>
+<span class="k">CMD</span><span class="s"> ["node", "server.js"]</span>
+</code></pre></div></div> <h3 id="container-security-scanning">Container Security Scanning</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># .github/workflows/security-scan.yml</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">Container Security Scan</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">main</span><span class="pi">]</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">main</span><span class="pi">]</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">security-scan</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout code</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v3</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build Docker image</span>
+      <span class="na">run</span><span class="pi">:</span> <span class="s">docker build -t myapp:test .</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Run Trivy vulnerability scanner</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">aquasecurity/trivy-action@master</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">image-ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">myapp:test'</span>
+        <span class="na">format</span><span class="pi">:</span> <span class="s1">'</span><span class="s">sarif'</span>
+        <span class="na">output</span><span class="pi">:</span> <span class="s1">'</span><span class="s">trivy-results.sarif'</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Upload Trivy scan results to GitHub Security tab</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">github/codeql-action/upload-sarif@v2</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">sarif_file</span><span class="pi">:</span> <span class="s1">'</span><span class="s">trivy-results.sarif'</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Run Snyk to check for vulnerabilities</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">snyk/actions/docker@master</span>
+      <span class="na">env</span><span class="pi">:</span>
+        <span class="na">SNYK_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">myapp:test</span>
+        <span class="na">args</span><span class="pi">:</span> <span class="s">--severity-threshold=high</span>
+</code></pre></div></div> <h2 id="-monitoring-and-observability">📊 Monitoring and Observability</h2> <h3 id="comprehensive-monitoring-setup">Comprehensive Monitoring Setup</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># monitoring/docker-compose.yml</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.8'</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">prometheus</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">prom/prometheus:latest</span>
+    <span class="na">command</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--config.file=/etc/prometheus/prometheus.yml'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--storage.tsdb.path=/prometheus'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--web.console.libraries=/etc/prometheus/console_libraries'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--web.console.templates=/etc/prometheus/consoles'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--storage.tsdb.retention.time=30d'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--web.enable-lifecycle'</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">9090:9090"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">./prometheus.yml:/etc/prometheus/prometheus.yml</span>
+      <span class="pi">-</span> <span class="s">prometheus-data:/prometheus</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">monitoring</span>
+
+  <span class="na">grafana</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">grafana/grafana:latest</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">GF_SECURITY_ADMIN_PASSWORD=admin123</span>
+      <span class="pi">-</span> <span class="s">GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">3000:3000"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">grafana-data:/var/lib/grafana</span>
+      <span class="pi">-</span> <span class="s">./grafana/dashboards:/etc/grafana/provisioning/dashboards</span>
+      <span class="pi">-</span> <span class="s">./grafana/datasources:/etc/grafana/provisioning/datasources</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">monitoring</span>
+
+  <span class="na">cadvisor</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">gcr.io/cadvisor/cadvisor:latest</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">cadvisor</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">8080:8080"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/:/rootfs:ro</span>
+      <span class="pi">-</span> <span class="s">/var/run:/var/run:rw</span>
+      <span class="pi">-</span> <span class="s">/sys:/sys:ro</span>
+      <span class="pi">-</span> <span class="s">/var/lib/docker/:/var/lib/docker:ro</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">monitoring</span>
+
+  <span class="na">node-exporter</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">prom/node-exporter:latest</span>
+    <span class="na">command</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--path.procfs=/host/proc'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--path.rootfs=/rootfs'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--path.sysfs=/host/sys'</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">9100:9100"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/proc:/host/proc:ro</span>
+      <span class="pi">-</span> <span class="s">/sys:/host/sys:ro</span>
+      <span class="pi">-</span> <span class="s">/:/rootfs:ro</span>
+    <span class="na">networks</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">monitoring</span>
+
+<span class="na">volumes</span><span class="pi">:</span>
+  <span class="na">prometheus-data</span><span class="pi">:</span>
+  <span class="na">grafana-data</span><span class="pi">:</span>
+
+<span class="na">networks</span><span class="pi">:</span>
+  <span class="na">monitoring</span><span class="pi">:</span>
+    <span class="na">driver</span><span class="pi">:</span> <span class="s">bridge</span>
+</code></pre></div></div> <h3 id="application-metrics-collection">Application Metrics Collection</h3> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// metrics.js - Node.js application metrics</span>
+<span class="kd">const</span> <span class="nx">promClient</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">prom-client</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// Create a Registry to register metrics</span>
+<span class="kd">const</span> <span class="nx">register</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">promClient</span><span class="p">.</span><span class="nc">Registry</span><span class="p">();</span>
+
+<span class="c1">// Add default metrics</span>
+<span class="nx">promClient</span><span class="p">.</span><span class="nf">collectDefaultMetrics</span><span class="p">({</span> <span class="nx">register</span> <span class="p">});</span>
+
+<span class="c1">// Custom metrics</span>
+<span class="kd">const</span> <span class="nx">httpDuration</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">promClient</span><span class="p">.</span><span class="nc">Histogram</span><span class="p">({</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">http_request_duration_seconds</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">help</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Duration of HTTP requests in seconds</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">labelNames</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">method</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">route</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">status</span><span class="dl">'</span><span class="p">],</span>
+  <span class="na">buckets</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="p">});</span>
+
+<span class="kd">const</span> <span class="nx">httpRequests</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">promClient</span><span class="p">.</span><span class="nc">Counter</span><span class="p">({</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">http_requests_total</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">help</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Total number of HTTP requests</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">labelNames</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">method</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">route</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">status</span><span class="dl">'</span><span class="p">]</span>
+<span class="p">});</span>
+
+<span class="kd">const</span> <span class="nx">activeConnections</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">promClient</span><span class="p">.</span><span class="nc">Gauge</span><span class="p">({</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">active_connections</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">help</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Number of active connections</span><span class="dl">'</span>
+<span class="p">});</span>
+
+<span class="nx">register</span><span class="p">.</span><span class="nf">registerMetric</span><span class="p">(</span><span class="nx">httpDuration</span><span class="p">);</span>
+<span class="nx">register</span><span class="p">.</span><span class="nf">registerMetric</span><span class="p">(</span><span class="nx">httpRequests</span><span class="p">);</span>
+<span class="nx">register</span><span class="p">.</span><span class="nf">registerMetric</span><span class="p">(</span><span class="nx">activeConnections</span><span class="p">);</span>
+
+<span class="c1">// Middleware to collect metrics</span>
+<span class="kd">function</span> <span class="nf">metricsMiddleware</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">start</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">.</span><span class="nf">now</span><span class="p">();</span>
+  
+  <span class="nx">res</span><span class="p">.</span><span class="nf">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">finish</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">duration</span> <span class="o">=</span> <span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nf">now</span><span class="p">()</span> <span class="o">-</span> <span class="nx">start</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">route</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">route</span> <span class="p">?</span> <span class="nx">req</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">path</span> <span class="p">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">path</span><span class="p">;</span>
+    
+    <span class="nx">httpDuration</span>
+      <span class="p">.</span><span class="nf">labels</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span> <span class="nx">route</span><span class="p">,</span> <span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span><span class="p">)</span>
+      <span class="p">.</span><span class="nf">observe</span><span class="p">(</span><span class="nx">duration</span><span class="p">);</span>
+    
+    <span class="nx">httpRequests</span>
+      <span class="p">.</span><span class="nf">labels</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span> <span class="nx">route</span><span class="p">,</span> <span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span><span class="p">)</span>
+      <span class="p">.</span><span class="nf">inc</span><span class="p">();</span>
+  <span class="p">});</span>
+  
+  <span class="nf">next</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// Metrics endpoint</span>
+<span class="kd">function</span> <span class="nf">metricsEndpoint</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">,</span> <span class="nx">register</span><span class="p">.</span><span class="nx">contentType</span><span class="p">);</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nf">end</span><span class="p">(</span><span class="nx">register</span><span class="p">.</span><span class="nf">metrics</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">metricsMiddleware</span><span class="p">,</span>
+  <span class="nx">metricsEndpoint</span><span class="p">,</span>
+  <span class="nx">activeConnections</span>
+<span class="p">};</span>
+</code></pre></div></div> <h2 id="-orchestration-and-scaling">🌐 Orchestration and Scaling</h2> <h3 id="docker-swarm-deployment">Docker Swarm Deployment</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c"># deploy.sh - Production deployment script</span>
+
+<span class="nb">set</span> <span class="nt">-e</span>
+
+<span class="c"># Configuration</span>
+<span class="nv">STACK_NAME</span><span class="o">=</span><span class="s2">"myapp"</span>
+<span class="nv">REGISTRY</span><span class="o">=</span><span class="s2">"your-registry.com"</span>
+<span class="nv">VERSION</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">1</span><span class="k">:-</span><span class="nv">latest</span><span class="k">}</span><span class="s2">"</span>
+
+<span class="nb">echo</span> <span class="s2">"🚀 Deploying </span><span class="k">${</span><span class="nv">STACK_NAME</span><span class="k">}</span><span class="s2"> version </span><span class="k">${</span><span class="nv">VERSION</span><span class="k">}</span><span class="s2">"</span>
+
+<span class="c"># Pull latest images</span>
+docker pull <span class="k">${</span><span class="nv">REGISTRY</span><span class="k">}</span>/myapp:<span class="k">${</span><span class="nv">VERSION</span><span class="k">}</span>
+docker pull <span class="k">${</span><span class="nv">REGISTRY</span><span class="k">}</span>/nginx:<span class="k">${</span><span class="nv">VERSION</span><span class="k">}</span>
+
+<span class="c"># Deploy to swarm</span>
+docker stack deploy <span class="se">\</span>
+  <span class="nt">--compose-file</span> docker-compose.prod.yml <span class="se">\</span>
+  <span class="nt">--with-registry-auth</span> <span class="se">\</span>
+  <span class="k">${</span><span class="nv">STACK_NAME</span><span class="k">}</span>
+
+<span class="c"># Wait for deployment</span>
+<span class="nb">echo</span> <span class="s2">"⏳ Waiting for services to be ready..."</span>
+<span class="nb">sleep </span>30
+
+<span class="c"># Health check</span>
+<span class="nv">MAX_ATTEMPTS</span><span class="o">=</span>30
+<span class="nv">ATTEMPT</span><span class="o">=</span>1
+
+<span class="k">while</span> <span class="o">[</span> <span class="nv">$ATTEMPT</span> <span class="nt">-le</span> <span class="nv">$MAX_ATTEMPTS</span> <span class="o">]</span><span class="p">;</span> <span class="k">do
+  if </span>docker service <span class="nb">ls</span> <span class="nt">--filter</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">STACK_NAME</span><span class="k">}</span> <span class="nt">--format</span> <span class="s2">"table </span><span class="se">\t</span><span class="s2">"</span> | <span class="nb">grep</span> <span class="nt">-q</span> <span class="s2">"3/3"</span><span class="p">;</span> <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"✅ Deployment successful!"</span>
+    <span class="nb">break
+  </span><span class="k">fi
+  
+  </span><span class="nb">echo</span> <span class="s2">"⏳ Attempt </span><span class="nv">$ATTEMPT</span><span class="s2">/</span><span class="nv">$MAX_ATTEMPTS</span><span class="s2"> - Waiting for services..."</span>
+  <span class="nb">sleep </span>10
+  <span class="nv">ATTEMPT</span><span class="o">=</span><span class="k">$((</span>ATTEMPT <span class="o">+</span> <span class="m">1</span><span class="k">))</span>
+<span class="k">done
+
+if</span> <span class="o">[</span> <span class="nv">$ATTEMPT</span> <span class="nt">-gt</span> <span class="nv">$MAX_ATTEMPTS</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">echo</span> <span class="s2">"❌ Deployment failed - services not ready"</span>
+  docker service <span class="nb">ls</span> <span class="nt">--filter</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">STACK_NAME</span><span class="k">}</span>
+  <span class="nb">exit </span>1
+<span class="k">fi</span>
+
+<span class="c"># Run smoke tests</span>
+<span class="nb">echo</span> <span class="s2">"🧪 Running smoke tests..."</span>
+curl <span class="nt">-f</span> http://localhost/health <span class="o">||</span> <span class="o">{</span>
+  <span class="nb">echo</span> <span class="s2">"❌ Health check failed"</span>
+  <span class="nb">exit </span>1
+<span class="o">}</span>
+
+<span class="nb">echo</span> <span class="s2">"🎉 Deployment completed successfully!"</span>
+</code></pre></div></div> <h3 id="kubernetes-migration-strategy">Kubernetes Migration Strategy</h3> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># k8s/deployment.yaml</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">apps/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">myapp</span>
+  <span class="na">labels</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">myapp</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">replicas</span><span class="pi">:</span> <span class="m">3</span>
+  <span class="na">strategy</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">RollingUpdate</span>
+    <span class="na">rollingUpdate</span><span class="pi">:</span>
+      <span class="na">maxSurge</span><span class="pi">:</span> <span class="m">1</span>
+      <span class="na">maxUnavailable</span><span class="pi">:</span> <span class="m">1</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">matchLabels</span><span class="pi">:</span>
+      <span class="na">app</span><span class="pi">:</span> <span class="s">myapp</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">labels</span><span class="pi">:</span>
+        <span class="na">app</span><span class="pi">:</span> <span class="s">myapp</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">securityContext</span><span class="pi">:</span>
+        <span class="na">runAsNonRoot</span><span class="pi">:</span> <span class="kc">true</span>
+        <span class="na">runAsUser</span><span class="pi">:</span> <span class="m">1001</span>
+        <span class="na">fsGroup</span><span class="pi">:</span> <span class="m">1001</span>
+      <span class="na">containers</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">app</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">myapp:latest</span>
+        <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="m">3000</span>
+        <span class="na">env</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">NODE_ENV</span>
+          <span class="na">value</span><span class="pi">:</span> <span class="s2">"</span><span class="s">production"</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">DB_PASSWORD</span>
+          <span class="na">valueFrom</span><span class="pi">:</span>
+            <span class="na">secretKeyRef</span><span class="pi">:</span>
+              <span class="na">name</span><span class="pi">:</span> <span class="s">db-secret</span>
+              <span class="na">key</span><span class="pi">:</span> <span class="s">password</span>
+        <span class="na">resources</span><span class="pi">:</span>
+          <span class="na">requests</span><span class="pi">:</span>
+            <span class="na">memory</span><span class="pi">:</span> <span class="s2">"</span><span class="s">256Mi"</span>
+            <span class="na">cpu</span><span class="pi">:</span> <span class="s2">"</span><span class="s">250m"</span>
+          <span class="na">limits</span><span class="pi">:</span>
+            <span class="na">memory</span><span class="pi">:</span> <span class="s2">"</span><span class="s">512Mi"</span>
+            <span class="na">cpu</span><span class="pi">:</span> <span class="s2">"</span><span class="s">500m"</span>
+        <span class="na">livenessProbe</span><span class="pi">:</span>
+          <span class="na">httpGet</span><span class="pi">:</span>
+            <span class="na">path</span><span class="pi">:</span> <span class="s">/health</span>
+            <span class="na">port</span><span class="pi">:</span> <span class="m">3000</span>
+          <span class="na">initialDelaySeconds</span><span class="pi">:</span> <span class="m">30</span>
+          <span class="na">periodSeconds</span><span class="pi">:</span> <span class="m">10</span>
+        <span class="na">readinessProbe</span><span class="pi">:</span>
+          <span class="na">httpGet</span><span class="pi">:</span>
+            <span class="na">path</span><span class="pi">:</span> <span class="s">/ready</span>
+            <span class="na">port</span><span class="pi">:</span> <span class="m">3000</span>
+          <span class="na">initialDelaySeconds</span><span class="pi">:</span> <span class="m">5</span>
+          <span class="na">periodSeconds</span><span class="pi">:</span> <span class="m">5</span>
+        <span class="na">securityContext</span><span class="pi">:</span>
+          <span class="na">allowPrivilegeEscalation</span><span class="pi">:</span> <span class="kc">false</span>
+          <span class="na">readOnlyRootFilesystem</span><span class="pi">:</span> <span class="kc">true</span>
+          <span class="na">capabilities</span><span class="pi">:</span>
+            <span class="na">drop</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">ALL</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Service</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">myapp-service</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">myapp</span>
+  <span class="na">ports</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">port</span><span class="pi">:</span> <span class="m">80</span>
+    <span class="na">targetPort</span><span class="pi">:</span> <span class="m">3000</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">ClusterIP</span>
+</code></pre></div></div> <h2 id="-performance-tuning">🎯 Performance Tuning</h2> <h3 id="benchmark-results">Benchmark Results</h3> <p>Here’s what proper optimization can achieve:</p> <table> <thead> <tr> <th>Metric</th> <th>Before Optimization</th> <th>After Optimization</th> <th>Improvement</th> </tr> </thead> <tbody> <tr> <td><strong>Image Size</strong></td> <td>2.1GB</td> <td>145MB</td> <td><strong>93% reduction</strong></td> </tr> <tr> <td><strong>Build Time</strong></td> <td>8m 32s</td> <td>2m 15s</td> <td><strong>74% faster</strong></td> </tr> <tr> <td><strong>Startup Time</strong></td> <td>45s</td> <td>8s</td> <td><strong>82% faster</strong></td> </tr> <tr> <td><strong>Memory Usage</strong></td> <td>512MB</td> <td>128MB</td> <td><strong>75% reduction</strong></td> </tr> <tr> <td><strong>CPU Usage</strong></td> <td>85%</td> <td>35%</td> <td><strong>59% reduction</strong></td> </tr> </tbody> </table> <h3 id="real-world-optimization-example">Real-World Optimization Example</h3> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Before: Slow, bloated Node.js app</span>
+<span class="k">FROM</span><span class="s"> node:18</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> . .</span>
+<span class="k">RUN </span>npm <span class="nb">install</span>
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+<span class="k">CMD</span><span class="s"> ["npm", "start"]</span>
+
+<span class="c"># After: Optimized production build</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">deps</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> package*.json ./</span>
+<span class="k">RUN </span>npm ci <span class="nt">--only</span><span class="o">=</span>production <span class="o">&amp;&amp;</span> npm cache clean <span class="nt">--force</span>
+
+<span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">builder</span>
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+<span class="k">COPY</span><span class="s"> package*.json ./</span>
+<span class="k">RUN </span>npm ci
+<span class="k">COPY</span><span class="s"> . .</span>
+<span class="k">RUN </span>npm run build
+
+<span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">runner</span>
+<span class="k">RUN </span>addgroup <span class="nt">-g</span> 1001 <span class="nt">-S</span> nodejs <span class="o">&amp;&amp;</span> adduser <span class="nt">-S</span> nextjs <span class="nt">-u</span> 1001
+<span class="k">WORKDIR</span><span class="s"> /app</span>
+
+<span class="k">COPY</span><span class="s"> --from=builder --chown=nextjs:nodejs /app/dist ./dist</span>
+<span class="k">COPY</span><span class="s"> --from=deps --chown=nextjs:nodejs /app/node_modules ./node_modules</span>
+<span class="k">COPY</span><span class="s"> --from=builder --chown=nextjs:nodejs /app/package.json ./</span>
+
+<span class="k">USER</span><span class="s"> nextjs</span>
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+<span class="k">CMD</span><span class="s"> ["node", "dist/server.js"]</span>
+</code></pre></div></div> <h2 id="-conclusion-the-docker-mastery-mindset">🎊 Conclusion: The Docker Mastery Mindset</h2> <div class="alert alert-success" role="alert"> <h4 class="alert-heading">🎯 The 90/10 Rule</h4> <p>90% of Docker problems in production come from ignoring these 10% of practices:</p> <ul> <li><strong>Multi-stage builds</strong> for size optimization</li> <li><strong>Non-root users</strong> for security</li> <li><strong>Health checks</strong> for reliability</li> <li><strong>Proper logging</strong> for debugging</li> <li><strong>Resource limits</strong> for stability</li> </ul> </div> <p>Docker mastery isn’t about memorizing commands—it’s about understanding the underlying principles and applying them consistently. The techniques in this guide will save you countless hours of debugging and make your applications more reliable, secure, and performant.</p> <h3 id="quick-reference-checklist">Quick Reference Checklist</h3> <ul> <li>✅ <strong>Multi-stage builds</strong> for optimal image size</li> <li>✅ <strong>Non-root users</strong> in all containers</li> <li>✅ <strong>Health checks</strong> for every service</li> <li>✅ <strong>Resource limits</strong> to prevent resource exhaustion</li> <li>✅ <strong>Security scanning</strong> in CI/CD pipeline</li> <li>✅ <strong>Monitoring and logging</strong> from day one</li> <li>✅ <strong>Documentation</strong> for your team</li> </ul> <p>Remember: <strong>Good Docker practices today prevent production disasters tomorrow.</strong></p> <hr/> <p><em>What Docker challenges have you faced in production? Share your experiences and let’s learn from each other in the comments below!</em></p>]]></content><author><name></name></author><category term="tutorial"/><category term="docker"/><category term="containers"/><category term="devops"/><category term="deployment"/><summary type="html"><![CDATA[A comprehensive guide to mastering Docker for modern development workflows, including best practices, optimization techniques, and production deployment strategies.]]></summary></entry><entry xml:lang="en"><title type="html">Mastering Jekyll: Advanced Formatting and Link Techniques</title><link href="https://sanjanb.github.io/blog/2015/formatting-and-links/" rel="alternate" type="text/html" title="Mastering Jekyll: Advanced Formatting and Link Techniques"/><published>2015-03-15T16:40:16+00:00</published><updated>2025-09-09T00:00:00+00:00</updated><id>https://sanjanb.github.io/blog/2015/formatting-and-links</id><content type="html" xml:base="https://sanjanb.github.io/blog/2015/formatting-and-links/"><![CDATA[<h2 id="introduction">Introduction</h2> <p>Modern web development demands sophisticated content presentation techniques that go beyond basic markdown. This comprehensive guide explores advanced formatting methods, intelligent link management, and professional content organization strategies specifically designed for Jekyll-powered static sites.</p> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/blog/formatting-guide/jekyll-advanced-480.webp 480w,/assets/img/blog/formatting-guide/jekyll-advanced-800.webp 800w,/assets/img/blog/formatting-guide/jekyll-advanced-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/blog/formatting-guide/jekyll-advanced.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Advanced Jekyll Techniques" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> <p>In today’s digital landscape, effective content presentation can significantly impact user engagement and knowledge transfer. Whether you’re building technical documentation, academic portfolios, or professional blogs, mastering these techniques will elevate your content from basic to exceptional.</p> <h2 id="typography-and-text-formatting">Typography and Text Formatting</h2> <h3 id="advanced-text-styling">Advanced Text Styling</h3> <p>Jekyll and Markdown provide powerful text formatting capabilities that extend far beyond basic <strong>bold</strong> and <em>italic</em> styling. Let’s explore professional typography techniques:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Strong emphasis**</span> for critical information
 <span class="ge">*Subtle emphasis*</span> for secondary points
 <span class="ges">***Combined emphasis***</span> for maximum impact
 ~~Strikethrough~~ for corrections or deprecated content
