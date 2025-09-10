@@ -88,7 +88,22 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
+      },{id: "achievements-freelance-web-development-success",
+          title: 'Freelance Web Development Success',
+          description: "",
+          section: "Achievements",handler: () => {
+              window.location.href = "/achievements/freelance-success/";
+            },},{id: "achievements-academic-excellence-award",
+          title: 'Academic Excellence Award',
+          description: "",
+          section: "Achievements",handler: () => {
+              window.location.href = "/achievements/academic-excellence/";
+            },},{id: "achievements-vice-chair-ieee-atmece-student-branch",
+          title: 'Vice Chair - IEEE ATMECE Student Branch',
+          description: "",
+          section: "Achievements",handler: () => {
+              window.location.href = "/achievements/ieee-vice-chair/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
