@@ -1,14 +1,22 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - sanjanb
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  # Confirmed repositories from your GitHub profile
+  - sanjanb/GAN-GenAI         # Fashion Item Generator using Generative Adversarial Networks
+  - sanjanb/Mental-depression-measures      # GitHub profile README
+  - sanjanb/FarmToTable-NextJs-Ecommerce      # GitHub profile README
+  - sanjanb/NeuralNetwork-with-PyTorch   # GitHub profile README
+  - sanjanb/cti-nlp-system  # GitHub profile README
+  - sanjanb/MetricsMonk   # GitHub profile README
+  - sanjanb/Travel-Copilot   # GitHub profile README
+  - sanjanb/RAG-Chat-Client   # GitHub profile README
+  - sanjanb/Pranayama-reduces-BP-or-Not   # GitHub profile README
+  - sanjanb/BiasNet-Pretrained-Model   # GitHub profile README
+  - sanjanb/GEN-AI-with-Hugging-Face     # GitHub profile README
+  - sanjanb/Text-to-image-generation   # GitHub profile README
+  - sanjanb/resume   # GitHub profile README
+  
+ 
