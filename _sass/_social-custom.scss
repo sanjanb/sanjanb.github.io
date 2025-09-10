@@ -1,0 +1,41 @@
+// Custom social icons sizing
+.social {
+  .contact-icons {
+    // Reduce font size for icon fonts
+    font-size: 2rem !important; // reduced from 4rem
+    
+    a {
+      img {
+        width: 1.6rem !important; // reduced from 3.2rem  
+        height: 1.6rem !important; // reduced from 3.2rem
+        margin-bottom: 0.5rem !important; // reduced from 1rem
+      }
+
+      svg {
+        width: 1.8rem !important; // reduced from 3.5rem
+        height: 2rem !important; // reduced from 4rem
+      }
+      
+      // Add some spacing between icons
+      margin: 0 0.3rem;
+    }
+  }
+}
+
+// For smaller icons, you can also use these alternative sizes:
+/*
+.social .contact-icons {
+  font-size: 1.5rem !important; // even smaller
+  
+  a {
+    img {
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+    }
+    svg {
+      width: 1.3rem !important;
+      height: 1.5rem !important;
+    }
+  }
+}
+*/
