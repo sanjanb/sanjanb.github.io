@@ -271,6 +271,7 @@ exclude:
   - _pages/profiles.md
   - _pages/teaching.md
   - _pages/dropdown.md
+  - _pages/publications.md
   - purgecss.config.js
   - README.md
   - readme_preview/
