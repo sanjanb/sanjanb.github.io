@@ -1,6 +1,6 @@
 ---
 layout: achievement
-title: Best Student Award - Senate Bhavan, ##  **Academic Foundation**---
+title: Best Student Award - Senate Bhavan, Mysuru. ##  **Academic Foundation**---
 
 ## **Personal Reflection & Impact**
 
@@ -31,13 +31,13 @@ The event took place at the esteemed **Senate Bhavan, Mysuru University** — a 
 
 ## **Award Ceremony Highlights**
 
-### **Distinguished Recognition**
+#### Distinguished Recognition
 
 I had the privilege of receiving the award from **Parampoojya Jagadguru Dr. Nirmalanandanatha Swamiji**, the revered Peethadhipathi of Adi Chunchanagiri Mahasamsthana Math.
 
 His blessings made the occasion even more special and meaningful.
 
-### **Esteemed Dignitaries Present**
+#### **Esteemed Dignitaries Present**
 
 The ceremony was graced by distinguished dignitaries, including:
 
@@ -49,7 +49,7 @@ The ceremony was graced by distinguished dignitaries, including:
 
 ## **Award Significance**
 
-#### **What This Recognition Represents**
+#### What This Recognition Represents
 
 This prestigious award recognizes exceptional performance across multiple dimensions:
 
@@ -71,21 +71,17 @@ This prestigious award recognizes exceptional performance across multiple dimens
 
 ---
 
-##  ** Academic Foundation **
+##  **Academic Foundation**
 
 #### Current Academic Standing
 
-**CGPA: 9.23/10**  
-*Maintained consistent academic excellence throughout the program*
+**CGPA: 9.23/10**: *Maintained consistent academic excellence throughout the program*
 
-**Specialization**  
-Artificial Intelligence and Machine Learning
+**Specialization**: Artificial Intelligence and Machine Learning
 
-**Institution**  
-ATME College of Engineering, Mysuru
+**Institution**: ATME College of Engineering, Mysuru
 
-**University**  
-Visvesvaraya Technological University (VTU)
+**University**: Visvesvaraya Technological University (VTU)
 
 ### **Key Academic Milestones**
 
@@ -101,7 +97,7 @@ Visvesvaraya Technological University (VTU)
 
 ## **Personal Reflection & Impact**
 
-### **What This Means to Me**
+#### **What This Means to Me**
 
 This recognition represents far more than academic achievement — it's validation of:
 
@@ -110,7 +106,7 @@ This recognition represents far more than academic achievement — it's validati
 - **Leadership values** and community service
 - **Vision for technology** that makes a positive impact
 
-### **Moving Forward**
+#### **Moving Forward**
 
 This honor motivates me to:
 
