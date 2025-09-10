@@ -1,4 +1,4 @@
-// Achievement page typography and layout improvements
+// Achievement page typography and layout improvements with enhanced UX
 .achievements-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -6,12 +6,16 @@
 
   h2 {
     color: var(--global-theme-color);
-    border-bottom: 2px solid var(--global-theme-color);
-    padding-bottom: 0.5rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-size: 1.8rem;
+    border-bottom: 3px solid var(--global-theme-color);
+    padding-bottom: 0.8rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    
+    @media (max-width: 768px) {
+      font-size: 1.7rem;
+    }
   }
 }
 
@@ -25,15 +29,17 @@
 
 .achievement-item {
   margin-bottom: 3rem;
-  padding: 2rem;
+  padding: 2.5rem;
   background: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
   
   &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: var(--global-theme-color);
   }
   
   &:last-child {
@@ -42,12 +48,12 @@
 }
 
 .achievement-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   
   h3 {
-    margin: 0 0 0.8rem 0;
-    font-size: 1.5rem;
-    font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 700;
     line-height: 1.3;
     
     a {
@@ -56,211 +62,372 @@
       
       &:hover {
         color: var(--global-theme-color);
+        transition: color 0.2s ease;
       }
     }
   }
   
   p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--global-text-color-light);
     font-style: italic;
+    font-weight: 500;
   }
 }
 
 .achievement-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
   color: var(--global-text-color-light);
   
   .meta-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
+    font-weight: 500;
     
     i {
       color: var(--global-theme-color);
+      font-size: 1.1rem;
     }
   }
 }
 
 .achievement-summary {
   color: var(--global-text-color);
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
   font-weight: 400;
+  text-align: justify;
+  
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 .achievement-tags {
   .tag {
     display: inline-block;
-    background: var(--global-bg-color);
-    color: var(--global-text-color-light);
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
+    background: var(--global-theme-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-size: 0.9rem;
-    margin: 0.2rem 0.3rem 0.2rem 0;
-    border: 1px solid var(--global-divider-color);
-    font-weight: 500;
+    margin: 0.3rem 0.4rem 0.3rem 0;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: var(--global-theme-color-dark);
+      transform: scale(1.05);
+    }
   }
 }
 
-// Individual achievement page styling
+// Individual achievement page styling with enhanced UX
 .achievement-content {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   
-  // Enhanced typography for content
+  // Enhanced typography hierarchy
   p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     color: var(--global-text-color);
+    text-align: justify;
+    
+    @media (max-width: 768px) {
+      font-size: 1.05rem;
+      text-align: left;
+    }
+    
+    // Enhanced emphasis styling
+    strong {
+      font-weight: 700;
+      color: var(--global-theme-color);
+      background: linear-gradient(120deg, transparent 0%, rgba(var(--global-theme-color-rgb), 0.1) 0%);
+      padding: 0.1rem 0.2rem;
+      border-radius: 3px;
+    }
+    
+    em {
+      font-style: italic;
+      color: var(--global-text-color-light);
+      font-size: 0.95em;
+      background: rgba(var(--global-text-color-light-rgb), 0.05);
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+    }
   }
   
+  // Enhanced heading hierarchy
   h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2.6rem;
+    font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--global-theme-color), var(--global-theme-color-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
   
   h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
     color: var(--global-theme-color);
-    border-bottom: 2px solid var(--global-theme-color);
-    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--global-theme-color);
+    padding-bottom: 0.8rem;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--global-theme-color-dark);
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+    }
   }
   
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: var(--global-text-color);
+    
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+  
+  h4 {
+    font-size: 1.3rem;
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--global-text-color);
   }
   
-  h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.8rem;
-    color: var(--global-text-color);
+  // Enhanced horizontal rule styling
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--global-theme-color), transparent);
+    margin: 3.5rem 0;
+    opacity: 0.7;
+    border-radius: 1px;
   }
   
-  // Lists styling
+  // Enhanced lists styling
   ul, ol {
-    margin-bottom: 1.5rem;
-    padding-left: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 0;
     
     li {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 0.8rem;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
       color: var(--global-text-color);
+      padding-left: 2rem;
+      position: relative;
+      
+      @media (max-width: 768px) {
+        font-size: 1.05rem;
+      }
+      
+      // Custom bullet points
+      &::before {
+        content: "▸";
+        color: var(--global-theme-color);
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        left: 0.5rem;
+      }
+      
+      // Special styling for checkmark items
+      &:contains("✅") {
+        &::before {
+          content: "";
+        }
+      }
+      
+      strong {
+        font-weight: 700;
+        color: var(--global-theme-color);
+      }
     }
   }
   
-  // Strong text enhancement
-  strong {
-    font-weight: 600;
-    color: var(--global-text-color);
+  // Enhanced blockquote styling
+  blockquote {
+    background: linear-gradient(135deg, var(--global-bg-color), var(--global-card-bg-color));
+    border-left: 5px solid var(--global-theme-color);
+    padding: 2rem 2.5rem;
+    margin: 3rem 0;
+    font-style: italic;
+    color: var(--global-text-color-light);
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    
+    p {
+      margin-bottom: 0;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
   }
   
   // Code styling
   code {
     background: var(--global-code-bg-color);
-    color: var(--global-text-color);
-    padding: 0.3rem 0.5rem;
-    border-radius: 4px;
+    color: var(--global-theme-color);
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Fira Code', 'Monaco', monospace;
   }
   
+  // Enhanced summary section
   .achievement-summary {
-    background: var(--global-bg-color);
-    border-left: 4px solid var(--global-theme-color);
-    padding: 1.5rem;
-    margin: 2rem 0;
-    border-radius: 0 8px 8px 0;
+    background: linear-gradient(135deg, var(--global-bg-color), var(--global-card-bg-color));
+    border: 1px solid var(--global-divider-color);
+    border-left: 5px solid var(--global-theme-color);
+    padding: 2.5rem;
+    margin: 3rem 0;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     
     p {
       margin: 0;
-      font-size: 1.2rem;
-      font-weight: 500;
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.7;
       color: var(--global-text-color);
     }
   }
   
+  // Enhanced metrics section
   .achievement-metrics {
-    margin: 2.5rem 0;
+    margin: 3.5rem 0;
     background: var(--global-card-bg-color);
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 2.5rem;
+    border-radius: 12px;
     border: 1px solid var(--global-divider-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     
     h4 {
       color: var(--global-theme-color);
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
     }
     
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
       
       li {
-        padding: 1rem 0;
-        border-bottom: 1px solid var(--global-divider-color);
-        font-size: 1.1rem;
+        padding: 2rem;
+        border: 2px solid var(--global-divider-color);
+        border-radius: 12px;
+        text-align: center;
+        background: var(--global-bg-color);
+        transition: all 0.3s ease;
         
-        &:last-child {
-          border-bottom: none;
+        &::before {
+          display: none;
+        }
+        
+        &:hover {
+          transform: translateY(-4px);
+          border-color: var(--global-theme-color);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
         
         strong {
+          display: block;
+          font-size: 1.8rem;
           color: var(--global-theme-color);
-          font-weight: 600;
+          font-weight: 800;
+          margin-bottom: 0.5rem;
+        }
+        
+        span {
+          font-size: 1rem;
+          color: var(--global-text-color-light);
+          font-weight: 500;
         }
       }
     }
   }
   
+  // Enhanced skills section
   .achievement-skills {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     background: var(--global-card-bg-color);
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 2.5rem;
+    border-radius: 12px;
     border: 1px solid var(--global-divider-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     
     h4 {
       color: var(--global-theme-color);
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
     }
     
     p {
       margin: 0;
-      line-height: 1.8;
+      line-height: 2;
+      text-align: center;
     }
     
     code {
       background: var(--global-theme-color);
       color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.95rem;
-      font-weight: 500;
-      margin: 0.2rem;
+      padding: 0.7rem 1.2rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0.4rem;
+      display: inline-block;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: var(--global-theme-color-dark);
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
