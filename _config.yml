@@ -213,6 +213,9 @@ newsletter:
 collections:
   books:
     output: true
+  achievements:
+    output: true
+    permalink: /:collection/:title/
   news:
     defaults:
       layout: post
@@ -344,6 +347,12 @@ jekyll-archives:
       year: "/books/:year/"
       tags: "/books/:type/:name/"
       categories: "/books/:type/:name/"
+  achievements:
+    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
+      year: "/achievements/:year/"
+      tags: "/achievements/:type/:name/"
+      categories: "/achievements/:type/:name/"
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes", "jekyll", "tutorial", "docker", "AI", "machine-learning", "data-science"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services", "tutorial", "research-code", "projects"] # these categories will be displayed on the front page of your blog

@@ -1,0 +1,205 @@
+---
+layout: default
+---
+{% assign year = page.date | date: '%Y' %}
+{% assign tags = page.tags | join: '' %}
+{% assign categories = page.categories | join: '' %}
+
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.organization or page.date %}
+      <p class="post-meta">
+        {% if page.organization %}
+          {{ page.organization }}
+        {% endif %}
+        {% if page.organization and page.date %} &nbsp;&middot;&nbsp; {% endif %}
+        {% if page.date %}
+          {{ page.date | date: '%B %Y' }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if page.start_date or page.end_date or page.rating %}
+      <p class="post-meta">
+        {% if page.start_date %}
+          <i class="fa-solid fa-play fa-sm" style="color: var(--global-tip-block) !important"></i> <em>{{ page.start_date | date: '%B %Y' }}</em>
+        {% endif %}
+        {% if page.end_date %}
+          {% if page.start_date %}
+            &nbsp;&middot;&nbsp;
+          {% endif %}
+          {% if page.status == 'ongoing' %}
+            <i class="fa-solid fa-clock fa-sm" style="color: #f39c12 !important"></i> <em>Present</em>
+          {% else %}
+            <i class="fa-solid fa-stop fa-sm" style="color: #e56565 !important"></i> <em>{{ page.end_date | date: '%B %Y' }}</em>
+          {% endif %}
+        {% endif %}
+        {% if page.rating %}
+          {% if page.start_date or page.end_date %}
+            &nbsp;&middot;&nbsp;
+          {% endif %}
+          {% assign full_stars = page.rating | floor %}
+          {% assign half_star = page.rating | minus: full_stars %}
+          {% assign empty_stars = 5 | minus: full_stars %}
+          {% if half_star > 0 %}
+            {% assign empty_stars = empty_stars | minus: 1 %}
+          {% endif %}
+          {% for i in (1..full_stars) -%}
+            <i class="fa-solid fa-star fa-sm"></i>
+          {%- endfor -%}
+          {%- if half_star > 0 %}<i class="fa-solid fa-star-half-stroke fa-sm"></i>{% endif -%}
+          {%- for i in (1..empty_stars) -%}
+            <i class="fa-regular fa-star fa-sm"></i>
+          {%- endfor -%}
+        {% endif %}
+        {% if page.link %}
+          {% if page.start_date or page.end_date or page.rating %}
+            &nbsp;&middot;&nbsp;
+          {% endif %}
+          <a target="_blank" href="{{ page.link }}"><i class="fa-solid fa-external-link-alt fa-sm"></i></a>
+        {% endif %}
+      </p>
+    {% endif %}
+    
+    <p class="post-tags">
+      <a href="{{ year | prepend: '/achievements/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
+      {% if tags != '' %}
+        &nbsp;&middot;&nbsp;
+        {% for tag in page.tags %}
+          <a href="{{ tag | slugify | prepend: '/achievements/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+          {% unless forloop.last %}
+            &nbsp;
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+
+      {% if categories != '' %}
+        &nbsp;&middot;&nbsp;
+        {% for category in page.categories %}
+          <a href="{{ category | slugify | prepend: '/achievements/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+          {% unless forloop.last %}
+            &nbsp;
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </p>
+    <hr>
+  </header>
+
+  <article class="achievement-content">
+    {% if page.icon %}
+      <div class="achievement-icon">
+        <i class="{{ page.icon }}"></i>
+      </div>
+    {% endif %}
+    
+    {% if page.summary %}
+      <div class="achievement-summary">
+        <h4>{{ page.summary }}</h4>
+      </div>
+    {% endif %}
+
+    {% if page.metrics %}
+      <div class="achievement-metrics">
+        {% for metric in page.metrics %}
+          <div class="metric-item">
+            <div class="metric-number">{{ metric.value }}</div>
+            <div class="metric-label">{{ metric.label }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {{ content }}
+    
+    {% if page.skills %}
+      <div class="achievement-skills">
+        <h5>Skills & Technologies:</h5>
+        {% for skill in page.skills %}
+          <span class="skill-tag">{{ skill }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
+
+<style>
+.achievement-content {
+  .achievement-icon {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--global-theme-color);
+    margin-bottom: 1rem;
+  }
+  
+  .achievement-summary {
+    background: var(--global-card-bg-color);
+    border-left: 4px solid var(--global-theme-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+    
+    h4 {
+      margin: 0;
+      color: var(--global-text-color);
+    }
+  }
+  
+  .achievement-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    
+    .metric-item {
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--global-theme-color), #667eea);
+      color: white;
+      border-radius: 8px;
+      
+      .metric-number {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      
+      .metric-label {
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+    }
+  }
+  
+  .achievement-skills {
+    margin-top: 2rem;
+    
+    h5 {
+      color: var(--global-text-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .skill-tag {
+      display: inline-block;
+      background: var(--global-theme-color);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      margin: 0.2rem;
+    }
+  }
+}
+</style>

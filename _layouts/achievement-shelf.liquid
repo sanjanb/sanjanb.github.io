@@ -1,0 +1,235 @@
+---
+layout: default
+---
+{% assign year = page.started | date: '%Y' %}
+{% assign tags = page.tags | join: '' %}
+{% assign categories = page.categories | join: '' %}
+
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    {{ content }}
+    
+    <div class="achievements-grid">
+      {% assign sorted_achievements = site.achievements | sort: 'date' | reverse %}
+      {% for achievement in sorted_achievements %}
+        <div class="achievement-card">
+          <div class="achievement-header">
+            {% if achievement.icon %}
+              <div class="achievement-icon">
+                <i class="{{ achievement.icon }}"></i>
+              </div>
+            {% endif %}
+            <h3><a href="{{ achievement.url | relative_url }}">{{ achievement.title }}</a></h3>
+            {% if achievement.organization %}
+              <p class="achievement-org">{{ achievement.organization }}</p>
+            {% endif %}
+          </div>
+          
+          <div class="achievement-meta">
+            {% if achievement.date %}
+              <span class="achievement-date">
+                <i class="fa-solid fa-calendar fa-sm"></i> 
+                {{ achievement.date | date: '%B %Y' }}
+              </span>
+            {% endif %}
+            {% if achievement.rating %}
+              <span class="achievement-rating">
+                {% assign full_stars = achievement.rating | floor %}
+                {% assign half_star = achievement.rating | minus: full_stars %}
+                {% assign empty_stars = 5 | minus: full_stars %}
+                {% if half_star > 0 %}
+                  {% assign empty_stars = empty_stars | minus: 1 %}
+                {% endif %}
+                {% for i in (1..full_stars) -%}
+                  <i class="fa-solid fa-star fa-sm"></i>
+                {%- endfor -%}
+                {%- if half_star > 0 %}<i class="fa-solid fa-star-half-stroke fa-sm"></i>{% endif -%}
+                {%- for i in (1..empty_stars) -%}
+                  <i class="fa-regular fa-star fa-sm"></i>
+                {%- endfor -%}
+              </span>
+            {% endif %}
+          </div>
+          
+          {% if achievement.summary %}
+            <p class="achievement-summary">{{ achievement.summary }}</p>
+          {% endif %}
+          
+          {% if achievement.metrics %}
+            <div class="achievement-metrics-preview">
+              {% for metric in achievement.metrics limit:2 %}
+                <div class="metric-preview">
+                  <span class="metric-value">{{ metric.value }}</span>
+                  <span class="metric-label">{{ metric.label }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          <div class="achievement-tags">
+            {% for tag in achievement.tags limit:3 %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>
+
+<style>
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.achievement-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.achievement-header {
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  .achievement-icon {
+    font-size: 3rem;
+    color: var(--global-theme-color);
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    margin: 0 0 0.5rem 0;
+    
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+  
+  .achievement-org {
+    color: var(--global-text-color-light);
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+.achievement-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  
+  .achievement-date {
+    color: var(--global-text-color-light);
+  }
+  
+  .achievement-rating {
+    color: #f39c12;
+  }
+}
+
+.achievement-summary {
+  color: var(--global-text-color-light);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.achievement-metrics-preview {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+  .metric-preview {
+    text-align: center;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, var(--global-theme-color), #667eea);
+    color: white;
+    border-radius: 8px;
+    flex: 1;
+    
+    .metric-value {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+    }
+    
+    .metric-label {
+      font-size: 0.8rem;
+      opacity: 0.9;
+    }
+  }
+}
+
+.achievement-tags {
+  .tag {
+    display: inline-block;
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    border: 1px solid var(--global-divider-color);
+  }
+}
+
+// Dark mode adjustments
+html[data-theme="dark"] {
+  .achievement-card {
+    background: var(--global-card-bg-color);
+    border-color: var(--global-divider-color);
+  }
+  
+  .tag {
+    background: var(--global-code-bg-color);
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .achievement-card {
+    padding: 1.5rem;
+  }
+  
+  .achievement-metrics-preview {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+</style>
