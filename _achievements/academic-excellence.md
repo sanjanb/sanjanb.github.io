@@ -127,15 +127,7 @@ This honor motivates me to:
 
 ##  **Gratitude & Acknowledgments**
 
-**To the Organizing Committee**: Thank you for this prestigious recognition and the opportunity to be part of such an esteemed gathering.
-
-**To My Institution (ATME College)**: Grateful for providing excellent education, resources, and unwavering support throughout my journey.
-
-**To My Faculty Members**: Thank you for your guidance, mentorship, and for believing in my potential from day one.
-
-**To My Family & Friends**: Your constant encouragement and support have been the foundation of this achievement.
-
-**To My Fellow Students**: Thank you for making this journey collaborative, enriching, and memorable.
+To the Organizing Committee, thank you for this prestigious recognition and the opportunity to be part of such an esteemed gathering. To My Institution ATME College Grateful for providing excellent guidance, resources, and good support throughout my journey. To My Faculty Members thank you for your guidance, mentorship, and for believing in my potential from day one. To My Family & Friends your constant encouragement and support have been the foundation of this achievement. To My Fellow Students thank you for making this journey collaborative, enriching, and memorable.
 
 ---
 
