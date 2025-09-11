@@ -14,7 +14,7 @@ toc:
 
 Docker has revolutionized how we build, ship, and run applications. But there's a **massive difference** between running `docker run hello-world` and architecting containerized systems that scale to millions of users. This guide bridges that gap.
 
-## 🐳 Beyond the Basics: Docker Deep Dive
+## Beyond the Basics: Docker Deep Dive
 
 ### The Mental Model Shift
 
@@ -22,12 +22,12 @@ Docker has revolutionized how we build, ship, and run applications. But there's 
 > 
 > Each container should do **one thing well**, be **stateless**, and **fail fast**. This isn't just philosophy—it's practical architecture that saves you from debugging nightmares at 3 AM.
 
-## 🏗️ Dockerfile Best Practices That Actually Matter
+## Dockerfile Best Practices That Actually Matter
 
 ### Multi-Stage Builds: The Game Changer
 
 ```dockerfile
-# ❌ BAD: Single-stage build (bloated image)
+# BAD: Single-stage build (bloated image)
 FROM node:18
 WORKDIR /app
 COPY package*.json ./
@@ -37,7 +37,7 @@ RUN npm run build
 EXPOSE 3000
 CMD ["npm", "start"]
 
-# ✅ GOOD: Multi-stage build (optimized)
+# GOOD: Multi-stage build (optimized)
 # Build stage
 FROM node:18-alpine AS builder
 WORKDIR /app
@@ -67,7 +67,7 @@ CMD ["node", "dist/server.js"]
 ### Layer Optimization Strategies
 
 <div class="alert alert-warning" role="alert">
-  <strong>⚠️ Layer Order Matters!</strong> Docker caches layers, so put frequently changing content at the bottom of your Dockerfile.
+  <strong>Warning: Layer Order Matters!</strong> Docker caches layers, so put frequently changing content at the bottom of your Dockerfile.
 </div>
 
 ```dockerfile
@@ -105,7 +105,7 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "4", "app:app"]
 ```
 
-## 🔧 Docker Compose for Development Excellence
+## Docker Compose for Development Excellence
 
 ### Development Environment Setup
 
@@ -268,14 +268,14 @@ volumes:
     driver: local
 ```
 
-## 🚀 Performance Optimization Deep Dive
+## Performance Optimization Deep Dive
 
 ### Image Size Optimization
 
 <div class="row">
 <div class="col-md-6">
 
-#### ❌ Bloated Image (2.1GB)
+#### Bloated Image (2.1GB)
 ```dockerfile
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
@@ -289,7 +289,7 @@ RUN pip3 install -r requirements.txt
 </div>
 <div class="col-md-6">
 
-#### ✅ Optimized Image (145MB)
+#### Optimized Image (145MB)
 ```dockerfile
 FROM python:3.11-alpine
 RUN apk add --no-cache gcc musl-dev
@@ -348,12 +348,12 @@ USER appuser
 CMD ["python", "-m", "gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
 ```
 
-## 🔐 Security Hardening
+## Security Hardening
 
 ### Security Best Practices Checklist
 
 <div class="alert alert-danger" role="alert">
-  <h4 class="alert-heading">🔒 Security is Not Optional</h4>
+  <h4 class="alert-heading">Security is Not Optional</h4>
   <p>A single security vulnerability can cost millions. These practices are your first line of defense.</p>
 </div>
 
@@ -439,7 +439,7 @@ jobs:
         args: --severity-threshold=high
 ```
 
-## 📊 Monitoring and Observability
+## Monitoring and Observability
 
 ### Comprehensive Monitoring Setup
 
@@ -585,7 +585,7 @@ module.exports = {
 };
 ```
 
-## 🌐 Orchestration and Scaling
+## Orchestration and Scaling
 
 ### Docker Swarm Deployment
 
@@ -600,7 +600,7 @@ STACK_NAME="myapp"
 REGISTRY="your-registry.com"
 VERSION="${1:-latest}"
 
-echo "🚀 Deploying ${STACK_NAME} version ${VERSION}"
+echo "Deploying ${STACK_NAME} version ${VERSION}"
 
 # Pull latest images
 docker pull ${REGISTRY}/myapp:${VERSION}
@@ -613,7 +613,7 @@ docker stack deploy \
   ${STACK_NAME}
 
 # Wait for deployment
-echo "⏳ Waiting for services to be ready..."
+echo "Waiting for services to be ready..."
 sleep 30
 
 # Health check
@@ -622,29 +622,29 @@ ATTEMPT=1
 
 while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
   if docker service ls --filter name=${STACK_NAME} --format "table {{.Name}}\t{{.Replicas}}" | grep -q "3/3"; then
-    echo "✅ Deployment successful!"
+    echo "Deployment successful!"
     break
   fi
   
-  echo "⏳ Attempt $ATTEMPT/$MAX_ATTEMPTS - Waiting for services..."
+  echo "Attempt $ATTEMPT/$MAX_ATTEMPTS - Waiting for services..."
   sleep 10
   ATTEMPT=$((ATTEMPT + 1))
 done
 
 if [ $ATTEMPT -gt $MAX_ATTEMPTS ]; then
-  echo "❌ Deployment failed - services not ready"
+  echo "Deployment failed - services not ready"
   docker service ls --filter name=${STACK_NAME}
   exit 1
 fi
 
 # Run smoke tests
-echo "🧪 Running smoke tests..."
+echo "Running smoke tests..."
 curl -f http://localhost/health || {
-  echo "❌ Health check failed"
+  echo "Health check failed"
   exit 1
 }
 
-echo "🎉 Deployment completed successfully!"
+echo "Deployment completed successfully!"
 ```
 
 ### Kubernetes Migration Strategy
@@ -728,7 +728,7 @@ spec:
   type: ClusterIP
 ```
 
-## 🎯 Performance Tuning
+## Performance Tuning
 
 ### Benchmark Results
 
@@ -779,10 +779,10 @@ EXPOSE 3000
 CMD ["node", "dist/server.js"]
 ```
 
-## 🎊 Conclusion: The Docker Mastery Mindset
+## Conclusion: The Docker Mastery Mindset
 
 <div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">🎯 The 90/10 Rule</h4>
+  <h4 class="alert-heading">The 90/10 Rule</h4>
   <p>90% of Docker problems in production come from ignoring these 10% of practices:</p>
   <ul>
     <li><strong>Multi-stage builds</strong> for size optimization</li>
@@ -797,13 +797,13 @@ Docker mastery isn't about memorizing commands—it's about understanding the un
 
 ### Quick Reference Checklist
 
-- ✅ **Multi-stage builds** for optimal image size
-- ✅ **Non-root users** in all containers
-- ✅ **Health checks** for every service
-- ✅ **Resource limits** to prevent resource exhaustion
-- ✅ **Security scanning** in CI/CD pipeline
-- ✅ **Monitoring and logging** from day one
-- ✅ **Documentation** for your team
+- **Multi-stage builds** for optimal image size
+- **Non-root users** in all containers
+- **Health checks** for every service
+- **Resource limits** to prevent resource exhaustion
+- **Security scanning** in CI/CD pipeline
+- **Monitoring and logging** from day one
+- **Documentation** for your team
 
 Remember: **Good Docker practices today prevent production disasters tomorrow.**
 
