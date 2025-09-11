@@ -93,13 +93,7 @@ This prestigious award recognizes exceptional performance across multiple dimens
 
 ### **Key Academic Milestones**
 
- **Top 5% Performance** — Consistently ranked among the highest performers  
-
- **Research Excellence** — Active participation in cutting-edge AI/ML research projects  
-
- **Practical Innovation** — Developed multiple real-world applications and solutions  
-
- **Peer Mentorship** — Guided fellow students and contributed to the academic community  
+ **Top 5% Performance** Consistently ranked among the highest performers. **Research Excellence** active participation in cutting-edge AI/ML research projects, **Practical Innovation** developed multiple real-world applications and solutions. **Peer Mentorship**. guided fellow students and contributed to the academic community  
 
 ---
 
@@ -116,7 +110,7 @@ This recognition represents far more than academic achievement — it's validati
 
 #### **Moving Forward**
 
-This honor motivates me to:
+**This honor motivates me to:**
 
 - Continue pursuing **cutting-edge research** in AI and Machine Learning
 - **Mentor and inspire** the next generation of engineers
