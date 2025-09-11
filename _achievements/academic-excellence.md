@@ -61,13 +61,7 @@ The ceremony was graced by distinguished dignitaries, including:
 
 This prestigious award recognizes exceptional performance across multiple dimensions:
 
-**Academic Excellence**: Outstanding performance in engineering studies with consistent high grades
-
-**AI/ML Specialization**: Deep expertise and innovation in Artificial Intelligence and Machine Learning
-
-**Leadership Qualities**: Demonstrated leadership in academic projects and community involvement
-
-**Research Contributions**: Active participation in cutting-edge research and innovative thinking
+Outstanding performance in engineering studies with consistent high grades. Deep expertise and innovation in Artificial Intelligence and Machine Learning. Demonstrated leadership in academic projects and community involvement. Active participation in cutting-edge research and innovative thinking
 
 #### **The Selection Journey**
 
