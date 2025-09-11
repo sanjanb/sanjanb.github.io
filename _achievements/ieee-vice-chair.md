@@ -33,31 +33,19 @@ This role has been a transformative experience that allowed me to **bridge the g
 
 #### **Technical Workshop Leadership**
 
-**15+ Workshops Organized**  
-*Cutting-edge topics including AI/ML, blockchain, cybersecurity, and emerging technologies*
-
-I've designed and conducted comprehensive technical workshops that go beyond theoretical knowledge, providing hands-on experience and practical skills that students can immediately apply.
+As a leader in technical education, I've organized **15+ comprehensive workshops** covering cutting-edge topics including AI/ML, blockchain, cybersecurity, and emerging technologies. These workshops go beyond theoretical knowledge, providing hands-on experience and practical skills that students can immediately apply in their academic and professional endeavors.
 
 #### **Event Coordination Excellence**
 
-**Inter-College Technical Symposiums**  
-*Successfully managed events with participation from 5+ colleges across Karnataka*
-
-From conceptualization to execution, I've led the planning and coordination of large-scale technical events that bring together the brightest minds from multiple institutions.
+I have successfully managed **inter-college technical symposiums** with participation from 5+ colleges across Karnataka. From conceptualization to execution, I've led the planning and coordination of large-scale technical events that bring together the brightest minds from multiple institutions, fostering collaboration and knowledge sharing across the region.
 
 #### **Student Mentoring & Development**
 
-**50+ Junior Students Guided**  
-*Research project development, career planning, and technical skill enhancement*
-
-I believe in **paying it forward** — helping junior students navigate their academic journey and discover their passions in technology.
+Through dedicated mentoring, I've guided **50+ junior students** in research project development, career planning, and technical skill enhancement. I believe in **paying it forward** — helping junior students navigate their academic journey and discover their passions in technology while building their confidence and capabilities.
 
 #### **Industry Partnership Building**
 
-**Strategic Industry Connections**  
-*Establishing partnerships with tech companies for internships and placement opportunities*
-
-Actively working to create **real career opportunities** for our student community through strategic industry partnerships.
+I actively work on establishing **strategic industry connections** to create real career opportunities for our student community. Through these partnerships with tech companies, we've successfully created direct placement and internship opportunities, bridging the gap between academic learning and professional development.
 
 ---
 
@@ -101,25 +89,11 @@ This workshop series was designed to take students from **zero to hero** in AI/M
 
 #### **Organizational Growth**
 
-**40% Increase in IEEE Membership**  
-*Growing from 350+ to 500+ active members within 8 months*
-
-**5 New Corporate Partnerships**  
-*Creating direct placement and internship opportunities*
-
-**Regional Recognition**  
-*ATMECE IEEE branch ranked among top 3 in Karnataka*
+Under my leadership, we achieved a remarkable **40% increase in IEEE membership**, growing from 350+ to 500+ active members within just 8 months. This growth was supported by establishing **5 new corporate partnerships** that created direct placement and internship opportunities for our students. Our efforts were recognized at the regional level, with the **ATMECE IEEE branch being ranked among the top 3 in Karnataka**.
 
 #### **Student Development Metrics**
 
-**500+ Students Impacted**  
-*Through workshops, seminars, and mentoring programs*
-
-**15+ Successful Events**  
-*100% success rate with all events exceeding participation targets*
-
-**85% Positive Feedback**  
-*From participants across all events and workshops*
+Through our comprehensive programs, we've successfully **impacted over 500+ students** through workshops, seminars, and mentoring programs. Our track record includes **15+ successful events** with a 100% success rate, with all events exceeding their participation targets. The quality of our initiatives is reflected in the consistently high **85% positive feedback** we receive from participants across all events and workshops.
 
 ---
 
