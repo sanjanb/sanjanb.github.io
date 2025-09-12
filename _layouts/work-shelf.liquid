@@ -1,0 +1,109 @@
+---
+layout: page
+---
+
+<div class="work">
+  {% assign sorted_work = site.work | sort: "date" | reverse %}
+  
+  {% for work_item in sorted_work %}
+    <div class="row work-item">
+      {% if work_item.preview %}
+        <div class="col col-sm-3 abbr">
+          {% if work_item.preview %}
+            {% if work_item.preview contains '://' %}
+              <img class="preview z-depth-1 rounded" src="{{ work_item.preview }}" alt="{{ work_item.title }}">
+            {% else %}
+              {% assign entry_path = work_item.preview | prepend: '/assets/img/work_preview/' %}
+              {%
+                include figure.liquid
+                loading="eager"
+                path=entry_path
+                sizes = "200px"
+                class="preview z-depth-1 rounded"
+                zoomable=true
+                avoid_scaling=true
+                alt=work_item.title
+              %}
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <!-- Work Entry -->
+      <div id="{{ work_item.title | slugify }}" class="{% if work_item.preview %}col-sm-9{% else %}col-sm-12{% endif %}">
+        <!-- Title -->
+        <div class="title">
+          <a href="{{ work_item.url | relative_url }}">{{ work_item.title }}</a>
+        </div>
+        
+        <!-- Company and Date -->
+        <div class="author">
+          {% if work_item.company %}
+            <em>{{ work_item.company }}</em>
+          {% endif %}
+          {% if work_item.role %}
+            {% if work_item.company %} - {% endif %}
+            {{ work_item.role }}
+          {% endif %}
+        </div>
+
+        <!-- Date and Duration -->
+        {% if work_item.date or work_item.start_date or work_item.end_date or work_item.duration %}
+          <div class="periodical">
+            {% if work_item.start_date %}
+              {{ work_item.start_date | date: '%B %Y' }}
+            {% elsif work_item.date %}
+              {{ work_item.date | date: '%B %Y' }}
+            {% endif %}
+            {% if work_item.end_date %}
+              {% if work_item.start_date %} - {% endif %}
+              {% if work_item.status == 'ongoing' %}
+                Present
+              {% else %}
+                {{ work_item.end_date | date: '%B %Y' }}
+              {% endif %}
+            {% endif %}
+            {% if work_item.duration %}
+              {% if work_item.start_date or work_item.end_date or work_item.date %} &nbsp;&middot;&nbsp; {% endif %}
+              {{ work_item.duration }}
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <!-- Summary -->
+        {% if work_item.summary %}
+          <div class="periodical">
+            {{ work_item.summary }}
+          </div>
+        {% endif %}
+
+        <!-- Links/Buttons -->
+        <div class="links">
+          <a href="{{ work_item.url | relative_url }}" class="btn btn-sm z-depth-0" role="button">Details</a>
+          {% if work_item.website %}
+            <a href="{{ work_item.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          {% endif %}
+          {% if work_item.github %}
+            <a href="{{ work_item.github }}" class="btn btn-sm z-depth-0" role="button" target="_blank">GitHub</a>
+          {% endif %}
+          {% if work_item.demo %}
+            <a href="{{ work_item.demo }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Demo</a>
+          {% endif %}
+          {% if work_item.case_study %}
+            <a href="{{ work_item.case_study }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Case Study</a>
+          {% endif %}
+        </div>
+
+        <!-- Tags -->
+        {% if work_item.tags %}
+          <div class="work-tags">
+            {% for tag in work_item.tags %}
+              <span class="badge badge-light">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <hr style="margin: 2rem 0;">
+  {% endfor %}
+</div>

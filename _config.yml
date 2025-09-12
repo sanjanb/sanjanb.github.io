@@ -216,6 +216,9 @@ collections:
   achievements:
     output: true
     permalink: /:collection/:title/
+  work:
+    output: true
+    permalink: /:collection/:title/
   news:
     defaults:
       layout: post
@@ -274,6 +277,7 @@ exclude:
   - _pages/teaching.md
   - _pages/dropdown.md
   - _pages/publications.md
+  - _pages/projects.md
   - purgecss.config.js
   - README.md
   - readme_preview/

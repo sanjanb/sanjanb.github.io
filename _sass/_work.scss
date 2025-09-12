@@ -1,0 +1,196 @@
+/*******************************************************************************
+ * Work
+ ******************************************************************************/
+
+.work {
+  .work-item {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    
+    .title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      
+      a {
+        color: var(--global-text-color);
+        text-decoration: none;
+        
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+    
+    .author {
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .periodical {
+      color: var(--global-text-color-light);
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+      
+      &:last-of-type {
+        margin-bottom: 0.75rem;
+      }
+    }
+    
+    .links {
+      margin-bottom: 0.5rem;
+      
+      .btn {
+        margin-right: 0.5rem;
+        margin-bottom: 0.25rem;
+      }
+    }
+    
+    .work-tags {
+      .badge {
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
+        font-size: 0.7rem;
+        background-color: var(--global-bg-color);
+        color: var(--global-text-color-light);
+        border: 1px solid var(--global-divider-color);
+        
+        &:hover {
+          background-color: var(--global-theme-color);
+          color: var(--global-bg-color);
+        }
+      }
+    }
+    
+    .preview {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+    
+    .abbr {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 1rem;
+      
+      @media (min-width: 576px) {
+        margin-bottom: 0;
+        padding-right: 1rem;
+      }
+    }
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid var(--global-divider-color);
+    margin: 2rem 0;
+    
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+// Individual work page styles
+.work-content {
+  .work-summary {
+    background-color: var(--global-code-bg-color);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--global-theme-color);
+    
+    p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+  }
+  
+  .work-impact,
+  .work-technologies,
+  .work-responsibilities {
+    margin-top: 2rem;
+    
+    h4 {
+      color: var(--global-theme-color);
+      border-bottom: 2px solid var(--global-theme-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+    }
+    
+    code {
+      background-color: var(--global-code-bg-color);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.85rem;
+      color: var(--global-theme-color);
+      border: 1px solid var(--global-divider-color);
+    }
+  }
+  
+  .work-technologies {
+    p {
+      line-height: 1.8;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 575.98px) {
+  .work {
+    .work-item {
+      .title {
+        font-size: 1rem;
+      }
+      
+      .links {
+        .btn {
+          font-size: 0.8rem;
+          padding: 0.25rem 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Dark theme adjustments
+[data-theme="dark"] {
+  .work {
+    .work-item {
+      .work-tags .badge {
+        background-color: var(--global-card-bg-color);
+        border-color: var(--global-divider-color-dark);
+      }
+      
+      .preview {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        
+        &:hover {
+          box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+        }
+      }
+    }
+  }
+}
