@@ -179,6 +179,11 @@ ninja.data = [{
           description: "",
           section: "Work",handler: () => {
               window.location.href = "/work/ai-powered-analytics-platform/";
+            },},{id: "work-ai-powered-cyber-threat-intelligence-system",
+          title: 'AI-Powered Cyber Threat Intelligence System',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/cti-nlp-system/";
             },},{
         id: 'social-email',
         title: 'email',
