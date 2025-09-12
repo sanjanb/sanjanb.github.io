@@ -1,3 +1,5 @@
+---
+---
 /**
  * Giscus Comments Setup
  * Initializes Giscus comments system with site configuration
