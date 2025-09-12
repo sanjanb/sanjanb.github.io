@@ -1,1 +1,105 @@
-function getGiscusTheme(){return"dark"===document.documentElement.getAttribute("data-theme")||document.body.classList.contains("dark-mode")||window.matchMedia("(prefers-color-scheme: dark)").matches?'{{ site.giscus.dark_theme | default: "dark" }}':'{{ site.giscus.light_theme | default: "light" }}'}function updateGiscusTheme(){const t=document.querySelector("iframe.giscus-frame");if(t){const e=getGiscusTheme();t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}}if(document.addEventListener("DOMContentLoaded",(function(){const t={repo:"{{ site.giscus.repo }}",repoId:"{{ site.giscus.repo_id }}",category:"{{ site.giscus.category }}",categoryId:"{{ site.giscus.category_id }}",mapping:'{{ site.giscus.mapping | default: "pathname" }}',strict:'{{ site.giscus.strict | default: "0" }}',reactionsEnabled:'{{ site.giscus.reactions_enabled | default: "1" }}',emitMetadata:'{{ site.giscus.emit_metadata | default: "0" }}',inputPosition:'{{ site.giscus.input_position | default: "bottom" }}',theme:getGiscusTheme(),lang:'{{ site.giscus.lang | default: "en" }}'},e=document.createElement("script");e.src="https://giscus.app/client.js",e.setAttribute("data-repo",t.repo),t.repoId&&""!==t.repoId&&e.setAttribute("data-repo-id",t.repoId),e.setAttribute("data-category",t.category),t.categoryId&&""!==t.categoryId&&e.setAttribute("data-category-id",t.categoryId),e.setAttribute("data-mapping",t.mapping),e.setAttribute("data-strict",t.strict),e.setAttribute("data-reactions-enabled",t.reactionsEnabled),e.setAttribute("data-emit-metadata",t.emitMetadata),e.setAttribute("data-input-position",t.inputPosition),e.setAttribute("data-theme",t.theme),e.setAttribute("data-lang",t.lang),e.setAttribute("crossorigin","anonymous"),e.async=!0;const s=document.getElementById("giscus_thread");s&&s.appendChild(e)})),window.MutationObserver){const t=new MutationObserver((function(t){t.forEach((function(t){"attributes"!==t.type||"data-theme"!==t.attributeName&&"class"!==t.attributeName||updateGiscusTheme()}))}));t.observe(document.documentElement,{attributes:!0,attributeFilter:["data-theme","class"]}),t.observe(document.body,{attributes:!0,attributeFilter:["class"]})}
+/**
+ * Giscus Comments Setup
+ * Initializes Giscus comments system with site configuration
+ */
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the site configuration (will be replaced by Jekyll with actual values)
+  const giscusConfig = {
+    repo: 'sanjanb/sanjanb.github.io',
+    repoId: 'R_kgDOPstneA',
+    category: 'Announcements',
+    categoryId: 'DIC_kwDOPstneM4CvQNK',
+    mapping: 'pathname',
+    strict: '0',
+    reactionsEnabled: '1',
+    emitMetadata: '0',
+    inputPosition: 'bottom',
+    theme: getGiscusTheme(),
+    lang: 'en'
+  };
+
+  // Create and configure the Giscus script
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', giscusConfig.repo);
+  
+  if (giscusConfig.repoId && giscusConfig.repoId !== '') {
+    script.setAttribute('data-repo-id', giscusConfig.repoId);
+  }
+  
+  script.setAttribute('data-category', giscusConfig.category);
+  
+  if (giscusConfig.categoryId && giscusConfig.categoryId !== '') {
+    script.setAttribute('data-category-id', giscusConfig.categoryId);
+  }
+  
+  script.setAttribute('data-mapping', giscusConfig.mapping);
+  script.setAttribute('data-strict', giscusConfig.strict);
+  script.setAttribute('data-reactions-enabled', giscusConfig.reactionsEnabled);
+  script.setAttribute('data-emit-metadata', giscusConfig.emitMetadata);
+  script.setAttribute('data-input-position', giscusConfig.inputPosition);
+  script.setAttribute('data-theme', giscusConfig.theme);
+  script.setAttribute('data-lang', giscusConfig.lang);
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+
+  // Add the script to the giscus container
+  const giscusContainer = document.getElementById('giscus_thread');
+  if (giscusContainer) {
+    giscusContainer.appendChild(script);
+  }
+});
+
+/**
+ * Get the appropriate Giscus theme based on the current site theme
+ */
+function getGiscusTheme() {
+  // Check if dark mode is enabled
+  const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark' || 
+                     document.body.classList.contains('dark-mode') ||
+                     window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  // Return appropriate theme
+  if (isDarkMode) {
+    return 'dark';
+  } else {
+    return 'light';
+  }
+}
+
+/**
+ * Update Giscus theme when site theme changes
+ */
+function updateGiscusTheme() {
+  const iframe = document.querySelector('iframe.giscus-frame');
+  if (iframe) {
+    const theme = getGiscusTheme();
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: theme } } },
+      'https://giscus.app'
+    );
+  }
+}
+
+// Listen for theme changes
+if (window.MutationObserver) {
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'attributes' && 
+          (mutation.attributeName === 'data-theme' || mutation.attributeName === 'class')) {
+        updateGiscusTheme();
+      }
+    });
+  });
+  
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme', 'class']
+  });
+  
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+}
