@@ -44,11 +44,11 @@ responsibilities:
 giscus_comments: true
 ---
 
-## Project Overview
+## **Project Overview**
 
 This project involved building a comprehensive AI-powered analytics platform from scratch to help enterprise clients make data-driven decisions faster and more accurately. The platform needed to handle massive data volumes while providing real-time insights and predictions.
 
-## The Challenge
+## **The Challenge**
 
 Enterprise clients were struggling with:
 - **Data Silos**: Information scattered across multiple systems
@@ -57,7 +57,7 @@ Enterprise clients were struggling with:
 - **Scalability Issues**: Existing solutions couldn't handle growing data volumes
 - **Complex Integration**: Difficulty connecting various data sources
 
-## Solution Architecture
+## **Solution Architecture**
 
 ### Machine Learning Pipeline
 

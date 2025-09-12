@@ -46,7 +46,7 @@ giscus_comments: true
 
 An intelligent cyber threat intelligence system that leverages **Natural Language Processing (NLP)** and **AI-based classification** to extract meaningful cyber threat indicators from unstructured text, categorize threat types, predict severity levels, and visualize insights through an interactive web interface.
 
-## 🎯 Project Overview
+## **Project Overview**
 
 In today's rapidly evolving cyber threat landscape, security analysts are overwhelmed with vast amounts of unstructured threat intelligence data from blogs, forums, reports, and social media. This project addresses the critical need for automated threat analysis by developing a comprehensive AI system that delivers:
 
@@ -55,9 +55,9 @@ In today's rapidly evolving cyber threat landscape, security analysts are overwh
 - **Risk Severity Assessment**: Predicts threat impact as Low, Medium, or High using ensemble learning
 - **Real-time Analysis Dashboard**: Provides actionable intelligence for SOC teams and security analysts
 
-## 🛠️ Technical Architecture
+## **Technical Architecture**
 
-### Core NLP Pipeline
+###### Core NLP Pipeline
 ```python
 # Named Entity Recognition using BERT-based models
 def extract_threat_entities(text):
@@ -83,7 +83,7 @@ def classify_threat(text):
 - Named entity occurrence patterns
 - Text complexity and sentiment metrics
 
-## 📊 Performance Metrics
+## **Performance Metrics**
 
 | Model Component | Accuracy | Precision | Recall | F1-Score |
 |-----------------|----------|-----------|---------|----------|
@@ -91,7 +91,7 @@ def classify_threat(text):
 | Severity Prediction | 84.7% | 83.2% | 85.1% | 84.1% |
 | Named Entity Recognition | 91.3% | 89.7% | 92.8% | 91.2% |
 
-## 🎨 Interactive Dashboard Features
+## **Interactive Dashboard Features**
 
 - **Real-time Threat Analysis**: Instant processing of threat reports
 - **Visual Entity Highlighting**: Color-coded threat indicators
@@ -99,9 +99,9 @@ def classify_threat(text):
 - **Export Capabilities**: JSON/CSV report downloads
 - **Responsive Design**: Mobile-friendly interface
 
-## 🔬 Research Impact & Innovation
+## **Research Impact & Innovation**
 
-### Key Technical Contributions:
+###### Key Technical Contributions:
 1. **Novel Ensemble Architecture**: Combined traditional ML with modern NLP for robust predictions
 2. **Domain-Specific Feature Engineering**: Developed cybersecurity-focused feature extraction methods
 3. **Real-time Processing Pipeline**: Optimized for sub-second threat analysis
@@ -113,9 +113,9 @@ def classify_threat(text):
 - **Industry Relevance**: Addressed real-world cybersecurity operational challenges
 - **Open Source Contribution**: Growing community engagement on GitHub
 
-## 🚀 Future Enhancements
+## **Future Enhancements**
 
-### Planned Technical Improvements:
+###### Planned Technical Improvements:
 1. **Advanced Transformer Models**: Integration with ThreatBERT and domain-specific transformers
 2. **Real-time Intelligence Feeds**: Live threat data from multiple sources
 3. **Graph-based Analytics**: Threat actor relationship mapping and visualization
