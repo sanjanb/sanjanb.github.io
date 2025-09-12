@@ -10,7 +10,7 @@ tags: [freelance, web-development, mern-stack, client-satisfaction]
 icon: fa-solid fa-code
 summary: Built 25+ responsive websites and web applications for global clients with 100% satisfaction
 rating: 5
-giscus_comments: true
+giscus_comments: false
 link: https://www.upwork.com/
 metrics:
   - value: "25+"

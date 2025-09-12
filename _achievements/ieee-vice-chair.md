@@ -10,7 +10,7 @@ tags: [ieee, leadership, student-branch, workshops]
 icon: fa-solid fa-users
 summary: Leading technical workshops, seminars, and campus tech events for 500+ student members
 rating: 5
-giscus_comments: true
+giscus_comments: false
 metrics:
   - value: "500+"
     label: "Students Impacted"

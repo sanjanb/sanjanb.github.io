@@ -454,7 +454,7 @@ validator = DataValidator(image_schema, ValidationLevel.WARNING)
 ### Model Optimization Techniques
 
 <div class="alert alert-info" role="alert">
-  <h4 class="alert-heading">💡 Pro Tip: The 80/20 Rule of ML Optimization</h4>
+  <h4 class="alert-heading">Pro Tip: The 80/20 Rule of ML Optimization</h4>
   <p>80% of your performance gains will come from 20% of optimizations. Focus on these high-impact areas first:</p>
   <ul>
     <li><strong>Model Quantization</strong>: Reduce precision without losing accuracy</li>

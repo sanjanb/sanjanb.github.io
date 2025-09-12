@@ -7,7 +7,7 @@ category: academic
 tags: [best-student-award, vtu, mysuru-university, academic-excellence, recognition]
 summary: Honored to receive the prestigious Best Student Award at Senate Bhavan, Mysuru University, recognizing academic excellence and achievements in engineering
 rating: 5
-giscus_comments: true
+giscus_comments: false
 metrics:
   - value: "9.23/10"
     label: "CGPA"
