@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
+        },{id: "nav-work",
+          title: "work",
+          description: "Showcase of my most valuable professional work and projects.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/work/";
           },
         },{id: "nav-achievements",
           title: "achievements",
@@ -164,6 +164,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "work-mobile-banking-app-security-enhancement",
+          title: 'Mobile Banking App Security Enhancement',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/mobile-banking-security-enhancement/";
+            },},{id: "work-e-commerce-platform-modernization",
+          title: 'E-Commerce Platform Modernization',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/ecommerce-platform-modernization/";
+            },},{id: "work-ai-powered-data-analytics-platform",
+          title: 'AI-Powered Data Analytics Platform',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/ai-powered-analytics-platform/";
             },},{
         id: 'social-email',
         title: 'email',
