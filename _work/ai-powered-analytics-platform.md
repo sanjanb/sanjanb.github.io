@@ -283,10 +283,10 @@ const AnalyticsDashboard = () => {
       
       switch (type) {
         case 'REAL_TIME_DATA':
-          setData(prevData => ({
+          setData(prevData => ({% raw %}{
             ...prevData,
             ...payload
-          }));
+          }{% endraw %}));
           break;
         case 'PREDICTIONS_UPDATE':
           setPredictions(payload.predictions);
@@ -389,20 +389,20 @@ const AnalyticsDashboard = () => {
       <div className="charts-container">
         <div className="chart-section">
           <h2>Time Series Analysis</h2>
-          <Line data={chartData} options={{ responsive: true }} />
+          <Line data={% raw %}{chartData}{% endraw %} options={% raw %}{{ responsive: true }}{% endraw %} />
         </div>
         
         <div className="chart-section">
           <h2>Prediction Confidence</h2>
           <Scatter 
-            data={{
+            data={% raw %}{
               datasets: [{
                 label: 'Confidence vs Accuracy',
                 data: predictions.map(p => ({ x: p.confidence, y: p.accuracy })),
                 backgroundColor: 'rgba(54, 162, 235, 0.6)'
               }]
-            }}
-            options={{ responsive: true }}
+            }{% endraw %}
+            options={% raw %}{{ responsive: true }}{% endraw %}
           />
         </div>
       </div>
