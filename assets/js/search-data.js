@@ -17,7 +17,7 @@ ninja.data = [{
             window.location.href = "/blog/";
           },
         },{id: "nav-work",
-          title: "work",
+          title: "Work",
           description: "Showcase of my most valuable professional work and projects.",
           section: "Navigation",
           handler: () => {
