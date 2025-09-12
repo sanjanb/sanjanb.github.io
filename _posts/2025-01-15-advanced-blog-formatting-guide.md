@@ -8,7 +8,7 @@ categories: tutorial
 giscus_comments: true
 related_posts: true
 featured: true
-thumbnail: assets/img/10.jng
+thumbnail: assets/img/8.jpg
 toc:
   sidebar: left
 ---

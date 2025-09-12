@@ -733,3 +733,21 @@ jsonresume:
   - languages
   - interests
   - references
+
+# -----------------------------------------------------------------------------
+# Giscus Comments
+# -----------------------------------------------------------------------------
+
+giscus:
+  repo: sanjanb/sanjanb.github.io
+  repo_id: R_kgDOPstneA
+  category: Announcements
+  category_id: DIC_kwDOPstneM4CvQNK
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: light
+  lang: en
+  dark_theme: dark

@@ -23,7 +23,7 @@ toc:
   sidebar: left
 giscus_comments: true
 related_posts: true
-thumbnail: assets/img/blog/welcome/ai-journey-header.jpg
+thumbnail: assets/img/9.jpg
 images:
   compare: true
   slider: true

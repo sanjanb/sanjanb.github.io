@@ -7,7 +7,7 @@ tags: docker containers devops deployment
 categories: tutorial
 giscus_comments: true
 related_posts: true
-thumbnail: assets/img/docker-mastery-thumb.png
+thumbnail: assets/img/10.jpg
 toc:
   sidebar: left
 ---
