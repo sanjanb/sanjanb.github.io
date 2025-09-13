@@ -15,7 +15,7 @@ toc:
 
 Creating compelling blog content requires more than just good writing—it needs **exceptional formatting** and **visual presentation**. This comprehensive guide demonstrates advanced techniques available in Jekyll with the al-folio theme.
 
-## 🎯 Content Formatting Essentials
+## Content Formatting Essentials
 
 ### Blockquotes for Impact
 
@@ -34,7 +34,7 @@ Use **bold text** for key concepts, *italics* for emphasis, and `inline code` fo
 - `Technical terms`: Code formatting for APIs, functions, filenames
 - ***Combined emphasis***: For absolutely critical information
 
-## 💻 Code Presentation Mastery
+## Code Presentation Mastery
 
 ### Syntax-Highlighted Code Blocks
 
@@ -115,7 +115,7 @@ class BlogManager {
 
 # Docker setup for Jekyll development
 setup_jekyll_docker() {
-    echo "🚀 Setting up Jekyll development environment..."
+    echo "Setting up Jekyll development environment..."
     
     # Create necessary directories
     mkdir -p assets/{img,js,css}
@@ -125,7 +125,7 @@ setup_jekyll_docker() {
     docker-compose build --no-cache
     docker-compose up -d
     
-    echo "✅ Jekyll is running at http://localhost:4000"
+    echo "Jekyll is running at http://localhost:4000"
 }
 
 # Function to create new blog post
@@ -152,7 +152,7 @@ EOF
 }
 ```
 
-## 📊 Interactive Elements and Media
+## Interactive Elements and Media
 
 ### Mermaid Diagrams
 
@@ -222,14 +222,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-## 🎨 Advanced Layout Techniques
+## Advanced Layout Techniques
 
 ### Multi-Column Layouts
 
 <div class="row">
 <div class="col-md-6">
 
-#### ✅ Best Practices
+#### Best Practices
 - Use semantic HTML structure
 - Implement responsive design
 - Optimize for readability
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 <div class="col-md-6">
 
-#### ❌ Common Mistakes
+#### Common Mistakes
 - Overusing bold text
 - Poor code formatting
 - Missing image descriptions
@@ -252,12 +252,12 @@ document.addEventListener('DOMContentLoaded', function() {
 ### Callout Boxes and Alerts
 
 <div class="alert alert-info" role="alert">
-  <h4 class="alert-heading">💡 Pro Tip!</h4>
+  <h4 class="alert-heading">Pro Tip!</h4>
   <p>Always test your blog formatting in both light and dark modes. What looks great in light mode might be completely unreadable in dark mode!</p>
 </div>
 
 <div class="alert alert-warning" role="alert">
-  <strong>⚠️ Important:</strong> Large code blocks can impact page load time. Consider using collapsible sections for extensive code examples.
+  <strong>Important:</strong> Large code blocks can impact page load time. Consider using collapsible sections for extensive code examples.
 </div>
 
 ### Image Galleries and Comparisons
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </div>
 
-## 🔧 Implementation Details
+## Implementation Details
 
 ### Jekyll Configuration Enhancements
 
@@ -336,7 +336,7 @@ blog:
 }
 ```
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Image Optimization Strategies
 
@@ -376,7 +376,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 ```
 
-## 🎯 SEO and Accessibility
+## SEO and Accessibility
 
 ### Structured Data Implementation
 
@@ -403,7 +403,7 @@ const observer = new IntersectionObserver((entries) => {
 - **Keyboard navigation**: All interactive elements accessible via keyboard
 - **Screen reader friendly**: Proper ARIA labels and roles
 
-## 🚀 Advanced Features
+## Advanced Features
 
 ### Interactive Code Playground
 
@@ -496,7 +496,7 @@ function runCode() {
 }
 </style>
 
-## 📚 Resources and References
+## Resources and References
 
 ### Essential Tools and Libraries
 

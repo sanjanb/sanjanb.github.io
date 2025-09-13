@@ -46,7 +46,7 @@ giscus_comments: true
 
 An intelligent cyber threat intelligence system that leverages **Natural Language Processing (NLP)** and **AI-based classification** to extract meaningful cyber threat indicators from unstructured text, categorize threat types, predict severity levels, and visualize insights through an interactive web interface.
 
-## **Project Overview**
+## Project Overview
 
 In today's rapidly evolving cyber threat landscape, security analysts are overwhelmed with vast amounts of unstructured threat intelligence data from blogs, forums, reports, and social media. This project addresses the critical need for automated threat analysis by developing a comprehensive AI system that delivers:
 
@@ -55,7 +55,7 @@ In today's rapidly evolving cyber threat landscape, security analysts are overwh
 - **Risk Severity Assessment**: Predicts threat impact as Low, Medium, or High using ensemble learning
 - **Real-time Analysis Dashboard**: Provides actionable intelligence for SOC teams and security analysts
 
-## **Technical Architecture**
+## Technical Architecture
 
 ###### Core NLP Pipeline
 ```python
@@ -83,7 +83,7 @@ def classify_threat(text):
 - Named entity occurrence patterns
 - Text complexity and sentiment metrics
 
-## **Performance Metrics**
+## Performance Metrics
 
 | Model Component | Accuracy | Precision | Recall | F1-Score |
 |-----------------|----------|-----------|---------|----------|
@@ -91,7 +91,7 @@ def classify_threat(text):
 | Severity Prediction | 84.7% | 83.2% | 85.1% | 84.1% |
 | Named Entity Recognition | 91.3% | 89.7% | 92.8% | 91.2% |
 
-## **Interactive Dashboard Features**
+## Interactive Dashboard Features
 
 - **Real-time Threat Analysis**: Instant processing of threat reports
 - **Visual Entity Highlighting**: Color-coded threat indicators
@@ -99,7 +99,7 @@ def classify_threat(text):
 - **Export Capabilities**: JSON/CSV report downloads
 - **Responsive Design**: Mobile-friendly interface
 
-## **Research Impact & Innovation**
+## Research Impact & Innovation
 
 ###### Key Technical Contributions:
 1. **Novel Ensemble Architecture**: Combined traditional ML with modern NLP for robust predictions
