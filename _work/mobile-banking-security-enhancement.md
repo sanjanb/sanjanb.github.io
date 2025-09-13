@@ -3,6 +3,7 @@ layout: work
 title: "Mobile Banking App Security Enhancement"
 company: "SecureBank Technologies"
 role: "Senior Security Engineer"
+published: false
 date: 2023-08-01
 start_date: 2023-05-01
 end_date: 2023-08-01
