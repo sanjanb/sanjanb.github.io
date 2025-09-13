@@ -1,7 +1,7 @@
 ---
 layout: achievement-shelf
 permalink: /achievements/
-title: achievements
+title: Achievements
 nav: true
 nav_order: 4
 collection: achievements
