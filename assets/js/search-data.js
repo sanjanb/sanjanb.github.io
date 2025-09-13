@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-advanced-blog-formatting-guide-mastering-jekyll-and-al-folio-techniques",
+        },{id: "post-my-ai-ml-specialization-journey-from-foundations-to-advanced-llm-applications",
+        
+          title: "My AI/ML Specialization Journey: From Foundations to Advanced LLM Applications",
+        
+        description: "A comprehensive overview of my machine learning, deep learning, and large language model specialization journey through structured learning, hands-on projects, and industry certifications.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/my-ai-ml-specialization-journey/";
+          
+        },
+      },{id: "post-advanced-blog-formatting-guide-mastering-jekyll-and-al-folio-techniques",
         
           title: "Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques",
         
