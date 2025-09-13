@@ -302,13 +302,7 @@ The future of AI is bright, and there's never been a better time to begin or adv
 *What's your AI/ML learning journey been like? Share your experiences and questions in the comments below. I'd love to connect with fellow AI enthusiasts and learn about your projects and specialization paths!*
 
 **Connect with me:**
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
-- Email: [Your Email]
+- LinkedIn: (Sanjan B M)['https://www.linkedin.com/in/sanjan-bm/']
+- GitHub: (sanjanb)['https://github.com/sanjanb']
+- Email: Sanjanacharaya1234@gmail.com   
 
----
-
-### Related Posts
-- [Advanced Blog Formatting Guide: Mastering Jekyll and al-folio Techniques](link-to-previous-post)
-- [Building Production-Ready RAG Systems](link-to-future-post)
-- [The Future of LLM Applications in Enterprise](link-to-future-post)

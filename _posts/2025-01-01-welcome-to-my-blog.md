@@ -239,7 +239,7 @@ As we stand at the threshold of unprecedented technological advancement, the opp
 
 Together, we'll explore the frontiers of what's possible, tackle complex challenges, and build AI systems that not only perform exceptionally but also contribute meaningfully to human progress.
 
-**Ready to begin?** Start by exploring the [latest posts]({% link _pages/blog.md %}) or dive into the [project portfolio]({% link _pages/projects.md %}) to see AI in action.
+**Ready to begin?** Start by exploring the [latest posts](/blog/) or dive into the [project portfolio](/projects/) to see AI in action.
 
 ---
 
