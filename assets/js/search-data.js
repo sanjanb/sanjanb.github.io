@@ -164,11 +164,6 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "work-mobile-banking-app-security-enhancement",
-          title: 'Mobile Banking App Security Enhancement',
-          description: "",
-          section: "Work",handler: () => {
-              window.location.href = "/work/mobile-banking-security-enhancement/";
             },},{id: "work-ai-powered-cyber-threat-intelligence-system",
           title: 'AI-Powered Cyber Threat Intelligence System',
           description: "",
