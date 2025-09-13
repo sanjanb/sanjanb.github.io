@@ -88,6 +88,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/docker-mastery-guide/";
           
         },
+      },{id: "post-welcome-to-the-future-of-ai-a-personal-journey",
+        
+          title: "Welcome to the Future of AI: A Personal Journey",
+        
+        description: "Join Sanjan B M on an exciting journey through artificial intelligence and machine learning. Discover cutting-edge research, practical implementations, and insights into the transformative power of AI technology.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/welcome-to-my-blog/";
+          
+        },
       },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
         
           title: "Mastering Jekyll: Advanced Formatting and Link Techniques",
