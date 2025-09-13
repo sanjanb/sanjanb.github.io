@@ -7,7 +7,7 @@ tags: AI machine-learning production scaling devops
 categories: projects
 giscus_comments: true
 related_posts: true
-featured: true
+# featured: true
 thumbnail: assets/img/rhino.png
 ---
 

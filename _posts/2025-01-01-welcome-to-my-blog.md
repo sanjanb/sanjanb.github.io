@@ -18,7 +18,7 @@ categories:
   - personal
   - ai-research
   - introductions
-featured: true
+# featured: true
 toc:
   sidebar: left
 giscus_comments: true
