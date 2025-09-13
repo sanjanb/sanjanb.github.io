@@ -30,7 +30,7 @@ images:
   zoomable: true
 author: Sanjan B M
 lang: en
-published: false  # Enhanced template for welcome posts
+published: true  # Enhanced template for welcome posts
 ---
 
 ## Introduction: Where Innovation Meets Impact

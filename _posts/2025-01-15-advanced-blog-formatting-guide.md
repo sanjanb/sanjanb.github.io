@@ -7,7 +7,7 @@ tags: formatting code jekyll blogging tutorial
 categories: tutorial
 giscus_comments: true
 related_posts: true
-featured: true
+# featured: true
 thumbnail: assets/img/8.jpg
 toc:
   sidebar: left
