@@ -3,6 +3,7 @@ layout: work
 title: "AI-Powered Data Analytics Platform"
 company: "DataTech Innovations"
 role: "Machine Learning Engineer"
+published: false
 date: 2024-03-01
 start_date: 2024-01-01
 end_date: 2024-03-01

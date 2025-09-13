@@ -3,6 +3,7 @@ layout: work
 title: "E-Commerce Platform Modernization"
 company: "TechCorp Solutions"
 role: "Senior Full Stack Developer"
+published: false
 date: 2023-12-01
 start_date: 2023-06-01
 end_date: 2023-12-01
