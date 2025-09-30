@@ -1,0 +1,10 @@
+# Document Text Extraction Interface
+# This is the first screenshot showing the AI-powered document text extraction system
+# Features visible:
+# - Clean web interface with "Document Text Extraction" title
+# - Text input area for manual text entry
+# - "Extract Information" button
+# - "Try These Examples" section with sample document types
+# - Extraction results showing detected entities with color-coded tags
+# - Structured information display with extracted fields
+# - Processing timestamp and confidence metrics
