@@ -125,6 +125,11 @@ ninja.data = [{
           description: "",
           section: "Achievements",handler: () => {
               window.location.href = "/achievements/academic-excellence/";
+            },},{id: "achievements-national-champion-hackfusion-2025-hackathon",
+          title: 'National Champion - HackFusion 2025 Hackathon',
+          description: "",
+          section: "Achievements",handler: () => {
+              window.location.href = "/achievements/hackfusion-national-winner/";
             },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
