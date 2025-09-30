@@ -1,0 +1,114 @@
+---
+layout: default
+---
+{%- comment -%}
+Custom case-study layout for achievements needing richer visual structure.
+Sections supported (rendered if front-matter / content present):
+- hero: page.title, page.summary, core metrics grid
+- side panel: metrics + skills
+- content: regular markdown body
+Add front-matter key `case_study: true` to use this layout.
+{%- endcomment -%}
+
+{% assign metrics = page.metrics %}
+{% assign skills = page.skills %}
+
+<style>
+.case-hero {padding:2.5rem 0 1.5rem;border-bottom:1px solid var(--global-border-color);} 
+.case-hero h1{margin-bottom:.75rem;font-size:clamp(2rem,4vw,2.75rem);line-height:1.15;font-weight:600;}
+.case-meta{color:var(--global-muted-color);font-size:.9rem;margin-bottom:1.25rem;}
+.metrics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.75rem;margin:1.25rem 0 0;}
+.metric-box{background:var(--global-card-bg,#111);border:1px solid var(--global-border-color);padding:.85rem .9rem;border-radius:10px;position:relative;overflow:hidden;}
+.metric-box h3{margin:0;font-size:1.25rem;font-weight:600;}
+.metric-box p{margin:.15rem 0 0;font-size:.7rem;letter-spacing:.5px;text-transform:uppercase;color:var(--global-muted-color);}
+.case-wrapper{display:grid;grid-template-columns:260px 1fr;gap:2.25rem;margin-top:2rem;}
+@media (max-width:1100px){.case-wrapper{grid-template-columns:1fr;} .side-panel{order:2;}}
+.side-panel{position:sticky;top:6rem;height:max-content;align-self:start;}
+.panel-block{background:var(--global-card-bg,#111);border:1px solid var(--global-border-color);padding:1rem 1rem .75rem;border-radius:12px;margin-bottom:1rem;}
+.panel-block h4{margin:.15rem 0 .65rem;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--global-muted-color);}
+.skill-chips{display:flex;flex-wrap:wrap;gap:.4rem;}
+.skill-chips code{background:#222;border:1px solid #2d2d2d;padding:.35rem .55rem;border-radius:6px;font-size:.65rem;line-height:1.1;}
+.main-content{min-width:0;}
+.main-content h2{margin-top:2.5rem;border-top:1px solid var(--global-border-color);padding-top:1.75rem;position:relative;}
+.main-content h2:first-of-type{margin-top:0;border-top:none;padding-top:0;}
+.inline-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.25rem 0 1.75rem;}
+.inline-card{background:var(--global-card-bg,#111);border:1px solid var(--global-border-color);border-radius:12px;padding:.9rem .95rem;}
+.inline-card h5{margin:.05rem 0 .35rem;font-size:.9rem;font-weight:600;}
+.inline-card p{margin:0;font-size:.75rem;line-height:1.25rem;color:var(--global-muted-color);}
+.gallery-grid{--cols:3;display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:10px;margin:1.5rem 0;}
+.gallery-grid.two{--cols:2;}
+.gallery-grid img{border-radius:10px;border:1px solid var(--global-border-color);}
+.callout{border-left:4px solid #3d7fff;background:#101826;padding:.9rem 1rem .95rem;border-radius:6px;margin:1.5rem 0;font-size:.85rem;}
+.quote-block{border:1px solid var(--global-border-color);background:#151515;padding:1.1rem 1.25rem;border-radius:12px;margin:1.25rem 0;font-style:italic;}
+.timeline{border-left:2px solid var(--global-border-color);margin:1.25rem 0 1.75rem;padding-left:1.15rem;}
+.timeline-item{margin-bottom:1rem;}
+.timeline-item h5{margin:0 0 .25rem;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--global-muted-color);}
+.timeline-item p{margin:0;font-size:.8rem;line-height:1.15rem;}
+.outcome-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.85rem;margin:1.25rem 0 1.75rem;}
+.outcome{background:var(--global-card-bg,#111);border:1px solid var(--global-border-color);padding:.8rem .85rem;border-radius:10px;}
+.outcome h3{margin:0;font-size:1.15rem;}
+.outcome span{display:block;margin-top:.15rem;font-size:.65rem;color:var(--global-muted-color);letter-spacing:.06em;text-transform:uppercase;}
+.repo-table{width:100%;border-collapse:collapse;font-size:.8rem;margin:1rem 0 2rem;}
+.repo-table th,.repo-table td{border:1px solid var(--global-border-color);padding:.5rem .55rem;vertical-align:top;}
+.repo-table th{background:#161616;font-weight:600;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--global-muted-color);}
+footer.case-footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--global-border-color);font-size:.75rem;color:var(--global-muted-color);}
+</style>
+
+<section class="case-hero">
+  <h1>{{ page.title }}</h1>
+  <div class="case-meta">
+    {% if page.organization %}{{ page.organization }}{% endif %}
+    {% if page.organization and page.date %} · {% endif %}
+    {% if page.date %}{{ page.date | date: '%B %Y' }}{% endif %}
+  </div>
+  {% if page.summary %}<p class="lead" style="max-width:860px;font-size:1.05rem;line-height:1.55rem;">{{ page.summary }}</p>{% endif %}
+  {% if metrics %}
+    <div class="metrics-grid">
+      {% for m in metrics %}
+        <div class="metric-box">
+          <h3>{{ m.value }}</h3>
+          <p>{{ m.label }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+<div class="case-wrapper">
+  <aside class="side-panel">
+    {% if metrics %}
+    <div class="panel-block">
+      <h4>Snapshot</h4>
+      <ul style="list-style:none;padding:0;margin:0;font-size:.7rem;line-height:1.1rem;">
+        {% for m in metrics %}
+          <li style="margin:.25rem 0;"><strong>{{ m.value }}</strong> – {{ m.label }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if skills %}
+    <div class="panel-block">
+      <h4>Stack & Skills</h4>
+      <div class="skill-chips">
+        {% for s in skills %}<code>{{ s }}</code>{% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    {% if page.tags %}
+    <div class="panel-block">
+      <h4>Tags</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+        {% for tag in page.tags %}<code>{{ tag }}</code>{% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </aside>
+
+  <main class="main-content">
+    {{ content }}
+  </main>
+</div>
+
+<footer class="case-footer">
+  <p>Last updated {{ 'now' | date: '%Y-%m-%d' }} · {{ site.title }}</p>
+</footer>
