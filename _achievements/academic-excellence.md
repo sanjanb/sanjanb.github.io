@@ -19,6 +19,22 @@ metrics:
   - value: "50+"
     label: "Students Mentored"
 skills: [Academic Excellence, Engineering, AI & Machine Learning, Leadership, Research]
+timeline:
+  - date: "Early 2024"
+    title: "Nomination"
+    detail: "Faculty committee submits nomination based on academic & leadership metrics"
+  - date: "Mid 2024"
+    title: "Evaluation"
+    detail: "Panel reviews performance, research work and mentorship impact"
+  - date: "Sep 2024"
+    title: "Shortlist"
+    detail: "Top 1% candidates notified and documentation verified"
+  - date: "Nov 2024"
+    title: "Ceremony"
+    detail: "Award presented at Senate Bhavan, Mysuru University"
+  - date: "Post 2024"
+    title: "Impact"
+    detail: "Continued mentorship & AI/ML project leadership"
 ---
 
 ## Overview
@@ -115,39 +131,15 @@ The award ceremony was honored by the presence of **Parampoojya Jagadguru Dr. Ni
 
 ### Notable Dignitaries Present
 
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<thead class="table-warning">
-<tr>
-<th><strong>Dignitary</strong></th>
-<th><strong>Position</strong></th>
-<th><strong>Significance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Dr. C.N. Ashwathnarayan</strong></td>
-<td>Former Deputy CM, MLA Malleshwaram</td>
-<td>Educational leadership</td>
-</tr>
-<tr>
-<td><strong>Shri Yaduveer Krishnadatta Chamaraja Wadiyar</strong></td>
-<td>Mysore Royal Family</td>
-<td>Cultural heritage & education</td>
-</tr>
-<tr>
-<td><strong>Shri Adaguru H. Vishwanath</strong></td>
-<td>Former Minister and MLC</td>
-<td>Legislative education support</td>
-</tr>
-<tr>
-<td><strong>Lions International Leadership</strong></td>
-<td>Multiple District 317 Officers</td>
-<td>Community service excellence</td>
-</tr>
-</tbody>
-</table>
-</div>
+<details class="collapsible-dignitaries" open>
+  <summary><strong>View Distinguished Guests</strong></summary>
+  <ul class="dignitary-list">
+    <li><strong>Dr. C.N. Ashwathnarayan</strong> – Former Deputy CM, MLA Malleshwaram <em>(Educational leadership)</em></li>
+    <li><strong>Shri Yaduveer Krishnadatta Chamaraja Wadiyar</strong> – Mysore Royal Family <em>(Cultural heritage & education)</em></li>
+    <li><strong>Shri Adaguru H. Vishwanath</strong> – Former Minister & MLC <em>(Legislative education support)</em></li>
+    <li><strong>Lions International Leadership</strong> – Multiple District 317 Officers <em>(Community service excellence)</em></li>
+  </ul>
+</details>
 
 ## Award Significance & Impact
 
@@ -204,4 +196,9 @@ dl.kv dd{margin:0;font-size:.82rem;line-height:1.25rem;}
 .selection-grid{list-style:none;margin:1rem 0;padding:0;display:flex;flex-direction:column;gap:.55rem;}
 .selection-grid li{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:.65rem .8rem;border-radius:10px;font-size:.82rem;line-height:1.25rem;}
 html[data-theme='dark'] .fact-card,html[data-theme='dark'] dl.kv div,html[data-theme='dark'] .mcard,html[data-theme='dark'] .selection-grid li{background:#232325;}
+.collapsible-dignitaries{margin:1rem 0 0;}
+.collapsible-dignitaries summary{cursor:pointer;list-style:none;background:var(--global-card-bg-color);padding:.6rem .85rem;border:1px solid var(--global-divider-color);border-radius:10px;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;}
+.collapsible-dignitaries[open] summary{border-bottom-left-radius:0;border-bottom-right-radius:0;}
+.dignitary-list{margin:0;border:1px solid var(--global-divider-color);border-top:0;padding:.75rem .95rem;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background:var(--global-card-bg-color);display:flex;flex-direction:column;gap:.55rem;font-size:.8rem;}
+.dignitary-list li{margin:0;}
 </style>
