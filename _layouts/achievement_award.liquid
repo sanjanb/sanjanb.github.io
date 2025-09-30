@@ -1,0 +1,128 @@
+---
+layout: default
+---
+{%- comment -%}
+  Unique award achievement layout
+  Features:
+    - Gradient hero with overlay
+    - Compact meta ribbon
+    - Floating fact panel (award facts + metrics)
+    - Inline section index (auto from h2 unless custom provided)
+    - Accessible landmark roles
+{%- endcomment -%}
+
+{%- assign award = page -%}
+<div class="award-hero-wrapper">
+  <div class="award-hero">
+    <div class="award-hero-inner">
+      <p class="award-ribbon">
+        {%- if award.organization %}<span>{{ award.organization }}</span>{% endif %}
+        {%- if award.date %}<span>{{ award.date | date: '%B %Y' }}</span>{% endif %}
+        {%- if award.category %}<span class="cat">{{ award.category }}</span>{% endif %}
+      </p>
+      <h1 class="award-title">{{ award.title }}</h1>
+      {%- if award.summary %}<p class="award-lead">{{ award.summary }}</p>{% endif %}
+      {%- if award.rating %}
+        <div class="award-rating" aria-label="Rating: {{ award.rating }} of 5">
+        {%- for i in (1..award.rating) -%}<i class="fa-solid fa-star"></i>{%- endfor -%}
+        </div>
+      {%- endif %}
+    </div>
+  </div>
+</div>
+
+<div class="container-lg award-shell">
+  <aside class="award-facts" aria-labelledby="facts-heading">
+    <h2 id="facts-heading" class="visually-hidden">Award Facts</h2>
+    {%- if award.metrics and award.metrics.size > 0 -%}
+      <div class="fact-block">
+        <h3>Key Metrics</h3>
+        <ul class="metric-list">
+          {%- for m in award.metrics -%}
+            <li><span class="metric-value">{{ m.value }}</span><span class="metric-label">{{ m.label }}</span></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+    {%- if award.skills -%}
+      <div class="fact-block">
+        <h3>Focus Areas</h3>
+        <p class="skill-cloud">
+          {%- for s in award.skills -%}
+            <code>{{ s }}</code>{% unless forloop.last %}, {% endunless %}
+          {%- endfor -%}
+        </p>
+      </div>
+    {%- endif -%}
+    {%- if award.tags -%}
+      <div class="fact-block">
+        <h3>Tags</h3>
+        <p class="tag-cloud">
+          {%- for t in award.tags -%}
+            <a class="tag-item" href="/achievements/tag/{{ t | slugify }}">#{{ t }}</a>{% unless forloop.last %} {% endunless %}
+          {%- endfor -%}
+        </p>
+      </div>
+    {%- endif -%}
+    <div class="fact-block updated"><small>Updated {{ award.date | date: '%b %Y' }}</small></div>
+  </aside>
+
+  <main class="award-body" role="main">
+    {%- if award.section_index != false -%}
+      <nav class="section-index" aria-label="Section index">
+        <h3>On this page</h3>
+        <ol>
+          {%- assign headers = content | split: '<h2' -%}
+          {%- for h in headers -%}
+            {%- if forloop.first == false -%}
+              {%- assign id_fragment = h | split: 'id="' | last | split: '"' | first -%}
+              {%- assign heading_text = h | split: '</h2>' | first | remove: '>' | strip_html | strip -%}
+              <li><a href="#{{ id_fragment }}">{{ heading_text }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ol>
+      </nav>
+    {%- endif -%}
+
+    <article class="award-article">
+      {{ content }}
+    </article>
+  </main>
+</div>
+
+<style>
+.award-hero-wrapper{position:relative;background:linear-gradient(110deg,var(--global-theme-color)10%,#6a1b9a 55%,#111 100%);color:#fff;overflow:hidden;padding:3.75rem 0 2.25rem;margin-bottom:1.25rem;}
+.award-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 20%,rgba(255,255,255,.18),transparent 60%);} 
+.award-hero-inner{position:relative;max-width:1100px;margin:0 auto;padding:0 1.25rem;}
+.award-ribbon{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .6rem;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;opacity:.9;}
+.award-ribbon span{background:rgba(255,255,255,.15);padding:.35rem .55rem;border-radius:6px;backdrop-filter:blur(4px);}
+.award-title{margin:0 0 .9rem;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.08;font-weight:650;letter-spacing:-.5px;}
+.award-lead{max-width:850px;font-size:1.05rem;line-height:1.55;margin:0;font-weight:400;}
+.award-rating{margin-top:.9rem;color:#ffc107;}
+.award-shell{display:grid;grid-template-columns:280px minmax(0,1fr);gap:2.25rem;align-items:start;}
+.award-facts{position:sticky;top:5.5rem;align-self:start;display:flex;flex-direction:column;gap:1.25rem;}
+.fact-block{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:1rem .95rem;border-radius:14px;box-shadow:0 4px 14px -6px rgba(0,0,0,.18);} 
+.fact-block h3{margin:.1rem 0 .75rem;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--global-text-color-light);} 
+.metric-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:.6rem;}
+.metric-list li{background:var(--global-bg-color);border:1px solid var(--global-divider-color);padding:.55rem .6rem;border-radius:10px;display:flex;flex-direction:column;align-items:flex-start;}
+.metric-value{font-weight:600;font-size:.95rem;}
+.metric-label{font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:var(--global-text-color-light);} 
+.skill-cloud code{background:var(--global-code-bg-color);padding:.2rem .45rem;border-radius:6px;margin:.15rem .2rem .15rem 0;font-size:.7rem;display:inline-block;}
+.tag-cloud .tag-item{font-size:.7rem;background:var(--global-code-bg-color);padding:.25rem .5rem;border-radius:6px;margin:.18rem .25rem .18rem 0;display:inline-block;text-decoration:none;color:var(--global-text-color);} 
+.section-index{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:1rem 1.1rem;border-radius:14px;margin:0 0 1.5rem;}
+.section-index h3{margin:0 0 .75rem;font-size:.8rem;letter-spacing:.07em;text-transform:uppercase;font-weight:600;color:var(--global-text-color-light);} 
+.section-index ol{margin:0;padding-left:1.15rem;font-size:.85rem;line-height:1.4;display:flex;flex-direction:column;gap:.35rem;}
+.section-index a{text-decoration:none;color:var(--global-theme-color);} 
+.section-index a:hover{text-decoration:underline;color:var(--global-hover-color);} 
+.award-article{max-width:820px;}
+.award-article h2{margin-top:2.2rem;font-size:1.65rem;}
+.award-article h3{margin-top:1.8rem;font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600;color:var(--global-text-color-light);} 
+.award-article hr{margin:2.2rem 0;border:0;border-top:1px solid var(--global-divider-color);} 
+.updated{text-align:center;font-size:.65rem;color:var(--global-text-color-light);} 
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);} 
+@media (max-width:1050px){.award-shell{grid-template-columns:230px 1fr;gap:1.5rem;}}
+@media (max-width:900px){.award-shell{grid-template-columns:1fr;}.award-facts{position:relative;top:0;flex-direction:row;overflow-x:auto;padding-bottom:.4rem;}.fact-block{min-width:200px;flex:0 0 auto;} }
+@media (max-width:600px){.award-hero-wrapper{padding:3rem 0 1.7rem;}.award-title{font-size:2.1rem;}.award-lead{font-size:.95rem;} .award-facts{flex-direction:column;} }
+html[data-theme='dark'] .award-hero-wrapper{background:linear-gradient(110deg,#151515 0%,#222 38%,var(--global-theme-color) 100%);} 
+html[data-theme='dark'] .award-ribbon span{background:rgba(255,255,255,.08);} 
+</style>
