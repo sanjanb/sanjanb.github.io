@@ -191,6 +191,11 @@ ninja.data = [{
           description: "",
           section: "Work",handler: () => {
               window.location.href = "/work/cti-nlp-system/";
+            },},{id: "work-smart-document-processor-ai-powered-ocr-automation",
+          title: 'Smart Document Processor - AI-Powered OCR Automation',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/smart-document-processor/";
             },},{
         id: 'social-email',
         title: 'email',
