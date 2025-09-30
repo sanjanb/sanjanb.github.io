@@ -178,18 +178,20 @@
   margin-top: 1rem;
   
   .tag {
-    display: inline-flex;
-    align-items: center;
-    background: linear-gradient(135deg, var(--global-theme-color), #e91e63);
-    color: white;
-    padding: 0.4rem 0.9rem;
-    border-radius: 16px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    position: relative;
-    overflow: hidden;
+    display: inline-flex !important;
+    align-items: center !important;
+    background: linear-gradient(135deg, var(--global-theme-color), #e91e63) !important;
+    color: white !important;
+    padding: 0.4rem 0.9rem !important;
+    border-radius: 16px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border: none !important;
+    text-decoration: none !important;
     
     // Subtle shine effect
     &::before {
@@ -204,9 +206,9 @@
     }
     
     &:hover {
-      background: linear-gradient(135deg, #9c27b0, var(--global-theme-color));
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 4px 15px rgba(181, 9, 172, 0.4);
+      background: linear-gradient(135deg, #9c27b0, var(--global-theme-color)) !important;
+      transform: translateY(-2px) scale(1.05) !important;
+      box-shadow: 0 4px 15px rgba(181, 9, 172, 0.4) !important;
       
       &::before {
         left: 100%;
@@ -214,7 +216,7 @@
     }
     
     &:active {
-      transform: translateY(0) scale(0.98);
+      transform: translateY(0) scale(0.98) !important;
     }
   }
 }
