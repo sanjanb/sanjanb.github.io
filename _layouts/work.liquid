@@ -13,80 +13,84 @@ layout: default
 {% endif %}
 
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.company or page.date %}
-      <p class="post-meta">
-        {% if page.company %}
-          {{ page.company }}
-        {% endif %}
-        {% if page.company and page.date %} &nbsp;&middot;&nbsp; {% endif %}
-        {% if page.date %}
-          {{ page.date | date: '%B %Y' }}
-        {% endif %}
-      </p>
-    {% endif %}
+  {% if page.hero %}
+    {% include hero_heading.liquid %}
+  {% else %}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.company or page.date %}
+        <p class="post-meta">
+          {% if page.company %}
+            {{ page.company }}
+          {% endif %}
+          {% if page.company and page.date %} &nbsp;&middot;&nbsp; {% endif %}
+          {% if page.date %}
+            {{ page.date | date: '%B %Y' }}
+          {% endif %}
+        </p>
+      {% endif %}
 
-    {% if page.start_date or page.end_date or page.duration %}
-      <p class="post-meta">
-        {% if page.start_date %}
-          <i class="fa-solid fa-play fa-sm" style="color: var(--global-tip-block) !important"></i> <em>{{ page.start_date | date: '%B %Y' }}</em>
-        {% endif %}
-        {% if page.end_date %}
+      {% if page.start_date or page.end_date or page.duration %}
+        <p class="post-meta">
           {% if page.start_date %}
-            &nbsp;&middot;&nbsp;
+            <i class="fa-solid fa-play fa-sm" style="color: var(--global-tip-block) !important"></i> <em>{{ page.start_date | date: '%B %Y' }}</em>
           {% endif %}
-          {% if page.status == 'ongoing' %}
-            <i class="fa-solid fa-clock fa-sm" style="color: #f39c12 !important"></i> <em>Present</em>
-          {% else %}
-            <i class="fa-solid fa-stop fa-sm" style="color: #e56565 !important"></i> <em>{{ page.end_date | date: '%B %Y' }}</em>
+          {% if page.end_date %}
+            {% if page.start_date %}
+              &nbsp;&middot;&nbsp;
+            {% endif %}
+            {% if page.status == 'ongoing' %}
+              <i class="fa-solid fa-clock fa-sm" style="color: #f39c12 !important"></i> <em>Present</em>
+            {% else %}
+              <i class="fa-solid fa-stop fa-sm" style="color: #e56565 !important"></i> <em>{{ page.end_date | date: '%B %Y' }}</em>
+            {% endif %}
           {% endif %}
+          {% if page.duration %}
+            {% if page.start_date or page.end_date %}
+              &nbsp;&middot;&nbsp;
+            {% endif %}
+            <i class="fa-solid fa-clock fa-sm"></i> <em>{{ page.duration }}</em>
+          {% endif %}
+          {% if page.website %}
+            {% if page.start_date or page.end_date or page.duration %}
+              &nbsp;&middot;&nbsp;
+            {% endif %}
+            <a target="_blank" href="{{ page.website }}"><i class="fa-solid fa-external-link-alt fa-sm"></i> View Project</a>
+          {% endif %}
+          {% if page.github %}
+            {% if page.start_date or page.end_date or page.duration or page.website %}
+              &nbsp;&middot;&nbsp;
+            {% endif %}
+            <a target="_blank" href="{{ page.github }}"><i class="fa-brands fa-github fa-sm"></i> GitHub</a>
+          {% endif %}
+        </p>
+      {% endif %}
+      
+      <p class="post-tags">
+        <a href="{{ year | prepend: '/work/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
+        {% if tags != '' %}
+          &nbsp;&middot;&nbsp;
+          {% for tag in page.tags %}
+            <a href="{{ tag | slugify | prepend: '/work/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+            {% unless forloop.last %}
+              &nbsp;
+            {% endunless %}
+          {% endfor %}
         {% endif %}
-        {% if page.duration %}
-          {% if page.start_date or page.end_date %}
-            &nbsp;&middot;&nbsp;
-          {% endif %}
-          <i class="fa-solid fa-clock fa-sm"></i> <em>{{ page.duration }}</em>
-        {% endif %}
-        {% if page.website %}
-          {% if page.start_date or page.end_date or page.duration %}
-            &nbsp;&middot;&nbsp;
-          {% endif %}
-          <a target="_blank" href="{{ page.website }}"><i class="fa-solid fa-external-link-alt fa-sm"></i> View Project</a>
-        {% endif %}
-        {% if page.github %}
-          {% if page.start_date or page.end_date or page.duration or page.website %}
-            &nbsp;&middot;&nbsp;
-          {% endif %}
-          <a target="_blank" href="{{ page.github }}"><i class="fa-brands fa-github fa-sm"></i> GitHub</a>
+
+        {% if categories != '' %}
+          &nbsp;&middot;&nbsp;
+          {% for category in page.categories %}
+            <a href="{{ category | slugify | prepend: '/work/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+            {% unless forloop.last %}
+              &nbsp;
+            {% endunless %}
+          {% endfor %}
         {% endif %}
       </p>
-    {% endif %}
-    
-    <p class="post-tags">
-      <a href="{{ year | prepend: '/work/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
-      {% if tags != '' %}
-        &nbsp;&middot;&nbsp;
-        {% for tag in page.tags %}
-          <a href="{{ tag | slugify | prepend: '/work/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-          {% unless forloop.last %}
-            &nbsp;
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
-
-      {% if categories != '' %}
-        &nbsp;&middot;&nbsp;
-        {% for category in page.categories %}
-          <a href="{{ category | slugify | prepend: '/work/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-          {% unless forloop.last %}
-            &nbsp;
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
-    </p>
-    <hr>
-  </header>
+      <hr>
+    </header>
+  {% endif %}
 
   <article class="work-content">
     {% if page.summary %}

@@ -1,0 +1,33 @@
+{%- comment -%}
+Reusable hero heading block.
+Usage in front matter:
+hero: true
+summary: "Short description"
+metrics:
+  - value: "1st Place"
+    label: "National Ranking"
+organization: "HackFusion National Hackathon" (optional contextual source)
+Add `hero_metrics: false` to suppress metrics grid even if metrics exist.
+{%- endcomment -%}
+{% assign metrics = page.metrics %}
+<section class="hero-block">
+  <h1 class="hero-title">{{ page.title }}</h1>
+  <div class="hero-meta">
+    {% if page.organization %}{{ page.organization }}{% endif %}
+    {% if page.organization and page.date %} · {% endif %}
+    {% if page.date %}{{ page.date | date: '%B %Y' }}{% endif %}
+  </div>
+  {% if page.summary %}
+    <p class="hero-lead">{{ page.summary }}</p>
+  {% endif %}
+  {% if metrics and page.hero_metrics != false %}
+    <div class="hero-metrics-grid">
+      {% for m in metrics %}
+        <div class="hero-metric">
+          <h3>{{ m.value }}</h3>
+          <p>{{ m.label }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
