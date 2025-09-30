@@ -1,6 +1,7 @@
 ---
 layout: achievement_case_study
 case_study: true
+hero: true
 title: "National Champion - HackFusion 2025 Hackathon"
 organization: "HackFusion National Hackathon"
 date: 2025-01-15
