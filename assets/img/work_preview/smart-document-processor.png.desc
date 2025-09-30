@@ -1,0 +1,11 @@
+# Smart Document Processor Interface  
+# This is the second screenshot showing the main document processing interface
+# Features visible:
+# - Professional green header with "Smart Document Processor" branding
+# - "AI-powered document extraction using Local API" subtitle
+# - Student ID input field for MongoDB storage
+# - File upload section supporting JPG, PNG, GIF, WebP, PDF
+# - Document type dropdown with auto-detect functionality
+# - Large green "Process Document" button
+# - API Documentation links at bottom (Swagger, ReDoc, Health Check, Document Schemas)
+# - Clean, user-friendly interface design
