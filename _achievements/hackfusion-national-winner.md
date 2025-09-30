@@ -39,13 +39,48 @@ Current institutional workflows exhibit:
 A vertically integrated admission and enrollment automation ecosystem composed of five independently deployable services working through well-defined APIs. Core capabilities: document digitisation, structured data extraction, workflow orchestration, conversational assistance, administrative oversight.
 
 ### Architecture Summary
-| Layer | Component | Responsibility | Tech Stack |
-|-------|-----------|----------------|------------|
-| Ingestion | OCR Automation Pipeline | Raw document conversion, text extraction, pre-processing | Python, FastAPI, Gemini API |
-| Extraction | SLM Document Extraction | Field-level semantic extraction and validation | DistilBERT, TensorFlow, PyTorch |
-| Orchestration | Admission Management Platform | Application lifecycle, status transitions, security | Spring Boot, React, JWT |
-| Assistance | Scholaro ChatBot | Real-time applicant Q&A, workflow guidance | Node.js, Express, MongoDB |
-| Administrative | University Management System | Operational configuration and oversight | Full-Stack Web Stack |
+<table class="case-table">
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Component</th>
+      <th>Responsibility</th>
+      <th>Tech Stack</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ingestion</td>
+      <td>OCR Automation Pipeline</td>
+      <td>Raw document conversion, text extraction, pre-processing</td>
+      <td>Python, FastAPI, Gemini API</td>
+    </tr>
+    <tr>
+      <td>Extraction</td>
+      <td>SLM Document Extraction</td>
+      <td>Field-level semantic extraction and validation</td>
+      <td>DistilBERT, TensorFlow, PyTorch</td>
+    </tr>
+    <tr>
+      <td>Orchestration</td>
+      <td>Admission Management Platform</td>
+      <td>Application lifecycle, status transitions, security</td>
+      <td>Spring Boot, React, JWT</td>
+    </tr>
+    <tr>
+      <td>Assistance</td>
+      <td>Scholaro ChatBot</td>
+      <td>Real-time applicant Q&amp;A, workflow guidance</td>
+      <td>Node.js, Express, MongoDB</td>
+    </tr>
+    <tr>
+      <td>Administrative</td>
+      <td>University Management System</td>
+      <td>Operational configuration and oversight</td>
+      <td>Full-Stack Web Stack</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 4. Design Principles
 1. Separation of concerns per service boundary
@@ -63,25 +98,63 @@ A vertically integrated admission and enrollment automation ecosystem composed o
 6. Chatbot surfaces context-aware responses and reduces manual tickets
 
 ## 6. Selected Technical Decisions
-| Decision | Rationale | Trade-offs |
-|----------|-----------|------------|
-| Microservices over monolith | Parallel team velocity; independent scaling | Higher integration overhead |
-| Lightweight DistilBERT variant | Balance between inference speed and accuracy | Slightly lower ceiling vs larger models |
-| FastAPI for OCR service | Async IO efficiency, rapid prototyping | Requires careful tuning under load |
-| Spring Boot for orchestration | Mature ecosystem, security & data tooling | Higher memory footprint |
-| JWT-based auth | Stateless session management | Token revocation complexity |
+<table class="case-table">
+  <thead>
+    <tr>
+      <th>Decision</th>
+      <th>Rationale</th>
+      <th>Trade-offs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microservices over monolith</td>
+      <td>Parallel team velocity; independent scaling</td>
+      <td>Higher integration overhead</td>
+    </tr>
+    <tr>
+      <td>Lightweight DistilBERT variant</td>
+      <td>Balance between inference speed and accuracy</td>
+      <td>Slightly lower ceiling vs larger models</td>
+    </tr>
+    <tr>
+      <td>FastAPI for OCR service</td>
+      <td>Async IO efficiency, rapid prototyping</td>
+      <td>Requires careful tuning under load</td>
+    </tr>
+    <tr>
+      <td>Spring Boot for orchestration</td>
+      <td>Mature ecosystem, security &amp; data tooling</td>
+      <td>Higher memory footprint</td>
+    </tr>
+    <tr>
+      <td>JWT-based auth</td>
+      <td>Stateless session management</td>
+      <td>Token revocation complexity</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 7. Implementation Footprint
 ### Service Deployment Progression (Time-Ordered)
-| Hour Block | Focus | Output |
-|------------|-------|--------|
-| 1–3 | Architecture alignment, repository scaffolds | Shared contracts defined |
-| 4–8 | OCR + extraction model integration | Baseline inference pipeline operational |
-| 9–14 | Orchestration service domain + auth | Role & workflow model stable |
-| 15–19 | Chatbot integration + context hooks | FAQ reduction path validated |
-| 20–22 | UI polishing + latency tuning | &lt; 1.2s avg extraction latency |
-| 23 | Cross-service integration test | All success paths green |
-| 24 | Demo packaging & narrative | Judge-ready scenario path |
+<table class="case-table">
+  <thead>
+    <tr>
+      <th>Hour Block</th>
+      <th>Focus</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1–3</td><td>Architecture alignment, repository scaffolds</td><td>Shared contracts defined</td></tr>
+    <tr><td>4–8</td><td>OCR + extraction model integration</td><td>Baseline inference pipeline operational</td></tr>
+    <tr><td>9–14</td><td>Orchestration service domain + auth</td><td>Role &amp; workflow model stable</td></tr>
+    <tr><td>15–19</td><td>Chatbot integration + context hooks</td><td>FAQ reduction path validated</td></tr>
+    <tr><td>20–22</td><td>UI polishing + latency tuning</td><td>&lt; 1.2s avg extraction latency</td></tr>
+    <tr><td>23</td><td>Cross-service integration test</td><td>All success paths green</td></tr>
+    <tr><td>24</td><td>Demo packaging &amp; narrative</td><td>Judge-ready scenario path</td></tr>
+  </tbody>
+</table>
 
 ## 8. Evidence Gallery
 <div class="gallery-grid two">
@@ -106,22 +179,40 @@ A vertically integrated admission and enrollment automation ecosystem composed o
 
 ## 10. Differentiators
 ### Architectural Strengths
-| Dimension | Implementation | Benefit |
-|-----------|----------------|---------|
-| Isolation | Service-per-core-function | Failure containment |
-| Observability | Stage & confidence instrumentation | Rapid diagnosis |
-| Extensibility | Contract-first APIs | Faster feature addition |
-| Performance | Model/runtime balance | Real-time usability |
-| Security | Role + token enforcement | Controlled access |
+<table class="case-table">
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Implementation</th>
+      <th>Benefit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Isolation</td><td>Service-per-core-function</td><td>Failure containment</td></tr>
+    <tr><td>Observability</td><td>Stage &amp; confidence instrumentation</td><td>Rapid diagnosis</td></tr>
+    <tr><td>Extensibility</td><td>Contract-first APIs</td><td>Faster feature addition</td></tr>
+    <tr><td>Performance</td><td>Model/runtime balance</td><td>Real-time usability</td></tr>
+    <tr><td>Security</td><td>Role + token enforcement</td><td>Controlled access</td></tr>
+  </tbody>
+</table>
 
 ## 11. Repositories
-| Repository | Scope | Key Focus |
-|------------|-------|-----------|
-| [OCR Automation Pipeline](https://github.com/sanjanb/ocr-automation-pipeline) | Document processing | OCR + pre-processing |
-| [SLM Document Extraction](https://github.com/sanjanb/small-language-model) | AI inference | Field semantics |
-| [College Admission Automation](https://github.com/sanjanb/College-Admission-Automation) | Core orchestration | Workflow + auth |
-| [Scholaro ChatBot](https://github.com/sanjanb/scholaro-chatbot) | Conversational layer | Contextual responses |
-| [University Management System](https://github.com/sanjanb/UniveristySite) | Admin oversight | Configuration UI |
+<table class="case-table">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Scope</th>
+      <th>Key Focus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="https://github.com/sanjanb/ocr-automation-pipeline">OCR Automation Pipeline</a></td><td>Document processing</td><td>OCR + pre-processing</td></tr>
+    <tr><td><a href="https://github.com/sanjanb/small-language-model">SLM Document Extraction</a></td><td>AI inference</td><td>Field semantics</td></tr>
+    <tr><td><a href="https://github.com/sanjanb/College-Admission-Automation">College Admission Automation</a></td><td>Core orchestration</td><td>Workflow + auth</td></tr>
+    <tr><td><a href="https://github.com/sanjanb/scholaro-chatbot">Scholaro ChatBot</a></td><td>Conversational layer</td><td>Contextual responses</td></tr>
+    <tr><td><a href="https://github.com/sanjanb/UniveristySite">University Management System</a></td><td>Admin oversight</td><td>Configuration UI</td></tr>
+  </tbody>
+</table>
 
 ## 12. Leadership & Coordination
 Role: Full-Stack Architect & Team Lead. Responsibilities included architectural definition, integration risk mitigation, API boundary negotiation, and delivery sequencing.
