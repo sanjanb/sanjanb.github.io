@@ -27,6 +27,16 @@ layout: default
         {%- for i in (1..award.rating) -%}<i class="fa-solid fa-star"></i>{%- endfor -%}
         </div>
       {%- endif %}
+      <div class="engagement-bar">
+        <span class="read-time" aria-label="Estimated reading time">{% assign words = content | number_of_words %}{% assign minutes = words | divided_by:180 | plus:1 %}~{{ minutes }} min read</span>
+        <div class="share-bar" aria-label="Share actions">
+          {%- assign share_url = site.url | append: award.url -%}
+          <button class="share-btn" data-share="copy" title="Copy link"><i class="fa-solid fa-link"></i></button>
+          <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener" title="Share on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="share-btn" href="https://twitter.com/intent/tweet?url={{ share_url | url_encode }}&text={{ award.title | url_encode }}" target="_blank" rel="noopener" title="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="share-btn" href="https://wa.me/?text={{ award.title | url_encode }}%20{{ share_url | url_encode }}" target="_blank" rel="noopener" title="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -85,7 +95,25 @@ layout: default
     {%- endif -%}
 
     <article class="award-article">
+      {%- if award.timeline -%}
+        <section class="award-timeline" aria-labelledby="timeline-heading">
+          <h2 id="timeline-heading">Journey Timeline</h2>
+          <ol class="timeline-list">
+            {%- for e in award.timeline -%}
+              <li>
+                <div class="t-dot" aria-hidden="true"></div>
+                <div class="t-content">
+                  <h4>{{ e.date }} · {{ e.title }}</h4>
+                  <p>{{ e.detail }}</p>
+                </div>
+              </li>
+            {%- endfor -%}
+          </ol>
+        </section>
+        <hr>
+      {%- endif -%}
       {{ content }}
+      <nav class="back-link"><a href="/achievements/" aria-label="Back to achievements list">← Back to Achievements</a></nav>
     </article>
   </main>
 </div>
@@ -125,4 +153,70 @@ layout: default
 @media (max-width:600px){.award-hero-wrapper{padding:3rem 0 1.7rem;}.award-title{font-size:2.1rem;}.award-lead{font-size:.95rem;} .award-facts{flex-direction:column;} }
 html[data-theme='dark'] .award-hero-wrapper{background:linear-gradient(110deg,#151515 0%,#222 38%,var(--global-theme-color) 100%);} 
 html[data-theme='dark'] .award-ribbon span{background:rgba(255,255,255,.08);} 
+/* Engagement additions */
+.engagement-bar{margin-top:1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;}
+.read-time{font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85;background:rgba(255,255,255,.15);padding:.35rem .55rem;border-radius:6px;}
+.share-bar{display:flex;gap:.45rem;}
+.share-btn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:.4rem .55rem;border-radius:8px;font-size:.75rem;color:#fff;text-decoration:none;line-height:1;display:inline-flex;align-items:center;justify-content:center;transition:background .25s,border-color .25s;}
+.share-btn:hover{background:rgba(255,255,255,.28);}
+/* Timeline */
+.award-timeline{margin:2rem 0 1.5rem;}
+.timeline-list{list-style:none;margin:1.25rem 0 0;padding:0;position:relative;}
+.timeline-list:before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--global-divider-color);} 
+.timeline-list li{position:relative;margin:0 0 1.4rem;padding-left:2.1rem;display:flex;}
+.timeline-list li:last-child{margin-bottom:.4rem;}
+.timeline-list h4{margin:0 0 .25rem;font-size:.9rem;font-weight:600;}
+.timeline-list p{margin:0;font-size:.8rem;line-height:1.25rem;}
+.t-dot{position:absolute;left:4px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--global-theme-color);box-shadow:0 0 0 3px var(--global-bg-color);} 
+.back-link{margin:3rem 0 0;font-size:.8rem;}
+.back-link a{text-decoration:none;color:var(--global-theme-color);}
+.back-link a:hover{text-decoration:underline;}
+/* Metric count-up animation */
+.metric-value[data-animate]{opacity:0;transform:translateY(4px);transition:opacity .4s ease,transform .4s ease;}
+.metric-value[data-animate].visible{opacity:1;transform:none;}
+</style>
+<script>
+(function(){
+  // Copy share link
+  const shareBar=document.querySelector('.share-bar');
+  if(shareBar){
+    shareBar.addEventListener('click',async e=>{
+      const btn=e.target.closest('[data-share="copy"]');
+      if(!btn) return; 
+      try{await navigator.clipboard.writeText(window.location.href);btn.classList.add('copied');setTimeout(()=>btn.classList.remove('copied'),1800);}catch(err){console.warn('Copy failed',err);}
+    });
+  }
+  // Count-up metrics
+  const metrics=document.querySelectorAll('.metric-value');
+  const speed=900; // ms
+  function animate(el){
+    const raw=el.textContent.trim();
+    const number=parseFloat(raw.replace(/[^0-9.]/g,''));
+    if(isNaN(number)) {el.classList.add('visible');return;}
+    const suffix=raw.replace(/[0-9.,]/g,'').trim();
+    let start=null;
+    function step(ts){
+      if(!start) start=ts; const p=Math.min((ts-start)/speed,1); const val=(number*p).toFixed(number%1?2:0); el.textContent=val+(suffix?(' '+suffix):''); if(p<1) requestAnimationFrame(step); else el.textContent=raw; }
+    requestAnimationFrame(step); el.classList.add('visible');
+  }
+  const io=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){animate(en.target);io.unobserve(en.target);}})},{threshold:.4});
+  metrics.forEach(m=>{m.setAttribute('data-animate','');io.observe(m);});
+})();
+</script>
+{%- comment -%} Structured data for SEO {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Award",
+  "name": {{ award.title | jsonify }},
+  "description": {{ award.summary | jsonify }},
+  "award": {{ award.title | jsonify }},
+  "dateReceived": "{{ award.date | date: '%Y-%m-%d' }}",
+  "recipient": {
+    "@type":"Person",
+    "name": {{ site.author.name | default: site.title | jsonify }}
+  },
+  "url": "{{ site.url }}{{ award.url }}"
+}
+</script>
 </style>
