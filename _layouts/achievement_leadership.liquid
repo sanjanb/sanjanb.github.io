@@ -1,0 +1,206 @@
+---
+layout: default
+---
+{%- assign a = page -%}
+{%- assign simple = a.layout_variant == 'simple' -%}
+<div class="lead-hero-wrapper{% if simple %} simple{% endif %}">
+  <div class="lead-hero">
+    <div class="lead-hero-inner">
+  <div class="lead-ribbon{% if simple %} flat{% endif %}">
+        {%- if a.organization %}<span>{{ a.organization }}</span>{% endif %}
+        {%- if a.date %}<span>{{ a.date | date: '%b %Y' }}</span>{% endif %}
+        {%- if a.status %}<span class="status {{ a.status }}">{{ a.status | capitalize }}</span>{% endif %}
+      </div>
+      <h1 class="lead-title">{{ a.title }}</h1>
+      {% if a.summary %}<p class="lead-lead{% if simple %} simple-text{% endif %}">{{ a.summary }}</p>{% endif %}
+      {% unless simple %}
+        {% if a.rating %}<div class="lead-rating" aria-label="Rating: {{ a.rating }} of 5">{% for i in (1..a.rating) %}<i class="fa-solid fa-star"></i>{% endfor %}</div>{% endif %}
+        <div class="lead-engage">
+          <span class="read-time">{% assign w = content | number_of_words %}{% assign m = w | divided_by:190 | plus:1 %}~{{ m }} min read</span>
+          <div class="share-mini" aria-label="Share actions">
+            {%- assign share_url = site.url | append: a.url -%}
+            <button data-share="copy" class="sbtn" title="Copy link"><i class="fa-solid fa-link"></i></button>
+            <a class="sbtn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="sbtn" href="https://twitter.com/intent/tweet?url={{ share_url | url_encode }}&text={{ a.title | url_encode }}" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      {% endunless %}
+    </div>
+  </div>
+</div>
+
+<div class="lead-grid container-lg{% if simple %} simple{% endif %}">
+  {% unless simple %}
+  <aside class="lead-aside" aria-labelledby="snapshot-heading">
+    <h2 class="visually-hidden" id="snapshot-heading">Snapshot</h2>
+    {% if a.metrics %}
+    <div class="panel">
+      <h3>Key Metrics</h3>
+      <ul class="metric-cards">{% for m in a.metrics %}<li><span class="mv" data-animate>{{ m.value }}</span><span class="ml">{{ m.label }}</span></li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+    {% if a.skills %}
+    <div class="panel">
+      <h3>Focus Areas</h3>
+      <p class="skill-cloud">{% for s in a.skills %}<code>{{ s }}</code>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    </div>
+    {% endif %}
+    {% if a.initiatives %}
+    <div class="panel">
+      <h3>Initiatives</h3>
+      <ul class="init-list">{% for i in a.initiatives %}<li>{{ i.title }}</li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+    <div class="panel updated"><small>Updated {{ a.date | date: '%b %Y' }}</small></div>
+  </aside>
+  {% endunless %}
+
+  <main class="lead-main{% if simple %} simple{% endif %}" role="main">
+  {% if a.initiatives and not simple %}
+      <section class="initiative-grid" aria-labelledby="initiatives-heading">
+        <h2 id="initiatives-heading">Strategic Initiatives</h2>
+        <div class="igrid">
+          {% for i in a.initiatives %}
+            <div class="icard">
+              <h4>{{ i.title }}</h4>
+              {% if i.outcome %}<p class="icard-outcome">{{ i.outcome }}</p>{% endif %}
+              {% if i.metrics %}<ul class="inline-metrics">{% for pair in i.metrics %}<li>{{ pair }}</li>{% endfor %}</ul>{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <hr>
+    {% endif %}
+
+  {% if a.growth and not simple %}
+      <section class="growth-band" aria-labelledby="growth-heading">
+        <h2 id="growth-heading">Growth & Impact</h2>
+        <div class="growth-flex">
+          {% for g in a.growth %}
+            <div class="gitem">
+              <h3>{{ g.value }}</h3>
+              <p>{{ g.label }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <hr>
+    {% endif %}
+
+  {% if a.timeline %}
+      <section class="lead-timeline" aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading">Leadership Timeline</h2>
+        <ol class="tline">
+          {% for t in a.timeline %}
+            <li>
+              <div class="tdot"></div>
+              <div class="tcontent"><h4>{{ t.date }} · {{ t.title }}</h4><p>{{ t.detail }}</p></div>
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+      <hr>
+    {% endif %}
+
+    <article class="lead-article">
+      {{ content }}
+      {% unless simple %}
+        <details class="more-body"><summary>Extended Narrative</summary>
+          <div class="extended-slot" id="extended-slot"><!-- optional appended content injection point --></div>
+        </details>
+      {% endunless %}
+      <nav class="back-link"><a href="/achievements/">← All Achievements</a></nav>
+    </article>
+  </main>
+</div>
+
+<style>
+.lead-hero-wrapper{background:linear-gradient(120deg,var(--global-theme-color)0%,#5c2f91 50%,#101010 100%);color:#fff;position:relative;padding:3.4rem 0 2.1rem;margin-bottom:1.4rem;overflow:hidden;}
+.lead-hero-wrapper.simple{background:var(--global-bg-color);color:var(--global-text-color);border-bottom:1px solid var(--global-divider-color);padding:2.2rem 0 1.2rem;margin-bottom:1.2rem;}
+.lead-hero-wrapper:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 22%,rgba(255,255,255,.18),transparent 62%);} 
+.lead-hero-inner{max-width:1150px;margin:0 auto;padding:0 1.25rem;position:relative;}
+.lead-ribbon{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 .65rem;font-size:.65rem;text-transform:uppercase;letter-spacing:.09em;font-weight:600;}
+.lead-ribbon span{background:rgba(255,255,255,.16);padding:.35rem .55rem;border-radius:6px;backdrop-filter:blur(4px);} 
+.lead-ribbon.flat span{background:var(--global-code-bg-color);color:var(--global-text-color);backdrop-filter:none;}
+.lead-title{margin:0 0 .85rem;font-size:clamp(2.1rem,5vw,3.25rem);line-height:1.07;font-weight:650;letter-spacing:-.5px;}
+.lead-hero-wrapper.simple .lead-title{font-size:clamp(1.9rem,4.5vw,2.8rem);}
+.lead-lead{max-width:880px;margin:0;font-size:1.02rem;line-height:1.55;}
+.lead-lead.simple-text{color:var(--global-text-color-light);font-size:.95rem;}
+.lead-rating{margin-top:.85rem;color:#ffc107;}
+.lead-engage{margin-top:1.05rem;display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;}
+.read-time{background:rgba(255,255,255,.15);padding:.35rem .6rem;border-radius:6px;font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;}
+.share-mini .sbtn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:.4rem .55rem;border-radius:8px;font-size:.75rem;color:#fff;text-decoration:none;line-height:1;display:inline-flex;align-items:center;justify-content:center;transition:background .25s,border-color .25s;}
+.share-mini .sbtn:hover{background:rgba(255,255,255,.28);} 
+.lead-grid{display:grid;grid-template-columns:300px minmax(0,1fr);gap:2.4rem;}
+.lead-grid.simple{display:block;}
+.lead-aside{position:sticky;top:5.5rem;display:flex;flex-direction:column;gap:1.2rem;}
+.panel{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:1rem .95rem;border-radius:14px;box-shadow:0 4px 14px -6px rgba(0,0,0,.18);} 
+.panel h3{margin:.1rem 0 .75rem;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--global-text-color-light);} 
+.metric-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:.6rem;}
+.metric-cards li{background:var(--global-bg-color);border:1px solid var(--global-divider-color);padding:.55rem .6rem;border-radius:10px;display:flex;flex-direction:column;}
+.metric-cards .mv{font-weight:600;font-size:.95rem;}
+.metric-cards .ml{font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:var(--global-text-color-light);} 
+.skill-cloud code{background:var(--global-code-bg-color);padding:.22rem .5rem;border-radius:6px;margin:.15rem .2rem .15rem 0;font-size:.65rem;display:inline-block;}
+.init-list{margin:0;padding-left:1.05rem;font-size:.75rem;line-height:1.2rem;}
+.lead-main h2{margin-top:2.1rem;font-size:1.6rem;}
+.initiative-grid .igrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem;}
+.icard{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:.9rem .85rem;border-radius:12px;display:flex;flex-direction:column;gap:.45rem;position:relative;overflow:hidden;}
+.icard:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.08),transparent 70%);pointer-events:none;}
+.icard h4{margin:0;font-size:.95rem;font-weight:600;}
+.icard-outcome{margin:0;font-size:.75rem;line-height:1.2rem;}
+.inline-metrics{list-style:none;margin:.2rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem;}
+.inline-metrics li{background:var(--global-code-bg-color);padding:.25rem .5rem;font-size:.55rem;letter-spacing:.05em;text-transform:uppercase;border-radius:6px;}
+.growth-band{margin:2rem 0 1.5rem;}
+.growth-flex{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.9rem;margin-top:1rem;}
+.gitem{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:1rem .9rem;border-radius:14px;text-align:left;position:relative;}
+.gitem h3{margin:0 0 .35rem;font-size:1.4rem;letter-spacing:-.5px;font-weight:600;}
+.gitem p{margin:0;font-size:.65rem;letter-spacing:.07em;text-transform:uppercase;color:var(--global-text-color-light);} 
+.lead-timeline{margin:2rem 0 1.5rem;}
+.tline{list-style:none;margin:1.3rem 0 0;padding:0;position:relative;}
+.tline:before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:var(--global-divider-color);} 
+.tline li{position:relative;margin:0 0 1.5rem;padding-left:2.4rem;}
+.tdot{position:absolute;left:6px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--global-theme-color);box-shadow:0 0 0 3px var(--global-bg-color);} 
+.tcontent h4{margin:0 0 .25rem;font-size:.9rem;font-weight:600;}
+.tcontent p{margin:0;font-size:.78rem;line-height:1.25rem;}
+.lead-article{max-width:850px;}
+.lead-main.simple .lead-article{max-width:900px;}
+.lead-article hr{margin:2.2rem 0;border:0;border-top:1px solid var(--global-divider-color);} 
+.more-body{margin:2rem 0 0;}
+.more-body summary{cursor:pointer;list-style:none;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:.7rem .95rem;border-radius:10px;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;}
+.more-body[open] summary{border-bottom-left-radius:0;border-bottom-right-radius:0;}
+.extended-slot{border:1px solid var(--global-divider-color);border-top:0;padding:1rem .95rem;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background:var(--global-card-bg-color);} 
+.back-link{margin:3rem 0 0;font-size:.8rem;}
+.back-link a{text-decoration:none;color:var(--global-theme-color);} .back-link a:hover{text-decoration:underline;}
+.updated{text-align:center;font-size:.6rem;color:var(--global-text-color-light);} 
+.mv[data-animate]{opacity:0;transform:translateY(4px);transition:opacity .45s,transform .45s;}
+.mv.visible{opacity:1;transform:none;}
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);} 
+html[data-theme='dark'] .lead-hero-wrapper{background:linear-gradient(120deg,#141414 0%,#232323 45%,var(--global-theme-color) 100%);} 
+html[data-theme='dark'] .lead-hero-wrapper.simple{background:var(--global-bg-color);} 
+@media (max-width:1080px){.lead-grid{grid-template-columns:250px 1fr;gap:1.8rem;}}
+@media (max-width:900px){.lead-grid{grid-template-columns:1fr;}.lead-aside{position:relative;top:0;flex-direction:row;overflow-x:auto;padding-bottom:.4rem;}.panel{min-width:220px;flex:0 0 auto;}}
+@media (max-width:600px){.lead-hero-wrapper{padding:3rem 0 1.7rem;}.lead-title{font-size:2.15rem;}.lead-lead{font-size:.95rem;} .lead-aside{flex-direction:column;}}
+</style>
+<script>
+(function(){
+  // Copy
+  const share=document.querySelector('.share-mini');
+  if(share){share.addEventListener('click',async e=>{const b=e.target.closest('[data-share="copy"]');if(!b)return;try{await navigator.clipboard.writeText(location.href);b.classList.add('copied');setTimeout(()=>b.classList.remove('copied'),1500);}catch(err){console.warn('Clipboard fail',err);}})}
+  // Animate metrics
+  const mv=document.querySelectorAll('.mv');
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){const el=en.target;el.classList.add('visible');io.unobserve(el);}})},{threshold:.4});
+  mv.forEach(m=>io.observe(m));
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Role",
+  "roleName": {{ a.title | jsonify }},
+  "startDate": "{{ a.start_date | default: a.date | date: '%Y-%m-%d' }}",
+  "name": {{ a.title | jsonify }},
+  "description": {{ a.summary | jsonify }},
+  "url": "{{ site.url }}{{ a.url }}",
+  "member": {"@type":"Person","name": {{ site.author.name | default: site.title | jsonify }} }
+}
+</script>
