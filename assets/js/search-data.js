@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-achievements",
           title: "Achievements",
-          description: "",
+          description: "A journey of continuous growth and impact in technology and leadership.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/achievements/";
