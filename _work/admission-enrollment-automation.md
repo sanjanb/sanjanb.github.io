@@ -117,21 +117,29 @@ benchmarks:
         after: Low (self-serve guidance)
 ---
 
-## **Advanced Educational Automation Ecosystem**
+## **Executive Overview**
 
-The **Admission & Enrollment Automation System** represents an **advanced educational technology solution**, developed for MIT Hackathon 2025. This comprehensive ecosystem transforms traditional educational administration through intelligent automation, integrating **5 specialized microservices** into a unified, enterprise-grade platform that automates the complete student journey from application to enrollment.
+Built for MIT Hackathon 2025, this platform unifies 5 focused microservices (OCR, ChatBot, Admission Core, SLM Extraction, University Admin) into a coherent automation layer that converts a slow, manual, fragmented admission journey into a real‑time, data‑driven flow.
 
-## **The Complete Educational Challenge**
+Key outcomes:
 
-Traditional educational institutions face numerous interconnected challenges in managing student admissions and enrollment:
+- 100% digitized applicant workflow (documents → decisions)
+- 95%+ structured field extraction accuracy (AI OCR + DistilBERT)
+- Minutes → seconds document handling (2–3 min → 2–5s)
+- 80% faster end-to-end application cycle
+- Lower support load via guided ChatBot & proactive status updates
+- Secure role isolation (JWT scopes, service boundaries)
 
-- **Fragmented Systems**: Multiple disconnected tools creating data silos and inefficiencies
-- **Manual Document Processing**: Time-intensive paper-based workflows prone to human error
-- **Inconsistent Student Guidance**: Lack of personalized, intelligent counseling systems
-- **Complex Integration**: Difficulty connecting various departmental and external systems
-- **Scalability Limitations**: Legacy systems unable to handle growing student volumes
-- **Quality Assurance**: Maintaining accuracy and compliance across all processes
-- **Real-time Analytics**: Need for comprehensive insights and decision-making tools
+## **Challenges Addressed**
+
+| Pain Point | Prior State | Resolution | Result |
+|------------|------------|------------|--------|
+| Manual document intake | Human review delays | AI OCR + DistilBERT pipeline | Seconds processing; high accuracy |
+| Fragmented journey | Disconnected steps | Unified workflow + real-time events | Faster progression |
+| Low applicant guidance | Repeated queries | ChatBot + eligibility engine | Fewer interventions |
+| Security gaps | Broad access | JWT scopes + clear boundaries | Hardened access & audit |
+
+These challenges map directly to the Problems & Performance panels (sidebar) and the matrix below for quick executive scanning.
 
 ## **Real-World Interface Demonstrations**
 
