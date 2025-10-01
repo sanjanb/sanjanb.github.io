@@ -7,6 +7,8 @@ layout: default
 {%- assign mods = w.submodules -%}
 {%- assign resp = w.responsibilities -%}
 {%- assign timeline = w.timeline -%}
+{%- assign probs = w.problems -%}
+{%- assign bench = w.benchmarks -%}
 {%- assign simple = w.layout_variant == 'simple' -%}
 <div class="workcs-hero{% if simple %} simple{% endif %}">
   <div class="inner">
@@ -65,6 +67,18 @@ layout: default
       <ol class="tl-mini">{% for t in timeline %}<li><span class="tdate">{{ t.date }}</span><span class="ttitle">{{ t.title }}</span></li>{% endfor %}</ol>
     </div>
     {%- endif %}
+    {%- if probs %}
+    <div class="panel">
+      <h3>Challenges</h3>
+      <ul class="problem-mini">{% for p in probs %}<li><strong>{{ p.issue }}</strong><br><small>{{ p.impact }}</small></li>{% endfor %}</ul>
+    </div>
+    {%- endif %}
+    {%- if bench %}
+    <div class="panel">
+      <h3>Performance</h3>
+      <ul class="bench-mini">{% for b in bench %}<li><span class="bmetric">{{ b.metric }}</span><span class="bvals">{{ b.before }} → <strong>{{ b.after }}</strong></span></li>{% endfor %}</ul>
+    </div>
+    {%- endif %}
   </aside>
   <main class="main" role="main">
     {%- if mods %}
@@ -84,6 +98,26 @@ layout: default
 
     <article class="article">
       {{ content }}
+      {%- if probs %}
+      <section class="problem-matrix" aria-labelledby="problem-matrix-heading">
+        <h2 id="problem-matrix-heading">Problem → Solution → Impact</h2>
+        <div class="table-wrap">
+          <table class="matrix">
+            <thead><tr><th>Problem</th><th>Solution</th><th>Impact</th></tr></thead>
+            <tbody>
+              {% for p in probs %}
+              <tr>
+                <td>{{ p.issue }}</td>
+                <td>{{ p.solution }}</td>
+                <td>{{ p.impact }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <hr>
+      </section>
+      {%- endif %}
       {%- if timeline %}
       <section class="cs-timeline" aria-labelledby="full-timeline-heading">
         <h2 id="full-timeline-heading">Project Timeline</h2>
@@ -143,6 +177,18 @@ layout: default
 .tl-mini li{margin:0 0 .4rem}
 .tl-mini .tdate{display:block;font-weight:600;font-size:.58rem;letter-spacing:.05em;text-transform:uppercase;color:var(--global-text-color-light)}
 .tl-mini .ttitle{display:block}
+.problem-mini{margin:0;padding-left:1.05rem;font-size:.65rem;line-height:1rem}
+.problem-mini li{margin:0 0 .55rem}
+.bench-mini{margin:0;padding:0;list-style:none;font-size:.62rem;line-height:.9rem;display:grid;gap:.45rem}
+.bench-mini li{background:var(--global-bg-color);border:1px solid var(--global-divider-color);padding:.4rem .5rem;border-radius:8px;display:flex;flex-direction:column}
+.bmetric{font-weight:600;font-size:.6rem;letter-spacing:.05em;text-transform:uppercase;color:var(--global-text-color-light)}
+.bvals{font-size:.7rem}
+.problem-matrix{margin:2.5rem 0 1.2rem}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.matrix{width:100%;border-collapse:separate;border-spacing:0;font-size:.78rem}
+table.matrix th,table.matrix td{padding:.55rem .65rem;text-align:left;vertical-align:top;border:1px solid var(--global-divider-color)}
+table.matrix th{background:var(--global-card-bg-color);font-size:.62rem;letter-spacing:.07em;text-transform:uppercase}
+table.matrix tbody tr:nth-child(even){background:var(--global-code-bg-color)}
 .cs-timeline{margin:2.4rem 0 1.2rem}
 .tline{list-style:none;margin:1.3rem 0 0;padding:0;position:relative}
 .tline:before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:var(--global-divider-color)}
