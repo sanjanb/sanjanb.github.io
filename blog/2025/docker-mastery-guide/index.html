@@ -515,7 +515,7 @@ docker stack deploy <span class="se">\</span>
 <span class="nv">ATTEMPT</span><span class="o">=</span>1
 
 <span class="k">while</span> <span class="o">[</span> <span class="nv">$ATTEMPT</span> <span class="nt">-le</span> <span class="nv">$MAX_ATTEMPTS</span> <span class="o">]</span><span class="p">;</span> <span class="k">do
-  if </span>docker service <span class="nb">ls</span> <span class="nt">--filter</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">STACK_NAME</span><span class="k">}</span> <span class="nt">--format</span> <span class="s2">"table </span><span class="se">\t</span><span class="s2">"</span> | <span class="nb">grep</span> <span class="nt">-q</span> <span class="s2">"3/3"</span><span class="p">;</span> <span class="k">then
+  if </span>docker service <span class="nb">ls</span> <span class="nt">--filter</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">STACK_NAME</span><span class="k">}</span> <span class="nt">--format</span> <span class="s2">"table {{.Name}}</span><span class="se">\t</span><span class="s2">{{.Replicas}}"</span> | <span class="nb">grep</span> <span class="nt">-q</span> <span class="s2">"3/3"</span><span class="p">;</span> <span class="k">then
     </span><span class="nb">echo</span> <span class="s2">"Deployment successful!"</span>
     <span class="nb">break
   </span><span class="k">fi
