@@ -1,0 +1,30 @@
+{% comment %}
+Renders a skill matrix. Expects 'entry' with structure:
+- title: Core Technical Skills
+  type: skills_matrix
+  contents:
+    - group: AI / ML
+      items:
+        - name: BERT & Transformers
+          level: expert
+        - name: Computer Vision (CLIP, CNNs)
+          level: advanced
+    - group: Backend & APIs
+      items:
+        - name: FastAPI / REST
+          level: advanced
+{% endcomment %}
+<div class="skill-matrix">
+  {% for g in entry.contents %}
+    <div class="skill-group">
+      <h4>{{ g.group }}</h4>
+      {% for s in g.items %}
+        <div class="skill-item" data-level="{{ s.level }}">
+          <span>{{ s.name }}</span>
+          <div class="skill-bar"><span></span></div>
+          <span class="skill-level">{{ s.level }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
