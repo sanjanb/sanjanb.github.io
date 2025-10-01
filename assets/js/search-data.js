@@ -191,16 +191,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "work-",
-          title: '',
-          description: "",
-          section: "Work",handler: () => {
-              window.location.href = "/work/admission-enrollment-automation/";
             },},{id: "work-ai-powered-cyber-threat-intelligence-system",
           title: 'AI-Powered Cyber Threat Intelligence System',
           description: "",
           section: "Work",handler: () => {
               window.location.href = "/work/cti-nlp-system/";
+            },},{id: "work-admission-amp-enrollment-automation-complete-educational-ecosystem",
+          title: 'Admission &amp;amp; Enrollment Automation - Complete Educational Ecosystem',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/admission-enrollment-automation/";
             },},{
         id: 'social-email',
         title: 'email',
