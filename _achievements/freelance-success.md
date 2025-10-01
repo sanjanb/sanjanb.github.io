@@ -44,6 +44,8 @@ timeline:
 
 My freelance journey since 2020 has let me solve real business problems for global clients while building deep modern web stack expertise. What began as a way to apply skills became a sustainable professional track alongside my AI/ML focus.
 
+{% include figure.liquid loading="eager" path="assets/img/achievements/freelance.jpg" title="Freelance Web Development Portfolio" class="img-fluid rounded z-depth-1" caption="Sample of responsive web applications and sites developed for global clients" %}
+
 ---
 
 ## **Professional Achievements & Portfolio**
