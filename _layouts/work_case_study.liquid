@@ -1,0 +1,208 @@
+---
+layout: default
+---
+{%- assign w = page -%}
+{%- assign metrics = w.impact -%}
+{%- assign stack = w.technologies -%}
+{%- assign mods = w.submodules -%}
+{%- assign resp = w.responsibilities -%}
+{%- assign timeline = w.timeline -%}
+{%- assign simple = w.layout_variant == 'simple' -%}
+<div class="workcs-hero{% if simple %} simple{% endif %}">
+  <div class="inner">
+    <div class="ribbon">
+      {%- if w.company %}<span>{{ w.company }}</span>{% endif %}
+      {%- if w.role %}<span>{{ w.role }}</span>{% endif %}
+      {%- if w.date %}<span>{{ w.date | date: '%b %Y' }}</span>{% endif %}
+      {%- if w.status %}<span class="status {{ w.status }}">{{ w.status | capitalize }}</span>{% endif %}
+    </div>
+    <h1 class="title">{{ w.title }}</h1>
+    {%- if w.summary %}<p class="lead">{{ w.summary }}</p>{% endif %}
+    <div class="meta-line">
+      {%- if w.start_date %}<span><i class="fa-solid fa-play"></i> {{ w.start_date | date: '%b %Y' }}</span>{% endif %}
+      {%- if w.end_date %}<span><i class="fa-solid fa-flag-checkered"></i> {{ w.end_date | date: '%b %Y' }}</span>{% endif %}
+      {%- if w.duration %}<span><i class="fa-solid fa-clock"></i> {{ w.duration }}</span>{% endif %}
+      {%- if w.website %}<a href="{{ w.website }}" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live</a>{% endif %}
+      {%- if w.repository %}<a href="{{ w.repository }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
+    </div>
+    <div class="quick-actions">
+      <button data-copy class="cbtn" title="Copy link"><i class="fa-solid fa-link"></i></button>
+      <a class="cbtn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url | append: w.url | url_encode }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a class="cbtn" href="https://twitter.com/intent/tweet?url={{ site.url | append: w.url | url_encode }}&text={{ w.title | url_encode }}" target="_blank" rel="noopener" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+  </div>
+</div>
+<div class="workcs-grid container-lg">
+  <aside class="side" aria-label="Page index">
+    <nav class="sindex" id="section-index"></nav>
+    {%- if metrics %}
+    <div class="panel">
+      <h3>Impact</h3>
+      <ul class="metric-cards">{% for m in metrics %}<li><span class="mv" data-animate>{{ m.value }}</span><span class="ml">{{ m.description }}</span></li>{% endfor %}</ul>
+    </div>
+    {%- endif %}
+    {%- if stack %}
+    <div class="panel">
+      <h3>Stack</h3>
+      <p class="stack-cloud">{% for t in stack %}<code>{{ t }}</code>{% endfor %}</p>
+    </div>
+    {%- endif %}
+    {%- if mods %}
+    <div class="panel">
+      <h3>Submodules</h3>
+      <ul class="mod-list">{% for m in mods %}<li><strong>{{ m.name }}</strong><br><small>{{ m.description }}</small></li>{% endfor %}</ul>
+    </div>
+    {%- endif %}
+    {%- if resp %}
+    <div class="panel">
+      <h3>Responsibilities</h3>
+      <ul class="resp-list">{% for r in resp %}<li>{{ r }}</li>{% endfor %}</ul>
+    </div>
+    {%- endif %}
+    {%- if timeline %}
+    <div class="panel">
+      <h3>Timeline</h3>
+      <ol class="tl-mini">{% for t in timeline %}<li><span class="tdate">{{ t.date }}</span><span class="ttitle">{{ t.title }}</span></li>{% endfor %}</ol>
+    </div>
+    {%- endif %}
+  </aside>
+  <main class="main" role="main">
+    {%- if mods %}
+    <section class="mod-grid" aria-labelledby="mods-heading">
+      <h2 id="mods-heading">Integrated Components</h2>
+      <div class="mgrid">{% for m in mods %}
+        <div class="mcard">
+          <h4>{{ m.name }}</h4>
+          <p>{{ m.description }}</p>
+          <p class="tech-line">{% for t in m.tech %}<code>{{ t }}</code>{% endfor %}</p>
+          {%- if m.repo %}<p><a class="repo" href="{{ m.repo }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a></p>{% endif %}
+        </div>
+      {% endfor %}</div>
+    </section>
+    <hr>
+    {%- endif %}
+
+    <article class="article">
+      {{ content }}
+      {%- if timeline %}
+      <section class="cs-timeline" aria-labelledby="full-timeline-heading">
+        <h2 id="full-timeline-heading">Project Timeline</h2>
+        <ol class="tline cs">{% for t in timeline %}
+          <li>
+            <div class="tdot"></div>
+            <div class="tcontent"><h4>{{ t.date }} · {{ t.title }}</h4><p>{{ t.detail }}</p></div>
+          </li>
+        {% endfor %}</ol>
+        <hr>
+      </section>
+      {%- endif %}
+      {%- if w.gallery %}
+      <section class="gallery" aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading">Gallery</h2>
+        <div class="ggrid">{% for g in w.gallery %}
+          <figure>
+            <img src="/assets/img/work_preview/{{ g }}" alt="{{ g }}" loading="lazy">
+          </figure>
+        {% endfor %}</div>
+      </section>
+      {%- endif %}
+      <nav class="back-link"><a href="/work/">← All Work</a></nav>
+    </article>
+  </main>
+</div>
+<style>
+.workcs-hero{background:linear-gradient(110deg,var(--global-theme-color)0%,#242038 60%,#101010 100%);color:#fff;padding:3.4rem 0 2.4rem;margin:0 0 1.6rem;position:relative;overflow:hidden}
+.workcs-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 22%,rgba(255,255,255,.15),transparent 65%)}
+.workcs-hero.simple{background:var(--global-bg-color);color:var(--global-text-color);border-bottom:1px solid var(--global-divider-color)}
+.workcs-hero .inner{max-width:1150px;margin:0 auto;padding:0 1.2rem;position:relative}
+.ribbon{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 .65rem;font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.ribbon span{background:rgba(255,255,255,.16);padding:.35rem .55rem;border-radius:6px;backdrop-filter:blur(4px)}
+.workcs-hero.simple .ribbon span{background:var(--global-code-bg-color);color:var(--global-text-color)}
+.title{margin:0 0 .9rem;font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.06;font-weight:650;letter-spacing:-.5px}
+.lead{max-width:920px;margin:0;font-size:1.02rem;line-height:1.54}
+.meta-line{margin:1.05rem 0 0;display:flex;flex-wrap:wrap;gap:.85rem;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.meta-line a{text-decoration:none;color:#fff}
+.workcs-hero.simple .meta-line a{color:var(--global-theme-color)}
+.quick-actions{margin-top:1rem;display:flex;gap:.55rem}
+.cbtn{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:.45rem .65rem;border-radius:8px;font-size:.8rem;color:#fff;line-height:1;display:inline-flex;align-items:center;justify-content:center;transition:background .25s,border-color .25s}
+.cbtn:hover{background:rgba(255,255,255,.28)}
+.workcs-hero.simple .cbtn{background:var(--global-code-bg-color);color:var(--global-text-color);border-color:var(--global-divider-color)}
+.workcs-grid{display:grid;grid-template-columns:300px minmax(0,1fr);gap:2.4rem}
+.side{position:sticky;top:5.5rem;display:flex;flex-direction:column;gap:1.2rem;align-self:start}
+.panel{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:1rem .95rem;border-radius:14px;box-shadow:0 4px 14px -6px rgba(0,0,0,.18)}
+.panel h3{margin:.1rem 0 .75rem;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--global-text-color-light)}
+.metric-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:.6rem}
+.metric-cards li{background:var(--global-bg-color);border:1px solid var(--global-divider-color);padding:.55rem .6rem;border-radius:10px;display:flex;flex-direction:column}
+.metric-cards .mv{font-weight:600;font-size:.95rem}
+.metric-cards .ml{font-size:.58rem;text-transform:uppercase;letter-spacing:.06em;color:var(--global-text-color-light)}
+.stack-cloud code{background:var(--global-code-bg-color);padding:.22rem .5rem;border-radius:6px;margin:.15rem .25rem .15rem 0;font-size:.65rem;display:inline-block}
+.mod-list{margin:0;padding-left:1.05rem;font-size:.7rem;line-height:1rem}
+.resp-list{margin:0;padding-left:1.05rem;font-size:.7rem;line-height:1.05rem}
+.resp-list li{margin:0 0 .35rem}
+.tl-mini{margin:.2rem 0 0;padding:0 0 0 1.05rem;font-size:.68rem;line-height:1rem}
+.tl-mini li{margin:0 0 .4rem}
+.tl-mini .tdate{display:block;font-weight:600;font-size:.58rem;letter-spacing:.05em;text-transform:uppercase;color:var(--global-text-color-light)}
+.tl-mini .ttitle{display:block}
+.cs-timeline{margin:2.4rem 0 1.2rem}
+.tline{list-style:none;margin:1.3rem 0 0;padding:0;position:relative}
+.tline:before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:var(--global-divider-color)}
+.tline li{position:relative;margin:0 0 1.5rem;padding-left:2.4rem}
+.tdot{position:absolute;left:6px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--global-theme-color);box-shadow:0 0 0 3px var(--global-bg-color)}
+.tcontent h4{margin:0 0 .25rem;font-size:.9rem;font-weight:600}
+.tcontent p{margin:0;font-size:.78rem;line-height:1.25rem}
+.main h2{margin-top:2.2rem;font-size:1.6rem}
+.mod-grid .mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1.1rem}
+.mcard{background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);padding:.95rem .85rem;border-radius:12px;display:flex;flex-direction:column;gap:.5rem;position:relative;overflow:hidden}
+.mcard:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.08),transparent 70%);pointer-events:none}
+.mcard h4{margin:0;font-size:.95rem;font-weight:600}
+.mcard p{margin:0;font-size:.78rem;line-height:1.15rem}
+.tech-line code{background:var(--global-code-bg-color);padding:.2rem .45rem;font-size:.55rem;margin:.15rem .2rem .15rem 0;border-radius:6px}
+.article{max-width:880px}
+.article hr{margin:2.2rem 0;border:0;border-top:1px solid var(--global-divider-color)}
+.gallery{margin:2.5rem 0 1rem}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.ggrid figure{margin:0;padding:0;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:12px;overflow:hidden}
+.ggrid img{width:100%;display:block}
+.back-link{margin:3rem 0 0;font-size:.8rem}
+.back-link a{text-decoration:none;color:var(--global-theme-color)}
+#section-index{font-size:.7rem}
+#section-index a{text-decoration:none;display:block;padding:.25rem 0;color:var(--global-text-color-light)}
+#section-index a:hover{color:var(--global-theme-color)}
+.mv[data-animate]{opacity:0;transform:translateY(4px);transition:opacity .45s,transform .45s}
+.mv.visible{opacity:1;transform:none}
+@media (max-width:1080px){.workcs-grid{grid-template-columns:250px 1fr;gap:1.8rem}}
+@media (max-width:900px){.workcs-grid{grid-template-columns:1fr}.side{position:relative;top:0;flex-direction:row;overflow-x:auto;padding-bottom:.4rem}.panel{min-width:220px;flex:0 0 auto}}
+@media (max-width:600px){.workcs-hero{padding:3rem 0 1.8rem}.title{font-size:2.15rem}.lead{font-size:.96rem}.side{flex-direction:column}}
+</style>
+<script>
+(function(){
+  // Copy link
+  const btn=document.querySelector('[data-copy]');
+  if(btn){btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);btn.classList.add('copied');setTimeout(()=>btn.classList.remove('copied'),1500);}catch(e){console.warn('copy fail',e);}})}
+  // Animate metrics
+  const mv=document.querySelectorAll('.mv');
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target);}})},{threshold:.4});
+  mv.forEach(m=>io.observe(m));
+  // Build section index
+  const container=document.querySelector('.article');
+  const index=document.getElementById('section-index');
+  if(container && index){
+    const hs=container.querySelectorAll('h2, h3');
+    const frag=document.createDocumentFragment();
+    hs.forEach(h=>{if(!h.id){h.id=h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-');}
+      const a=document.createElement('a');a.href='#'+h.id;a.textContent=(h.tagName==='H3'?'• ':'')+h.textContent;frag.appendChild(a);});
+    index.appendChild(frag);
+  }
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CreativeWork",
+  "name": {{ w.title | jsonify }},
+  "description": {{ w.summary | jsonify }},
+  "author": {"@type":"Person","name": {{ site.author.name | default: site.title | jsonify }}},
+  "datePublished": "{{ w.date | date: '%Y-%m-%d' }}",
+  "url": "{{ site.url }}{{ w.url }}"
+}
+</script>

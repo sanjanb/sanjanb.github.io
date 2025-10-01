@@ -621,7 +621,7 @@ MAX_ATTEMPTS=30
 ATTEMPT=1
 
 while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
-  if docker service ls --filter name=${STACK_NAME} --format "table {{.Name}}\t{{.Replicas}}" | grep -q "3/3"; then
+  if docker service ls --filter name=${STACK_NAME} --format "table {% raw %}{{.Name}}\t{{.Replicas}}{% endraw %}" | grep -q "3/3"; then
     echo "Deployment successful!"
     break
   fi

@@ -56,7 +56,7 @@ layout: default
   {% endunless %}
 
   <main class="lead-main{% if simple %} simple{% endif %}" role="main">
-  {% if a.initiatives and not simple %}
+  {% if a.initiatives and simple == false %}
       <section class="initiative-grid" aria-labelledby="initiatives-heading">
         <h2 id="initiatives-heading">Strategic Initiatives</h2>
         <div class="igrid">
@@ -72,7 +72,7 @@ layout: default
       <hr>
     {% endif %}
 
-  {% if a.growth and not simple %}
+  {% if a.growth and simple == false %}
       <section class="growth-band" aria-labelledby="growth-heading">
         <h2 id="growth-heading">Growth & Impact</h2>
         <div class="growth-flex">

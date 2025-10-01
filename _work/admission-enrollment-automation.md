@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work_case_study
 title: "Admission & Enrollment Automation - Complete Educational Ecosystem"
 company: "MIT Hackathon 2025 - Grand Winner"
 role: "Full-Stack Architect & Team Lead"
@@ -72,6 +72,49 @@ responsibilities:
   - "Developed intelligent document processing pipeline with 95%+ accuracy"
   - "Created responsive dashboard with real-time analytics and comprehensive admin controls"
 giscus_comments: true
+layout_variant: full
+timeline:
+    - date: 2024-12
+        title: Architecture & service contracts
+        detail: Defined microservice boundaries, data models, auth flows, and integration contracts.
+    - date: 2024-12 (mid)
+        title: Core services scaffolded
+        detail: Bootstrapped OCR, ChatBot, Admission API, and base React dashboard.
+    - date: 2024-12 (late)
+        title: AI document pipeline operational
+        detail: Implemented Gemini integration + DistilBERT extraction with >95% parsing accuracy.
+    - date: 2025-01 (week 1)
+        title: Real-time dashboards & workflow engine
+        detail: Added WebSocket metrics, approval workflow stages, system health views.
+    - date: 2025-01-03
+        title: Final integration & hackathon win
+        detail: End-to-end demo with automated application journey and microservice resilience.
+problems:
+    - issue: Manual document intake delays
+        solution: AI OCR + DistilBERT extraction pipeline
+        impact: 95%+ field accuracy; minutes → seconds processing
+    - issue: Fragmented applicant journey
+        solution: Unified microservice workflow + WebSocket status updates
+        impact: 80% faster application cycle
+    - issue: Low transparency & guidance
+        solution: ChatBot + eligibility + recommendation engine
+        impact: Higher completion & reduced support queries
+    - issue: Security & role isolation gaps
+        solution: JWT + role scopes + service boundary contracts
+        impact: Hardened access; clear audit trail
+benchmarks:
+    - metric: Avg API latency
+        before: ~520ms
+        after: 280ms
+    - metric: Document processing time
+        before: 2-3 min manual
+        after: 2-5s automated
+    - metric: Application throughput
+        before: 1 batch/hour
+        after: Real-time continuous
+    - metric: Ops intervention rate
+        before: High (frequent clarifications)
+        after: Low (self-serve guidance)
 ---
 
 ## **Advanced Educational Automation Ecosystem**
