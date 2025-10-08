@@ -1,694 +1,257 @@
-------
+---
+layout: default
+---
+{% assign year = page.started | date: '%Y' %}
+{% assign tags = page.tags | join: '' %}
+{% assign categories = page.categories | join: '' %}
 
-layout: defaultlayout: default
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
 
-------
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
 
-{% assign year = page.started | date: '%Y' %}{% assign year = page.started | date: '%Y' %}
-
-{% assign tags = page.tags | join: '' %}{% assign tags = page.tags | join: '' %}
-
-{% assign categories = page.categories | join: '' %}{% assign categories = page.categories | join: '' %}
-
-
-
-{% if page._styles %}{% if page._styles %}
-
-  <!-- Page/Post style -->  <!-- Page/Post style -->
-
-  <style type="text/css">  <style type="text/css">
-
-    {{ page._styles }}    {{ page._styles }}
-
-  </style>  </style>
-
-{% endif %}{% endif %}
-
-
-
-<div class="post"><div class="post">
-
-  <header class="post-header">  <header class="post-header teaching-header">
-
-    <h1 class="post-title">{{ page.title | capitalize }}</h1>    <div class="header-content">
-
-    {% if page.description %}      <h1 class="post-title">
-
-      <p class="post-description">{{ page.description }}</p>        <i class="fas fa-chalkboard-teacher header-icon"></i>
-
-    {% endif %}        {{ page.title | capitalize }}
-
-  </header>      </h1>
-
-      {% if page.description %}
-
-  <article>        <p class="post-description">{{ page.description }}</p>
-
-    {{ content }}      {% endif %}
-
-        </div>
-
-    <div class="teaching-filters">  </header>
-
+  <article>
+    {{ content }}
+    
+    <div class="teaching-filters">
       <button class="filter-btn active" data-filter="all">All Courses</button>
-
-      <button class="filter-btn" data-filter="programming">Programming</button>  <article>
-
-      <button class="filter-btn" data-filter="data-science">Data Science</button>    {{ content }}
-
-      <button class="filter-btn" data-filter="ai-ml">AI & ML</button>    
-
-      <button class="filter-btn" data-filter="web-dev">Web Development</button>    <div class="teaching-filters">
-
-    </div>      <button class="filter-btn active" data-filter="all">All Courses</button>
-
       <button class="filter-btn" data-filter="programming">Programming</button>
-
-    <div class="teaching-grid">      <button class="filter-btn" data-filter="data-science">Data Science</button>
-
-      {% assign sorted_teaching = site.teaching | sort: 'importance' | sort: 'date' | reverse %}      <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
-
-      {% if sorted_teaching == empty %}      <button class="filter-btn" data-filter="web-dev">Web Development</button>
-
-        <div class="empty-state">    </div>
-
-          <div class="icon"><i class="fas fa-hourglass-half"></i></div>
-
-          <h3>Content in Progress</h3>    <div class="teaching-grid" id="teaching-grid">
-
-          <p>Courses will appear here soon. Stay tuned!</p>      {% assign sorted_teaching = site.teaching | sort: 'importance' | sort: 'date' | reverse %}
-
-        </div>      {% if sorted_teaching == empty %}
-
-      {% endif %}        <div class="empty-state">
-
-      {% for course in sorted_teaching %}          <div class="icon"><i class="fas fa-hourglass-half"></i></div>
-
-        <div class="teaching-card" data-category="{{ course.category }}">          <h3>Content in Progress</h3>
-
-          <div class="teaching-icon">          <p>Courses will appear here soon. Stay tuned!</p>
-
-            {% if course.icon %}        </div>
-
-              <i class="{{ course.icon }}"></i>      {% endif %}
-
-            {% else %}      {% for course in sorted_teaching %}
-
-              {% case course.category %}        <div class="teaching-card" data-category="{{ course.category }}">
-
-                {% when 'programming' %}          <div class="teaching-icon">
-
-                  <i class="fas fa-code"></i>            {% if course.icon %}
-
-                {% when 'data-science' %}              <i class="{{ course.icon }}"></i>
-
-                  <i class="fas fa-chart-bar"></i>            {% else %}
-
-                {% when 'ai-ml' %}              {% case course.category %}
-
-                  <i class="fas fa-robot"></i>                {% when 'programming' %}
-
-                {% when 'web-dev' %}                  <i class="fas fa-code"></i>
-
-                  <i class="fas fa-globe"></i>                {% when 'data-science' %}
-
-                {% else %}                  <i class="fas fa-chart-bar"></i>
-
-                  <i class="fas fa-book"></i>                {% when 'ai-ml' %}
-
-              {% endcase %}                  <i class="fas fa-robot"></i>
-
-            {% endif %}                {% when 'web-dev' %}
-
-          </div>                  <i class="fas fa-globe"></i>
-
-                          {% else %}
-
-          <div class="teaching-content">                  <i class="fas fa-book"></i>
-
-            <h3 class="teaching-title">              {% endcase %}
-
-              <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">            {% endif %}
-
-                {{ course.title }}          </div>
-
-              </a>          
-
-            </h3>          <h3 class="teaching-title">
-
-            <p class="teaching-description">{{ course.description }}</p>            <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">
-
-                          {{ course.title }}
-
-            <div class="teaching-meta">            </a>
-
-              {% if course.duration %}          </h3>
-
-                <span class="duration">          
-
-                  <i class="fas fa-clock"></i> {{ course.duration }}          <p class="teaching-description">{{ course.description }}</p>
-
-                </span>          
-
-              {% endif %}          <div class="teaching-meta">
-
-              {% if course.students %}            {% if course.duration %}
-
-                <span class="students">              <span><i class="fas fa-clock"></i> {{ course.duration }}</span>
-
-                  <i class="fas fa-users"></i> {{ course.students }}            {% endif %}
-
-                </span>            {% if course.students %}
-
-              {% endif %}              <span><i class="fas fa-users"></i> {{ course.students }}</span>
-
-              {% if course.level %}            {% endif %}
-
-                <span class="level level-{{ course.level }}">{{ course.level | capitalize }}</span>            {% if course.level %}
-
-              {% endif %}              <span class="level">{{ course.level | capitalize }}</span>
-
-            </div>            {% endif %}
-
-          </div>
-
-            <div class="teaching-tags">
-
-              {% for tag in course.tags %}          {% if course.live_url %}
-
-                <span class="tag">{{ tag }}</span>            <a href="{{ course.live_url }}" target="_blank" class="course-link">
-
-              {% endfor %}              View Course <i class="fas fa-external-link-alt"></i>
-
-            </div>            </a>
-
-          {% endif %}
-
-            <div class="teaching-links">                </a>
-
-              {% if course.live_url %}              {% endif %}
-
-                <a href="{{ course.live_url }}" target="_blank" class="btn btn-sm btn-primary">              {% if course.github %}
-
-                  <i class="fas fa-external-link-alt"></i> View Course                <a href="{{ course.github }}" target="_blank" class="btn btn-outline">
-
-                </a>                  <i class="fab fa-github"></i>
-
-              {% endif %}                  <span>Code</span>
-
-              {% if course.github %}                </a>
-
-                <a href="{{ course.github }}" target="_blank" class="btn btn-sm btn-outline-secondary">              {% endif %}
-
-                  <i class="fab fa-github"></i> Code            </div>
-
-                </a>          </div>
-
-              {% endif %}        </div>
-
-            </div>                  <i class="fab fa-github"></i> Code
-
-          </div>                </a>
-
-        </div>              {% endif %}
-
-      {% endfor %}            </div>
-
-    </div>          </div>
-
-  </article>        </div>
-
-</div>      {% endfor %}
-
+      <button class="filter-btn" data-filter="data-science">Data Science</button>
+      <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+      <button class="filter-btn" data-filter="web-dev">Web Development</button>
     </div>
 
-<style>  </article>
+    <div class="teaching-grid">
+      {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
+      {% for course in sorted_teaching %}
+        <div class="teaching-card" data-category="{{ course.category }}">
+          <div class="teaching-icon">
+            {% if course.icon %}
+              <i class="{{ course.icon }}"></i>
+            {% else %}
+              {% case course.category %}
+                {% when 'programming' %}
+                  <i class="fas fa-code"></i>
+                {% when 'data-science' %}
+                  <i class="fas fa-chart-bar"></i>
+                {% when 'ai-ml' %}
+                  <i class="fas fa-robot"></i>
+                {% when 'web-dev' %}
+                  <i class="fas fa-globe"></i>
+                {% else %}
+                  <i class="fas fa-book"></i>
+              {% endcase %}
+            {% endif %}
+          </div>
+          
+          <div class="teaching-content">
+            <h3 class="teaching-title">
+              <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">
+                {{ course.title }}
+              </a>
+            </h3>
+            <p class="teaching-description">{{ course.description }}</p>
+            
+            <div class="teaching-meta">
+              {% if course.duration %}
+                <span class="duration">
+                  <i class="fas fa-clock"></i> {{ course.duration }}
+                </span>
+              {% endif %}
+              {% if course.students %}
+                <span class="students">
+                  <i class="fas fa-users"></i> {{ course.students }} students
+                </span>
+              {% endif %}
+              {% if course.level %}
+                <span class="level level-{{ course.level }}">{{ course.level | capitalize }}</span>
+              {% endif %}
+            </div>
 
-.teaching-filters {</div>
+            <div class="teaching-tags">
+              {% for tag in course.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
 
+            <div class="teaching-links">
+              {% if course.live_url %}
+                <a href="{{ course.live_url }}" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt"></i> View Course
+                </a>
+              {% endif %}
+              {% if course.github %}
+                <a href="{{ course.github }}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>
+
+<style>
+.teaching-filters {
   margin: 2rem 0;
+  text-align: center;
+}
 
-  text-align: center;<style>
-
-}/* Teaching Header */
-
-.teaching-header {
-
-.filter-btn {  margin-bottom: 2rem;
-
-  background: transparent;}
-
-  border: 1px solid var(--global-divider-color);
-
-  color: var(--global-text-color-light);.teaching-header .post-title {
-
-  padding: 0.375rem 0.75rem;  font-size: 2rem;
-
-  margin: 0.25rem;  font-weight: 600;
-
-  border-radius: 999px;  margin-bottom: 0.5rem;
-
-  cursor: pointer;  color: var(--global-text-color);
-
-  transition: background .2s ease, color .2s ease, border-color .2s ease;}
-
+.filter-btn {
+  background: none;
+  border: 2px solid var(--global-text-color-light);
+  color: var(--global-text-color-light);
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
   font-weight: 500;
+}
 
-}.header-icon {
-
-  color: var(--global-theme-color);
-
-.filter-btn:hover,  margin-right: 0.5rem;
-
-.filter-btn.active {}
-
-  background: var(--global-code-bg-color);
-
-  border-color: var(--global-divider-color);.teaching-header .post-description {
-
-  color: var(--global-text-color);  color: var(--global-text-color-light);
-
-}  margin: 0;
-
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: white;
 }
 
 .teaching-grid {
-
-  display: grid;/* Filters */
-
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));.teaching-filters {
-
-  gap: 2rem;  display: flex;
-
-  margin-top: 2rem;  justify-content: center;
-
-}  gap: 0.5rem;
-
-  margin: 1.5rem 0;
-
-.empty-state {  flex-wrap: wrap;
-
-  grid-column: 1 / -1;}
-
-  text-align: center;
-
-  padding: 2rem 1rem;.filter-btn {
-
-  border: 1px dashed var(--global-divider-color);  background: transparent;
-
-  border-radius: 0.75rem;  border: 1px solid var(--global-divider-color);
-
-  font-size: 0.9rem;  color: var(--global-text-color-light);
-
-}  padding: 0.5rem 1rem;
-
-  border-radius: 2rem;
-
-.empty-state .icon {  cursor: pointer;
-
-  font-size: 2rem;  transition: all 0.2s ease;
-
-  color: var(--global-text-color-light);  font-size: 0.875rem;
-
-  margin-bottom: 0.5rem;  font-weight: 500;
-
-}}
-
-
-
-.teaching-card {.filter-btn:hover,
-
-  background: var(--global-card-bg-color);.filter-btn.active {
-
-  border: 1px solid var(--global-divider-color);  background: var(--global-theme-color);
-
-  border-radius: 1rem;  border-color: var(--global-theme-color);
-
-  padding: 1.5rem;  color: white;
-
-  transition: all 0.3s ease;}
-
-  opacity: 1;
-
-  transform: scale(1);/* Grid */
-
-}.teaching-grid {
-
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-.teaching-card:hover {  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.teaching-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+}
 
-  border-color: var(--global-text-color-light);  gap: 1.5rem;
-
-}  margin-top: 1.5rem;
-
+.teaching-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .teaching-card.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
 
-  opacity: 0;/* Teaching Cards */
-
-  transform: scale(0.9);.teaching-card {
-
-  pointer-events: none;  background: var(--global-card-bg-color);
-
-}  border: 1px solid var(--global-divider-color);
-
-  border-radius: 0.75rem;
-
-.teaching-icon {  padding: 1.25rem;
-
-  font-size: 2rem;  transition: border-color 0.2s ease;
-
-  color: var(--global-theme-color);}
-
+.teaching-icon {
+  font-size: 2rem;
+  color: var(--global-theme-color);
   margin-bottom: 1rem;
+}
 
-}.teaching-card:hover {
-
-  border-color: var(--global-theme-color);
-
-.teaching-title {}
-
+.teaching-title {
   font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
 
-  font-weight: 600;.teaching-card.hidden {
-
-  margin-bottom: 0.5rem;  display: none;
-
-}}
-
-
-
-.teaching-title a {.teaching-icon {
-
-  color: var(--global-text-color);  font-size: 1.75rem;
-
-  text-decoration: none;  color: var(--global-theme-color);
-
-}  margin-bottom: 1rem;
-
+.teaching-title a {
+  color: var(--global-text-color);
+  text-decoration: none;
 }
 
 .teaching-title a:hover {
+  color: var(--global-theme-color);
+}
 
-  color: var(--global-theme-color);.teaching-title {
-
-}  font-size: 1.125rem;
-
-  font-weight: 600;
-
-.teaching-description {  margin-bottom: 0.5rem;
-
-  color: var(--global-text-color-light);  line-height: 1.3;
-
-  margin-bottom: 1rem;}
-
+.teaching-description {
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
   line-height: 1.6;
+}
 
-}.teaching-title a {
-
-  color: var(--global-text-color);
-
-.teaching-meta {  text-decoration: none;
-
-  display: flex;}
-
+.teaching-meta {
+  display: flex;
   flex-wrap: wrap;
-
-  gap: 1rem;.teaching-title a:hover {
-
-  margin-bottom: 1rem;  color: var(--global-theme-color);
-
-  font-size: 0.875rem;}
-
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
   color: var(--global-text-color-light);
+}
 
-}.teaching-description {
-
-  color: var(--global-text-color-light);
-
-.teaching-meta i {  margin-bottom: 1rem;
-
-  margin-right: 0.25rem;  line-height: 1.5;
-
-}  font-size: 0.9rem;
-
+.teaching-meta i {
+  margin-right: 0.25rem;
 }
 
 .level {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
 
-  padding: 0.25rem 0.5rem;.teaching-meta {
-
-  border-radius: 0.25rem;  display: flex;
-
-  font-weight: 500;  gap: 1rem;
-
-  text-transform: uppercase;  margin-bottom: 1rem;
-
-  font-size: 0.75rem;  font-size: 0.8rem;
-
-}  color: var(--global-text-color-light);
-
-  flex-wrap: wrap;
-
-.level-beginner {}
-
+.level-beginner {
   background: rgba(34, 197, 94, 0.1);
+  color: rgb(34, 197, 94);
+}
 
-  color: rgb(34, 197, 94);.teaching-meta i {
-
-}  margin-right: 0.25rem;
-
-  color: var(--global-theme-color);
-
-.level-intermediate {}
-
+.level-intermediate {
   background: rgba(251, 191, 36, 0.1);
+  color: rgb(251, 191, 36);
+}
 
-  color: rgb(251, 191, 36);.level {
-
-}  background: var(--global-code-bg-color);
-
-  padding: 0.125rem 0.5rem;
-
-.level-advanced {  border-radius: 0.25rem;
-
-  background: rgba(239, 68, 68, 0.1);  font-weight: 500;
-
-  color: rgb(239, 68, 68);  text-transform: uppercase;
-
-}  font-size: 0.7rem;
-
+.level-advanced {
+  background: rgba(239, 68, 68, 0.1);
+  color: rgb(239, 68, 68);
 }
 
 .teaching-tags {
+  margin-bottom: 1rem;
+}
 
-  margin-bottom: 1rem;.course-link {
-
-}  display: inline-flex;
-
-  align-items: center;
-
-.tag {  gap: 0.375rem;
-
-  display: inline-block;  color: var(--global-theme-color);
-
-  background: var(--global-bg-color);  text-decoration: none;
-
-  color: var(--global-text-color-light);  font-weight: 500;
-
-  padding: 0.25rem 0.5rem;  font-size: 0.875rem;
-
-  margin: 0.125rem;  transition: color 0.2s ease;
-
-  border-radius: 0.25rem;}
-
+.tag {
+  display: inline-block;
+  background: var(--global-bg-color);
+  color: var(--global-text-color-light);
+  padding: 0.25rem 0.5rem;
+  margin: 0.125rem;
+  border-radius: 0.25rem;
   font-size: 0.75rem;
-
-  border: 1px solid var(--global-divider-color);.course-link:hover {
-
-}  color: var(--global-hover-color);
-
+  border: 1px solid var(--global-divider-color);
 }
 
 .teaching-links {
-
-  display: flex;.course-link i {
-
-  gap: 0.5rem;  font-size: 0.75rem;
-
-  flex-wrap: wrap;}
-
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
-
-/* Empty State */
-
-.btn {.empty-state {
-
-  padding: 0.5rem 1rem;  grid-column: 1 / -1;
-
-  border-radius: 0.375rem;  text-align: center;
-
-  text-decoration: none;  padding: 2rem;
-
-  font-size: 0.875rem;  border: 1px dashed var(--global-divider-color);
-
-  font-weight: 500;  border-radius: 0.75rem;
-
-  transition: all 0.3s ease;  color: var(--global-text-color-light);
-
-  display: inline-flex;}
-
-  align-items: center;
-
-  gap: 0.25rem;.empty-state .icon {
-
-}  font-size: 2rem;
-
-  margin-bottom: 0.5rem;
-
-.btn-primary {  color: var(--global-text-color-light);
-
-  background: var(--global-theme-color);}
-
-  color: white;
-
-  border: 1px solid var(--global-theme-color);/* Responsive */
-
-}@media (max-width: 768px) {
-
-  .teaching-header .post-title {
-
-.btn-primary:hover {    font-size: 1.75rem;
-
-  background: var(--global-theme-color);  }
-
-  opacity: 0.9;
-
-  color: white;  .teaching-grid {
-
-}    grid-template-columns: 1fr;
-
-    gap: 1rem;
-
-.btn-outline-secondary {  }
-
-  background: transparent;
-
-  color: var(--global-text-color-light);  .teaching-card {
-
-  border: 1px solid var(--global-divider-color);    padding: 1rem;
-
-}  }
-
-
-
-.btn-outline-secondary:hover {  .filter-btn {
-
-  background: var(--global-text-color-light);    padding: 0.4rem 0.8rem;
-
-  color: var(--global-bg-color);    font-size: 0.8rem;
-
-}  }
-
-
-
-/* Mobile responsiveness */  .teaching-meta {
-
-@media (max-width: 768px) {    flex-direction: column;
-
-  .teaching-grid {    gap: 0.5rem;
-
-    grid-template-columns: 1fr;  }
-
-    gap: 1.5rem;}
-
-  }</style>
-
-  </style>
-
-  .teaching-card {
-
-    padding: 1rem;.level-advanced {
-
-  }  background: rgba(239, 68, 68, 0.1);
-
-    color: rgb(239, 68, 68);
-
-  .filter-btn {}
-
-    padding: 0.375rem 0.75rem;
-
-    font-size: 0.875rem;.teaching-tags {
-
-  }  margin-bottom: 1rem;
-
-  }
-
-  .teaching-meta {
-
-    flex-direction: column;.tag {
-
-    gap: 0.5rem;  display: inline-block;
-
-  }  background: var(--global-bg-color);
-
-}  color: var(--global-text-color-light);
-
-</style>  padding: 0.25rem 0.5rem;
-
-  margin: 0.125rem;
-
-<script>  border-radius: 0.25rem;
-
-document.addEventListener('DOMContentLoaded', function() {  font-size: 0.75rem;
-
-  const filterBtns = document.querySelectorAll('.filter-btn');  border: 1px solid var(--global-divider-color);
-
-  const teachingCards = document.querySelectorAll('.teaching-card');}
-
-
-
-  filterBtns.forEach(btn => {/* quick outcomes removed */
-
-    btn.addEventListener('click', function() {
-
-      // Remove active class from all buttons.teaching-links {
-
-      filterBtns.forEach(b => b.classList.remove('active'));  display: flex;
-
-      // Add active class to clicked button  gap: 0.5rem;
-
-      this.classList.add('active');  flex-wrap: wrap;
-
-}
-
-      const filter = this.getAttribute('data-filter');
 
 .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
 
-      teachingCards.forEach(card => {  padding: 0.5rem 1rem;
-
-        if (filter === 'all' || card.getAttribute('data-category') === filter) {  border-radius: 0.375rem;
-
-          card.classList.remove('hidden');  text-decoration: none;
-
-        } else {  font-size: 0.875rem;
-
-          card.classList.add('hidden');  font-weight: 500;
-
-        }  transition: all 0.3s ease;
-
-      });  display: inline-flex;
-
-    });  align-items: center;
-
-  });  gap: 0.25rem;
-
-});}
-
-</script>
 .btn-primary {
   background: var(--global-theme-color);
   color: white;
@@ -718,7 +281,6 @@ document.addEventListener('DOMContentLoaded', function() {  font-size: 0.75rem;
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  /* stats removed */
   
   .teaching-card {
     padding: 1rem;
