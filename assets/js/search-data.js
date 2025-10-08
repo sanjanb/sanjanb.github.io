@@ -191,6 +191,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "teaching-ai-amp-ml-fundamentals",
+          title: 'AI &amp;amp; ML Fundamentals',
+          description: "A foundational course introducing core concepts in Artificial Intelligence and Machine Learning through practical, hands-on examples.",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ai-ml-fundamentals/";
             },},{id: "work-ai-powered-cyber-threat-intelligence-system",
           title: 'AI-Powered Cyber Threat Intelligence System',
           description: "",
