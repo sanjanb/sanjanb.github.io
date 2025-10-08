@@ -1,13 +1,13 @@
 ---
 layout: teaching-shelf
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Courses, tutorials, and educational content I've created to share knowledge and help others learn.
 nav: true
 nav_order: 6
 ---
 
-## 🎓 Educational Impact
+## Educational Impact
 
 I'm passionate about sharing knowledge and helping others grow in technology. Through various teaching initiatives, I've had the opportunity to create educational content that makes complex concepts accessible and engaging.
 
@@ -23,6 +23,4 @@ I'm passionate about sharing knowledge and helping others grow in technology. Th
 **Programming Fundamentals** - Building strong foundations in coding  
 **Data Science & Analytics** - From data collection to insights  
 **AI & Machine Learning** - Modern ML techniques and applications  
-**Web Development** - Full-stack development skills
-
 ---
