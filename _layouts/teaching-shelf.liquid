@@ -13,11 +13,35 @@ layout: default
 {% endif %}
 
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
+  <header class="teaching-hero">
+    <div class="hero-text">
+      <h1 class="post-title gradient-text"><i class="fas fa-chalkboard-teacher"></i> {{ page.title | capitalize }}</h1>
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+      <div class="teaching-stats">
+        {% assign total_courses = site.teaching | size %}
+        <div class="stat">
+          <span class="value">{{ total_courses }}</span>
+          <span class="label">Courses</span>
+        </div>
+        {% assign total_students = 0 %}
+        {% for c in site.teaching %}
+          {% if c.students %}
+            {% assign num = c.students | replace: '+','' | replace: ',','' %}
+            {% assign total_students = total_students | plus: num %}
+          {% endif %}
+        {% endfor %}
+        <div class="stat">
+          <span class="value">{{ total_students }}+</span>
+          <span class="label">Learners Impacted</span>
+        </div>
+        <div class="stat">
+          <span class="value">{{ site.time | date: '%Y' }}</span>
+          <span class="label">Active Year</span>
+        </div>
+      </div>
+    </div>
   </header>
 
   <article>
@@ -31,10 +55,17 @@ layout: default
       <button class="filter-btn" data-filter="web-dev">Web Development</button>
     </div>
 
-    <div class="teaching-grid">
-      {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
+    <div class="teaching-grid" id="teaching-grid">
+      {% assign sorted_teaching = site.teaching | sort: 'importance' | sort: 'date' | reverse %}
+      {% if sorted_teaching == empty %}
+        <div class="empty-state">
+          <div class="icon"><i class="fas fa-hourglass-half"></i></div>
+          <h3>Content in Progress</h3>
+          <p>Courses will appear here soon. Stay tuned!</p>
+        </div>
+      {% endif %}
       {% for course in sorted_teaching %}
-        <div class="teaching-card" data-category="{{ course.category }}">
+        <div class="teaching-card fade-in" data-category="{{ course.category }}">
           <div class="teaching-icon">
             {% if course.icon %}
               <i class="{{ course.icon }}"></i>
@@ -61,6 +92,13 @@ layout: default
               </a>
             </h3>
             <p class="teaching-description">{{ course.description }}</p>
+            {% if course.outcomes %}
+              <ul class="quick-outcomes">
+                {% for o in course.outcomes limit:2 %}
+                  <li>{{ o }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
             
             <div class="teaching-meta">
               {% if course.duration %}
@@ -82,6 +120,9 @@ layout: default
               {% for tag in course.tags %}
                 <span class="tag">{{ tag }}</span>
               {% endfor %}
+              {% if course.level %}
+                <span class="tag level-chip level-{{ course.level }}">{{ course.level | capitalize }}</span>
+              {% endif %}
             </div>
 
             <div class="teaching-links">
@@ -107,6 +148,52 @@ layout: default
 .teaching-filters {
   margin: 2rem 0;
   text-align: center;
+}
+
+.teaching-hero {
+  padding: 1rem 0 2rem;
+  position: relative;
+}
+
+.teaching-hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--global-theme-color) 0%, rgba(181,9,172,0.15) 60%, transparent 100%);
+  opacity: 0.08;
+  border-radius: 1rem;
+}
+
+.hero-text { position: relative; }
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--global-theme-color), var(--global-text-color));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.teaching-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.teaching-stats .stat { min-width: 110px; }
+
+.teaching-stats .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  display: block;
+}
+
+.teaching-stats .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--global-text-color-light);
 }
 
 .filter-btn {
@@ -135,6 +222,17 @@ layout: default
   margin-top: 2rem;
 }
 
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 2px dashed var(--global-divider-color);
+  border-radius: 1rem;
+  opacity: .8;
+}
+
+.empty-state .icon { font-size: 3rem; color: var(--global-theme-color); margin-bottom: .75rem; }
+
 .teaching-card {
   background: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -144,6 +242,10 @@ layout: default
   opacity: 1;
   transform: scale(1);
 }
+
+.teaching-card.fade-in { animation: fadeUp .6s ease both; }
+
+@keyframes fadeUp { from { opacity:0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
 
 .teaching-card:hover {
   transform: translateY(-5px);
@@ -204,6 +306,8 @@ layout: default
   font-size: 0.75rem;
 }
 
+.level-chip { border: none; font-weight:600; }
+
 .level-beginner {
   background: rgba(34, 197, 94, 0.1);
   color: rgb(34, 197, 94);
@@ -233,6 +337,9 @@ layout: default
   font-size: 0.75rem;
   border: 1px solid var(--global-divider-color);
 }
+
+.quick-outcomes { margin:0 0 .75rem .95rem; padding:0; list-style: disc; font-size:.75rem; color: var(--global-text-color-light); }
+.quick-outcomes li { margin-bottom:.2rem; }
 
 .teaching-links {
   display: flex;
@@ -281,6 +388,7 @@ layout: default
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+  .teaching-stats { gap:1rem; }
   
   .teaching-card {
     padding: 1rem;
