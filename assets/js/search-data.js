@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Courses, tutorials, and educational content I&#39;ve created to share knowledge and help others learn.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
         },{id: "post-my-ai-ml-specialization-journey-from-foundations-to-advanced-llm-applications",
         
           title: "My AI/ML Specialization Journey: From Foundations to Advanced LLM Applications",
