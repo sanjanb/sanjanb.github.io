@@ -13,11 +13,16 @@ layout: default
 {% endif %}
 
 <div class="post">
-  <header class="post-header minimal">
-    <h1 class="post-title">{{ page.title | capitalize }}</h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
+  <header class="post-header teaching-header">
+    <div class="header-content">
+      <h1 class="post-title">
+        <i class="fas fa-chalkboard-teacher header-icon"></i>
+        {{ page.title | capitalize }}
+      </h1>
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    </div>
   </header>
 
   <article>
@@ -41,7 +46,7 @@ layout: default
         </div>
       {% endif %}
       {% for course in sorted_teaching %}
-  <div class="teaching-card" data-category="{{ course.category }}">
+        <div class="teaching-card" data-category="{{ course.category }}">
           <div class="teaching-icon">
             {% if course.icon %}
               <i class="{{ course.icon }}"></i>
@@ -61,44 +66,42 @@ layout: default
             {% endif %}
           </div>
           
-          <div class="teaching-content">
-            <h3 class="teaching-title">
-              <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">
-                {{ course.title }}
-              </a>
-            </h3>
-            <p class="teaching-description">{{ course.description }}</p>
-            
-            <div class="teaching-meta">
-              {% if course.duration %}
-                <span class="duration">
-                  <i class="fas fa-clock"></i> {{ course.duration }}
-                </span>
-              {% endif %}
-              {% if course.students %}
-                <span class="students">
-                  <i class="fas fa-users"></i> {{ course.students }} students
-                </span>
-              {% endif %}
-              {% if course.level %}
-                <span class="level level-{{ course.level }}">{{ course.level | capitalize }}</span>
-              {% endif %}
-            </div>
+          <h3 class="teaching-title">
+            <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">
+              {{ course.title }}
+            </a>
+          </h3>
+          
+          <p class="teaching-description">{{ course.description }}</p>
+          
+          <div class="teaching-meta">
+            {% if course.duration %}
+              <span><i class="fas fa-clock"></i> {{ course.duration }}</span>
+            {% endif %}
+            {% if course.students %}
+              <span><i class="fas fa-users"></i> {{ course.students }}</span>
+            {% endif %}
+            {% if course.level %}
+              <span class="level">{{ course.level | capitalize }}</span>
+            {% endif %}
+          </div>
 
-            <div class="teaching-tags">
-              {% for tag in course.tags %}
-                <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-
-            <div class="teaching-links">
-              {% if course.live_url %}
-                <a href="{{ course.live_url }}" target="_blank" class="btn btn-sm btn-primary">
-                  <i class="fas fa-external-link-alt"></i> View Course
+          {% if course.live_url %}
+            <a href="{{ course.live_url }}" target="_blank" class="course-link">
+              View Course <i class="fas fa-external-link-alt"></i>
+            </a>
+          {% endif %}
                 </a>
               {% endif %}
               {% if course.github %}
-                <a href="{{ course.github }}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                <a href="{{ course.github }}" target="_blank" class="btn btn-outline">
+                  <i class="fab fa-github"></i>
+                  <span>Code</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
                   <i class="fab fa-github"></i> Code
                 </a>
               {% endif %}
@@ -111,74 +114,92 @@ layout: default
 </div>
 
 <style>
-.teaching-filters {
-  margin: 2rem 0;
-  text-align: center;
+/* Teaching Header */
+.teaching-header {
+  margin-bottom: 2rem;
 }
 
-.post-header.minimal { margin-bottom: 1.25rem; }
-.post-header.minimal .post-title { margin-bottom: .25rem; }
-.post-header.minimal .post-description { color: var(--global-text-color-light); font-size:.95rem; }
+.teaching-header .post-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.header-icon {
+  color: var(--global-theme-color);
+  margin-right: 0.5rem;
+}
+
+.teaching-header .post-description {
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+
+/* Filters */
+.teaching-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
 
 .filter-btn {
   background: transparent;
   border: 1px solid var(--global-divider-color);
   color: var(--global-text-color-light);
-  padding: 0.375rem 0.75rem;
-  margin: 0.25rem;
-  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
   cursor: pointer;
-  transition: background .2s ease, color .2s ease, border-color .2s ease;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--global-code-bg-color);
-  border-color: var(--global-divider-color);
-  color: var(--global-text-color);
+  background: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: white;
 }
 
+/* Grid */
 .teaching-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.empty-state { grid-column:1/-1; text-align:center; padding:2rem 1rem; border:1px dashed var(--global-divider-color); border-radius:.75rem; font-size:.9rem; }
-.empty-state .icon { font-size:2rem; color: var(--global-text-color-light); margin-bottom:.5rem; }
-
+/* Teaching Cards */
 .teaching-card {
   background: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  opacity: 1;
-  transform: scale(1);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: border-color 0.2s ease;
 }
 
-/* remove animations for minimal look */
-
-.teaching-card:hover { border-color: var(--global-text-color-light); }
+.teaching-card:hover {
+  border-color: var(--global-theme-color);
+}
 
 .teaching-card.hidden {
-  opacity: 0;
-  transform: scale(0.9);
-  pointer-events: none;
+  display: none;
 }
 
 .teaching-icon {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--global-theme-color);
   margin-bottom: 1rem;
 }
 
 .teaching-title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  line-height: 1.3;
 }
 
 .teaching-title a {
@@ -193,41 +214,95 @@ layout: default
 .teaching-description {
   color: var(--global-text-color-light);
   margin-bottom: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .teaching-meta {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--global-text-color-light);
+  flex-wrap: wrap;
 }
 
 .teaching-meta i {
   margin-right: 0.25rem;
+  color: var(--global-theme-color);
 }
 
 .level {
-  padding: 0.25rem 0.5rem;
+  background: var(--global-code-bg-color);
+  padding: 0.125rem 0.5rem;
   border-radius: 0.25rem;
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.course-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.course-link:hover {
+  color: var(--global-hover-color);
+}
+
+.course-link i {
   font-size: 0.75rem;
 }
 
-/* removed duplicate level chip usage */
-
-.level-beginner {
-  background: rgba(34, 197, 94, 0.1);
-  color: rgb(34, 197, 94);
+/* Empty State */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 0.75rem;
+  color: var(--global-text-color-light);
 }
 
-.level-intermediate {
-  background: rgba(251, 191, 36, 0.1);
-  color: rgb(251, 191, 36);
+.empty-state .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color-light);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .teaching-header .post-title {
+    font-size: 1.75rem;
+  }
+
+  .teaching-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .teaching-card {
+    padding: 1rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .teaching-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+</style>
+</style>
 
 .level-advanced {
   background: rgba(239, 68, 68, 0.1);
