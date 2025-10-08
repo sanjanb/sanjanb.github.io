@@ -203,6 +203,9 @@ collections:
   work:
     output: true
     permalink: /:collection/:title/
+  teaching:
+    output: true
+    permalink: /:collection/:title/
   news:
     defaults:
       layout: post
@@ -258,7 +261,6 @@ exclude:
   - _pages/about_einstein.md
   - _pages/news.md
   - _pages/profiles.md
-  - _pages/teaching.md
   - _pages/dropdown.md
   - _pages/publications.md
   - _pages/projects.md

@@ -1,0 +1,325 @@
+---
+layout: default
+---
+{% assign year = page.started | date: '%Y' %}
+{% assign tags = page.tags | join: '' %}
+{% assign categories = page.categories | join: '' %}
+
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    {{ content }}
+    
+    <div class="teaching-filters">
+      <button class="filter-btn active" data-filter="all">All Courses</button>
+      <button class="filter-btn" data-filter="programming">Programming</button>
+      <button class="filter-btn" data-filter="data-science">Data Science</button>
+      <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+      <button class="filter-btn" data-filter="web-dev">Web Development</button>
+    </div>
+
+    <div class="teaching-grid">
+      {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
+      {% for course in sorted_teaching %}
+        <div class="teaching-card" data-category="{{ course.category }}">
+          <div class="teaching-icon">
+            {% if course.icon %}
+              <i class="{{ course.icon }}"></i>
+            {% else %}
+              {% case course.category %}
+                {% when 'programming' %}
+                  <i class="fas fa-code"></i>
+                {% when 'data-science' %}
+                  <i class="fas fa-chart-bar"></i>
+                {% when 'ai-ml' %}
+                  <i class="fas fa-robot"></i>
+                {% when 'web-dev' %}
+                  <i class="fas fa-globe"></i>
+                {% else %}
+                  <i class="fas fa-book"></i>
+              {% endcase %}
+            {% endif %}
+          </div>
+          
+          <div class="teaching-content">
+            <h3 class="teaching-title">
+              <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}">
+                {{ course.title }}
+              </a>
+            </h3>
+            <p class="teaching-description">{{ course.description }}</p>
+            
+            <div class="teaching-meta">
+              {% if course.duration %}
+                <span class="duration">
+                  <i class="fas fa-clock"></i> {{ course.duration }}
+                </span>
+              {% endif %}
+              {% if course.students %}
+                <span class="students">
+                  <i class="fas fa-users"></i> {{ course.students }} students
+                </span>
+              {% endif %}
+              {% if course.level %}
+                <span class="level level-{{ course.level }}">{{ course.level | capitalize }}</span>
+              {% endif %}
+            </div>
+
+            <div class="teaching-tags">
+              {% for tag in course.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+
+            <div class="teaching-links">
+              {% if course.live_url %}
+                <a href="{{ course.live_url }}" target="_blank" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt"></i> View Course
+                </a>
+              {% endif %}
+              {% if course.github %}
+                <a href="{{ course.github }}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>
+
+<style>
+.teaching-filters {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.filter-btn {
+  background: none;
+  border: 2px solid var(--global-text-color-light);
+  color: var(--global-text-color-light);
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: white;
+}
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.teaching-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.teaching-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.teaching-card.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+.teaching-icon {
+  font-size: 2rem;
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+.teaching-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.teaching-title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.teaching-title a:hover {
+  color: var(--global-theme-color);
+}
+
+.teaching-description {
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.teaching-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+
+.teaching-meta i {
+  margin-right: 0.25rem;
+}
+
+.level {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.level-beginner {
+  background: rgba(34, 197, 94, 0.1);
+  color: rgb(34, 197, 94);
+}
+
+.level-intermediate {
+  background: rgba(251, 191, 36, 0.1);
+  color: rgb(251, 191, 36);
+}
+
+.level-advanced {
+  background: rgba(239, 68, 68, 0.1);
+  color: rgb(239, 68, 68);
+}
+
+.teaching-tags {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--global-bg-color);
+  color: var(--global-text-color-light);
+  padding: 0.25rem 0.5rem;
+  margin: 0.125rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  border: 1px solid var(--global-divider-color);
+}
+
+.teaching-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.btn-primary {
+  background: var(--global-theme-color);
+  color: white;
+  border: 1px solid var(--global-theme-color);
+}
+
+.btn-primary:hover {
+  background: var(--global-theme-color);
+  opacity: 0.9;
+  color: white;
+}
+
+.btn-outline-secondary {
+  background: transparent;
+  color: var(--global-text-color-light);
+  border: 1px solid var(--global-divider-color);
+}
+
+.btn-outline-secondary:hover {
+  background: var(--global-text-color-light);
+  color: var(--global-bg-color);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .teaching-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .teaching-card {
+    padding: 1rem;
+  }
+  
+  .filter-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .teaching-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const teachingCards = document.querySelectorAll('.teaching-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      this.classList.add('active');
+
+      const filter = this.getAttribute('data-filter');
+
+      teachingCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
+</script>

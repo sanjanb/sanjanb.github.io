@@ -1,12 +1,28 @@
 ---
-layout: page
+layout: teaching-shelf
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Courses, tutorials, and educational content I've created to share knowledge and help others learn.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## 🎓 Educational Impact
 
-Organize your courses by years, topics, or universities, however you like!
+I'm passionate about sharing knowledge and helping others grow in technology. Through various teaching initiatives, I've had the opportunity to create educational content that makes complex concepts accessible and engaging.
+
+### Teaching Philosophy
+
+- **Learn by Doing**: Hands-on projects and practical applications
+- **Real-World Relevance**: Connect theory to industry practices  
+- **Supportive Learning**: Creating an environment where questions are encouraged
+- **Continuous Improvement**: Regular feedback and course updates based on student needs
+
+### Course Categories
+
+**Programming Fundamentals** - Building strong foundations in coding  
+**Data Science & Analytics** - From data collection to insights  
+**AI & Machine Learning** - Modern ML techniques and applications  
+**Web Development** - Full-stack development skills
+
+---

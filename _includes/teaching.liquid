@@ -1,0 +1,41 @@
+<div class="col">
+  <a href="{% if teaching.redirect %}{{ teaching.redirect }}{% else %}{{ teaching.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable">
+      {% if teaching.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=teaching.img
+          sizes = "250px"
+          alt="teaching thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ teaching.title }}</h2>
+        <p class="card-text">{{ teaching.description }}</p>
+        <div class="row ml-1 mr-1 p-0">
+          {% if teaching.github %}
+            <div class="github-icon">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ teaching.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+              </div>
+            </div>
+          {% endif %}
+          {% if teaching.live_url %}
+            <div class="live-icon ml-2">
+              <div class="icon" data-toggle="tooltip" title="Live Demo">
+                <a href="{{ teaching.live_url }}" target="_blank"><i class="fa-solid fa-external-link"></i></a>
+              </div>
+            </div>
+          {% endif %}
+          {% if teaching.duration %}
+            <div class="duration-badge ml-auto">
+              <span class="badge badge-secondary">{{ teaching.duration }}</span>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
