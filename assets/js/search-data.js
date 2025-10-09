@@ -191,6 +191,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "teaching-generative-ai-langchain-learning-hub",
+          title: 'Generative AI: LangChain Learning Hub',
+          description: "A structured curriculum for mastering Generative AI with LangChain - from basics to enterprise RAG systems",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/langchain-learning-hub/";
             },},{id: "work-ai-powered-cyber-threat-intelligence-system",
           title: 'AI-Powered Cyber Threat Intelligence System',
           description: "",
