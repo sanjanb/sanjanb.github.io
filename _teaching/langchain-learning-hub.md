@@ -15,6 +15,8 @@ github: https://github.com/sanjanb/langchain-learning-hub
 redirect: false
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/course-page.css' | relative_url }}">
+
 <!-- Course Hero -->
 <section class="teaching-hero" style="background-image: url('{{ page.img | relative_url }}');">
     <div class="hero-overlay">
