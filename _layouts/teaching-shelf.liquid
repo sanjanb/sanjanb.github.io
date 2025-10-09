@@ -85,11 +85,9 @@ layout: default
             </div>
 
             <div class="teaching-links">
-              {% if course.live_url %}
-                <a href="{{ course.live_url }}" target="_blank" class="btn btn-sm btn-primary">
-                  <i class="fas fa-external-link-alt"></i> View Course
-                </a>
-              {% endif %}
+              <a href="{% if course.redirect %}{{ course.redirect }}{% else %}{{ course.url | relative_url }}{% endif %}" class="btn btn-sm btn-primary">
+                <i class="fas fa-book-open"></i> Course Details
+              </a>
               {% if course.github %}
                 <a href="{{ course.github }}" target="_blank" class="btn btn-sm btn-outline-secondary">
                   <i class="fab fa-github"></i> Code

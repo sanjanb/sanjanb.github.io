@@ -10,7 +10,7 @@ duration: "5 Lessons"
 level: intermediate
 students: "500+"
 tags: [LangChain, Generative AI, RAG, LLM, Python, AI Applications]
-live_url: https://sanjanb.github.io/langchain/
+course_url: https://sanjanb.github.io/langchain/
 github: https://github.com/sanjanb/langchain-learning-hub
 redirect: false
 ---
@@ -120,9 +120,12 @@ The course maintains focus on:
 <div class="course-cta">
     <h3>Ready to Master Generative AI with LangChain?</h3>
     <p>Join hundreds of learners building practical AI applications with structured, foundation-first learning.</p>
-    <a href="{{ page.live_url }}" target="_blank" class="btn btn-primary btn-lg">
-        <i class="fas fa-rocket"></i> Start Learning Now
+    <a href="{{ page.course_url }}" target="_blank" class="btn btn-primary btn-lg">
+        <i class="fas fa-external-link-alt"></i> Access Course
     </a>
+    <div class="course-note">
+        <small><i class="fas fa-info-circle"></i> This will take you to the external learning platform</small>
+    </div>
 </div>
 
 <style>
@@ -159,10 +162,19 @@ The course maintains focus on:
     margin-bottom: 1.5rem;
 }
 
-.btn-lg {
+.course-cta .btn-lg {
     padding: 0.75rem 2rem;
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+.course-note {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.course-note i {
+    margin-right: 0.25rem;
 }
 
 @media (max-width: 768px) {
