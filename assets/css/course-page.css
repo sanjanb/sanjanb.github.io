@@ -657,7 +657,7 @@ dl.kv dd {
 /* Enhanced Course CTA */
 .course-cta {
   background: linear-gradient(135deg, var(--global-theme-color), rgba(var(--global-theme-color-rgb), 0.8));
-  color: var(--global-hover-text-color);
+  color: var(--global-text-color);
   padding: 2.5rem;
   border-radius: 24px;
   text-align: center;
@@ -684,13 +684,14 @@ dl.kv dd {
 }
 
 .course-cta h3 {
-  color: var(--global-hover-text-color);
+  color: var(--global-text-color);
   margin-bottom: 1.25rem;
   font-size: 1.6rem;
   font-weight: 700;
 }
 
 .course-cta p {
+  color: var(--global-text-color);
   opacity: 0.95;
   margin-bottom: 2rem;
   font-size: 1.1rem;
@@ -702,7 +703,7 @@ dl.kv dd {
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 16px;
-  background: rgba(255, 255, 255, .9);
+  background: var(--global-bg-color);
   color: var(--global-theme-color);
   border: none;
   transition: all .3s ease;
