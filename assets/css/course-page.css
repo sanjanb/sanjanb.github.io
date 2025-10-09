@@ -657,7 +657,7 @@ dl.kv dd {
 /* Enhanced Course CTA */
 .course-cta {
   background: linear-gradient(135deg, var(--global-theme-color), rgba(var(--global-theme-color-rgb), 0.8));
-  color: white;
+  color: var(--global-hover-text-color);
   padding: 2.5rem;
   border-radius: 24px;
   text-align: center;
@@ -684,7 +684,7 @@ dl.kv dd {
 }
 
 .course-cta h3 {
-  color: white;
+  color: var(--global-hover-text-color);
   margin-bottom: 1.25rem;
   font-size: 1.6rem;
   font-weight: 700;
