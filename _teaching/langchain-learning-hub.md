@@ -264,14 +264,6 @@ redirect: false
     </a>
 </div>
 
-<style>
-.teaching-hero{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,var(--global-theme-color),rgba(var(--global-theme-color-rgb),.8));background-size:cover;background-position:center;margin:1rem 0 2rem;min-height:360px;box-shadow:0 20px 60px -12px rgba(0,0,0,.4)}
-.teaching-hero .hero-scrim{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.15),rgba(0,0,0,.4))}
-.teaching-hero .hero-overlay{position:relative;z-index:1;padding:3rem 2rem;display:flex;align-items:center;min-height:360px}
-.hero-content{color:#fff;max-width:900px;width:100%}
-.hero-panel{background:rgba(255,255,255,.12);backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.25);border-radius:24px;padding:2.5rem;box-shadow:0 25px 50px -12px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.4)}
-.hero-eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;opacity:.95;margin-bottom:.75rem;color:rgba(255,255,255,.95);font-weight:500}
-.hero-title{margin:0 0 1rem;font-size:clamp(2rem,4.5vw,2.75rem);line-height:1.15;font-weight:700;text-shadow:0 3px 12px rgba(0,0,0,.4);color:#fff}
 .hero-subtitle{margin:0 0 1.5rem;opacity:.95;max-width:70ch;font-size:1.1rem;line-height:1.55;font-weight:300;color:#fff}
 .hero-chips{display:flex;gap:.75rem;list-style:none;padding:0;margin:1rem 0 2rem;flex-wrap:wrap}
 .hero-chips li{background:rgba(255,255,255,.18);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:.55rem 1rem;font-size:.9rem;font-weight:500;display:flex;align-items:center;gap:.5rem;transition:all .3s cubic-bezier(.4,0,.2,1);color:#fff}
