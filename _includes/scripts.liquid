@@ -325,3 +325,72 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+<!-- Mobile Desktop View Suggestion -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Desktop View Suggestion
+  function isMobileDevice() {
+    return window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  function showMobilePopup() {
+    // Check if user has already seen this popup (using localStorage)
+    const hasSeenPopup = localStorage.getItem('mobileViewPopupSeen');
+    
+    if (!hasSeenPopup && isMobileDevice()) {
+      const popup = document.getElementById('mobileViewPopup');
+      if (popup) {
+        popup.style.display = 'flex';
+      }
+    }
+  }
+
+  function switchToDesktopView() {
+    // Force desktop viewport
+    let viewport = document.querySelector('meta[name=viewport]');
+    if (viewport) {
+      viewport.setAttribute('content', 'width=1024');
+    } else {
+      viewport = document.createElement('meta');
+      viewport.name = 'viewport';
+      viewport.content = 'width=1024';
+      document.getElementsByTagName('head')[0].appendChild(viewport);
+    }
+    
+    // Hide popup and mark as seen
+    const popup = document.getElementById('mobileViewPopup');
+    if (popup) {
+      popup.style.display = 'none';
+    }
+    localStorage.setItem('mobileViewPopupSeen', 'true');
+    
+    // Add a class to body for any additional desktop-specific styling
+    document.body.classList.add('force-desktop-view');
+  }
+
+  function stayMobileView() {
+    // Hide popup and mark as seen
+    const popup = document.getElementById('mobileViewPopup');
+    if (popup) {
+      popup.style.display = 'none';
+    }
+    localStorage.setItem('mobileViewPopupSeen', 'true');
+  }
+
+  // Event listeners for popup buttons
+  const switchBtn = document.getElementById('switchToDesktop');
+  const stayBtn = document.getElementById('stayMobile');
+  
+  if (switchBtn) {
+    switchBtn.addEventListener('click', switchToDesktopView);
+  }
+  
+  if (stayBtn) {
+    stayBtn.addEventListener('click', stayMobileView);
+  }
+
+  // Show popup if on mobile device
+  showMobilePopup();
+});
+</script>
