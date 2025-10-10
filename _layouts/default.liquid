@@ -63,6 +63,29 @@
     <!-- Footer -->
     {% include footer.liquid %}
 
+    <!-- Mobile Desktop View Suggestion Popup -->
+    <div id="mobileViewPopup" class="mobile-popup-overlay" style="display: none;">
+      <div class="mobile-popup-content">
+        <div class="mobile-popup-header">
+          <i class="fas fa-desktop"></i>
+          <h3>Better Experience Available</h3>
+        </div>
+        <div class="mobile-popup-body">
+          <p>This site looks amazing in desktop view! Would you like to switch to desktop view for the best experience?</p>
+        </div>
+        <div class="mobile-popup-actions">
+          <button id="switchToDesktop" class="btn-popup-primary">
+            <i class="fas fa-desktop"></i>
+            Switch to Desktop View
+          </button>
+          <button id="stayMobile" class="btn-popup-secondary">
+            <i class="fas fa-mobile-alt"></i>
+            Continue Mobile View
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScripts -->
     {% include scripts.liquid %}
   </body>
