@@ -831,6 +831,28 @@ layout: default
   z-index: 10;
 }
 
+/* Different arrow style for card 3 (Leadership) */
+.doodle-arrow-3 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M8,15 Q15,8 25,15 Q35,22 42,15 Q48,10 52,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M48,11 L52,15 L48,19 M45,13 L49,17 L45,21' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(-8deg);
+}
+
+/* Different arrow style for card 5 (Data Projects) - pointing downward */
+.doodle-arrow-5 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M10,8 Q20,12 30,8 Q40,4 50,8 Q52,12 50,18' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M46,14 L50,18 L54,14 M48,16 L52,20 L56,16' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(15deg);
+  right: -90px;
+  top: 25%;
+}
+
+/* Different arrow style for card 7 (Media Work) - curved upward */
+.doodle-arrow-7 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M5,20 Q15,25 25,18 Q35,10 45,15 Q50,18 52,12' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M48,8 L52,12 L48,16 M46,10 L50,14 L46,18' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(-12deg);
+  right: -80px;
+  top: 35%;
+}
+
 /* Doodle Text */
 .thought-bubble {
   position: absolute;
@@ -847,6 +869,19 @@ layout: default
   transform: rotate(-5deg);
   z-index: 15;
   line-height: 1.2;
+}
+
+/* Text positioning adjustments for different arrows */
+.thought-bubble-5 {
+  right: -155px;
+  top: 22%;
+  transform: rotate(10deg);
+}
+
+.thought-bubble-7 {
+  right: -145px;
+  top: 32%;
+  transform: rotate(-8deg);
 }
 
 /* Hide on mobile screens */
