@@ -1,11 +1,11 @@
 ---
 layout: cv
 permalink: /cv/
-title: Professional Journey
+title: CV
 nav: true
 nav_order: 6
 cv_pdf: SANJAN B M.pdf
-description: From aspiring technologist to AI engineering leader - explore my journey of building impactful systems, leading communities, and pushing the boundaries of artificial intelligence.
+description: Comprehensive curriculum vitae showcasing technical expertise, academic achievements, and professional experience in software engineering and AI/ML.
 toc:
   sidebar: left
 ---
