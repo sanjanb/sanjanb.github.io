@@ -804,46 +804,52 @@ layout: default
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
 }
 
-/* Static message in front of arrow - Only for 1st, 3rd, 5th, and 7th cards */
+/* Circular thought bubble message in front of arrow - Only for 1st, 3rd, 5th, and 7th cards */
 .timeline-milestone:nth-child(1) .content-card::after,
 .timeline-milestone:nth-child(3) .content-card::after,
 .timeline-milestone:nth-child(5) .content-card::after,
 .timeline-milestone:nth-child(7) .content-card::after {
   position: absolute;
-  right: -180px;
-  top: 35%;
-  font-size: 0.8rem;
+  right: -120px;
+  top: 15%;
+  width: 110px;
+  height: 110px;
+  font-size: 0.7rem;
   color: var(--global-theme-color);
   font-weight: 700;
   opacity: 1;
   pointer-events: none;
-  white-space: nowrap;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  white-space: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  transform: rotate(-8deg);
-  z-index: 15;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 4px 8px;
-  border-radius: 4px;
-  border: 1.5px solid var(--global-theme-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3deg);
+  z-index: 999;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid var(--global-theme-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
 }
 
 /* Experience-specific messages */
 .timeline-milestone:nth-child(1) .content-card::after {
-  content: 'Check my AI journey!';
+  content: 'AI Journey!';
 }
 
 .timeline-milestone:nth-child(3) .content-card::after {
-  content: 'See my leadership story!';
+  content: 'Leadership Story!';
 }
 
 .timeline-milestone:nth-child(5) .content-card::after {
-  content: 'Explore my data projects!';
+  content: 'Data Projects!';
 }
 
 .timeline-milestone:nth-child(7) .content-card::after {
-  content: 'View my media work!';
+  content: 'Media Work!';
 }
 
 /* Hide arrows and messages from all other cards */
@@ -1209,11 +1215,13 @@ layout: default
   .timeline-milestone:nth-child(even) .milestone-content {
     margin-left: 1rem;
   }
-  
-  /* Hide doodled arrow on smaller screens to avoid overlap */
+}
+
+/* Hide doodled arrows and thought bubbles only on mobile phones */
+@media (max-width: 480px) {
   .content-card::before,
   .content-card::after {
-    display: none;
+    display: none !important;
   }
 }
 
