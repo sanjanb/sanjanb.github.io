@@ -837,8 +837,8 @@ layout: default
 /* Doodle Arrows */
 .doodle-arrow {
   position: absolute;
-  right: -100px;
-  top: 40%;
+  right: -90px;
+  top: 35%;
   width: 80px;
   height: 40px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40'%3E%3Cpath d='M10,20 Q30,5 50,15 Q65,20 70,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M65,10 L70,15 L65,20 M62,12 L67,17 L62,22' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
@@ -850,31 +850,21 @@ layout: default
   z-index: 10;
 }
 
-/* Thought Bubbles */
+/* Doodle Text */
 .thought-bubble {
   position: absolute;
-  right: -220px;
-  top: 15%;
-  width: 110px;
-  height: 110px;
-  font-size: 0.7rem;
+  right: -180px;
+  top: 20%;
+  font-size: 0.8rem;
   color: var(--global-theme-color);
   font-weight: 700;
   opacity: 1;
   pointer-events: none;
-  white-space: normal;
-  text-align: center;
+  white-space: nowrap;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  transform: rotate(-3deg);
+  transform: rotate(-8deg);
   z-index: 15;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 3px solid var(--global-theme-color);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   line-height: 1.2;
 }
 
@@ -886,92 +876,7 @@ layout: default
   }
 }
 
-/* Old pseudo-element approach - keeping for reference but not needed */
-.timeline-milestone:nth-child(1) .content-card::after,
-.timeline-milestone:nth-child(3) .content-card::after,
-.timeline-milestone:nth-child(5) .content-card::after,
-.timeline-milestone:nth-child(7) .content-card::after {
-  position: absolute;
-  right: -120px;
-  top: 15%;
-  width: 110px;
-  height: 110px;
-  font-size: 0.7rem;
-  color: var(--global-theme-color);
-  font-weight: 700;
-  opacity: 1;
-  pointer-events: none;
-  white-space: normal;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  transform: rotate(-3deg);
-  z-index: 999;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 3px solid var(--global-theme-color);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.2;
-}
 
-/* Experience-specific messages */
-.timeline-milestone:nth-child(1) .content-card::after {
-  content: 'AI Journey!';
-}
-
-.timeline-milestone:nth-child(3) .content-card::after {
-  content: 'Leadership Story!';
-}
-
-.timeline-milestone:nth-child(5) .content-card::after {
-  content: 'Data Projects!';
-}
-
-.timeline-milestone:nth-child(7) .content-card::after {
-  content: 'Media Work!';
-}
-
-/* Hide arrows and messages from all other cards */
-.timeline-milestone:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)) .content-card::before,
-.timeline-milestone:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(7)) .content-card::after {
-  display: none !important;
-}
-
-/* Static hover effects for selected cards only */
-.timeline-milestone:nth-child(1) .content-card:hover::before,
-.timeline-milestone:nth-child(3) .content-card:hover::before,
-.timeline-milestone:nth-child(5) .content-card:hover::before,
-.timeline-milestone:nth-child(7) .content-card:hover::before,
-.timeline-milestone:nth-child(1) .content-card:hover::after,
-.timeline-milestone:nth-child(3) .content-card:hover::after,
-.timeline-milestone:nth-child(5) .content-card:hover::after,
-.timeline-milestone:nth-child(7) .content-card:hover::after {
-  opacity: 1;
-}
-
-.content-card:hover::before,
-.content-card:hover::after {
-  opacity: 1;
-  animation-duration: 1.5s;
-}
-
-@keyframes doodleWiggle {
-  0%, 100% { 
-    transform: rotate(-10deg) scale(1);
-  }
-  25% { 
-    transform: rotate(-8deg) scale(1.05);
-  }
-  50% { 
-    transform: rotate(-12deg) scale(0.95);
-  }
-  75% { 
-    transform: rotate(-9deg) scale(1.02);
-  }
-}
 
 /* Content Card Arrows */
 .timeline-milestone:nth-child(odd) .content-card::after {
@@ -1299,13 +1204,7 @@ layout: default
   }
 }
 
-/* Hide doodled arrows and thought bubbles only on mobile phones */
-@media (max-width: 480px) {
-  .content-card::before,
-  .content-card::after {
-    display: none !important;
-  }
-}
+
 
 @media (max-width: 576px) {
   .journey-timeline::before {
@@ -1329,10 +1228,6 @@ layout: default
     margin-right: 0 !important;
   }
   
-  .timeline-milestone:nth-child(odd) .content-card::after,
-  .timeline-milestone:nth-child(even) .content-card::after {
-    display: none;
-  }
   
   .hero-title {
     font-size: 2rem;
