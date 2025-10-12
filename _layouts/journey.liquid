@@ -898,36 +898,37 @@ layout: default
 }
 
 /* Different arrow styles for even cards */
-/* Card 2 (Agriculture) - Left pointing arrow */
+/* Card 2 (Agriculture) - Arrow above the border */
 .doodle-arrow-2 {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M55,15 Q40,8 25,12 Q15,15 10,12' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M14,8 L10,12 L14,16 M16,10 L12,14 L16,18' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
-  transform: rotate(8deg);
-  left: -85px;
-  top: 30%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 25'%3E%3Cpath d='M5,15 Q15,8 25,12 Q30,15 35,10' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M32,7 L35,10 L32,13' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(-8deg);
+  right: -10px;
+  top: -25px;
+  z-index: 10;
 }
 
-/* Card 4 (Open Source) - Diagonal left-down */
+/* Card 4 (Open Source) - Random arrow below card */
 .doodle-arrow-4 {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M50,8 Q35,10 25,15 Q15,20 8,22' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M12,18 L8,22 L12,26 M14,20 L10,24 L14,28' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
-  transform: rotate(-15deg);
-  left: -90px;
-  top: 25%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M5,10 Q15,25 30,15 Q45,5 55,20' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M52,17 L55,20 L52,23 M50,19 L53,22 L50,25' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(12deg);
+  left: 40%;
+  bottom: -25px;
 }
 
-/* Card 6 (Business) - Spiral left */
+/* Card 6 (Business) - Random arrow above card */
 .doodle-arrow-6 {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M52,15 Q45,8 35,12 Q25,16 20,12 Q15,8 12,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16,11 L12,15 L16,19 M18,13 L14,17 L18,21' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
-  transform: rotate(5deg);
-  left: -85px;
-  top: 35%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M8,15 Q18,8 28,18 Q38,28 48,12 Q52,8 58,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M55,12 L58,15 L55,18 M53,14 L56,17 L53,20' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(6deg);
+  left: 25%;
+  top: -25px;
 }
 
-/* Card 8 (Freelance) - Curved left-up */
+/* Card 8 (Freelance) - Random arrow below card */
 .doodle-arrow-8 {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M55,20 Q40,22 30,18 Q20,14 15,18 Q10,22 8,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M12,11 L8,15 L12,19 M14,13 L10,17 L14,21' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
-  transform: rotate(-10deg);
-  left: -80px;
-  top: 32%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M2,20 Q12,8 25,18 Q38,28 50,12 Q55,8 58,22' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M55,19 L58,22 L55,25 M53,21 L56,24 L53,27' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(-9deg);
+  left: 35%;
+  bottom: -25px;
 }
 
 /* Doodle Text */
@@ -999,29 +1000,30 @@ layout: default
   transform: rotate(-8deg);
 }
 
-/* Text positioning for even cards (left side) */
+/* Text positioning for even cards */
 .thought-bubble-2 {
-  left: -150px;
-  top: 25%;
+  right: -45px;
+  top: -35px;
   transform: rotate(5deg);
+  z-index: 15;
 }
 
 .thought-bubble-4 {
-  left: -155px;
-  top: 20%;
-  transform: rotate(-10deg);
+  left: 40%;
+  bottom: -70px;
+  transform: translateX(-50%) rotate(-10deg);
 }
 
 .thought-bubble-6 {
-  left: -145px;
-  top: 30%;
-  transform: rotate(3deg);
+  left: 25%;
+  top: -70px;
+  transform: translateX(-50%) rotate(3deg);
 }
 
 .thought-bubble-8 {
-  left: -150px;
-  top: 27%;
-  transform: rotate(-7deg);
+  left: 35%;
+  bottom: -70px;
+  transform: translateX(-50%) rotate(-7deg);
 }
 
 /* Hide on mobile screens */
