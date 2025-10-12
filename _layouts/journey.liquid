@@ -211,12 +211,6 @@ layout: default
 <style>
 /* Professional Journey Page Styling */
 .professional-journey-page {
-  --journey-primary: var(--global-theme-color);
-  --journey-secondary: var(--global-text-color-light);
-  --journey-accent: #f59e0b;
-  --journey-success: #10b981;
-  --journey-surface: var(--global-card-bg-color);
-  --journey-border: var(--global-divider-color);
   margin: 0;
   overflow-x: hidden;
 }
@@ -229,6 +223,7 @@ layout: default
   align-items: center;
   overflow: hidden;
   color: white;
+  margin-top: -1.5rem;
 }
 
 .hero-background {
@@ -240,7 +235,7 @@ layout: default
 .hero-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--journey-primary) 0%, #7c3aed 50%, #1e293b 100%);
+  background: linear-gradient(135deg, var(--global-theme-color) 0%, var(--global-hover-color) 50%, var(--global-text-color) 100%);
 }
 
 .hero-pattern {
@@ -302,7 +297,7 @@ layout: default
   align-items: center;
   gap: 0.5rem;
   padding: 0.875rem 1.5rem;
-  border-radius: 12px;
+  border-radius: 0.375rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -310,8 +305,8 @@ layout: default
 }
 
 .hero-btn.primary {
-  background: white;
-  color: var(--journey-primary);
+  background: var(--global-hover-text-color);
+  color: var(--global-theme-color);
 }
 
 .hero-btn.ghost {
@@ -324,6 +319,8 @@ layout: default
 .hero-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: var(--global-hover-text-color);
+  background: var(--global-hover-color);
 }
 
 /* Timeline Section */
@@ -372,11 +369,9 @@ layout: default
   bottom: 0;
   width: 4px;
   background: linear-gradient(to bottom, 
-    #10b981 0%, 
-    var(--journey-primary) 25%, 
-    var(--journey-accent) 50%, 
-    #8b5cf6 75%, 
-    #ec4899 100%);
+    var(--global-theme-color) 0%, 
+    var(--global-hover-color) 50%, 
+    var(--global-text-color-light) 100%);
   transform: translateX(-50%);
   border-radius: 2px;
   z-index: 1;
@@ -445,38 +440,38 @@ layout: default
 }
 
 .marker-dot.education {
-  background: #10b981;
-  color: #10b981;
+  background: var(--global-theme-color);
+  color: var(--global-theme-color);
 }
 
 .marker-dot.career {
-  background: #3b82f6;
-  color: #3b82f6;
+  background: var(--global-hover-color);
+  color: var(--global-hover-color);
 }
 
 .marker-dot.growth {
-  background: var(--journey-primary);
-  color: var(--journey-primary);
+  background: var(--global-theme-color);
+  color: var(--global-theme-color);
 }
 
 .marker-dot.leadership {
-  background: var(--journey-accent);
-  color: var(--journey-accent);
+  background: var(--global-hover-color);
+  color: var(--global-hover-color);
 }
 
 .marker-dot.innovation {
-  background: #8b5cf6;
-  color: #8b5cf6;
+  background: var(--global-theme-color);
+  color: var(--global-theme-color);
 }
 
 .marker-label {
-  background: var(--journey-surface);
+  background: var(--global-card-bg-color);
   color: var(--global-text-color);
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.75rem;
   font-weight: 600;
-  border: 1px solid var(--journey-border);
+  border: 1px solid var(--global-divider-color);
   white-space: nowrap;
 }
 
@@ -487,9 +482,9 @@ layout: default
 
 /* Content Cards */
 .content-card {
-  background: var(--journey-surface);
-  border: 1px solid var(--journey-border);
-  border-radius: 16px;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.75rem;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
@@ -499,7 +494,7 @@ layout: default
 .content-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  border-color: var(--journey-primary);
+  border-color: var(--global-theme-color);
 }
 
 /* Content Card Arrows */
@@ -511,7 +506,7 @@ layout: default
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-left-color: var(--journey-surface);
+  border-left-color: var(--global-card-bg-color);
 }
 
 .timeline-milestone:nth-child(even) .content-card::after {
@@ -522,7 +517,7 @@ layout: default
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-right-color: var(--journey-surface);
+  border-right-color: var(--global-card-bg-color);
 }
 
 .content-card h3 {
@@ -534,7 +529,7 @@ layout: default
 
 .content-card h4 {
   font-size: 1.125rem;
-  color: var(--journey-primary);
+  color: var(--global-theme-color);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
@@ -560,8 +555,8 @@ layout: default
 }
 
 .achievement-tag {
-  background: linear-gradient(135deg, var(--journey-success), #34d399);
-  color: white;
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.75rem;
@@ -569,8 +564,8 @@ layout: default
 }
 
 .skill-tag {
-  background: var(--journey-primary);
-  color: white;
+  background: var(--global-hover-color);
+  color: var(--global-hover-text-color);
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.75rem;
@@ -580,7 +575,8 @@ layout: default
 /* Achievements Section */
 .journey-achievements {
   padding: 5rem 0;
-  background: var(--journey-surface);
+  background: var(--global-card-bg-color);
+  border-top: 1px solid var(--global-divider-color);
 }
 
 .journey-achievements h2 {
@@ -599,8 +595,8 @@ layout: default
 
 .achievement-card {
   background: var(--global-bg-color);
-  border: 1px solid var(--journey-border);
-  border-radius: 16px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.75rem;
   padding: 2rem;
   text-align: center;
   transition: all 0.3s ease;
@@ -609,11 +605,12 @@ layout: default
 .achievement-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-color: var(--global-theme-color);
 }
 
 .achievement-icon {
   font-size: 2.5rem;
-  color: var(--journey-primary);
+  color: var(--global-theme-color);
   margin-bottom: 1rem;
 }
 
@@ -689,6 +686,10 @@ layout: default
   
   .container {
     padding: 0 1rem;
+  }
+  
+  .journey-hero-inner {
+    padding: 3rem 1rem;
   }
 }
 </style>
