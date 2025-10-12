@@ -809,7 +809,6 @@ layout: default
 .timeline-milestone:nth-child(3) .content-card::after,
 .timeline-milestone:nth-child(5) .content-card::after,
 .timeline-milestone:nth-child(7) .content-card::after {
-  content: 'Check my AI journey!';
   position: absolute;
   right: -200px;
   top: 15%;
@@ -822,6 +821,23 @@ layout: default
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   font-family: 'Comic Sans MS', cursive, sans-serif;
   transform: rotate(-8deg);
+}
+
+/* Experience-specific messages */
+.timeline-milestone:nth-child(1) .content-card::after {
+  content: 'Check my AI journey!';
+}
+
+.timeline-milestone:nth-child(3) .content-card::after {
+  content: 'See my leadership story!';
+}
+
+.timeline-milestone:nth-child(5) .content-card::after {
+  content: 'Explore my data projects!';
+}
+
+.timeline-milestone:nth-child(7) .content-card::after {
+  content: 'View my media work!';
 }
 
 /* Hide arrows and messages from all other cards */
