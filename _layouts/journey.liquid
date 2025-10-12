@@ -871,6 +871,39 @@ layout: default
   line-height: 1.2;
 }
 
+/* Add decorative lines around text */
+.thought-bubble::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: -8px;
+  width: 12px;
+  height: 2px;
+  background: var(--global-theme-color);
+  transform: rotate(15deg);
+  opacity: 0.6;
+}
+
+.thought-bubble::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  bottom: -5px;
+  width: 8px;
+  height: 2px;
+  background: var(--global-theme-color);
+  transform: rotate(-20deg);
+  opacity: 0.6;
+}
+
+/* Additional decorative line */
+.thought-bubble {
+  border-bottom: 2px solid var(--global-theme-color);
+  border-radius: 2px;
+  padding-bottom: 2px;
+  opacity: 0.7;
+}
+
 /* Text positioning adjustments for different arrows */
 .thought-bubble-5 {
   right: -155px;
