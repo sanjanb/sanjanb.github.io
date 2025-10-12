@@ -495,10 +495,11 @@ layout: default
       z-index: 1;
     }    .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-      max-width: 650px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.8rem;
+      max-width: 800px;
       margin: 0 auto;
+      padding: 0 1rem;
     }
 
     /* Staggered animation for stat cards */
@@ -639,9 +640,9 @@ layout: default
 /* Timeline Structure */
 .journey-timeline {
   position: relative;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 /* Central Timeline Line */
@@ -685,6 +686,7 @@ layout: default
 /* Alternating Layout */
 .timeline-milestone:nth-child(odd) {
   padding-right: 50%;
+  text-align: left;
 }
 
 .timeline-milestone:nth-child(even) {
@@ -693,11 +695,11 @@ layout: default
 }
 
 .timeline-milestone:nth-child(odd) .milestone-content {
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
 
 .timeline-milestone:nth-child(even) .milestone-content {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 
 /* Milestone Markers */
@@ -1044,7 +1046,30 @@ layout: default
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+    max-width: 700px;
+    padding: 0 0.8rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .journey-timeline {
+    max-width: 600px;
+  }
+  
+  .timeline-milestone:nth-child(odd) .milestone-content {
+    margin-right: 1rem;
+  }
+
+  .timeline-milestone:nth-child(even) .milestone-content {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
   .journey-timeline::before {
     left: 20px;
     transform: none;
@@ -1087,8 +1112,9 @@ layout: default
   
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    max-width: 500px;
+    gap: 0.8rem;
+    max-width: 400px;
+    padding: 0 0.5rem;
   }
   
   .stat-card {
@@ -1173,30 +1199,33 @@ layout: default
 
 @media (max-width: 480px) {
   .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    max-width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    max-width: 340px;
+    padding: 0 0.5rem;
   }
   
   .stat-card {
-    padding: 0.8rem 0.5rem;
+    padding: 0.8rem 0.4rem;
   }
   
   .stat-icon {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .stat-number {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .stat-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
+    font-size: 0.65rem;
+    letter-spacing: 0.4px;
   }
 
   .stat-description {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
+    line-height: 1.2;
+  }
   }
   
   .journey-timeline::before {
