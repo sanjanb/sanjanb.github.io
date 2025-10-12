@@ -94,7 +94,7 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Vision Language Model Intern</h3>
+              <h3><a href="https://sanjanb.github.io/Internship-log/" target="_blank" rel="noopener noreferrer">Vision Language Model Intern</a></h3>
               <h4>SynerSense®</h4>
               <p class="period">Jun 2025 - Present</p>
               <p class="description">
@@ -118,7 +118,7 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Project Intern - AI in Agriculture</h3>
+              <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">Project Intern - AI in Agriculture</a></h3>
               <h4>IEEE Computer Society Bangalore Chapter</h4>
               <p class="period">Apr 2025 - Sep 2025</p>
               <p class="description">
@@ -142,8 +142,8 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Vice Chair</h3>
-              <h4>IEEE ATMECE</h4>
+              <h3><a href="https://sanjanb.github.io/achievements/ieee-vice-chair/" target="_blank" rel="noopener noreferrer">Vice Chair</a></h3>
+              <h4><a href="https://atme.edu.in/ieee-home-2/" target="_blank" rel="noopener noreferrer">IEEE ATMECE</a></h4>
               <p class="period">Sep 2024 - Present</p>
               <p class="description">
                 Leading events and workshops to enhance member skills and foster industry connections. 
@@ -166,12 +166,13 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Open Source Contributor</h3>
+              <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">Open Source Contributor</a></h3>
               <h4>SWOC & GirlScript Winter of Contributing</h4>
               <p class="period">Sep 2024 - Feb 2025</p>
               <p class="description">
                 Contributed to blockchain projects and dApps, collaborating with global teams to enhance 
-                security and optimize transaction efficiency. Made significant impacts through pull requests.
+                security and optimize transaction efficiency. Made significant impacts through pull requests. 
+                <a href="https://github.com/sanjanb" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
               </p>
               <div class="skills">
                 <span class="skill-tag">Blockchain</span>
@@ -190,12 +191,13 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Kaggler & Data Science Enthusiast</h3>
+              <h3><a href="https://www.kaggle.com/sanjanbm" target="_blank" rel="noopener noreferrer">Kaggler & Data Science Enthusiast</a></h3>
               <h4>Kaggle Platform</h4>
               <p class="period">Apr 2024 - Present</p>
               <p class="description">
                 Exploring real-world data problems to sharpen machine learning skills. 
                 Practicing classification, regression, and clustering while learning from top data science minds.
+                <a href="https://www.datacamp.com/portfolio/sanjanacharya" target="_blank" rel="noopener noreferrer">View DataCamp Portfolio</a>
               </p>
               <div class="skills">
                 <span class="skill-tag">Machine Learning</span>
@@ -214,7 +216,7 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Business Development Specialist</h3>
+              <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">Business Development Specialist</a></h3>
               <h4>Younity.in</h4>
               <p class="period">Feb 2025</p>
               <p class="description">
@@ -238,7 +240,7 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>News Editor & Reporter</h3>
+              <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">News Editor & Reporter</a></h3>
               <h4>Thirthahalli Bandhu</h4>
               <p class="period">Oct 2022 - May 2023</p>
               <p class="description">
@@ -262,7 +264,7 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
-              <h3>Freelance Web Developer</h3>
+              <h3><a href="https://sanjanb.github.io/achievements/freelance-success/" target="_blank" rel="noopener noreferrer">Freelance Web Developer</a></h3>
               <h4>Upwork</h4>
               <p class="period">Jul 2020 - Present</p>
               <p class="description">
@@ -812,11 +814,50 @@ layout: default
   color: var(--global-text-color);
 }
 
+.content-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.content-card h3 a:hover {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-theme-color);
+}
+
 .content-card h4 {
   font-size: 1rem;
   color: var(--global-theme-color);
   margin-bottom: 0.375rem;
   font-weight: 500;
+}
+
+.content-card h4 a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.content-card h4 a:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
+
+.content-card .description a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(var(--global-theme-color-rgb, 181, 9, 172), 0.1);
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.content-card .description a:hover {
+  background: rgba(var(--global-theme-color-rgb, 181, 9, 172), 0.2);
+  transform: translateY(-1px);
 }
 
 .period {
