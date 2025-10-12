@@ -95,6 +95,13 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 1 -->
+              <div class="thought-bubble thought-bubble-1">
+                AI Journey!
+              </div>
+              <!-- Doodle arrow for card 1 -->
+              <div class="doodle-arrow doodle-arrow-1"></div>
+              
               <h3><a href="https://sanjanb.github.io/Internship-log/" target="_blank" rel="noopener noreferrer">Vision Language Model Intern</a></h3>
               <h4>SynerSense®</h4>
               <p class="period">Jun 2025 - Present</p>
@@ -143,6 +150,13 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 3 -->
+              <div class="thought-bubble thought-bubble-3">
+                Leadership Story!
+              </div>
+              <!-- Doodle arrow for card 3 -->
+              <div class="doodle-arrow doodle-arrow-3"></div>
+              
               <h3><a href="https://sanjanb.github.io/achievements/ieee-vice-chair/" target="_blank" rel="noopener noreferrer">Vice Chair</a></h3>
               <h4><a href="https://atme.edu.in/ieee-home-2/" target="_blank" rel="noopener noreferrer">IEEE ATMECE</a></h4>
               <p class="period">Sep 2024 - Present</p>
@@ -192,6 +206,13 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 5 -->
+              <div class="thought-bubble thought-bubble-5">
+                Data Projects!
+              </div>
+              <!-- Doodle arrow for card 5 -->
+              <div class="doodle-arrow doodle-arrow-5"></div>
+              
               <h3><a href="https://www.kaggle.com/sanjanbm" target="_blank" rel="noopener noreferrer">Kaggler & Data Science Enthusiast</a></h3>
               <h4>Kaggle Platform</h4>
               <p class="period">Apr 2024 - Present</p>
@@ -241,6 +262,13 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 7 -->
+              <div class="thought-bubble thought-bubble-7">
+                Media Work!
+              </div>
+              <!-- Doodle arrow for card 7 -->
+              <div class="doodle-arrow doodle-arrow-7"></div>
+              
               <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">News Editor & Reporter</a></h3>
               <h4>Thirthahalli Bandhu</h4>
               <p class="period">Oct 2022 - May 2023</p>
@@ -804,7 +832,61 @@ layout: default
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
 }
 
-/* Circular thought bubble message in front of arrow - Only for 1st, 3rd, 5th, and 7th cards */
+/* Thought Bubbles and Doodle Arrows - Direct HTML approach */
+
+/* Doodle Arrows */
+.doodle-arrow {
+  position: absolute;
+  right: -100px;
+  top: 40%;
+  width: 80px;
+  height: 40px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40'%3E%3Cpath d='M10,20 Q30,5 50,15 Q65,20 70,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M65,10 L70,15 L65,20 M62,12 L67,17 L62,22' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+  opacity: 0.8;
+  pointer-events: none;
+  transform: rotate(-10deg);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+  z-index: 10;
+}
+
+/* Thought Bubbles */
+.thought-bubble {
+  position: absolute;
+  right: -220px;
+  top: 15%;
+  width: 110px;
+  height: 110px;
+  font-size: 0.7rem;
+  color: var(--global-theme-color);
+  font-weight: 700;
+  opacity: 1;
+  pointer-events: none;
+  white-space: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transform: rotate(-3deg);
+  z-index: 15;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid var(--global-theme-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+/* Hide on mobile screens */
+@media (max-width: 480px) {
+  .thought-bubble,
+  .doodle-arrow {
+    display: none !important;
+  }
+}
+
+/* Old pseudo-element approach - keeping for reference but not needed */
 .timeline-milestone:nth-child(1) .content-card::after,
 .timeline-milestone:nth-child(3) .content-card::after,
 .timeline-milestone:nth-child(5) .content-card::after,
