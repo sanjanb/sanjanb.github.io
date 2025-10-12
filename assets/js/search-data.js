@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/achievements/";
           },
-        },{id: "nav-professional-journey",
-          title: "Professional Journey",
+        },{id: "nav-voyage",
+          title: "Voyage",
           description: "Explore my journey from a curious computer science student to an AI leader, showcasing the evolution of skills, impactful projects, and continuous learning that drives innovation.",
           section: "Navigation",
           handler: () => {
