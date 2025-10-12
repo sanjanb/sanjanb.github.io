@@ -87,7 +87,8 @@ layout: default
         <!-- Timeline items will be populated here -->
         
         <!-- Current Role -->
-        <div class="timeline-milestone" data-year="2025">
+        <!-- Vision Language Model Intern -->
+        <div class="timeline-milestone" data-year="2025" data-experience="vision-ai">
           <div class="milestone-marker">
             <div class="marker-dot innovation"></div>
             <div class="marker-label">Vision AI</div>
@@ -111,7 +112,7 @@ layout: default
         </div>
 
         <!-- AI Agriculture Project -->
-        <div class="timeline-milestone" data-year="2025">
+        <div class="timeline-milestone" data-year="2025" data-experience="ai-agriculture">
           <div class="milestone-marker">
             <div class="marker-dot growth"></div>
             <div class="marker-label">AI Agriculture</div>
@@ -135,7 +136,7 @@ layout: default
         </div>
 
         <!-- Leadership Role -->
-        <div class="timeline-milestone" data-year="2024">
+        <div class="timeline-milestone" data-year="2024" data-experience="leadership">
           <div class="milestone-marker">
             <div class="marker-dot leadership"></div>
             <div class="marker-label">Leadership</div>
@@ -159,7 +160,7 @@ layout: default
         </div>
 
         <!-- Open Source Contributions -->
-        <div class="timeline-milestone" data-year="2024">
+        <div class="timeline-milestone" data-year="2024" data-experience="open-source">
           <div class="milestone-marker">
             <div class="marker-dot career"></div>
             <div class="marker-label">Open Source</div>
@@ -184,7 +185,7 @@ layout: default
         </div>
 
         <!-- Data Science Journey -->
-        <div class="timeline-milestone" data-year="2024">
+        <div class="timeline-milestone" data-year="2024" data-experience="data-science">
           <div class="milestone-marker">
             <div class="marker-dot growth"></div>
             <div class="marker-label">Data Science</div>
@@ -209,7 +210,7 @@ layout: default
         </div>
 
         <!-- Business Development Experience -->
-        <div class="timeline-milestone" data-year="2025">
+        <div class="timeline-milestone" data-year="2025" data-experience="business">
           <div class="milestone-marker">
             <div class="marker-dot career"></div>
             <div class="marker-label">Business</div>
@@ -233,7 +234,7 @@ layout: default
         </div>
 
         <!-- Journalism Experience -->
-        <div class="timeline-milestone" data-year="2022-2023">
+        <div class="timeline-milestone" data-year="2022-2023" data-experience="journalism">
           <div class="milestone-marker">
             <div class="marker-dot education"></div>
             <div class="marker-label">Media</div>
@@ -257,7 +258,7 @@ layout: default
         </div>
 
         <!-- Freelance Journey -->
-        <div class="timeline-milestone" data-year="2020">
+        <div class="timeline-milestone" data-year="2020" data-experience="freelance">
           <div class="milestone-marker">
             <div class="marker-dot career"></div>
             <div class="marker-label">Freelance</div>
@@ -784,7 +785,7 @@ layout: default
   border-color: var(--global-theme-color);
 }
 
-/* Doodled Click Arrow */
+/* Doodled Experience Messages */
 .content-card::before {
   content: '';
   position: absolute;
@@ -801,6 +802,7 @@ layout: default
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
 }
 
+/* Generic fallback message */
 .content-card::after {
   content: 'click here!';
   position: absolute;
@@ -816,6 +818,68 @@ layout: default
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   font-family: 'Comic Sans MS', cursive, sans-serif;
   transform: rotate(-8deg);
+}
+
+/* Experience-specific doodle messages */
+[data-experience="vision-ai"] .content-card::after {
+  content: 'Check my AI journey!' !important;
+  right: -150px !important;
+}
+
+[data-experience="ai-agriculture"] .content-card::after {
+  content: 'See farm innovation!' !important;
+  right: -140px !important;
+}
+
+[data-experience="leadership"] .content-card::after {
+  content: 'My leadership story!' !important;
+  right: -145px !important;
+}
+
+[data-experience="open-source"] .content-card::after {
+  content: 'View my contributions!' !important;
+  right: -155px !important;
+}
+
+[data-experience="data-science"] .content-card::after {
+  content: 'Explore my projects!' !important;
+  right: -150px !important;
+}
+
+[data-experience="business"] .content-card::after {
+  content: 'Business growth story!' !important;
+  right: -155px !important;
+}
+
+[data-experience="journalism"] .content-card::after {
+  content: 'My media work!' !important;
+  right: -130px !important;
+}
+
+[data-experience="freelance"] .content-card::after {
+  content: 'Success stories!' !important;
+  right: -130px !important;
+}
+
+.content-card:hover::before,
+.content-card:hover::after {
+  opacity: 1;
+  animation-duration: 1.5s;
+}
+
+@keyframes doodleWiggle {
+  0%, 100% { 
+    transform: rotate(-10deg) scale(1);
+  }
+  25% { 
+    transform: rotate(-8deg) scale(1.05);
+  }
+  50% { 
+    transform: rotate(-12deg) scale(0.95);
+  }
+  75% { 
+    transform: rotate(-9deg) scale(1.02);
+  }
 }
 
 .content-card:hover::before,
