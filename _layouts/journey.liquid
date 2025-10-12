@@ -128,6 +128,15 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 2 -->
+              <div class="thought-bubble thought-bubble-2">
+                <div>Smart</div>
+                <div>Agriculture</div>
+                <div>Tech!</div>
+              </div>
+              <!-- Doodle arrow for card 2 -->
+              <div class="doodle-arrow doodle-arrow-2"></div>
+              
               <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">Project Intern - AI in Agriculture</a></h3>
               <h4>IEEE Computer Society Bangalore Chapter</h4>
               <p class="period">Apr 2025 - Sep 2025</p>
@@ -185,6 +194,15 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 4 -->
+              <div class="thought-bubble thought-bubble-4">
+                <div>Awesome</div>
+                <div>Open Source</div>
+                <div>Contributions!</div>
+              </div>
+              <!-- Doodle arrow for card 4 -->
+              <div class="doodle-arrow doodle-arrow-4"></div>
+              
               <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">Open Source Contributor</a></h3>
               <h4>SWOC & GirlScript Winter of Contributing</h4>
               <p class="period">Sep 2024 - Feb 2025</p>
@@ -244,6 +262,15 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 6 -->
+              <div class="thought-bubble thought-bubble-6">
+                <div>Strategic</div>
+                <div>Business</div>
+                <div>Growth!</div>
+              </div>
+              <!-- Doodle arrow for card 6 -->
+              <div class="doodle-arrow doodle-arrow-6"></div>
+              
               <h3><a href="https://www.linkedin.com/in/sanjan-bm/details/experience/" target="_blank" rel="noopener noreferrer">Business Development Specialist</a></h3>
               <h4>Younity.in</h4>
               <p class="period">Feb 2025</p>
@@ -301,6 +328,15 @@ layout: default
           </div>
           <div class="milestone-content">
             <div class="content-card">
+              <!-- Thought bubble for card 8 -->
+              <div class="thought-bubble thought-bubble-8">
+                <div>Epic</div>
+                <div>Freelance</div>
+                <div>Journey!</div>
+              </div>
+              <!-- Doodle arrow for card 8 -->
+              <div class="doodle-arrow doodle-arrow-8"></div>
+              
               <h3><a href="https://sanjanb.github.io/achievements/freelance-success/" target="_blank" rel="noopener noreferrer">Freelance Web Developer</a></h3>
               <h4>Upwork</h4>
               <p class="period">Jul 2020 - Present</p>
@@ -861,6 +897,39 @@ layout: default
   top: 35%;
 }
 
+/* Different arrow styles for even cards */
+/* Card 2 (Agriculture) - Left pointing arrow */
+.doodle-arrow-2 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M55,15 Q40,8 25,12 Q15,15 10,12' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M14,8 L10,12 L14,16 M16,10 L12,14 L16,18' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(8deg);
+  left: -85px;
+  top: 30%;
+}
+
+/* Card 4 (Open Source) - Diagonal left-down */
+.doodle-arrow-4 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M50,8 Q35,10 25,15 Q15,20 8,22' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M12,18 L8,22 L12,26 M14,20 L10,24 L14,28' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(-15deg);
+  left: -90px;
+  top: 25%;
+}
+
+/* Card 6 (Business) - Spiral left */
+.doodle-arrow-6 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M52,15 Q45,8 35,12 Q25,16 20,12 Q15,8 12,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16,11 L12,15 L16,19 M18,13 L14,17 L18,21' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(5deg);
+  left: -85px;
+  top: 35%;
+}
+
+/* Card 8 (Freelance) - Curved left-up */
+.doodle-arrow-8 {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Cpath d='M55,20 Q40,22 30,18 Q20,14 15,18 Q10,22 8,15' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M12,11 L8,15 L12,19 M14,13 L10,17 L14,21' stroke='%23b509ac' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+  transform: rotate(-10deg);
+  left: -80px;
+  top: 32%;
+}
+
 /* Doodle Text */
 .thought-bubble {
   position: absolute;
@@ -928,6 +997,31 @@ layout: default
   right: -145px;
   top: 25%;
   transform: rotate(-8deg);
+}
+
+/* Text positioning for even cards (left side) */
+.thought-bubble-2 {
+  left: -150px;
+  top: 25%;
+  transform: rotate(5deg);
+}
+
+.thought-bubble-4 {
+  left: -155px;
+  top: 20%;
+  transform: rotate(-10deg);
+}
+
+.thought-bubble-6 {
+  left: -145px;
+  top: 30%;
+  transform: rotate(3deg);
+}
+
+.thought-bubble-8 {
+  left: -150px;
+  top: 27%;
+  transform: rotate(-7deg);
 }
 
 /* Hide on mobile screens */
