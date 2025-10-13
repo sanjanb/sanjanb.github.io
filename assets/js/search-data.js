@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/work/";
           },
-        },{id: "nav-achievements",
-          title: "Achievements",
+        },{id: "nav-feats",
+          title: "Feats",
           description: "A journey of continuous growth and impact in technology and leadership.",
           section: "Navigation",
           handler: () => {
