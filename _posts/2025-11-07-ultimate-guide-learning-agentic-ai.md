@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "The Ultimate Guide to Learning Agentic AI: From Foundations to Advanced Applications"
-date: 2025-11-07 16:00:00
+date: 2024-11-07 16:00:00
 description: A comprehensive roadmap to mastering Agentic AI with curated learning resources, practical projects, and expert insights from leading researchers and practitioners in the field.
 tags: agentic-ai artificial-intelligence machine-learning autonomous-agents llm
 categories: education
 giscus_comments: true
 related_posts: true
 featured: true
+published: True
 ---
 
 <section class="hero-block agentic-ai-hero">

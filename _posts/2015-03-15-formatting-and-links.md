@@ -20,7 +20,6 @@ toc:
   sidebar: left
 giscus_comments: true
 related_posts: true
-thumbnail: assets/img/blog/formatting-guide/header.jpg
 images:
   compare: true
   slider: true
@@ -33,8 +32,6 @@ published: true
 ## Introduction
 
 Modern web development demands sophisticated content presentation techniques that go beyond basic markdown. This comprehensive guide explores advanced formatting methods, intelligent link management, and professional content organization strategies specifically designed for Jekyll-powered static sites.
-
-{% include figure.liquid loading="eager" path="assets/img/blog/formatting-guide/jekyll-advanced.jpg" title="Advanced Jekyll Techniques" class="img-fluid rounded z-depth-1" %}
 
 In today's digital landscape, effective content presentation can significantly impact user engagement and knowledge transfer. Whether you're building technical documentation, academic portfolios, or professional blogs, mastering these techniques will elevate your content from basic to exceptional.
 
@@ -164,14 +161,7 @@ Strategic external linking builds authority and provides comprehensive context:
 
 ### Rich Media Integration
 
-{% include figure.liquid 
-   path="assets/img/blog/formatting-guide/link-architecture.jpg" 
-   title="Link Architecture Diagram" 
-   class="img-fluid rounded z-depth-1" 
-   caption="Strategic link placement enhances user experience and content discoverability" 
-   zoomable=true %}
-
-Professional content benefits from thoughtful media integration that supports rather than distracts from the core message.
+Professional content benefits from thoughtful media integration that supports rather than distracts from the core message. Strategic link placement enhances user experience and content discoverability.
 
 ---
 
@@ -192,9 +182,6 @@ Professional quotations should serve strategic purposes: establishing authority,
 ### Advanced Content Blocks
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/blog/formatting-guide/content-blocks.jpg" title="Content Block Example" class="img-fluid rounded z-depth-1" %}
-    </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="alert alert-info" role="alert">
             <h4 class="alert-heading">Pro Tip!</h4>
