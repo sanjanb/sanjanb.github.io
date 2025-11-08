@@ -2,7 +2,7 @@
 layout: none
 title: "(Disabled duplicate) Ultimate Guide to Learning Agentic AI"
 date: 2025-11-07 00:00:00
-published: false
+published: False
 permalink: /drafts/duplicate-agentic-ai-guide/
 ---
 
