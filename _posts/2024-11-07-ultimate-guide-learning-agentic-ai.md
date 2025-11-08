@@ -57,10 +57,7 @@ Before diving into agentic systems, ensure you have a solid foundation in:
 
 ### Phase 2: Core Agentic AI Concepts (Weeks 5-8)
 
-<div class="alert alert-info" role="alert">
-  <h4 class="alert-heading">Learning Strategy</h4>
-  <p>The best way to learn agentic AI is through a combination of theoretical understanding and hands-on implementation. Each concept should be followed by practical coding exercises.</p>
-</div>
+> Learning strategy: the best way to learn agentic AI is a mix of theory and hands‑on work. After each concept, do a small coding exercise to internalize it.
 
 ---
 
@@ -68,161 +65,131 @@ Before diving into agentic systems, ensure you have a solid foundation in:
 
 I've carefully analyzed and curated the best learning resources for mastering Agentic AI. Here are the top courses and playlists that will take you from beginner to expert:
 
-### 1. **Stanford CS25: Transformers United** 
-**Course Link: [Stanford CS25 Playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z)**
+### 1. Stanford CS25: Transformers United
+Course link: [Stanford CS25 Playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z)
 
-<div class="course-highlight" markdown="1">
-<div class="course-header">
-<h4>Stanford University - CS25</h4>
-<span class="difficulty-badge advanced">Advanced</span>
-<span class="duration-badge">15+ Hours</span>
-</div>
+#### Stanford University — CS25
+Difficulty: Advanced · Duration: 15+ hours
 
-**Why Choose This Course:**
+Why choose this course:
 - **Academic Rigor**: Direct from Stanford's computer science department with comprehensive theoretical foundations
 - **Research-Grade Content**: Latest developments in transformer architectures from leading AI researchers
 - **Expert Instructors**: Course taught by renowned faculty and guest lecturers from top AI research labs
 - **Foundation Building**: Essential theoretical knowledge for understanding modern agentic systems architecture
 
-**What You'll Learn:**
+What you'll learn:
 - Advanced transformer architectures and their applications in autonomous systems
 - Attention mechanisms and self-attention for complex reasoning tasks
 - Multi-modal transformers for vision, language, and cross-modal understanding
 - Scaling laws and efficiency optimizations for large-scale deployments
 - Applications to autonomous systems and intelligent agent development
 
-**Perfect For:** Students with strong ML background seeking deep technical understanding of transformer-based agents
-</div>
+Perfect for: Students with strong ML background seeking deep technical understanding of transformer-based agents
 
-### 2. **Krish Naik's Agentic AI Fundamentals**
-**Course Link: [Complete Series](https://www.youtube.com/playlist?list=PLkBMe2eZMRQ2VKEtoL0GVUrNzEiXfgj07)**
+### 2. Krish Naik's Agentic AI Fundamentals
+Course link: [Complete Series](https://www.youtube.com/playlist?list=PLkBMe2eZMRQ2VKEtoL0GVUrNzEiXfgj07)
 
-<div class="course-highlight" markdown="1">
-<div class="course-header">
-<h4>Krish Naik - Practical AI Implementation</h4>
-<span class="difficulty-badge beginner">Beginner-Friendly</span>
-<span class="duration-badge">12+ Hours</span>
-</div>
+#### Krish Naik — Practical AI Implementation
+Difficulty: Beginner‑friendly · Duration: 12+ hours
 
-**Why Choose This Course:**
+Why choose this course:
 - **Practical Focus**: Hands-on coding approach with immediate implementation of concepts
 - **Clear Explanations**: Complex agentic AI concepts broken down into digestible components
 - **Project-Based Learning**: Real-world applications and comprehensive project implementations
 - **Industry Relevant**: Skills directly applicable to current job market and enterprise requirements
 
-**What You'll Learn:**
+What you'll learn:
 - Building your first AI agent from scratch using modern frameworks
 - LangChain framework integration and agent orchestration techniques
 - Tool integration strategies and API management for autonomous systems
 - Memory systems implementation and conversation state management
 - Production deployment strategies and scalability considerations
 
-**Perfect For:** Developers seeking immediate practical skills and hands-on experience with agentic AI systems
-</div>
+Perfect for: Developers seeking immediate practical skills and hands‑on experience with agentic AI systems
 
-### 3. **Codebasics Agentic AI Deep Dive**
-**Course Link: [Comprehensive Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVN9VbAx5I2VvloTtYmlApe3)**
+### 3. Codebasics Agentic AI Deep Dive
+Course link: [Comprehensive Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVN9VbAx5I2VvloTtYmlApe3)
 
-<div class="course-highlight" markdown="1">
-<div class="course-header">
-<h4>Codebasics - End-to-End Implementation</h4>
-<span class="difficulty-badge intermediate">Intermediate</span>
-<span class="duration-badge">20+ Hours</span>
-</div>
+#### Codebasics — End‑to‑End Implementation
+Difficulty: Intermediate · Duration: 20+ hours
 
-**Why Choose This Course:**
+Why choose this course:
 - **Complete Projects**: Build full-scale applications from initial concept to final deployment
 - **Step-by-Step Methodology**: Systematic approach to complex system architecture and implementation
 - **UI/UX Integration**: Creating professional user interfaces for AI agent interactions
 - **Data Integration**: Comprehensive coverage of real-world data sources and processing pipelines
 
-**What You'll Learn:**
+What you'll learn:
 - Multi-agent systems architecture and design patterns
 - RAG (Retrieval Augmented Generation) implementation with vector databases
 - Vector databases integration and semantic search optimization
 - Building conversational AI with persistent memory and context awareness
 - Deploying agents using modern web frameworks and cloud infrastructure
 
-**Perfect For:** Developers building commercial AI applications and enterprise-grade solutions
-</div>
+Perfect for: Developers building commercial AI applications and enterprise‑grade solutions
 
-### 4. **Advanced Multi-Agent Systems**
-**Course Link: [Specialized Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVORE4VF7WQ_fAl0L1Gljtar)**
+### 4. Advanced Multi‑Agent Systems
+Course link: [Specialized Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVORE4VF7WQ_fAl0L1Gljtar)
 
-<div class="course-highlight" markdown="1">
-<div class="course-header">
-<h4>Multi-Agent Collaboration Systems</h4>
-<span class="difficulty-badge advanced">Advanced</span>
-<span class="duration-badge">18+ Hours</span>
-</div>
+#### Multi‑Agent Collaboration Systems
+Difficulty: Advanced · Duration: 18+ hours
 
-**Why Choose This Course:**
+Why choose this course:
 - **Distributed Systems**: Comprehensive understanding of how multiple agents coordinate and collaborate
 - **Specialized Applications**: Domain-specific agent implementations across various industries
 - **Research-Based Content**: Latest academic developments and cutting-edge methodologies
 - **Performance Optimization**: Advanced techniques for scaling agent systems in production environments
 
-**What You'll Learn:**
+What you'll learn:
 - Agent communication protocols and message passing architectures
 - Distributed planning and coordination algorithms for complex task management
 - Conflict resolution strategies in multi-agent environments
 - Emergent behavior analysis and swarm intelligence principles
 - Performance monitoring, optimization, and system reliability engineering
 
-**Perfect For:** Advanced practitioners building enterprise-scale distributed AI systems
-</div>
+Perfect for: Advanced practitioners building enterprise‑scale distributed AI systems
 
-### 5. **Agentic AI Production Systems**
-**Course Link: [Production Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPFd7JdvB-rnTb_5V26NYNO)**
+### 5. Agentic AI Production Systems
+Course link: [Production Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPFd7JdvB-rnTb_5V26NYNO)
 
-<div class="course-highlight" markdown="1">
-<div class="course-header">
-<h4>Production Deployment and Operations</h4>
-<span class="difficulty-badge expert">Expert</span>
-<span class="duration-badge">25+ Hours</span>
-</div>
+#### Production Deployment and Operations
+Difficulty: Expert · Duration: 25+ hours
 
-**Why Choose This Course:**
+Why choose this course:
 - **Production Ready**: Comprehensive real-world deployment strategies and operational best practices
 - **Security Focus**: Advanced AI safety practices, security frameworks, and intelligent guardrails
 - **Monitoring Systems**: Complete observability solutions for AI systems in production environments
 - **Cost Optimization**: Efficient resource management strategies and infrastructure scaling techniques
 
-**What You'll Learn:**
+What you'll learn:
 - Containerizing and orchestrating AI agents using Docker and Kubernetes
 - Implementing comprehensive safety measures, guardrails, and ethical AI frameworks
 - Advanced monitoring and alerting systems for production AI deployments
 - Cost optimization strategies and dynamic resource scaling for efficient operations
 - Compliance frameworks, governance structures, and regulatory requirements management
 
-**Perfect For:** DevOps engineers, AI architects, and production system administrators
-</div>
+Perfect for: DevOps engineers, AI architects, and production system administrators
 
-### 6. **Cutting-Edge Research & Applications**
-**Course Link: [Research Series](https://www.youtube.com/playlist?list=PLZoTAELRMXVMBr14UQ30AFlnlQ7eL5wjl)**
+### 6. Cutting‑Edge Research & Applications
+Course link: [Research Series](https://www.youtube.com/playlist?list=PLZoTAELRMXVMBr14UQ30AFlnlQ7eL5wjl)
 
-<div class="course-highlight" markdown="1">
-<div class="course-header">
-<h4>Latest Research and Innovation</h4>
-<span class="difficulty-badge expert">Expert</span>
-<span class="duration-badge">15+ Hours</span>
-</div>
+#### Latest Research and Innovation
+Difficulty: Expert · Duration: 15+ hours
 
-**Why Choose This Course:**
+Why choose this course:
 - **Paper Reviews**: In-depth analysis of latest research papers and breakthrough discoveries
 - **Cutting-Edge Developments**: Most recent innovations and technological advancements in the field
 - **Experimental Techniques**: Novel approaches, experimental methodologies, and research protocols
 - **Future Trends**: Strategic insights into upcoming developments and research directions
 
-**What You'll Learn:**
+What you'll learn:
 - Latest breakthrough papers and their practical implications for industry applications
 - Experimental techniques and novel architectural approaches in agentic AI research
 - Emerging applications and innovative use cases across various domains
 - Future research directions, opportunities, and potential technological disruptions
 - Implementation strategies for state-of-the-art methods and research prototypes
 
-**Perfect For:** Researchers, innovation teams, and R&D professionals in artificial intelligence
-</div>
+Perfect for: Researchers, innovation teams, and R&D professionals in artificial intelligence
 
 ---
 
