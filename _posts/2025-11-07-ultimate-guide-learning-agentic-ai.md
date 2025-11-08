@@ -1,135 +1,21 @@
 ---
-layout: post
-title: "The Ultimate Guide to Learning Agentic AI: From Foundations to Advanced Applications"
-date: 2024-11-07 16:00:00
-description: A comprehensive roadmap to mastering Agentic AI with curated learning resources, practical projects, and expert insights from leading researchers and practitioners in the field.
-tags: agentic-ai artificial-intelligence machine-learning autonomous-agents llm
-categories: education
-giscus_comments: true
-related_posts: true
-featured: true
-published: True
+layout: none
+title: "(Disabled duplicate) Ultimate Guide to Learning Agentic AI"
+date: 2025-11-07 00:00:00
+published: false
+permalink: /drafts/duplicate-agentic-ai-guide/
 ---
 
-<section class="hero-block agentic-ai-hero">
-  <h1 class="hero-title">The Ultimate Guide to Learning Agentic AI</h1>
-  <div class="hero-meta">
-    Educational Technology Guide
-     · 
-    November 2025
-  </div>
-  
-  <p class="hero-lead">A comprehensive roadmap to mastering Agentic AI with curated learning resources, practical projects, and expert insights from leading researchers and practitioners in the field.</p>
-  
-  <div class="hero-metrics-grid">
-    <div class="hero-metric">
-      <h3>6 Courses</h3>
-      <p>Curated Resources</p>
-    </div>
-    <div class="hero-metric">
-      <h3>100+ Hours</h3>
-      <p>Learning Content</p>
-    </div>
-    <div class="hero-metric">
-      <h3>15+ Projects</h3>
-      <p>Hands-on Practice</p>
-    </div>
-    <div class="hero-metric">
-      <h3>3 Levels</h3>
-      <p>Beginner to Expert</p>
-    </div>
-    <div class="hero-metric">
-      <h3>6-12 Months</h3>
-      <p>Learning Timeline</p>
-    </div>
-  </div>
-</section>
+This file was a future-dated duplicate of the Agentic AI guide and is now intentionally disabled.
 
-The field of **Agentic AI** is revolutionizing how we think about artificial intelligence. Unlike traditional AI systems that respond to specific prompts, agentic AI systems can plan, reason, use tools, and autonomously pursue complex goals. If you're looking to master this cutting-edge domain, you've come to the right place.
+Canonical post to keep and display:
+- `_posts/2024-11-07-ultimate-guide-learning-agentic-ai.md`
 
-## What is Agentic AI?
+Reason for disabling:
+- Prevent conflicting rendering and raw Markdown artifacts.
+- Remove heavy inline CSS and custom HTML blocks.
 
-> **Agentic AI** refers to AI systems that can act autonomously, make decisions, and pursue goals without constant human supervision. These systems combine large language models with planning, tool use, memory, and reasoning capabilities to solve complex, multi-step problems.
-
-### Key Characteristics of Agentic AI:
-- **Goal-oriented behavior**: Systems that can define and pursue objectives autonomously
-- **Autonomous reasoning and planning**: Advanced decision-making capabilities without human intervention
-- **Tool usage and integration**: Ability to interact with external APIs, databases, and software systems
-- **Memory and context management**: Persistent storage and retrieval of relevant information across interactions
-- **Self-reflection and improvement**: Capability to analyze performance and optimize behavior over time
-- **Multi-agent collaboration**: Coordination and communication between multiple AI agents
-
----
-
-## The Complete Learning Roadmap
-
-### Phase 1: Foundations (Weeks 1-4)
-
-Before diving into agentic systems, ensure you have a solid foundation in:
-
-<div class="row">
-<div class="col-md-6">
-
-#### Prerequisites
-- **Python Programming** (Advanced)
-- **Machine Learning Fundamentals**
-- **Deep Learning & Neural Networks**
-- **Natural Language Processing**
-- **Large Language Models (LLMs)**
-
-</div>
-<div class="col-md-6">
-
-#### Essential Concepts
-- **Transformer Architecture**
-- **Attention Mechanisms**
-- **Fine-tuning Techniques**
-- **Prompt Engineering**
-- **API Integration**
-
-</div>
-</div>
-
-### Phase 2: Core Agentic AI Concepts (Weeks 5-8)
-
-<div class="alert alert-info" role="alert">
-  <h4 class="alert-heading">Learning Strategy</h4>
-  <p>The best way to learn agentic AI is through a combination of theoretical understanding and hands-on implementation. Each concept should be followed by practical coding exercises.</p>
-</div>
-
----
-
-## Comprehensive Learning Resources
-
-I've carefully analyzed and curated the best learning resources for mastering Agentic AI. Here are the top courses and playlists that will take you from beginner to expert:
-
-### 1. **Stanford CS25: Transformers United** 
-**Course Link: [Stanford CS25 Playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z)**
-
-<div class="course-highlight">
-<div class="course-header">
-<h4>Stanford University - CS25</h4>
-<span class="difficulty-badge advanced">Advanced</span>
-<span class="duration-badge">15+ Hours</span>
-</div>
-
-**Why Choose This Course:**
-- **Academic Rigor**: Direct from Stanford's computer science department with comprehensive theoretical foundations
-- **Research-Grade Content**: Latest developments in transformer architectures from leading AI researchers
-- **Expert Instructors**: Course taught by renowned faculty and guest lecturers from top AI research labs
-- **Foundation Building**: Essential theoretical knowledge for understanding modern agentic systems architecture
-
-**What You'll Learn:**
-- Advanced transformer architectures and their applications in autonomous systems
-- Attention mechanisms and self-attention for complex reasoning tasks
-- Multi-modal transformers for vision, language, and cross-modal understanding
-- Scaling laws and efficiency optimizations for large-scale deployments
-- Applications to autonomous systems and intelligent agent development
-
-**Perfect For:** Students with strong ML background seeking deep technical understanding of transformer-based agents
-</div>
-
-### 2. **Krish Naik's Agentic AI Fundamentals**
+If you need to restore anything, copy from the canonical 2024 version instead of this stub.
 **Course Link: [Complete Series](https://www.youtube.com/playlist?list=PLkBMe2eZMRQ2VKEtoL0GVUrNzEiXfgj07)**
 
 <div class="course-highlight">
