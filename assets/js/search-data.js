@@ -117,17 +117,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/welcome-to-my-blog/";
           
         },
-      },{id: "post-the-ultimate-guide-to-learning-agentic-ai-from-foundations-to-advanced-applications",
-        
-          title: "The Ultimate Guide to Learning Agentic AI: From Foundations to Advanced Applications",
-        
-        description: "A comprehensive roadmap to mastering Agentic AI with curated learning resources, practical projects, and expert insights from leading researchers and practitioners in the field.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/ultimate-guide-learning-agentic-ai/";
-          
-        },
       },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
         
           title: "Mastering Jekyll: Advanced Formatting and Link Techniques",
