@@ -33,7 +33,7 @@ The field of **Agentic AI** is revolutionizing how we think about artificial int
 Before diving into agentic systems, ensure you have a solid foundation in:
 
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6" markdown="1">
 
 #### Prerequisites
 - **Python Programming** (Advanced)
@@ -43,7 +43,7 @@ Before diving into agentic systems, ensure you have a solid foundation in:
 - **Large Language Models (LLMs)**
 
 </div>
-<div class="col-md-6">
+<div class="col-md-6" markdown="1">
 
 #### Essential Concepts
 - **Transformer Architecture**
@@ -71,7 +71,7 @@ I've carefully analyzed and curated the best learning resources for mastering Ag
 ### 1. **Stanford CS25: Transformers United** 
 **Course Link: [Stanford CS25 Playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z)**
 
-<div class="course-highlight">
+<div class="course-highlight" markdown="1">
 <div class="course-header">
 <h4>Stanford University - CS25</h4>
 <span class="difficulty-badge advanced">Advanced</span>
@@ -97,7 +97,7 @@ I've carefully analyzed and curated the best learning resources for mastering Ag
 ### 2. **Krish Naik's Agentic AI Fundamentals**
 **Course Link: [Complete Series](https://www.youtube.com/playlist?list=PLkBMe2eZMRQ2VKEtoL0GVUrNzEiXfgj07)**
 
-<div class="course-highlight">
+<div class="course-highlight" markdown="1">
 <div class="course-header">
 <h4>Krish Naik - Practical AI Implementation</h4>
 <span class="difficulty-badge beginner">Beginner-Friendly</span>
@@ -123,7 +123,7 @@ I've carefully analyzed and curated the best learning resources for mastering Ag
 ### 3. **Codebasics Agentic AI Deep Dive**
 **Course Link: [Comprehensive Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVN9VbAx5I2VvloTtYmlApe3)**
 
-<div class="course-highlight">
+<div class="course-highlight" markdown="1">
 <div class="course-header">
 <h4>Codebasics - End-to-End Implementation</h4>
 <span class="difficulty-badge intermediate">Intermediate</span>
@@ -149,7 +149,7 @@ I've carefully analyzed and curated the best learning resources for mastering Ag
 ### 4. **Advanced Multi-Agent Systems**
 **Course Link: [Specialized Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVORE4VF7WQ_fAl0L1Gljtar)**
 
-<div class="course-highlight">
+<div class="course-highlight" markdown="1">
 <div class="course-header">
 <h4>Multi-Agent Collaboration Systems</h4>
 <span class="difficulty-badge advanced">Advanced</span>
@@ -175,7 +175,7 @@ I've carefully analyzed and curated the best learning resources for mastering Ag
 ### 5. **Agentic AI Production Systems**
 **Course Link: [Production Course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPFd7JdvB-rnTb_5V26NYNO)**
 
-<div class="course-highlight">
+<div class="course-highlight" markdown="1">
 <div class="course-header">
 <h4>Production Deployment and Operations</h4>
 <span class="difficulty-badge expert">Expert</span>
@@ -201,7 +201,7 @@ I've carefully analyzed and curated the best learning resources for mastering Ag
 ### 6. **Cutting-Edge Research & Applications**
 **Course Link: [Research Series](https://www.youtube.com/playlist?list=PLZoTAELRMXVMBr14UQ30AFlnlQ7eL5wjl)**
 
-<div class="course-highlight">
+<div class="course-highlight" markdown="1">
 <div class="course-header">
 <h4>Latest Research and Innovation</h4>
 <span class="difficulty-badge expert">Expert</span>
@@ -382,7 +382,7 @@ class AgentOrchestrator:
 The agentic AI field is exploding with opportunities:
 
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6" markdown="1">
 
 ### High-Demand Roles
 - **Agentic AI Engineer**: $120k-$200k
@@ -391,7 +391,7 @@ The agentic AI field is exploding with opportunities:
 - **Autonomous Systems Developer**: $110k-$190k
 
 </div>
-<div class="col-md-6">
+<div class="col-md-6" markdown="1">
 
 ### Growing Industries
 - **Financial Services**: Trading and risk management
