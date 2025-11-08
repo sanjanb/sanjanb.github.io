@@ -32,28 +32,19 @@ The field of **Agentic AI** is revolutionizing how we think about artificial int
 
 Before diving into agentic systems, ensure you have a solid foundation in:
 
-<div class="row">
-<div class="col-md-6" markdown="1">
-
 #### Prerequisites
-- **Python Programming** (Advanced)
-- **Machine Learning Fundamentals**
-- **Deep Learning & Neural Networks**
-- **Natural Language Processing**
-- **Large Language Models (LLMs)**
+- Python programming (advanced)
+- Machine learning fundamentals
+- Deep learning and neural networks
+- Natural language processing
+- Large language models (LLMs)
 
-</div>
-<div class="col-md-6" markdown="1">
-
-#### Essential Concepts
-- **Transformer Architecture**
-- **Attention Mechanisms**
-- **Fine-tuning Techniques**
-- **Prompt Engineering**
-- **API Integration**
-
-</div>
-</div>
+#### Essential concepts
+- Transformer architecture
+- Attention mechanisms
+- Fine‑tuning techniques
+- Prompt engineering
+- API integration
 
 ### Phase 2: Core Agentic AI Concepts (Weeks 5-8)
 
@@ -348,26 +339,17 @@ class AgentOrchestrator:
 
 The agentic AI field is exploding with opportunities:
 
-<div class="row">
-<div class="col-md-6" markdown="1">
+### High‑demand roles
+- Agentic AI engineer: $120k–$200k
+- AI agent architect: $150k–$250k
+- Multi‑agent systems researcher: $130k–$220k
+- Autonomous systems developer: $110k–$190k
 
-### High-Demand Roles
-- **Agentic AI Engineer**: $120k-$200k
-- **AI Agent Architect**: $150k-$250k
-- **Multi-Agent Systems Researcher**: $130k-$220k
-- **Autonomous Systems Developer**: $110k-$190k
-
-</div>
-<div class="col-md-6" markdown="1">
-
-### Growing Industries
-- **Financial Services**: Trading and risk management
-- **Healthcare**: Diagnostic and treatment planning
-- **Education**: Personalized learning systems
-- **Entertainment**: Interactive storytelling
-
-</div>
-</div>
+### Growing industries
+- Financial services: trading and risk management
+- Healthcare: diagnostic and treatment planning
+- Education: personalized learning systems
+- Entertainment: interactive storytelling
 
 ---
 
