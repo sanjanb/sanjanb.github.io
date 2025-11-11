@@ -47,7 +47,7 @@ Our winning team consisted of three passionate AI enthusiasts:
 - **Mayank M** - Technical Developer & Innovation Specialist  
 - **MD Fakruddin** - Solutions Engineer & System Designer
 
-{% include figure.liquid loading="eager" path="assets/img/achievements/ai-visionaries-winners-with-judges.jpg" title="AI Visionaries Expo 2025 Winner" class="img-fluid rounded z-depth-1" caption="Celebrating our first place victory at AI Visionaries Expo 2025 with judges and fellow winners" %}
+{% include figure.liquid loading="eager" path="assets/img/achievements/ai-visionaries-winners-with-judges.jpg" title="Team Rizz Coders - AI Visionaries Expo 2025 Champions" class="img-fluid rounded z-depth-1" caption="Team Rizz Coders celebrating our first place victory at AI Visionaries Expo 2025 with judge Sanjay Kowdle and fellow participants" %}
 
 ## Visual Journey of Our Victory
 
@@ -206,11 +206,11 @@ This recognition represents more than a competition victory—it validates our c
 This achievement belongs not just to our team, but to everyone who supported us along the way. The AI Visionaries Expo 2025 has been an incredible journey of learning, innovation, and growth.
 
 ### Team Excellence
-The victory showcases the power of:
-- **Collaborative Innovation**: Diverse perspectives driving creative solutions
-- **Technical Mastery**: Deep understanding of AI concepts and applications
-- **Persistent Dedication**: Unwavering commitment to excellence
-- **Strategic Thinking**: Smart approach to problem-solving and presentation
+The victory showcases the power of Team Rizz Coders:
+- **Collaborative Innovation**: Diverse perspectives from Sanjan, Mayank, and MD Fakruddin driving creative solutions
+- **Technical Mastery**: Deep understanding of AI concepts and applications across the team
+- **Persistent Dedication**: Unwavering commitment to excellence by all three members
+- **Strategic Thinking**: Smart approach to problem-solving and presentation coordination
 
 ## Event Impact & Community Building
 
