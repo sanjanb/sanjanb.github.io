@@ -37,9 +37,15 @@ timeline:
 
 ## We Did It! 🥇
 
-**Thrilled to announce our team took the top spot at the AI Visionaries Expo 2025!**
+**Thrilled to announce Team Rizz Coders took the top spot at the AI Visionaries Expo 2025!**
 
-What an incredible day of innovation and competition! Our team is absolutely ecstatic to have won the AI Visionaries Expo, hosted by the brilliant **Department of Artificial Intelligence and Data Science** at **GSSS Institute of Engineering and Technology for Women**.
+What an incredible day of innovation and competition! **Team Rizz Coders** is absolutely ecstatic to have won the AI Visionaries Expo, hosted by the brilliant **Department of Artificial Intelligence and Data Science** at **GSSS Institute of Engineering and Technology for Women**.
+
+### Team Rizz Coders
+Our winning team consisted of three passionate AI enthusiasts:
+- **Sanjan B M** - Team Lead & AI Architect
+- **Mayank M** - Technical Developer & Innovation Specialist  
+- **MD Fakruddin** - Solutions Engineer & System Designer
 
 {% include figure.liquid loading="eager" path="assets/img/achievements/ai-visionaries-winners-with-judges.jpg" title="AI Visionaries Expo 2025 Winner" class="img-fluid rounded z-depth-1" caption="Celebrating our first place victory at AI Visionaries Expo 2025 with judges and fellow winners" %}
 
@@ -95,7 +101,10 @@ Our victory has been officially recognized with a prestigious certificate from t
 
 ## Outstanding Evaluation & Expert Recognition
 
-A special and sincere thank you to the esteemed judges who evaluated our work. Your insights, rigorous feedback, and dedication to fostering quality in AI projects are invaluable. Your recognition means the world to us!
+A special and sincere thank you to the esteemed judge **Sanjay Kowdle** who evaluated our work. Your insights, rigorous feedback, and dedication to fostering quality in AI projects are invaluable. Your recognition means the world to us!
+
+### Expert Judge Recognition
+We extend our heartfelt gratitude to **Mr. Sanjay Kowdle**, whose expert evaluation and professional insights validated our innovative approach. His comprehensive assessment across technical innovation, problem-solving effectiveness, and implementation quality helped recognize the excellence of Team Rizz Coders' solution.
 
 ### Expert Evaluation Panel
 <div class="metric-card-grid">
@@ -114,14 +123,14 @@ The rigorous evaluation process assessed our project across multiple dimensions:
 
 ## Victory Through Teamwork & Dedication
 
-This victory is a testament to the power of **teamwork**, **late nights**, and the **relentless pursuit of solving complex problems**. The journey to first place was marked by:
+This victory is a testament to the power of **Team Rizz Coders**, **late nights**, and the **relentless pursuit of solving complex problems**. The journey to first place was marked by exceptional collaboration between **Sanjan B M**, **Mayank M**, and **MD Fakruddin**.
 
-### Success Factors
+### Team Rizz Coders Success Factors
 <ul class="selection-grid">
-  <li><strong>Collaborative Excellence:</strong> Seamless team coordination and shared vision <em>(Unity of purpose)</em></li>
-  <li><strong>Technical Innovation:</strong> Cutting-edge AI solution development <em>(Breakthrough technology)</em></li>
-  <li><strong>Persistent Dedication:</strong> Countless hours of refinement and optimization <em>(Commitment to excellence)</em></li>
-  <li><strong>Problem-Solving Focus:</strong> Clear identification and resolution of complex challenges <em>(Impact-driven approach)</em></li>
+  <li><strong>Collaborative Excellence:</strong> Seamless coordination between Sanjan, Mayank, and MD Fakruddin with shared vision <em>(Unity of purpose)</em></li>
+  <li><strong>Technical Innovation:</strong> Cutting-edge AI solution development leveraging each member's expertise <em>(Breakthrough technology)</em></li>
+  <li><strong>Persistent Dedication:</strong> Countless hours of refinement and optimization by the entire team <em>(Commitment to excellence)</em></li>
+  <li><strong>Problem-Solving Focus:</strong> Clear identification and resolution of complex challenges through collaborative effort <em>(Impact-driven approach)</em></li>
 </ul>
 
 ## Competitive Excellence & Recognition
