@@ -12,8 +12,10 @@ giscus_comments: true
 metrics:
   - value: "1st Place"
     label: "Competition Result"
-  - value: "AI Visionaries"
-    label: "Expo Category"
+  - value: "Team Rizz Coders"
+    label: "Winning Team"
+  - value: "3 Members"
+    label: "Team Size"
   - value: "Innovation"
     label: "Focus Area"
 skills: [Artificial Intelligence, Machine Learning, Innovation, Team Leadership, Problem Solving, Presentation]
@@ -55,7 +57,7 @@ Our AI Visionaries Expo 2025 journey captured in memorable moments:
 
 <div class="gallery-grid two">
   {% include figure.liquid path="assets/img/achievements/ai-visionaries-certificate.jpg" title="Official Certificate of Achievement" class="img-fluid" caption="First place certificate for AI Visionaries Expo 2025" %}
-  {% include figure.liquid path="assets/img/achievements/ai-visionaries-team-celebration.jpg" title="Team celebration with certificates" class="img-fluid" caption="Our team proudly displaying the victory certificates" %}
+  {% include figure.liquid path="assets/img/achievements/ai-visionaries-team-celebration.jpg" title="Team Rizz Coders victory celebration" class="img-fluid" caption="Team Rizz Coders - Sanjan B M, Mayank M, and MD Fakruddin proudly displaying our victory certificates" %}
 </div>
 
 <div class="gallery-grid single">
@@ -82,9 +84,9 @@ The energy, organization, and passion from the entire hosting team were truly in
 
 <div class="fact-grid">
   <div class="fact-card"><h4>Event</h4><p>AI Visionaries Expo 2025</p><small>Premier AI Innovation Competition</small></div>
-  <div class="fact-card"><h4>Host Institution</h4><p>GSSS Institute of Engineering and Technology for Women</p><small>Department of AI & Data Science</small></div>
+  <div class="fact-card"><h4>Winning Team</h4><p>Team Rizz Coders</p><small>Sanjan, Mayank & MD Fakruddin</small></div>
   <div class="fact-card"><h4>Achievement</h4><p>First Place Winner</p><small>Top Innovation Team</small></div>
-  <div class="fact-card"><h4>Date</h4><p>November 11, 2025</p><small>Competition Day</small></div>
+  <div class="fact-card"><h4>Expert Judge</h4><p>Sanjay Kowdle</p><small>Industry Professional</small></div>
 </div>
 
 ## Official Recognition & Certificate Details
