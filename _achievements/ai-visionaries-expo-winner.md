@@ -41,7 +41,24 @@ timeline:
 
 What an incredible day of innovation and competition! Our team is absolutely ecstatic to have won the AI Visionaries Expo, hosted by the brilliant **Department of Artificial Intelligence and Data Science** at **GSSS Institute of Engineering and Technology for Women**.
 
-{% include figure.liquid loading="eager" path="assets/img/achievements/ai-visionaries-expo-2025.jpg" title="AI Visionaries Expo 2025 Winner" class="img-fluid rounded z-depth-1" caption="Celebrating our first place victory at AI Visionaries Expo 2025" %}
+{% include figure.liquid loading="eager" path="assets/img/achievements/ai-visionaries-winners-with-judges.jpg" title="AI Visionaries Expo 2025 Winner" class="img-fluid rounded z-depth-1" caption="Celebrating our first place victory at AI Visionaries Expo 2025 with judges and fellow winners" %}
+
+## Visual Journey of Our Victory
+
+Our AI Visionaries Expo 2025 journey captured in memorable moments:
+
+<div class="gallery-grid two">
+  {% include figure.liquid path="assets/img/achievements/ai-visionaries-certificate.jpg" title="Official Certificate of Achievement" class="img-fluid" caption="First place certificate for AI Visionaries Expo 2025" %}
+  {% include figure.liquid path="assets/img/achievements/ai-visionaries-team-celebration.jpg" title="Team celebration with certificates" class="img-fluid" caption="Our team proudly displaying the victory certificates" %}
+</div>
+
+<div class="gallery-grid single">
+  {% include figure.liquid path="assets/img/achievements/ai-visionaries-group-photo.jpg" title="Group photo at GSSS Institute" class="img-fluid" caption="All participants and organizers at GSSS Institute of Engineering and Technology for Women" %}
+</div>
+
+<div class="gallery-grid single">
+  {% include figure.liquid path="assets/img/achievements/ai-visionaries-all-participants.jpg" title="All participants in the auditorium" class="img-fluid" caption="The complete gathering of AI enthusiasts and innovators during the expo" %}
+</div>
 
 ## Event Excellence & Outstanding Organization
 
@@ -63,6 +80,18 @@ The energy, organization, and passion from the entire hosting team were truly in
   <div class="fact-card"><h4>Achievement</h4><p>First Place Winner</p><small>Top Innovation Team</small></div>
   <div class="fact-card"><h4>Date</h4><p>November 11, 2025</p><small>Competition Day</small></div>
 </div>
+
+## Official Recognition & Certificate Details
+
+Our victory has been officially recognized with a prestigious certificate from the **Department of Artificial Intelligence and Data Science** at **GSSS Institute of Engineering and Technology for Women**. The certificate acknowledges our **1st place** achievement in the **AI Visionaries Expo 2025** organized by the **C.O.D.E Students' Club**.
+
+### Certificate Highlights
+<dl class="kv">
+  <div><dt>Recognition</dt><dd>First Place in AI Visionaries Expo 2025</dd></div>
+  <div><dt>Organizing Body</dt><dd>C.O.D.E Students' Club of Artificial Intelligence & Data Science Department</dd></div>
+  <div><dt>Institution</dt><dd>GSSS Institute of Engineering & Technology for Women, Mysuru</dd></div>
+  <div><dt>Date</dt><dd>November 11, 2025</dd></div>
+</dl>
 
 ## Outstanding Evaluation & Expert Recognition
 
