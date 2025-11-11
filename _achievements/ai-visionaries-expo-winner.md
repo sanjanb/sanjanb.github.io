@@ -108,6 +108,18 @@ A special and sincere thank you to the esteemed judge **Sanjay Kowdle** who eval
 ### Expert Judge Recognition
 We extend our heartfelt gratitude to **Mr. Sanjay Kowdle**, whose expert evaluation and professional insights validated our innovative approach. His comprehensive assessment across technical innovation, problem-solving effectiveness, and implementation quality helped recognize the excellence of Team Rizz Coders' solution.
 
+## Team Rizz Coders: The Winning Combination
+
+Our success at the AI Visionaries Expo 2025 was built on the diverse expertise and collaborative spirit of Team Rizz Coders. Each team member brought unique strengths that contributed to our first-place victory:
+
+### Team Member Contributions
+<div class="metric-card-grid">
+  <div class="mcard"><span class="label">Sanjan B M</span><span class="value">Team Lead & AI Architect</span><small>System design and strategic leadership</small></div>
+  <div class="mcard"><span class="label">Mayank M</span><span class="value">Technical Developer</span><small>Innovation specialist and implementation</small></div>
+  <div class="mcard"><span class="label">MD Fakruddin</span><span class="value">Solutions Engineer</span><small>System design and optimization</small></div>
+  <div class="mcard"><span class="label">Judge Recognition</span><span class="value">Sanjay Kowdle</span><small>Expert evaluation and validation</small></div>
+</div>
+
 ### Expert Evaluation Panel
 <div class="metric-card-grid">
   <div class="mcard"><span class="label">Judge Expertise</span><span class="value">Industry Veterans</span><small>Years of AI experience</small></div>
