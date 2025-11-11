@@ -148,6 +148,11 @@ ninja.data = [{
           description: "",
           section: "Achievements",handler: () => {
               window.location.href = "/achievements/hackfusion-national-winner/";
+            },},{id: "achievements-first-place-winner-ai-visionaries-expo-2025",
+          title: 'First Place Winner - AI Visionaries Expo 2025',
+          description: "",
+          section: "Achievements",handler: () => {
+              window.location.href = "/achievements/ai-visionaries-expo-winner/";
             },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
