@@ -92,6 +92,15 @@ benchmarks:
 
 A state-level government initiative for Karnataka's K-Tech NAIN program—**Farm To Table** revolutionizes agricultural commerce by creating a transparent, zero-commission marketplace that eliminates intermediaries and ensures farmers receive fair prices for their produce through direct buyer connections.
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/work_preview/k-tech-nain-platform.png" title="Farm To Table Platform Interface" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    K-Tech NAIN Farm To Table platform - A state-level government initiative connecting farmers directly with buyers through a zero-commission digital marketplace.
+</div>
+
 ## Project Overview
 
 ### Government Initiative Context
@@ -124,6 +133,15 @@ The platform follows a **minimal, essential-features-only** approach:
 - **Free by Design**: No hidden charges, commissions, or platform fees whatsoever
 
 ### Full-Stack Technology Stack
+
+<div class="row mt-4 mb-4">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/work_preview/k-tech-nain-platform.png" title="Production Platform Dashboard" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Production-ready platform with responsive design, real-time product listings, and seamless user experience.
+</div>
 
 ###### Frontend Architecture
 ```javascript
@@ -221,6 +239,15 @@ export default function FarmerDashboard() {
 - **Deal history and analytics** for both farmers and buyers
 
 ## Performance & Production Readiness
+
+<div class="row justify-content-center mt-4 mb-4">
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/work_preview/k-tech-nain-platform.png" title="Platform Performance & User Interface" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Optimized platform interface demonstrating 90+ Lighthouse score with responsive design and fast load times.
+</div>
 
 ### Lighthouse Metrics (Production)
 | Metric | Score | Description |
