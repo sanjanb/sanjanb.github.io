@@ -1,9 +1,12 @@
-<header>
+<header role="banner">
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip to main content</a>
+  
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation" aria-label="Main navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/" aria-label="Home - {% if site.title == 'blank' %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -22,7 +25,7 @@
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
+        <div class="navbar-brand social" aria-label="Social media links">{% include social.liquid %}</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button
@@ -32,26 +35,26 @@
         data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-label="Toggle navigation menu"
       >
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
+        <span class="icon-bar top-bar" aria-hidden="true"></span>
+        <span class="icon-bar middle-bar" aria-hidden="true"></span>
+        <span class="icon-bar bottom-bar" aria-hidden="true"></span>
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav ml-auto flex-nowrap" role="list">
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+            <a class="nav-link" href="{{ '/' | relative_url }}" {% if page.permalink == '/' %}aria-current="page"{% endif %}>
               {{- about_title }}
               {% if page.permalink == '/' %}
-                <span class="sr-only">(current)</span>
+                <span class="sr-only">(current page)</span>
               {% endif %}
             </a>
           </li>
@@ -76,20 +79,23 @@
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    {% if page.title == p.title or has_active_child %}aria-current="page"{% endif %}
                   >
                     {{- p.title }}
                     {% if page.title == p.title or has_active_child %}
-                      <span class="sr-only">(current)</span>
+                      <span class="sr-only">(current page)</span>
                     {% endif %}
                   </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="navbarDropdown">
                     {% for child in p.children %}
                       {% if child.title == 'divider' %}
-                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-divider" role="separator"></div>
                       {% else %}
                         <a
                           class="dropdown-item {% if page.title == child.title %}active{% endif %}"
+                          role="menuitem"
                           href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                          {% if page.title == child.title %}aria-current="page"{% endif %}
                         >
                           {{- child.title -}}
                         </a>

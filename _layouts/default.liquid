@@ -21,25 +21,25 @@
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <main id="main-content" class="container mt-5" role="main" aria-label="Main content">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
             <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
+            <div class="col-sm-9" role="article">{{ content }}</div>
             <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+            <div class="col-sm-3" role="complementary" aria-label="Table of contents">
+              <nav id="toc-sidebar" class="sticky-top" aria-label="Page sections"></nav>
             </div>
           </div>
         {% else %}
           <div class="row">
             <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+            <div class="col-sm-3" role="complementary" aria-label="Table of contents">
+              <nav id="toc-sidebar" class="sticky-top" aria-label="Page sections"></nav>
             </div>
             <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
+            <div class="col-sm-9" role="article">{{ content }}</div>
           </div>
         {% endif %}
       {% else %}
