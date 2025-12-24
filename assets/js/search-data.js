@@ -229,6 +229,11 @@ ninja.data = [{
           description: "",
           section: "Work",handler: () => {
               window.location.href = "/work/admission-enrollment-automation/";
+            },},{id: "work-farm-to-table-k-tech-nain-state-level-agricultural-platform",
+          title: 'Farm To Table: K-Tech NAIN State-Level Agricultural Platform',
+          description: "",
+          section: "Work",handler: () => {
+              window.location.href = "/work/k-tech-nain-farm-to-table/";
             },},{
         id: 'social-email',
         title: 'email',
