@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The 10-Minute 'GPS Method' to Actually Achieve Your Goals This Year"
-date: 2025-12-25 10:00:00
+date: 2024-12-25 10:00:00
 description: "A simple, evidence-based framework that takes less than 10 minutes to implement and transforms vague aspirations into achievable goals through the GPS (Goal, Plan, System) method."
 tags: goal-setting productivity personal-development planning systems time-management
 categories: personal-development
