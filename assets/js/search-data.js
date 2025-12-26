@@ -117,6 +117,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/welcome-to-my-blog/";
           
         },
+      },{id: "post-the-10-minute-39-gps-method-39-to-actually-achieve-your-goals-this-year",
+        
+          title: "The 10-Minute &#39;GPS Method&#39; to Actually Achieve Your Goals This Year",
+        
+        description: "A simple, evidence-based framework that takes less than 10 minutes to implement and transforms vague aspirations into achievable goals through the GPS (Goal, Plan, System) method.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/gps-method-achieve-your-goals/";
+          
+        },
       },{id: "post-mastering-jekyll-advanced-formatting-and-link-techniques",
         
           title: "Mastering Jekyll: Advanced Formatting and Link Techniques",
