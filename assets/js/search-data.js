@@ -59,7 +59,18 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/2024-11-07-ultimate-guide-learning-agentic-ai/";
+            window.location.href = "/blog/2026/2024-11-07-ultimate-guide-learning-agentic-ai/";
+          
+        },
+      },{id: "post-how-recruiters-decide-whom-to-message-reverse-engineering-linkedin-signals",
+        
+          title: "How Recruiters Decide Whom to Message: Reverse-Engineering LinkedIn Signals",
+        
+        description: "A data-driven analysis of what triggers recruiter outreach on LinkedIn, based on reverse-engineering actual messages from top companies.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/linkedin-recruiter-signals/";
           
         },
       },{id: "post-my-ai-ml-specialization-journey-from-foundations-to-advanced-llm-applications",
