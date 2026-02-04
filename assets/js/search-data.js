@@ -62,17 +62,6 @@ ninja.data = [{
             window.location.href = "/blog/2026/2024-11-07-ultimate-guide-learning-agentic-ai/";
           
         },
-      },{id: "post-how-recruiters-decide-whom-to-message-reverse-engineering-linkedin-signals",
-        
-          title: "How Recruiters Decide Whom to Message: Reverse-Engineering LinkedIn Signals",
-        
-        description: "A data-driven analysis of what triggers recruiter outreach on LinkedIn, based on reverse-engineering actual messages from top companies.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/linkedin-recruiter-signals/";
-          
-        },
       },{id: "post-my-ai-ml-specialization-journey-from-foundations-to-advanced-llm-applications",
         
           title: "My AI/ML Specialization Journey: From Foundations to Advanced LLM Applications",
@@ -82,6 +71,28 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/my-ai-ml-specialization-journey/";
+          
+        },
+      },{id: "post-how-to-optimize-your-website-to-rank-in-the-top-5-search-results",
+        
+          title: "How to Optimize Your Website to Rank in the Top 5 Search Results...",
+        
+        description: "Learn the real strategies that drive top search rankings. This guide cuts through SEO myths and focuses on what actually works: aligning your site with how search engines evaluate usefulness, trust, and relevance.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/how-to-rank-top-5-search-results/";
+          
+        },
+      },{id: "post-how-recruiters-decide-whom-to-message-reverse-engineering-linkedin-signals",
+        
+          title: "How Recruiters Decide Whom to Message: Reverse-Engineering LinkedIn Signals",
+        
+        description: "A data-driven analysis of what triggers recruiter outreach on LinkedIn, based on reverse-engineering actual messages from top companies.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/linkedin-recruiter-signals/";
           
         },
       },{id: "post-advanced-blog-formatting-guide-mastering-jekyll-and-al-folio-techniques",
