@@ -2,7 +2,7 @@
 layout: post
 title: "How Recruiters Decide Whom to Message: Reverse-Engineering LinkedIn Signals"
 subtitle: "What I learned from analyzing 50+ inbound recruiter messages"
-date: 2026-02-01 10:00:00
+date: 2025-01-28 10:00:00
 description: "A data-driven analysis of what triggers recruiter outreach on LinkedIn, based on reverse-engineering actual messages from top companies."
 tags:
   - career

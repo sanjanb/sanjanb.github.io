@@ -80,11 +80,11 @@ Target **search intent + low competition + clear problem statements**.
 
 **Example:**
 
-| ❌ Wrong Approach      | ✅ Right Approach                                              |
-| ---------------------- | -------------------------------------------------------------- |
-| "AI tools"             | "AI tools for document summarization in legal firms"           |
-| "Web development"      | "Web development frameworks for real-time collaboration apps"  |
-| "Machine learning"     | "Machine learning models for financial fraud detection"        |
+| ❌ Wrong Approach  | ✅ Right Approach                                             |
+| ------------------ | ------------------------------------------------------------- |
+| "AI tools"         | "AI tools for document summarization in legal firms"          |
+| "Web development"  | "Web development frameworks for real-time collaboration apps" |
+| "Machine learning" | "Machine learning models for financial fraud detection"       |
 
 Search engines reward specificity.
 
@@ -144,13 +144,13 @@ You don't need to obsess over technical SEO, but you must get the basics right.
 
 ### Non-Negotiables
 
-| Technical Requirement     | Why It Matters                                 | Tool to Use                    |
-| ------------------------- | ---------------------------------------------- | ------------------------------ |
-| Fast page load            | Core Web Vitals directly impact rankings       | PageSpeed Insights             |
-| Mobile-friendly layout    | 60%+ of searches happen on mobile              | Google Mobile-Friendly Test    |
-| Clean URLs                | Better crawlability and user understanding     | Manual audit                   |
-| HTTPS                     | Security is a ranking factor                   | SSL certificate                |
-| Proper heading hierarchy  | Helps search engines understand page structure | HTML validation                |
+| Technical Requirement    | Why It Matters                                 | Tool to Use                 |
+| ------------------------ | ---------------------------------------------- | --------------------------- |
+| Fast page load           | Core Web Vitals directly impact rankings       | PageSpeed Insights          |
+| Mobile-friendly layout   | 60%+ of searches happen on mobile              | Google Mobile-Friendly Test |
+| Clean URLs               | Better crawlability and user understanding     | Manual audit                |
+| HTTPS                    | Security is a ranking factor                   | SSL certificate             |
+| Proper heading hierarchy | Helps search engines understand page structure | HTML validation             |
 
 ### Tools to Use
 
@@ -195,12 +195,12 @@ A few relevant, high-quality links outperform hundreds of low-quality ones.
 
 ### Ways to Earn Real Backlinks
 
-| Strategy                       | Why It Works                                    | Difficulty |
-| ------------------------------ | ----------------------------------------------- | ---------- |
-| Publish original insights/data | Unique content gets cited                       | High       |
-| Write technical breakdowns     | Developers and researchers link to deep content | Medium     |
-| Contribute valuable guest posts| Builds relationships and authority              | Medium     |
-| Get cited by niche newsletters | Targeted, engaged audience                      | Low        |
+| Strategy                        | Why It Works                                    | Difficulty |
+| ------------------------------- | ----------------------------------------------- | ---------- |
+| Publish original insights/data  | Unique content gets cited                       | High       |
+| Write technical breakdowns      | Developers and researchers link to deep content | Medium     |
+| Contribute valuable guest posts | Builds relationships and authority              | Medium     |
+| Get cited by niche newsletters  | Targeted, engaged audience                      | Low        |
 
 ### Avoid
 
@@ -260,11 +260,11 @@ Search engines trust:
 
 ### What Works Better
 
-| ❌ Scattered Approach                        | ✅ Focused Approach                     |
-| -------------------------------------------- | --------------------------------------- |
-| 200 random articles across unrelated topics  | 20 strong articles in one niche         |
-| Sporadic publishing                          | Weekly/bi-weekly consistent schedule    |
-| Generic topics                               | Deep expertise in specific domain       |
+| ❌ Scattered Approach                       | ✅ Focused Approach                  |
+| ------------------------------------------- | ------------------------------------ |
+| 200 random articles across unrelated topics | 20 strong articles in one niche      |
+| Sporadic publishing                         | Weekly/bi-weekly consistent schedule |
+| Generic topics                              | Deep expertise in specific domain    |
 
 SEO is cumulative, not explosive.
 
@@ -274,13 +274,13 @@ SEO is cumulative, not explosive.
 
 ### Track These Metrics
 
-| Metric               | What It Tells You                    | Where to Find It      |
-| -------------------- | ------------------------------------ | --------------------- |
-| Search impressions   | How often you appear in results      | Search Console        |
-| Click-through rate   | How compelling your titles are       | Search Console        |
-| Average position     | Your ranking trajectory              | Search Console        |
-| Time on page         | Content engagement level             | Google Analytics      |
-| Scroll depth         | Content completeness                 | Google Analytics      |
+| Metric             | What It Tells You               | Where to Find It |
+| ------------------ | ------------------------------- | ---------------- |
+| Search impressions | How often you appear in results | Search Console   |
+| Click-through rate | How compelling your titles are  | Search Console   |
+| Average position   | Your ranking trajectory         | Search Console   |
+| Time on page       | Content engagement level        | Google Analytics |
+| Scroll depth       | Content completeness            | Google Analytics |
 
 ### Then
 
