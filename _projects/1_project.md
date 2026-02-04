@@ -18,21 +18,25 @@ This platform is designed for cybersecurity analysts and SOC teams to **triage, 
 ## Key Features
 
 ### 🔍 **Named Entity Recognition (NER)**
+
 - Extracts IOCs (IP addresses, malware names, CVEs, domains)
 - Uses BERT-based transformers for cybersecurity-specific entities
 - Identifies threat actors, organizations, and geographical locations
 
 ### 🎯 **Threat Classification**
+
 - Categorizes threats into: Phishing, Malware, APTs, Ransomware
 - Ensemble model combining XGBoost and Logistic Regression
 - High accuracy with interpretable feature importance
 
 ### ⚠️ **Severity Level Prediction**
+
 - Automated risk assessment (Low, Medium, High)
 - Multi-feature analysis including IOC count and sentiment
 - Random Forest classifier with keyword-based features
 
 ### 📊 **Interactive Dashboard**
+
 - Real-time threat analysis interface
 - Expandable result cards with detailed breakdowns
 - Downloadable reports and visualizations
@@ -41,18 +45,19 @@ This platform is designed for cybersecurity analysts and SOC teams to **triage, 
 
 ### Technology Stack
 
-| Category | Technologies |
-|----------|-------------|
-| **Backend** | FastAPI, Python, Uvicorn |
-| **NLP Models** | spaCy, HuggingFace Transformers, BERT |
-| **ML Libraries** | Scikit-learn, XGBoost, PyTorch |
-| **Frontend** | HTML5, Bootstrap 5, JavaScript, Jinja2 |
-| **Deployment** | Docker, Docker Compose |
-| **Data Storage** | CSV, JSON, Pickle |
+| Category         | Technologies                           |
+| ---------------- | -------------------------------------- |
+| **Backend**      | FastAPI, Python, Uvicorn               |
+| **NLP Models**   | spaCy, HuggingFace Transformers, BERT  |
+| **ML Libraries** | Scikit-learn, XGBoost, PyTorch         |
+| **Frontend**     | HTML5, Bootstrap 5, JavaScript, Jinja2 |
+| **Deployment**   | Docker, Docker Compose                 |
+| **Data Storage** | CSV, JSON, Pickle                      |
 
 ## Machine Learning Pipeline
 
 ### 1. **Ensemble Threat Classification**
+
 ```python
 # Combining multiple models for robust classification
 ensemble_models = {
@@ -63,11 +68,13 @@ ensemble_models = {
 ```
 
 ### 2. **Advanced NER with BERT**
+
 - Model: `dslim/bert-base-NER` from HuggingFace
 - Fine-tuned on cybersecurity datasets
 - Extracts entities: ORG, LOC, PER, MISC with cybersecurity context
 
 ### 3. **Severity Prediction Features**
+
 - IOC count (IP addresses, domains, CVEs)
 - Named entity frequency
 - Sentiment analysis scores
@@ -86,6 +93,7 @@ The system demonstrates high accuracy across all components:
 ## Implementation Highlights
 
 ### Real-time Threat Analysis API
+
 ```bash
 curl -X POST http://localhost:8000/analyze \
     -H "Content-Type: application/json" \
@@ -93,8 +101,9 @@ curl -X POST http://localhost:8000/analyze \
 ```
 
 ### Docker Deployment
+
 ```yaml
-version: '3.8'
+version: "3.8"
 services:
   cti-nlp:
     build: .
@@ -107,6 +116,7 @@ services:
 ## Future Enhancements
 
 ### Planned Features
+
 - **Real-time Data Ingestion**: Integration with threat feeds and social media APIs
 - **Knowledge Graph**: Visualization of threat actor relationships
 - **Automated Response**: IOC blocking and SIEM integration
@@ -114,6 +124,7 @@ services:
 - **Advanced Visualization**: Interactive threat maps and timeline analysis
 
 ### Research Directions
+
 - Zero-shot threat classification using GPT models
 - Adversarial training for improved robustness
 - Time-series analysis for threat trend prediction
@@ -122,6 +133,7 @@ services:
 ## Academic Impact
 
 This project contributes to cybersecurity research by:
+
 - Demonstrating effective ensemble learning for threat classification
 - Providing open-source tools for CTI analysis
 - Establishing benchmarks for NLP in cybersecurity
@@ -130,12 +142,14 @@ This project contributes to cybersecurity research by:
 ## Getting Started
 
 1. **Clone Repository**
+
    ```bash
    git clone https://github.com/sanjanb/cti-nlp-system.git
    cd cti-nlp-system
    ```
 
 2. **Setup Environment**
+
    ```bash
    python -m venv venv
    source venv/bin/activate
@@ -152,8 +166,9 @@ Visit the [GitHub repository](https://github.com/sanjanb/cti-nlp-system) for com
 ## Team & Collaboration
 
 **Development Team:**
+
 - **Sanjan B M** - Lead Developer & ML Engineer
-- **Kushal S M** - Frontend & API Development  
+- **Kushal S M** - Frontend & API Development
 - **Ponnanna K V** - Data Engineering & Testing
 - **Vishnu S** - Documentation & DevOps
 - **Prof. Khateeja Ambreen** - Project Guide
@@ -164,4 +179,4 @@ Visit the [GitHub repository](https://github.com/sanjanb/cti-nlp-system) for com
 
 ---
 
-*This project demonstrates the practical application of AI and NLP in cybersecurity, contributing to the advancement of automated threat intelligence systems.*
+_This project demonstrates the practical application of AI and NLP in cybersecurity, contributing to the advancement of automated threat intelligence systems._

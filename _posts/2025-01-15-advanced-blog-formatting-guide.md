@@ -262,17 +262,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Image Galleries and Comparisons
 
-{% include figure.liquid loading="eager" path="assets/img/blog-before-after.jpg" title="Before and After Formatting" class="img-fluid rounded z-depth-1" %}
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/code-syntax-highlight.png" title="Syntax Highlighting" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/responsive-design.png" title="Responsive Layout" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
 ## Implementation Details
 
 ### Jekyll Configuration Enhancements
