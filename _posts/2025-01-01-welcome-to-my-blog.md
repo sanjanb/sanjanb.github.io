@@ -264,7 +264,6 @@ Research_Contributions:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/blog/welcome/generative-ai.jpg" title="Generative AI Systems" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             <strong>Generative AI & LLMs</strong><br>
             <em>Expertise Level: 9/10</em><br>
@@ -272,7 +271,6 @@ Research_Contributions:
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/blog/welcome/computer-vision.jpg" title="Computer Vision Applications" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             <strong>Computer Vision Excellence</strong><br>
             <em>Expertise Level: 9/10</em><br>
@@ -280,7 +278,6 @@ Research_Contributions:
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/blog/welcome/deep-learning.jpg" title="Deep Learning Architecture" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             <strong>Deep Learning Architecture</strong><br>
             <em>Expertise Level: 8/10</em><br>
