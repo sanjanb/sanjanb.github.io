@@ -15,18 +15,6 @@ A cutting-edge **Cyber Threat Intelligence (CTI) system** that leverages **Natur
 
 This platform is designed for cybersecurity analysts and SOC teams to **triage, investigate, and act** on threat intelligence — all within one comprehensive dashboard.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/cti-dashboard.jpg" title="CTI Dashboard Interface" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/cti-analysis.jpg" title="Threat Analysis Results" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Left: The main dashboard interface showing real-time threat analysis. Right: Detailed analysis results with entity extraction and classification.
-</div>
-
 ## Key Features
 
 ### 🔍 **Named Entity Recognition (NER)**
@@ -50,15 +38,6 @@ This platform is designed for cybersecurity analysts and SOC teams to **triage, 
 - Downloadable reports and visualizations
 
 ## Technical Architecture
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/cti-architecture.jpg" title="System Architecture" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    System architecture showing the NLP pipeline, ML models, and web interface components.
-</div>
 
 ### Technology Stack
 
@@ -103,15 +82,6 @@ The system demonstrates high accuracy across all components:
 - **Severity Prediction**: 89.7% accuracy on test dataset
 - **NER Performance**: 92.1% F1-score for cybersecurity entities
 - **Real-time Processing**: <2 seconds average response time
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/cti-metrics.jpg" title="Performance Metrics" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Performance metrics showing classification accuracy, precision, and recall across different threat categories.
-</div>
 
 ## Implementation Highlights
 

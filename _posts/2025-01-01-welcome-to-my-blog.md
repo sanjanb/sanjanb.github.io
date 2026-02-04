@@ -46,8 +46,6 @@ Welcome to a meticulously curated space where artificial intelligence transcends
 | **Strategic Insights** | Industry trends and future technology roadmaps | Decision makers, Entrepreneurs, Investors |
 | **Educational Resources** | Comprehensive tutorials and learning pathways | Students, Career changers, Lifelong learners |
 
-{% include figure.liquid loading="eager" path="assets/img/blog/welcome/ai-innovation.jpg" title="AI Innovation Landscape" class="img-fluid rounded z-depth-1" caption="The ever-evolving landscape of artificial intelligence presents unprecedented opportunities for innovation and discovery" %}
-
 ###### The AI Revolution: Current Landscape
 
 In an era where artificial intelligence is reshaping industries, revolutionizing research methodologies, and redefining what's possible, this blog serves as your comprehensive navigation system through the rapidly evolving AI ecosystem.
@@ -172,13 +170,6 @@ MLOps_Pipeline_Architecture:
 | **NLP & Language Models** | Expert | Communication transformation | Transformers, PEFT, vLLM, Triton |
 | **Generative AI Platforms** | Cutting-edge | Creative industry revolution | Diffusers, ComfyUI, Stable Diffusion |
 | **MLOps Infrastructure** | Professional | Operational excellence | Kubernetes, MLflow, Kubeflow, Ray |
-
-{% include figure.liquid 
-   path="assets/img/blog/welcome/project-pipeline.jpg" 
-   title="ML Project Pipeline" 
-   class="img-fluid rounded z-depth-1" 
-   caption="Comprehensive machine learning project lifecycle from conception to production deployment" 
-   zoomable=true %}
 
 ### Strategic Market Intelligence & Future Forecasting
 
