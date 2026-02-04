@@ -395,6 +395,7 @@ Most likely culprits:
 4. Profile contradicts itself across sections
 
 Drop your answer in the comments. I'll tell you what signal you're missing
+
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/blog/referral/Screenshot_2-2-2026_174932_www.linkedin.com.jpeg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
